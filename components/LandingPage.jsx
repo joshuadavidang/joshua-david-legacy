@@ -21,13 +21,13 @@ export default function LandingPage(props) {
         </div>
 
         <span className="hidden md:block">
-          <Image src={Coding} alt="coding" width="250" />
+          <Image src={Coding} alt="coding" width="350" />
         </span>
       </Post>
 
       <Post>
         <span className="hidden md:block">
-          <Image src={CodingII} alt="coding" width="250" />
+          <Image src={CodingII} alt="coding" width="350" />
         </span>
 
         <div className="flex flex-col">
