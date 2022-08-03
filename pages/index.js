@@ -1,5 +1,6 @@
 import Head from "next/head";
 import LandingPage from "../components/LandingPage";
+import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
 
 export default function Home() {
@@ -16,7 +17,11 @@ export default function Home() {
           <NavBar />
         </header>
 
-        <main className="md:px-36 md:py-16 pt-16 h-screen w-screen">
+        <header className="md:hidden block">
+          <MobileNavBar />
+        </header>
+
+        <main className="px-10 md:px-36 md:py-16 md:pt-16 h-screen w-screen">
           <LandingPage />
         </main>
       </div>

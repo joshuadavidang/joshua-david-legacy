@@ -1,7 +1,12 @@
-export default function Post({ children }) {
+export default function Post(props) {
+  const { className, children } = props;
   return (
     <>
-      <div className="grid grid-rows-1 grid-flow-col gap-48 flex justify-center items-center">{children}</div>
+      <div
+        className={`flex flex-row justify-center items-center gap-48 ${className}`}
+      >
+        {children}
+      </div>
     </>
   );
 }

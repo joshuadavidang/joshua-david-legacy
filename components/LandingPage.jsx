@@ -10,7 +10,7 @@ export default function LandingPage(props) {
   const { id } = props;
 
   return (
-    <div id={id} className="pt-10">
+    <div id={id} className="pt-12">
       <Post>
         <div className="flex flex-col">
           <div className="text-blue1 text-4xl font-sen tracking-tight">
@@ -42,9 +42,9 @@ export default function LandingPage(props) {
         </span>
       </Post>
 
-      <Post>
+      <Post className="pt-12">
         <span className="hidden md:block">
-          <Image src={Coding} alt="coding" width="350" />
+          <Image src={Coding} alt="coding" />
         </span>
 
         <div className="flex flex-col">
