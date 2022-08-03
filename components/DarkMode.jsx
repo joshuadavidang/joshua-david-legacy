@@ -18,7 +18,7 @@ export default function DarkMode() {
       return (
         <span className="hover:bg-gray p-2 rounded cursor-pointer">
           <SunIcon
-            className="w-6 h-6 text-white"
+            className="w-5 h-5 text-white"
             role="button"
             onClick={() => setTheme("light")}
           />
@@ -28,7 +28,7 @@ export default function DarkMode() {
       return (
         <span className="hover:bg-lightGray p-2 rounded cursor-pointer">
           <MoonIcon
-            className="w-6 h-6 text-gray-900"
+            className="w-5 h-5 text-gray-900"
             role="button"
             onClick={() => setTheme("dark")}
           />
