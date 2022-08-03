@@ -8,6 +8,8 @@ module.exports = {
   ],
   theme: {
     colors: {
+      black: "#121212",
+      white: "#ffffff",
       blue: "#1fb6ff",
       blue1: "#6868F6",
       purple: "#7e5bef",
@@ -16,6 +18,7 @@ module.exports = {
       green: "#13ce66",
       yellow: "#ffc82c",
       darkGray: "#273444",
+      darkBlue: "#050726",
       gray: "#8492a6",
       lightGray: "#d3dce6",
     },

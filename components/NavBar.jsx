@@ -1,15 +1,26 @@
 import Link from "next/link";
 import DarkMode from "./DarkMode";
 
-export default function NavBar(props) {
-  const { toggleToDark } = props;
+export default function NavBar() {
   return (
     <>
-      <div className="bg-white p-8 flex justify-end flex-row gap-16 pr-24 w-screen">
-        <Link href="/">About</Link>
-        <Link href="/">Projects</Link>
-        <Link href="/">Contacts</Link>
-        <DarkMode toggleToDark={toggleToDark} />
+      <div className="flex justify-end flex-row gap-8 pr-12 p-6 w-screen items-center">
+        <Link href="/">
+          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+            <p className="">About</p>
+          </span>
+        </Link>
+        <Link href="/">
+          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+            <p className="">Projects</p>
+          </span>
+        </Link>
+        <Link href="/">
+          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+            <p className="">Contacts</p>
+          </span>
+        </Link>
+        <DarkMode />
       </div>
     </>
   );

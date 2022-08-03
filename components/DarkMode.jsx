@@ -1,47 +1,41 @@
-export default function DarkMode(props) {
-  const { isDark, toggleToDark } = props;
+import { useTheme } from "next-themes";
+import { SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { useState, useEffect } from "react";
 
-  return (
-    <div onClick={toggleToDark} className="cursor-pointer">
-      {isDark ? (
-        <>
-          <span>
-            {/* Sun */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-              />
-            </svg>
-          </span>{" "}
-        </>
-      ) : (
-        <>
-          {/* Moon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            />
-          </svg>
-        </>
-      )}
-    </div>
-  );
+export default function DarkMode() {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "dark") {
+      return (
+        <span className="hover:bg-gray p-2 rounded cursor-pointer">
+          <SunIcon
+            className="w-6 h-6 text-white"
+            role="button"
+            onClick={() => setTheme("light")}
+          />
+        </span>
+      );
+    } else {
+      return (
+        <span className="hover:bg-lightGray p-2 rounded cursor-pointer">
+          <MoonIcon
+            className="w-6 h-6 text-gray-900"
+            role="button"
+            onClick={() => setTheme("dark")}
+          />
+        </span>
+      );
+    }
+  };
+
+  return <>{renderThemeChanger()}</>;
 }

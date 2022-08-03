@@ -7,27 +7,27 @@ export default function LandingPage(props) {
   const { id } = props;
 
   return (
-    <div id={id}>
+    <div id={id} className="pt-16">
       <Post>
         <div className="flex flex-col">
           <div className="text-blue1 text-4xl font-sen tracking-tight">
-            👋🏻 Joshua David —
+            👋🏻&nbsp; Joshua David —
           </div>
 
-          <div className="pt-3 leading-relaxed">
+          <div className="pt-3 leading-loose">
             Freshman at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
           </div>
         </div>
 
         <span className="hidden md:block">
-          <Image src={Coding} alt="coding" width="350" />
+          <Image src={CodingII} alt="coding" width="350" />
         </span>
       </Post>
 
       <Post>
         <span className="hidden md:block">
-          <Image src={CodingII} alt="coding" width="350" />
+          <Image src={Coding} alt="coding" width="350" />
         </span>
 
         <div className="flex flex-col">
@@ -35,7 +35,7 @@ export default function LandingPage(props) {
             Aspiring Software Engineer
           </div>
 
-          <div className="pt-3 w-5/6 leading-relaxed">
+          <div className="pt-3 w-5/6 leading-loose">
             Passionate about building tech for public good, my interest lies in
             the field of Software Engineering and Artificial Intelligence. As a
             highly self-motivated individual, {"I'm"} constantly on the lookout
