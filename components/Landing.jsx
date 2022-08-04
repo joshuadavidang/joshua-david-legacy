@@ -13,11 +13,11 @@ export default function Landing(props) {
     <div id={id} className="pt-12">
       <Post>
         <div className="flex flex-col">
-          <div className="text-blue1 text-4xl font-sen tracking-tight">
+          <div className="text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
             👋🏻&nbsp; joshua david —
           </div>
 
-          <div className="pt-3 leading-loose">
+          <div className="pt-3 leading-loose text-md">
             freshman at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
           </div>
@@ -52,11 +52,11 @@ export default function Landing(props) {
         </span>
 
         <div className="flex flex-col">
-          <div className="text-blue1 text-4xl font-sen tracking-tight">
+          <div className="text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
             aspiring software engineer
           </div>
 
-          <div className="pt-3 w-5/6 leading-loose">
+          <div className="pt-3 w-5/6 leading-loose text-md">
             {"i'm"} passionate about building tech for public good - my interest
             lies in the field of software engineering and artificial
             intelligence. as a highly self-motivated individual, {"i'm"}{" "}

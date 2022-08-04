@@ -10,7 +10,7 @@ export default function Contacts() {
   return (
     <>
       <div className="relative bg-white dark:bg-black">
-        <nav className="fixed hidden md:block">
+        <nav className="md:block hidden">
           <NavBar />
         </nav>
 
