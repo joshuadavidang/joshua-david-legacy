@@ -22,18 +22,22 @@ export default function LandingPage(props) {
             <p className="break-words">Singapore Management University</p>
           </div>
 
-          <div className="flex flex-row gap-4 pt-3">
-            <Link href="https://github.com/joshuadavidang">
-              <a target="_blank">
-                <FaGithub size={30} className="cursor-pointer" />
-              </a>
-            </Link>
+          <div className="flex flex-row gap-2 pt-3">
+            <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+              <Link href="https://github.com/joshuadavidang">
+                <a target="_blank">
+                  <FaGithub size={30} className="cursor-pointer" />
+                </a>
+              </Link>
+            </span>
 
-            <Link href="https://linkedin.com/in/joshuadavidang/">
-              <a target="_blank">
-                <FaLinkedin size={30} className="cursor-pointer" />
-              </a>
-            </Link>
+            <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+              <Link href="https://linkedin.com/in/joshuadavidang/">
+                <a target="_blank">
+                  <FaLinkedin size={30} className="cursor-pointer" />
+                </a>
+              </Link>
+            </span>
           </div>
         </div>
 
