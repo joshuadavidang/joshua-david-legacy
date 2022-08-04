@@ -25,10 +25,7 @@ export default function Projects() {
         <MobileNavBar />
       </nav>
 
-      <main
-        className="grid md:grid-cols-3 md:px-36 gap-12 md:pt-32 p-8
-        w-screen h-screen justify-center overflow-scroll"
-      >
+      <main className="flex flex-col gap-12 justify-center items-center md:flex-row md:flex-wrap md:pt-32 p-6">
         {pastProjects.map((project, index) => (
           <Card openModal={openModal} key={index}>
             <CardHeader>{project.name}</CardHeader>
