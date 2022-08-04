@@ -4,6 +4,7 @@ import Coffee from "../public/assets/images/Coffee.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import MobileNavBar from "../components/MobileNavBar";
 
 export default function Contacts() {
   return (
@@ -13,8 +14,12 @@ export default function Contacts() {
           <NavBar />
         </header>
 
-        <main className="md:px-36 md:py-16 pt-16 h-screen w-screen flex justify-center items-center h-screen">
-          <div className="flex flex-row items-center justify-center gap-32">
+        <header className="md:hidden block">
+          <MobileNavBar />
+        </header>
+
+        <main className="md:px-36 md:py-16 md:pt-16 md:h-screen w-screen flex justify-center items-center">
+          <div className="flex flex-col md:flex-row items-center justify-center md:gap-32">
             <Image src={Coffee} alt="coffee" width={400} />
 
             <div className="flex flex-col text-center">
