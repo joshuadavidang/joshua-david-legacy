@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Contacts() {
   return (
     <>
-      <div className="relative bg-white dark:bg-black overflow-hidden">
+      <div className="relative bg-white dark:bg-black">
         <header className="fixed hidden md:block">
           <NavBar />
         </header>

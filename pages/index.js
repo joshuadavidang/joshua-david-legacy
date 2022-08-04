@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative bg-white dark:bg-black overflow-hidden">
+      <div className="relative bg-white dark:bg-black">
         <header className="fixed hidden md:block">
           <NavBar />
         </header>

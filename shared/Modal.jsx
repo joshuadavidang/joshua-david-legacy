@@ -1,7 +1,13 @@
-export default function Modal() {
+export default function Modal(props) {
+  const { children, open } = props;
+
   return (
     <>
-      <p>modal</p>
+      {open && (
+        <>
+          <div>{children}</div>
+        </>
+      )}
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function Chip(props) {
       {chipLabel.map((tech, index) => (
         <>
           <span
-            className="rounded bg-lightGray text-gray p-2 w-fit text-sm m-1.5 font-sen"
+            className="rounded bg-lightGray text-gray p-1.5 m-1.5 w-fit text-xs font-sen"
             key={index}
           >
             {tech}
