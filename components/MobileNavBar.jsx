@@ -13,7 +13,7 @@ export default function MobileNavBar() {
 
   return (
     <>
-      <div className="flex flex-row items-center justify-end p-3 gap-4">
+      <div className="flex flex-row items-center justify-end p-6 gap-4">
         <DarkMode />
         <MenuAlt3Icon className="w-7 h-7" onClick={toggleHamburger} />
       </div>
