@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
-export default function LandingPage(props) {
+export default function Landing(props) {
   const { id } = props;
 
   return (

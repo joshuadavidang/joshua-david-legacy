@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LandingPage from "../components/LandingPage";
+import Landing from "../components/Landing";
 import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
 
@@ -13,16 +13,16 @@ export default function Home() {
       </Head>
 
       <div className="relative bg-white dark:bg-black">
-        <header className="fixed hidden md:block">
+        <nav className="fixed hidden md:block">
           <NavBar />
-        </header>
+        </nav>
 
-        <header className="md:hidden block">
+        <nav className="md:hidden block">
           <MobileNavBar />
-        </header>
+        </nav>
 
-        <main className="px-10 md:px-36 md:py-16 md:pt-16 h-screen w-screen">
-          <LandingPage />
+        <main className="px-10 md:px-36 md:py-16 md:pt-16 h-screen w-screen overflow-scroll">
+          <Landing />
         </main>
       </div>
     </>

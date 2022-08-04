@@ -11,7 +11,7 @@ export default function Projects() {
   const [open, setOpen] = useState(false);
 
   let techStack = ["React.js", "Ionic", "Express.js", "TailwindCss"];
-  let data = [1, 1, 1, 1, 1];
+  let data = [1, 1, 1, 1, 1, 1, 1, 1];
 
   const openModal = () => {
     setOpen(!open);
@@ -19,15 +19,15 @@ export default function Projects() {
 
   return (
     <div className="relative bg-white dark:bg-black">
-      <header className="fixed hidden md:block">
+      <nav className="fixed hidden md:block">
         <NavBar />
-      </header>
+      </nav>
 
-      <header className="md:hidden block">
+      <nav className="md:hidden block">
         <MobileNavBar />
-      </header>
+      </nav>
 
-      <main className="md:px-36 md:py-16 md:pt-16 h-screen w-screen">
+      <main className="md:px-36 md:py-16 md:pt-16 h-screen w-screen overflow-scroll">
         <Card data={data} openModal={openModal}>
           <CardHeader>Project Sayocode</CardHeader>
           <CardBody>

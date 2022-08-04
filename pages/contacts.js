@@ -10,13 +10,13 @@ export default function Contacts() {
   return (
     <>
       <div className="relative bg-white dark:bg-black">
-        <header className="fixed hidden md:block">
+        <nav className="fixed hidden md:block">
           <NavBar />
-        </header>
+        </nav>
 
-        <header className="md:hidden block">
+        <nav className="md:hidden block">
           <MobileNavBar />
-        </header>
+        </nav>
 
         <main className="md:px-36 md:py-16 md:pt-16 md:h-screen w-screen flex justify-center items-center">
           <div className="flex flex-col md:flex-row items-center justify-center md:gap-32">
