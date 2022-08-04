@@ -10,8 +10,22 @@ import Modal from "../shared/Modal";
 export default function Projects() {
   const [open, setOpen] = useState(false);
 
-  let techStack = ["React.js", "Ionic", "Express.js", "TailwindCss"];
-  let data = [1, 1, 1, 1, 1, 1, 1, 1];
+  let pastProjects = [
+    {
+      name: "Sayocode",
+      description:
+        "Final year project at Singapore Polytechnic, Sayocode automates the process of app creation through a seamless method of dragging and dropping components directly to a mobile screen of your choice.",
+      year: 2019,
+      techStack: ["TailwindCss", "React.js", "Ionic", "Express.js", "MongoDB"],
+    },
+    {
+      name: "Still Young",
+      description:
+        "Cross-platform mobile app that serves as a centralized platform for young mums to look up information during their confinement period. With more than 200 downloads, it's now available on App Store & Google Play Store.",
+      year: 2019,
+      techStack: ["Ionic", "Express.js"],
+    },
+  ];
 
   const openModal = () => {
     setOpen(!open);
@@ -27,13 +41,19 @@ export default function Projects() {
         <MobileNavBar />
       </nav>
 
-      <main className="md:px-36 md:py-16 md:pt-16 h-screen w-screen overflow-scroll">
-        <Card data={data} openModal={openModal}>
-          <CardHeader>Project Sayocode</CardHeader>
-          <CardBody>
-            <Chip chipLabel={techStack} />
-          </CardBody>
-        </Card>
+      <main className="grid md:grid-cols-3 gap-2 gap-y-12 justify-center items-center md:px-36 md:py-16 md:pt-32 pt-12 w-screen md:h-3/4 overflow-scroll">
+        {pastProjects.map((project, index) => (
+          <Card openModal={openModal} key={index}>
+            <CardHeader>{project.name}</CardHeader>
+            <CardBody>
+              <Chip chipLabel={project.techStack} />
+            </CardBody>
+
+            <p className="pt-6 text-sm text-white dark:text-black">
+              {project.description}
+            </p>
+          </Card>
+        ))}
 
         <Modal open={open}>
           <p>modal opened</p>
