@@ -6,26 +6,10 @@ import CardBody from "../shared/Card/CardBody";
 import CardHeader from "../shared/Card/CardHeader";
 import Chip from "../shared/Chip";
 import Modal from "../shared/Modal";
+import { pastProjects } from "../data/pastProjects";
 
 export default function Projects() {
   const [open, setOpen] = useState(false);
-
-  let pastProjects = [
-    {
-      name: "Sayocode",
-      description:
-        "Final year project at Singapore Polytechnic, Sayocode automates the process of app creation through a seamless method of dragging and dropping components directly to a mobile screen of your choice.",
-      year: 2019,
-      techStack: ["TailwindCss", "React.js", "Ionic", "Express.js", "MongoDB"],
-    },
-    {
-      name: "Still Young",
-      description:
-        "Cross-platform mobile app that serves as a centralized platform for young mums to look up information during their confinement period. With more than 200 downloads, it's now available on App Store & Google Play Store.",
-      year: 2019,
-      techStack: ["Ionic", "Express.js"],
-    },
-  ];
 
   const openModal = () => {
     setOpen(!open);
@@ -41,7 +25,10 @@ export default function Projects() {
         <MobileNavBar />
       </nav>
 
-      <main className="grid md:grid-cols-3 gap-2 gap-y-12 justify-center items-center md:px-36 md:py-16 md:pt-32 pt-12 w-screen md:h-3/4 overflow-scroll">
+      <main
+        className="grid md:grid-cols-3 md:px-36 gap-12 md:pt-32 p-8
+        w-screen h-screen justify-center overflow-scroll"
+      >
         {pastProjects.map((project, index) => (
           <Card openModal={openModal} key={index}>
             <CardHeader>{project.name}</CardHeader>
