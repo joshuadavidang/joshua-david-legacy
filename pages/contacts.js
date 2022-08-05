@@ -18,11 +18,10 @@ export default function Contacts() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col md:flex-row items-center justify-center md:pt-16 md:gap-32">
-          <Image src={Coffee} alt="coffee" width={400} />
-
-          <div className="flex flex-col text-center">
-            <p className="text-blue1 text-4xl font-sen tracking-tight">
+        <main className="flex flex-col md:flex-row items-center justify-center md:gap-32 pt-32 text-center">
+          <div>
+            <Image src={Coffee} alt="coffee" layout="responsive" />
+            <p className="text-blue1 text-4xl font-sen tracking-tight pt-12">
               Stay Connected
             </p>
 
@@ -32,7 +31,7 @@ export default function Contacts() {
               </a>
             </p>
 
-            <div className="flex flex-row justify-center gap-2 pt-3">
+            <div className="flex flex-row justify-center gap-1.5 pt-3">
               <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
                 <Link href="https://github.com/joshuadavidang">
                   <a target="_blank">

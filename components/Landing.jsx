@@ -22,7 +22,7 @@ export default function Landing(props) {
             <p className="break-words">Singapore Management University</p>
           </div>
 
-          <div className="flex flex-row gap-2 pt-3">
+          <div className="flex flex-row gap-1.5 pt-3">
             <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
               <Link href="https://github.com/joshuadavidang">
                 <a target="_blank">
