@@ -20,7 +20,7 @@ module.exports = {
       darkGray: "#273444",
       darkBlue: "#050726",
       gray: "#8492a6",
-      lightGray: "#f8f8f8",
+      lightGray: "#f2f2f2",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
