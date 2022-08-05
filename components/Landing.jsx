@@ -57,8 +57,8 @@ export default function Landing(props) {
           </div>
 
           <div className="pt-3 w-5/6 leading-loose text-md">
-            {"i'm"} passionate about building tech for public good - my interest
-            lies in the field of software engineering and artificial
+            {"i'm"} passionate about building tech for public good and my
+            interest lies in the field of software engineering and artificial
             intelligence. as a highly self-motivated individual, {"i'm"}{" "}
             constantly on the lookout for opportunities to develop my skill
             sets.
