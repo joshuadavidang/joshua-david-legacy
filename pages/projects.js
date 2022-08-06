@@ -7,16 +7,8 @@ import CardHeader from "../shared/Card/CardHeader";
 import Chip from "../shared/Chip";
 import Modal from "../shared/Modal";
 import { pastProjects } from "../data/pastProjects";
-import StillYoung from "../public/assets/images/StillYoung.svg";
-import Image from "next/image";
 
 export default function Projects() {
-  const [open, setOpen] = useState(false);
-
-  const openModal = () => {
-    setOpen(!open);
-  };
-
   return (
     <div className="relative bg-white dark:bg-black">
       <nav className="fixed hidden md:block">
@@ -29,7 +21,7 @@ export default function Projects() {
 
       <main className="flex flex-col gap-12 justify-center items-center md:h-screen md:flex-row md:flex-wrap md:pt-32 p-6 overflow-scroll">
         {pastProjects.map((project, index) => (
-          <Card openModal={openModal} key={index}>
+          <Card key={index}>
             <CardHeader>{project.name}</CardHeader>
             <p className="text-sm text-white dark:text-black">
               {project.description}
@@ -39,10 +31,6 @@ export default function Projects() {
             </CardBody>
           </Card>
         ))}
-
-        <Modal open={open}>
-          <p>modal opened</p>
-        </Modal>
       </main>
     </div>
   );

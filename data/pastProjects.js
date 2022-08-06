@@ -8,21 +8,21 @@ export const pastProjects = [
   {
     name: "project-51",
     description:
-      "spearheaded the front-end development of a NFT marketplace that allows users to buy, mint and sell collectibles.",
+      "spearheaded the front-end development of a NFT marketplace, the web app allows users to buy, mint and sell collectibles.",
     year: 2555,
     techStack: ["Next.js", "Web3.js", "MongoDB"],
   },
   {
     name: "project-50",
     description:
-      "built a marketplace that allows jewellery collectors to manage collections by providing secure technology, services & experts to assist in cataloging, maintaining, acquiring & trading their collections.",
+      "built a marketplace that enables jewellery collectors to catalogue, maintain, acquire and trade collections.",
     year: 2555,
     techStack: ["React.js", "Express.js", "Firebase"],
   },
   {
     name: "project still young",
     description:
-      "developed a mobile app that serves as a centralized platform for young mums to look up information during their confinement period. with more than 200 downloads, it's now available on App Store & Google Play Store.",
+      "developed a mobile app that serves as a one-stop platform for mothers to learn more about confinement practices. with more than 200 downloads, it's now available on App Store & Play Store.",
     year: 2019,
     techStack: ["Ionic", "Express.js"],
   },
@@ -31,6 +31,6 @@ export const pastProjects = [
     description:
       "developed a web app builder that automates the process of app creation through a seamless method of dragging and dropping components directly to a mobile screen of your choice.",
     year: 2019,
-    techStack: ["TailwindCss", "React.js", "Ionic", "Express.js", "MongoDB"],
+    techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
   },
 ];
