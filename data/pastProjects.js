@@ -33,18 +33,4 @@ export const pastProjects = [
     year: 2019,
     techStack: ["TailwindCss", "React.js", "Ionic", "Express.js", "MongoDB"],
   },
-  {
-    name: "Lorem, ipsum dolor",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum in repellendus tempore placeat odit soluta, quo obcaecati ratione voluptas autem laboriosam voluptatibus eveniet repudiandae perferendis maiores. Atque adipisci maiores iure?",
-    year: 2555,
-    techStack: ["Lorem", "ipsum", "dolar", "sit"],
-  },
-  {
-    name: "Lorem, ipsum dolor",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum in repellendus tempore placeat odit soluta, quo obcaecati ratione voluptas autem laboriosam voluptatibus eveniet repudiandae perferendis maiores. Atque adipisci maiores iure?",
-    year: 2555,
-    techStack: ["Lorem", "ipsum", "dolar", "sit"],
-  },
 ];
