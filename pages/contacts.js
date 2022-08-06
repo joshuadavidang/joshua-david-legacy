@@ -5,12 +5,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import MobileNavBar from "../components/MobileNavBar";
+import Landing from "../components/Landing";
 
 export default function Contacts() {
   return (
     <>
       <div className="relative bg-white dark:bg-black">
-        <nav className="md:block hidden">
+        <nav className="fixed hidden md:block">
           <NavBar />
         </nav>
 
@@ -18,10 +19,13 @@ export default function Contacts() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col md:flex-row h-screen justify-center md:gap-32 items-center md:items-start md:pt-44 text-center">
-          <div>
+        <main className="flex md:flex-row flex-col md:gap-32 items-center justify-center h-screen text-center">
+          <div className="md:w-3/12 w-8/12">
             <Image src={Coffee} alt="coffee" layout="responsive" />
-            <p className="text-blue1 text-4xl font-sen tracking-tight pt-12">
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <p className="text-blue1 text-2xl md:text-4xl font-sen tracking-tight pt-12">
               Stay Connected
             </p>
 
@@ -31,7 +35,7 @@ export default function Contacts() {
               </a>
             </p>
 
-            <div className="flex flex-row justify-center gap-1.5 pt-3">
+            <div className="flex flex-row justify-center gap-1.5">
               <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
                 <Link href="https://github.com/joshuadavidang">
                   <a target="_blank">
