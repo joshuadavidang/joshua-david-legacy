@@ -5,10 +5,17 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import MobileNavBar from "../components/MobileNavBar";
+import Head from "next/head";
 
 export default function Contacts() {
   return (
     <>
+      <Head>
+        <title>Joshua David</title>
+        <meta name="description" content="joshua david's" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className="relative bg-white dark:bg-black">
         <nav className="fixed hidden md:block">
           <NavBar />
