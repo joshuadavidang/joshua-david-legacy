@@ -7,7 +7,11 @@ export default function Home() {
   return (
     <>
       <Head>
+<<<<<<< HEAD
         <title>Joshua David Ang - Staging</title>
+=======
+        <title>Joshua David</title>
+>>>>>>> f662e0a7c25b480d084891a736c6a587baa77581
         <meta name="description" content="joshua david's" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
