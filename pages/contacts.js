@@ -25,7 +25,7 @@ export default function Contacts() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex md:flex-row flex-col md:gap-32 items-center justify-center h-screen text-center">
+        <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-32 h-screen text-center">
           <div className="md:w-3/12 w-8/12">
             <Image src={Coffee} alt="coffee" layout="responsive" />
           </div>
