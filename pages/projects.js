@@ -7,6 +7,8 @@ import CardHeader from "../shared/Card/CardHeader";
 import Chip from "../shared/Chip";
 import Modal from "../shared/Modal";
 import { pastProjects } from "../data/pastProjects";
+import StillYoung from "../public/assets/images/StillYoung.svg";
+import Image from "next/image";
 
 export default function Projects() {
   const [open, setOpen] = useState(false);
@@ -29,13 +31,12 @@ export default function Projects() {
         {pastProjects.map((project, index) => (
           <Card openModal={openModal} key={index}>
             <CardHeader>{project.name}</CardHeader>
+            <p className="text-sm text-white dark:text-black">
+              {project.description}
+            </p>
             <CardBody>
               <Chip chipLabel={project.techStack} />
             </CardBody>
-
-            <p className="pt-6 text-sm text-white dark:text-black">
-              {project.description}
-            </p>
           </Card>
         ))}
 
