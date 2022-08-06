@@ -5,7 +5,6 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import MobileNavBar from "../components/MobileNavBar";
-import Landing from "../components/Landing";
 
 export default function Contacts() {
   return (
