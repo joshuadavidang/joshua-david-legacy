@@ -29,8 +29,15 @@ export const pastProjects = [
   {
     name: "project sayocode",
     description:
-      "developed a web app builder that automates the process of app creation through a seamless method of dragging and dropping components directly to a mobile screen of your choice.",
+      "built for front-end developers by front-end developers, sayocode automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one's choice.",
     year: 2019,
     techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
+  },
+  {
+    name: "project todolist",
+    description:
+      "web app that allows users to organise their daily tasks. features include adding, editing and deleting of task.",
+    year: 2019,
+    techStack: ["Angular.js", "Express.js", "Bootstrap", "Firebase"],
   },
 ];
