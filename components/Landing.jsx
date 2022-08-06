@@ -65,8 +65,7 @@ export default function Landing(props) {
             </p>
 
             <p>
-              outside of work, I enjoy going for walks and runs around the city.
-              {"i'm"} also a huge fan of coffee, I look forward to connecting
+              outside of work, I enjoy going for walks and runs around the city. {"i'm"} also a huge fan of coffee, I look forward to connecting
               with you.
             </p>
           </div>
