@@ -85,7 +85,7 @@ export default function Landing(props) {
       <Post className="md:p-0 pt-12">
         <div className="flex flex-col">
           <div className="text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
-            i'm comfortable with...
+            {"i'm"} comfortable with...
           </div>
 
           <div className="flex flex-row flex-wrap gap-6 pt-6">
