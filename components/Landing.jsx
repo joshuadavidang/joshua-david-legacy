@@ -104,7 +104,7 @@ export default function Landing(props) {
         </span>
       </Post>
 
-      <footer className="md:p-0 pt-16"></footer>
+      <footer className="bg-white dark:bg-black md:p-0 pt-12"></footer>
     </div>
   );
 }
