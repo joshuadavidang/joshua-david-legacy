@@ -7,7 +7,7 @@ import Link from "next/link";
 import MobileNavBar from "../components/MobileNavBar";
 import Head from "next/head";
 
-export default function Contacts() {
+export default function Contact() {
   return (
     <>
       <Head>
@@ -17,15 +17,15 @@ export default function Contacts() {
       </Head>
 
       <div className="relative bg-white dark:bg-black">
-        <nav className="fixed hidden md:block">
+        <nav className="fixed hidden md:block z-50">
           <NavBar />
         </nav>
 
-        <nav className="md:hidden block">
+        <nav className="fixed md:hidden block z-50">
           <MobileNavBar />
         </nav>
 
-        <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-32 h-screen text-center">
+        <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-48 h-screen text-center">
           <div className="md:w-3/12 w-8/12">
             <Image src={Coffee} alt="coffee" layout="responsive" />
           </div>
@@ -41,7 +41,7 @@ export default function Contacts() {
               </a>
             </p>
 
-            <div className="flex flex-row justify-center gap-1.5">
+            <div className="flex flex-row justify-center gap-0.5">
               <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
                 <Link href="https://github.com/joshuadavidang">
                   <a target="_blank">

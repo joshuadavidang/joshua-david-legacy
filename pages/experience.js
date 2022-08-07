@@ -1,4 +1,3 @@
-import { useState } from "react";
 import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
 import Card from "../shared/Card/Card";
@@ -8,7 +7,7 @@ import Chip from "../shared/Chip";
 import { pastProjects } from "../data/pastProjects";
 import Head from "next/head";
 
-export default function Projects() {
+export default function Experience() {
   return (
     <>
       <Head>
@@ -18,18 +17,20 @@ export default function Projects() {
       </Head>
 
       <div className="relative bg-white dark:bg-black">
-        <nav className="fixed hidden md:block">
+        <nav className="fixed hidden md:block z-50">
           <NavBar />
         </nav>
 
-        <nav className="md:hidden block">
+        <nav className="fixed md:hidden block z-50">
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-12 justify-center items-center md:h-screen md:flex-row md:flex-wrap md:pt-32 p-6 overflow-scroll">
+        <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-32 overflow-scroll">
           {pastProjects.map((project, index) => (
             <Card key={index}>
-              <CardHeader>{project.name}</CardHeader>
+              <CardHeader>
+                {project.name} {project.icon}{" "}
+              </CardHeader>
               <p className="text-sm text-white dark:text-black">
                 {project.description}
               </p>
@@ -40,6 +41,8 @@ export default function Projects() {
           ))}
         </main>
       </div>
+
+      <footer className="bg-white dark:bg-black md:p-0 pt-12"></footer>
     </>
   );
 }

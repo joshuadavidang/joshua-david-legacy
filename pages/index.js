@@ -13,11 +13,11 @@ export default function Home() {
       </Head>
 
       <div className="relative bg-white dark:bg-black">
-        <nav className="fixed hidden md:block">
+        <nav className="fixed hidden md:block z-50">
           <NavBar />
         </nav>
 
-        <nav className="md:hidden block">
+        <nav className="fixed md:hidden block z-50">
           <MobileNavBar />
         </nav>
 

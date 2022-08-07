@@ -3,7 +3,7 @@ export default function Card(props) {
 
   return (
     <>
-      <div className="p-6 w-80 h-80 bg-blue1 dark:bg-white rounded-2xl shadow-md cursor-pointer overflow-scroll">
+      <div className="p-6 w-72 h-80 bg-blue1 dark:bg-white rounded-2xl drop-shadow-md cursor-pointer">
         {children}
       </div>
     </>
