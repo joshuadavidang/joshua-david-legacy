@@ -8,7 +8,7 @@ export const pastProjects = [
   {
     name: "project-51",
     description:
-      "spearheaded the front-end development of a NFT marketplace, the web app allows users to buy, mint and sell collectibles.",
+      "spearheaded front-end development of a NFT marketplace, the web app allows users to mint, buy and sell collectibles.",
     year: 2555,
     techStack: ["Next.js", "Web3.js", "MongoDB"],
   },
