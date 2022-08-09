@@ -29,7 +29,9 @@ export default function Experience() {
         <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28">
           {pastProjects.map((project, index) => (
             <Card key={index}>
-              <Image src={project.icon} alt="image" priority={true} />
+              <div className="w-40">
+                <Image src={project.icon} alt="image" priority />
+              </div>
               <CardHeader>{project.name}</CardHeader>
               <p className="text-sm text-white dark:text-black">
                 {project.description}
@@ -42,7 +44,7 @@ export default function Experience() {
         </main>
       </div>
 
-      <footer className="bg-white dark:bg-black pt-12" />
+      <footer className="bg-white dark:bg-black py-12" />
     </>
   );
 }
