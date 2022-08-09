@@ -25,12 +25,11 @@ export default function Experience() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-32 overflow-scroll">
+        <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28">
           {pastProjects.map((project, index) => (
             <Card key={index}>
-              <CardHeader>
-                {project.name} {project.icon}{" "}
-              </CardHeader>
+              {project.icon}
+              <CardHeader>{project.name}</CardHeader>
               <p className="text-sm text-white dark:text-black">
                 {project.description}
               </p>
@@ -42,7 +41,7 @@ export default function Experience() {
         </main>
       </div>
 
-      <footer className="bg-white dark:bg-black md:p-0 pt-12"></footer>
+      <footer className="bg-white dark:bg-black md:p-0 mt-12" />
     </>
   );
 }
