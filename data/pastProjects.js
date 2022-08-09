@@ -29,7 +29,7 @@ export const pastProjects = [
   {
     name: "still young",
     description:
-      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices, available on App Store/Play Store.",
+      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices",
     year: 2019,
     techStack: ["Ionic", "Express.js"],
     icon: StillYoung,
@@ -37,7 +37,7 @@ export const pastProjects = [
   {
     name: "sayocode",
     description:
-      "automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen.",
+      "automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of your choice.",
     year: 2019,
     techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
     icon: Sayocode,
