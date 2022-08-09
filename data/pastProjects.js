@@ -29,9 +29,9 @@ export const pastProjects = [
   {
     name: "still young",
     description:
-      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices",
+      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices.",
     year: 2019,
-    techStack: ["Ionic", "Express.js"],
+    techStack: ["Ionic"],
     icon: StillYoung,
   },
   {
