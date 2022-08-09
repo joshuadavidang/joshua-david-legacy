@@ -1,5 +1,4 @@
-import Image from "next/image";
-// import StillYoung from "../public/assets/images/StillYoung.svg";
+import StillYoung from "../public/assets/images/StillYoung.svg";
 import Sayocode from "../public/assets/images/Sayocode.png";
 import CompletedTask from "../public/assets/images/CompletedTask.svg";
 
@@ -33,7 +32,7 @@ export const pastProjects = [
       "mobile app that serves as a one-stop platform for mothers to learn about confinement practices, available on App Store/Play Store.",
     year: 2019,
     techStack: ["Ionic", "Express.js"],
-    icon: CompletedTask,
+    icon: StillYoung,
   },
   {
     name: "sayocode",
