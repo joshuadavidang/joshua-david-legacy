@@ -41,7 +41,7 @@ export default function Experience() {
         </main>
       </div>
 
-      <footer className="bg-white dark:bg-black md:p-0 mt-12" />
+      <footer className="bg-white dark:bg-black md:p-0 pt-12" />
     </>
   );
 }
