@@ -26,7 +26,7 @@ export default function Experience() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28">
+        <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28 overflow-scroll">
           {pastProjects.map((project, index) => (
             <Card key={index}>
               <div className="w-40">
@@ -43,8 +43,6 @@ export default function Experience() {
           ))}
         </main>
       </div>
-
-      <footer className="bg-white dark:bg-black py-12" />
     </>
   );
 }

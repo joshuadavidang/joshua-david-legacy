@@ -103,8 +103,6 @@ export default function Landing(props) {
           <Image src={Coding_III} alt="coding" width="350" />
         </span>
       </Post>
-
-      <footer className="bg-white dark:bg-black py-12" />
     </div>
   );
 }
