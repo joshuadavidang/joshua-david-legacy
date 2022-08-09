@@ -6,6 +6,7 @@ import CardHeader from "../shared/Card/CardHeader";
 import Chip from "../shared/Chip";
 import { pastProjects } from "../data/pastProjects";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Experience() {
   return (
@@ -28,7 +29,7 @@ export default function Experience() {
         <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28">
           {pastProjects.map((project, index) => (
             <Card key={index}>
-              {/* {project.icon} */}
+              <Image src={project.icon} alt="image" priority={true} />
               <CardHeader>{project.name}</CardHeader>
               <p className="text-sm text-white dark:text-black">
                 {project.description}
