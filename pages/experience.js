@@ -28,7 +28,7 @@ export default function Experience() {
         <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28">
           {pastProjects.map((project, index) => (
             <Card key={index}>
-              {project.icon}
+              {/* {project.icon} */}
               <CardHeader>{project.name}</CardHeader>
               <p className="text-sm text-white dark:text-black">
                 {project.description}
