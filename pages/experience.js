@@ -26,7 +26,7 @@ export default function Experience() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-9 justify-center items-center md:h-screen md:flex-row md:flex-wrap pt-28">
+        <main className="flex flex-col gap-9 justify-center items-center md:h-full md:flex-row md:flex-wrap pt-28">
           {pastProjects.map((project, index) => (
             <Card key={index}>
               <div className="flex justify-center w-40">

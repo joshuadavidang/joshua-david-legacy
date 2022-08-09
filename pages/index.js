@@ -21,7 +21,7 @@ export default function Home() {
           <MobileNavBar />
         </nav>
 
-        <main className="px-10 md:px-36 md:py-16 pt-16 h-screen w-screen overflow-scroll">
+        <main className="px-10 md:px-36 md:py-16 pt-16 h-full w-screen">
           <Landing />
         </main>
 
