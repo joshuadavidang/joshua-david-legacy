@@ -43,7 +43,7 @@ export default function Experience() {
           ))}
         </main>
 
-        <footer className="bg-white dark:bg-black pt-32" />
+        <footer className="bg-white dark:bg-black pt-16" />
       </div>
     </>
   );

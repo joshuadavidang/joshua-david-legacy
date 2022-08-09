@@ -24,6 +24,8 @@ export default function Home() {
         <main className="px-10 md:px-36 md:py-16 pt-16 h-screen w-screen overflow-scroll">
           <Landing />
         </main>
+
+        <footer className="bg-white dark:bg-black md:pt-0 pt-16" />
       </div>
     </>
   );
