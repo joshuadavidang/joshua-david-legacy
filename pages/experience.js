@@ -35,7 +35,7 @@ export default function Experience() {
               <CardHeader>{project.name}</CardHeader>
               <CardBody>
                 <Chip chipLabel={project.techStack} />
-                <p className="text-sm text-white dark:text-black pt-3">
+                <p className="text-sm pt-3">
                   {project.description}
                 </p>
               </CardBody>
