@@ -33,11 +33,11 @@ export default function Experience() {
                 <Image src={project.icon} alt="image" priority />
               </div>
               <CardHeader>{project.name}</CardHeader>
-              <p className="text-sm text-white dark:text-black">
-                {project.description}
-              </p>
               <CardBody>
                 <Chip chipLabel={project.techStack} />
+                <p className="text-sm text-white dark:text-black pt-3">
+                  {project.description}
+                </p>
               </CardBody>
             </Card>
           ))}

@@ -2,17 +2,12 @@ export default function Chip(props) {
   const { chipLabel } = props;
 
   return (
-    <>
+    <div className="flex flex-row gap-2 overflow-scroll">
       {chipLabel.map((tech, index) => (
-        <>
-          <span
-            className="rounded bg-lightGray text-gray p-1.5 m-1.5 w-fit text-xs font-sen"
-            key={index}
-          >
-            {tech}
-          </span>
-        </>
+        <div className="text-gray text-xs font-sen" key={index}>
+          {tech}
+        </div>
       ))}
-    </>
+    </div>
   );
 }

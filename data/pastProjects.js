@@ -4,6 +4,23 @@ import CompletedTask from "../public/assets/images/CompletedTask.svg";
 
 export const pastProjects = [
   {
+    name: "sayocode",
+    description:
+      "automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of your choice.",
+    year: 2019,
+    techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
+    icon: Sayocode,
+  },
+  {
+    name: "still young",
+    description:
+      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices.",
+    year: 2019,
+    techStack: ["Ionic"],
+    icon: StillYoung,
+  },
+
+  {
     name: "project-52",
     description: "project under construction",
     year: 2555,
@@ -25,21 +42,5 @@ export const pastProjects = [
     year: 2555,
     techStack: ["React.js", "Express.js", "Firebase"],
     icon: CompletedTask,
-  },
-  {
-    name: "still young",
-    description:
-      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices.",
-    year: 2019,
-    techStack: ["Ionic"],
-    icon: StillYoung,
-  },
-  {
-    name: "sayocode",
-    description:
-      "automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of your choice.",
-    year: 2019,
-    techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
-    icon: Sayocode,
   },
 ];

@@ -31,7 +31,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <p className="text-blue1 text-2xl md:text-4xl font-sen tracking-tight pt-12">
+            <p className="text-darkGray dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pt-12">
               Stay Connected
             </p>
 

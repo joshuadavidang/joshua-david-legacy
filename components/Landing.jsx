@@ -21,8 +21,8 @@ export default function Landing(props) {
     <div id={id} className="pt-12">
       <Post>
         <div className="flex flex-col">
-          <div className="text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
-            👋🏻&nbsp; joshua david —
+          <div className="text-darkGray dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
+            👋🏻&nbsp; joshua david
           </div>
 
           <div className="pt-3 leading-loose text-md">
@@ -60,7 +60,7 @@ export default function Landing(props) {
         </span>
 
         <div className="flex flex-col">
-          <div className="text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
+          <div className="text-darkGray dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
             about
           </div>
 
@@ -84,18 +84,18 @@ export default function Landing(props) {
 
       <Post className="md:p-0 pt-12">
         <div className="flex flex-col">
-          <div className="text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
+          <div className="text-darkGray dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
             {"i'm"} comfortable with...
           </div>
 
           <div className="flex flex-row flex-wrap gap-6 pt-6">
-            <FaJsSquare size={35} />
-            <FaPython size={35} />
-            <FaReact size={35} />
-            <TbBrandNextjs size={35} />
-            <FaNode size={35} />
-            <SiMysql size={35} />
-            <FaSwift size={35} />
+            <FaJsSquare size={30} />
+            <FaPython size={30} />
+            <FaReact size={30} />
+            <TbBrandNextjs size={30} />
+            <FaNode size={30} />
+            <SiMysql size={30} />
+            <FaSwift size={30} />
           </div>
         </div>
 
