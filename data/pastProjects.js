@@ -6,7 +6,7 @@ export const pastProjects = [
   {
     name: "sayocode",
     description:
-      "automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of your choice.",
+      "web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one's choice",
     year: 2019,
     techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
     icon: Sayocode,
@@ -14,7 +14,7 @@ export const pastProjects = [
   {
     name: "still young",
     description:
-      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices.",
+      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices",
     year: 2019,
     techStack: ["Ionic"],
     icon: StillYoung,
@@ -30,7 +30,7 @@ export const pastProjects = [
   {
     name: "project-51",
     description:
-      "spearheaded front-end development of a NFT marketplace, the web app allows users to mint, buy and sell collectibles.",
+      "spearheaded front-end development of a NFT marketplace, the web app allows users to mint, buy and sell collectibles",
     year: 2555,
     techStack: ["Next.js", "Web3.js", "MongoDB"],
     icon: CompletedTask,
@@ -38,7 +38,7 @@ export const pastProjects = [
   {
     name: "project-50",
     description:
-      "marketplace that enables jewellery collectors to catalogue, maintain, acquire and trade collections.",
+      "marketplace that enables jewellery collectors to catalogue, maintain, acquire and trade collections",
     year: 2555,
     techStack: ["React.js", "Express.js", "Firebase"],
     icon: CompletedTask,

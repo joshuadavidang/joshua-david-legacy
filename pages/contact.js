@@ -32,7 +32,7 @@ export default function Contact() {
 
           <div className="flex flex-col gap-1.5">
             <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pt-12">
-              Stay Connected
+              stay connected
             </p>
 
             <p className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">

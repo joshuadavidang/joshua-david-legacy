@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Post from "../shared/Container";
+import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 import Coding from "../public/assets/images/Coding.svg";
 import Coding_II from "../public/assets/images/Coding_II.svg";
 import Coding_III from "../public/assets/images/Coding_III.svg";
@@ -12,7 +14,6 @@ import { FaPython } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
-import Link from "next/link";
 
 export default function Landing(props) {
   const { id } = props;
@@ -21,15 +22,24 @@ export default function Landing(props) {
     <div id={id} className="pt-12">
       <Post>
         <div className="flex flex-col">
-          <div className="text-blue1 dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
-            👋🏻&nbsp; joshua david
-          </div>
+          <TypeAnimation
+            sequence={[
+              "joshua david", // Types 'One'
+              1000, // Waits 1s
+              "undergraduate student", // Deletes 'One' and types 'Two'
+              2000, // Waits 2s
+              "aspiring software engineer", // Types 'Three' without deleting 'Two'
+            ]}
+            cursor={true}
+            repeat={3}
+            speed={35}
+            className="text-blue1 dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl"
+          />
 
           <div className="pt-3 leading-loose text-md">
             freshman at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
           </div>
-
           <div className="flex flex-row gap-0.5 pt-3">
             <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
               <Link href="https://github.com/joshuadavidang">
