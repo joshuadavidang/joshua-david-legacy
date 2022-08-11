@@ -24,11 +24,11 @@ export default function Landing(props) {
         <div className="flex flex-col">
           <TypeAnimation
             sequence={[
-              "joshua david", // Types 'One'
-              1000, // Waits 1s
-              "freshman at smu", // Deletes 'One' and types 'Two'
-              2000, // Waits 2s
-              "aspiring software engineer", // Types 'Three' without deleting 'Two'
+              "joshua david",
+              1000,
+              "freshman at smu",
+              2000,
+              "aspiring software engineer",
             ]}
             cursor={true}
             repeat={3}

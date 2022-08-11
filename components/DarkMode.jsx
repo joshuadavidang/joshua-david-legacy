@@ -16,19 +16,24 @@ export default function DarkMode() {
 
     if (currentTheme === "dark") {
       return (
-        <SunIcon
-          className="w-6 h-6 md:w-5 md:h-5 text-white"
-          role="button"
+        <span
+          className="hidden md:block hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
           onClick={() => setTheme("light")}
-        />
+        >
+          <SunIcon className="w-6 h-6 md:w-5 md:h-5 text-white" role="button" />
+        </span>
       );
     } else {
       return (
-        <MoonIcon
-          className="w-6 h-6 md:w-5 md:h-5 text-black"
-          role="button"
+        <span
+          className="hidden md:block hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
           onClick={() => setTheme("dark")}
-        />
+        >
+          <MoonIcon
+            className="w-6 h-6 md:w-5 md:h-5 text-black"
+            role="button"
+          />
+        </span>
       );
     }
   };
