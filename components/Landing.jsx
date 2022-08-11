@@ -26,7 +26,7 @@ export default function Landing(props) {
             sequence={[
               "joshua david", // Types 'One'
               1000, // Waits 1s
-              "undergraduate student", // Deletes 'One' and types 'Two'
+              "freshman at smu", // Deletes 'One' and types 'Two'
               2000, // Waits 2s
               "aspiring software engineer", // Types 'Three' without deleting 'Two'
             ]}
