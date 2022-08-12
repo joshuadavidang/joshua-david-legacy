@@ -16,16 +16,16 @@ export default function DarkMode() {
 
     if (currentTheme === "dark") {
       return (
-        <span
+        <div
           className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
           onClick={() => setTheme("light")}
         >
           <SunIcon className="w-6 h-6 md:w-5 md:h-5 text-white" role="button" />
-        </span>
+        </div>
       );
     } else {
       return (
-        <span
+        <div
           className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
           onClick={() => setTheme("dark")}
         >
@@ -33,7 +33,7 @@ export default function DarkMode() {
             className="w-6 h-6 md:w-5 md:h-5 text-black"
             role="button"
           />
-        </span>
+        </div>
       );
     }
   };
