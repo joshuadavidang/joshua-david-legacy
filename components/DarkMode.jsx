@@ -17,7 +17,7 @@ export default function DarkMode() {
     if (currentTheme === "dark") {
       return (
         <span
-          className="hidden md:block hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
+          className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
           onClick={() => setTheme("light")}
         >
           <SunIcon className="w-6 h-6 md:w-5 md:h-5 text-white" role="button" />
@@ -26,7 +26,7 @@ export default function DarkMode() {
     } else {
       return (
         <span
-          className="hidden md:block hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
+          className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
           onClick={() => setTheme("dark")}
         >
           <MoonIcon
