@@ -76,11 +76,11 @@ export default function Landing(props) {
 
           <div className="flex flex-col gap-4 pt-3 md:w-5/6 w-full leading-loose text-md">
             <p>
-              {"i'm"} passionate about building tech for the public good, and my
-              interest mainly lies in the field of software engineering and
-              artificial intelligence. as a highly self-motivated individual,{" "}
-              {"i'm"} constantly on the lookout for opportunities to develop my
-              skill sets.
+              hey there, {"i'm"} joshua and i love to develop apps to solve
+              everyday challenges. my interest mainly lies in the fields of
+              software engineering and artificial intelligence. as a highly
+              self-motivated individual, {"i'm"} constantly on the lookout for
+              opportunities to develop my skill sets.
             </p>
 
             <p>
