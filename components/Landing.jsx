@@ -26,18 +26,18 @@ export default function Landing(props) {
             sequence={[
               "joshua david",
               1000,
-              "freshman at smu",
+              "student",
               2000,
               "aspiring software engineer",
             ]}
             cursor={true}
             repeat={3}
-            speed={35}
+            speed={30}
             className="text-blue1 dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl"
           />
 
           <div className="pt-3 leading-loose text-md">
-            freshman at the School of Computing and Information Systems,
+            Freshman at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
           </div>
           <div className="flex flex-row gap-0.5 pt-3">
@@ -76,17 +76,10 @@ export default function Landing(props) {
 
           <div className="flex flex-col gap-4 pt-3 md:w-5/6 w-full leading-loose text-md">
             <p>
-              hey there, {"i'm"} joshua and I love to build tech to solve
+              hey there! {"i'm"} joshua and i love to build tech to solve
               everyday challenges. my interest mainly lies in the fields of
-              software engineering and artificial intelligence. as a highly
-              self-motivated individual, {"i'm"} constantly on the lookout for
-              opportunities to develop my skill sets.
-            </p>
-
-            <p>
-              outside of work, I enjoy going for walks and runs around the city.{" "}
-              {"i'm"} also a huge fan of coffee, I look forward to connecting
-              with you.
+              software engineering and artificial intelligence. available for a
+              chat if we share the same interest!
             </p>
           </div>
         </div>
