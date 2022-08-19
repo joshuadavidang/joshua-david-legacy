@@ -79,7 +79,7 @@ export default function Landing(props) {
               hey there! {"i'm"} joshua and i love to build tech to solve
               everyday challenges. my interest mainly lies in the fields of
               software engineering and artificial intelligence. feel free to
-              contact me!
+              reach out!
             </p>
           </div>
         </div>
