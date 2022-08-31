@@ -8,7 +8,7 @@ import { pastProjects } from "../data/pastProjects";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Experience() {
+export default function Projects() {
   return (
     <>
       <Head>

@@ -36,8 +36,8 @@ export default function Contact() {
             </p>
 
             <p className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-              <a href="mailto:cxang.2022@scis.smu.edu.sg">
-                cxang.2022@scis.smu.edu.sg
+              <a href="mailto:joshuadavidang@outlook.sg">
+                joshuadavidang@outlook.sg
               </a>
             </p>
 
