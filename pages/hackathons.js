@@ -27,7 +27,7 @@ export default function Hackathons() {
             <Image src={Construction} alt="building" layout="responsive" />
           </div>
 
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col">
             <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pt-12">
               under construction
             </p>

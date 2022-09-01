@@ -24,11 +24,11 @@ export default function NavBar() {
           </span>
         </Link>
 
-        {/* <Link href="/hackathons">
+        <Link href="/hackathons">
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
             <p>hackathons</p>
           </span>
-        </Link> */}
+        </Link>
 
         <Link href="/contact">
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
