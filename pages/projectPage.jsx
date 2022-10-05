@@ -26,14 +26,11 @@ export default function ProjectPage() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-9 justify-center items-center md:h-full md:flex-row md:flex-wrap pt-28">
+        <main className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap md:pt-40">
           {pastProjects.map((project, index) => (
             <Card key={index}>
               <div className="flex justify-center w-30">
-                <Image
-                  src={project.icon}
-                  alt="image"
-                />
+                <Image src={project.icon} alt="image" />
               </div>
               <CardHeader>{project.name}</CardHeader>
               <CardBody>
