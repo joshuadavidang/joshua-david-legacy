@@ -7,7 +7,7 @@ import Link from "next/link";
 import MobileNavBar from "../components/MobileNavBar";
 import Head from "next/head";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <>
       <Head>

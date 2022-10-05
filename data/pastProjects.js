@@ -1,8 +1,16 @@
 import StillYoung from "../public/assets/images/StillYoung.svg";
 import Sayocode from "../public/assets/images/Sayocode.png";
-import CompletedTask from "../public/assets/images/CompletedTask.svg";
+import BreadApp from "../public/assets/images/bread_app.png";
 
 export const pastProjects = [
+  {
+    name: "bread",
+    description:
+      "Google Ignite, 4 weeks product sprint to develop a Flutter-based app.",
+    year: 2022,
+    techStack: ["Flutter"],
+    icon: BreadApp,
+  },
   {
     name: "sayocode",
     description:
@@ -18,29 +26,5 @@ export const pastProjects = [
     year: 2019,
     techStack: ["Ionic"],
     icon: StillYoung,
-  },
-
-  {
-    name: "project-52",
-    description: "project under construction",
-    year: 2555,
-    techStack: ["SwiftUI", "iOS development"],
-    icon: CompletedTask,
-  },
-  {
-    name: "project-51",
-    description:
-      "spearheaded front-end development of a NFT marketplace, the web app allows users to mint, buy and sell collectibles",
-    year: 2555,
-    techStack: ["Next.js", "Web3.js", "MongoDB"],
-    icon: CompletedTask,
-  },
-  {
-    name: "project-50",
-    description:
-      "marketplace that enables jewellery collectors to catalogue, maintain, acquire and trade collections",
-    year: 2555,
-    techStack: ["React.js", "Express.js", "Firebase"],
-    icon: CompletedTask,
   },
 ];

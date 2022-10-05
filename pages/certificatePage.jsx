@@ -1,10 +1,13 @@
-import MobileNavBar from "../components/MobileNavBar";
-import NavBar from "../components/NavBar";
-import Head from "next/head";
 import Image from "next/image";
-import Construction from "../public/assets/images/Construction.svg"
+import NavBar from "../components/NavBar";
+import CertOne from "../public/assets/images/cert_one.png";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+import MobileNavBar from "../components/MobileNavBar";
+import Head from "next/head";
 
-export default function Hackathons() {
+export default function CertificatePage() {
   return (
     <>
       <Head>
@@ -23,18 +26,10 @@ export default function Hackathons() {
         </nav>
 
         <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-48 h-screen text-center">
-          <div className="md:w-3/12 w-8/12">
-            <Image src={Construction} alt="building" layout="responsive" />
-          </div>
-
-          <div className="flex flex-col">
-            <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pt-12">
-              under construction
-            </p>
+          <div className="w-11/12 md:w-1/2">
+            <Image src={CertOne} alt="cert_one" layout="responsive" />
           </div>
         </main>
-
-        <footer className="bg-white dark:bg-black pt-16" />
       </div>
     </>
   );

@@ -8,6 +8,7 @@ import Coding_III from "../public/assets/images/Coding_III.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
+import { SiFlutter } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
@@ -15,7 +16,7 @@ import { FaSwift } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
 
-export default function Landing(props) {
+export default function LandingPage(props) {
   const { id } = props;
 
   return (
@@ -37,7 +38,7 @@ export default function Landing(props) {
           />
 
           <div className="pt-3 leading-loose text-md">
-            Freshman at the School of Computing and Information Systems,
+            Undergraduate at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
           </div>
           <div className="flex flex-row gap-0.5 pt-3">
@@ -94,6 +95,7 @@ export default function Landing(props) {
           <div className="flex flex-row flex-wrap gap-6 pt-6">
             <FaJsSquare size={30} />
             <FaPython size={30} />
+            <SiFlutter size={30} />
             <FaReact size={30} />
             <TbBrandNextjs size={30} />
             <FaNode size={30} />

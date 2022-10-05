@@ -18,19 +18,13 @@ export default function NavBar() {
           </span>
         </Link>
 
-        <Link href="/projects">
+        <Link href="/projectPage">
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
             <p>projects</p>
           </span>
         </Link>
 
-        <Link href="/hackathons">
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-            <p>hackathons</p>
-          </span>
-        </Link>
-
-        <Link href="/contact">
+        <Link href="/contactPage">
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
             <p>contact</p>
           </span>

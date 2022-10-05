@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Landing from "../components/Landing";
 import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
+import LandingPage from "./landingPage";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         </nav>
 
         <main className="px-10 md:px-36 md:py-16 pt-16 h-full w-screen">
-          <Landing />
+          <LandingPage />
         </main>
 
         <footer className="bg-white dark:bg-black md:pt-0 pt-16" />
