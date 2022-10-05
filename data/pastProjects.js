@@ -10,6 +10,7 @@ export const pastProjects = [
     year: 2022,
     techStack: ["Flutter"],
     icon: BreadApp,
+    link: 'https://github.com/joshuadavidang/google_ignite_bread'
   },
   {
     name: "sayocode",
@@ -18,6 +19,7 @@ export const pastProjects = [
     year: 2019,
     techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
     icon: Sayocode,
+    link: 'https://github.com/joshuadavidang/'
   },
   {
     name: "still young",
@@ -26,5 +28,6 @@ export const pastProjects = [
     year: 2019,
     techStack: ["Ionic"],
     icon: StillYoung,
+    link: 'https://github.com/joshuadavidang/'
   },
 ];

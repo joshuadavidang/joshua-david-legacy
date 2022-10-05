@@ -7,6 +7,7 @@ import Chip from "../shared/Chip";
 import { pastProjects } from "../data/pastProjects";
 import Head from "next/head";
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function ProjectPage() {
   return (
@@ -26,13 +27,14 @@ export default function ProjectPage() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap md:pt-40">
+        <main className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36">
           {pastProjects.map((project, index) => (
             <Card key={index}>
-              <div className="flex justify-center w-30">
+              <div className="flex justify-center w-32">
                 <Image src={project.icon} alt="image" />
               </div>
-              <CardHeader>{project.name}</CardHeader>
+              <CardHeader><Link href={project.link}>
+              {project.name}</Link></CardHeader>
               <CardBody>
                 <Chip chipLabel={project.techStack} />
                 <p className="text-sm pt-4">{project.description}</p>
