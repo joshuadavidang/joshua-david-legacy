@@ -1,10 +1,10 @@
 import Image from "next/image";
-import NavBar from "../components/NavBar";
-import CertOne from "../public/assets/images/cert_one.png";
-import MobileNavBar from "../components/MobileNavBar";
+import { certificatesData } from "../../data/certificates";
+import NavBar from "../../components/NavBar";
+import MobileNavBar from "../../components/MobileNavBar";
 import Head from "next/head";
 
-export default function CertificatePage() {
+export default function Cert() {
   return (
     <>
       <Head>
@@ -24,7 +24,11 @@ export default function CertificatePage() {
 
         <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-48 h-screen text-center">
           <div className="w-11/12 md:w-1/2">
-            <Image src={CertOne} alt="cert_one" layout="responsive" />
+            {certificatesData.map((cert) => (
+              <div key={cert.id} className="pb-9">
+                <Image src={cert.image} alt="cert_one" layout="responsive" />
+              </div>
+            ))}
           </div>
         </main>
       </div>
