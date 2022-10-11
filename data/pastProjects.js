@@ -1,6 +1,7 @@
 import StillYoung from "../public/assets/images/StillYoung.svg";
 import Sayocode from "../public/assets/images/Sayocode.png";
 import BreadApp from "../public/assets/images/bread_app.png";
+import MacBookPro from "../public/assets/images/macBookPro.png";
 
 export const pastProjects = [
   {
@@ -11,6 +12,15 @@ export const pastProjects = [
     techStack: ["Flutter"],
     icon: BreadApp,
     link: 'https://github.com/joshuadavidang/google_ignite_bread'
+  },
+  {
+    name: "joshuadavid",
+    description:
+      "Personal portfolio, built on top of Next.js framework.",
+    year: 2022,
+    techStack: ["Next.js"],
+    icon: MacBookPro,
+    link: 'https://github.com/joshuadavidang/joshua-david'
   },
   {
     name: "sayocode",

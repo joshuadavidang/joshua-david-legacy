@@ -93,14 +93,14 @@ export default function LandingPage(props) {
           </div>
 
           <div className="flex flex-row flex-wrap gap-6 pt-6">
-            <FaJsSquare size={30} />
             <FaPython size={30} />
-            <SiFlutter size={30} />
+            <FaJsSquare size={30} />
+            <FaSwift size={30} />
             <FaReact size={30} />
             <TbBrandNextjs size={30} />
             <FaNode size={30} />
             <SiMysql size={30} />
-            <FaSwift size={30} />
+            <SiFlutter size={30} />
           </div>
         </div>
 

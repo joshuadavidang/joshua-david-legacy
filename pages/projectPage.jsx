@@ -7,7 +7,7 @@ import Chip from "../shared/Chip";
 import { pastProjects } from "../data/pastProjects";
 import Head from "next/head";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function ProjectPage() {
   return (
@@ -33,8 +33,11 @@ export default function ProjectPage() {
               <div className="flex justify-center w-32">
                 <Image src={project.icon} alt="image" />
               </div>
-              <CardHeader><Link href={project.link}>
-              {project.name}</Link></CardHeader>
+              <CardHeader>
+                <Link href={project.link}>
+                  <a target="_blank">{project.name}</a>
+                </Link>
+              </CardHeader>
               <CardBody>
                 <Chip chipLabel={project.techStack} />
                 <p className="text-sm pt-4">{project.description}</p>
