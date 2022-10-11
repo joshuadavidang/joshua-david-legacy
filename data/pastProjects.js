@@ -7,37 +7,36 @@ export const pastProjects = [
   {
     name: "bread",
     description:
-      "Google Ignite, 4 weeks product sprint to develop a Flutter-based app.",
+      "Google Ignite, 4 weeks product sprint to develop a Flutter-based app that aims to streamline the process of food collection.",
     year: 2022,
     techStack: ["Flutter"],
     icon: BreadApp,
-    link: 'https://github.com/joshuadavidang/google_ignite_bread'
+    link: "https://github.com/joshuadavidang/google_ignite_bread",
   },
   {
     name: "joshuadavid",
-    description:
-      "Personal portfolio, built on top of Next.js framework.",
+    description: "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
     year: 2022,
-    techStack: ["Next.js"],
+    techStack: ["Next.js, TailwindCss"],
     icon: MacBookPro,
-    link: 'https://github.com/joshuadavidang/joshua-david'
+    link: "https://github.com/joshuadavidang/joshua-david",
   },
   {
     name: "sayocode",
     description:
-      "web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one's choice",
+      "Web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one's choice.",
     year: 2019,
     techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
     icon: Sayocode,
-    link: 'https://github.com/joshuadavidang/'
+    link: "https://github.com/joshuadavidang/",
   },
   {
     name: "still young",
     description:
-      "mobile app that serves as a one-stop platform for mothers to learn about confinement practices",
+      "Developed a one-stop platform for mothers to learn about confinement practices. Notable features include but not limited to receipes and quizes.",
     year: 2019,
     techStack: ["Ionic"],
     icon: StillYoung,
-    link: 'https://github.com/joshuadavidang/'
+    link: "https://github.com/joshuadavidang/",
   },
 ];
