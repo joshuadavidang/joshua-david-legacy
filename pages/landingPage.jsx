@@ -43,18 +43,18 @@ export default function LandingPage(props) {
           </div>
           <div className="flex flex-row gap-0.5 pt-3">
             <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-              <Link href="https://github.com/joshuadavidang">
-                <a target="_blank">
-                  <FaGithub size={30} className="cursor-pointer" />
-                </a>
+              <Link href="https://github.com/joshuadavidang" target="_blank">
+
+                <FaGithub size={30} className="cursor-pointer" />
+
               </Link>
             </span>
 
             <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-              <Link href="https://linkedin.com/in/joshuadavidang/">
-                <a target="_blank">
-                  <FaLinkedin size={30} className="cursor-pointer" />
-                </a>
+              <Link href="https://linkedin.com/in/joshuadavidang/" target="_blank">
+
+                <FaLinkedin size={30} className="cursor-pointer" />
+
               </Link>
             </span>
           </div>
