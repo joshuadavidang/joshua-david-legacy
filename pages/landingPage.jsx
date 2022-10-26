@@ -20,7 +20,7 @@ export default function LandingPage(props) {
   const { id } = props;
 
   return (
-    <div id={id} className="pt-12">
+    <div id={id} className="md:pt-32 pt-12">
       <Post>
         <div className="flex flex-col">
           <TypeAnimation
@@ -44,17 +44,16 @@ export default function LandingPage(props) {
           <div className="flex flex-row gap-0.5 pt-3">
             <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
               <Link href="https://github.com/joshuadavidang" target="_blank">
-
                 <FaGithub size={30} className="cursor-pointer" />
-
               </Link>
             </span>
 
             <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-              <Link href="https://linkedin.com/in/joshuadavidang/" target="_blank">
-
+              <Link
+                href="https://linkedin.com/in/joshuadavidang/"
+                target="_blank"
+              >
                 <FaLinkedin size={30} className="cursor-pointer" />
-
               </Link>
             </span>
           </div>
@@ -65,7 +64,7 @@ export default function LandingPage(props) {
         </span>
       </Post>
 
-      <Post className="pt-12">
+      <Post className="md:pt-24 pt-12">
         <span className="hidden md:block">
           <Image src={Coding} alt="coding" />
         </span>
@@ -86,7 +85,7 @@ export default function LandingPage(props) {
         </div>
       </Post>
 
-      <Post className="md:p-0 pt-12">
+      <Post className="md:p-24 pt-12">
         <div className="flex flex-col">
           <div className="text-blue1 dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl">
             {"i'm"} comfortable with...
