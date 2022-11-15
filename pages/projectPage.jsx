@@ -28,7 +28,7 @@ export default function ProjectPage() {
           <MobileNavBar />
         </nav>
 
-        <main className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36">
+        <main className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16">
           {pastProjects.map((project, index) => (
             <Card key={index}>
               <div className="flex justify-center w-32">
@@ -46,8 +46,6 @@ export default function ProjectPage() {
             </Card>
           ))}
         </main>
-
-        <footer className="bg-white dark:bg-black pt-16" />
       </div>
     </>
   );

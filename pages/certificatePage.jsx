@@ -23,7 +23,7 @@ export default function CertificatePage() {
           <MobileNavBar />
         </nav>
 
-        <main className="pt-12 flex flex-col items-center h-screen">
+        <main className="pt-16 pb-24 md:pb-16 flex flex-col items-center h-screen overflow-scroll">
           <div className="w-11/12 md:w-1/2">
             {certificatesData.map((cert) => (
               <div key={cert.name} className="pt-12">
@@ -38,8 +38,6 @@ export default function CertificatePage() {
             ))}
           </div>
         </main>
-
-        <footer className="bg-white dark:bg-black pt-16" />
       </div>
     </>
   );

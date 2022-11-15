@@ -23,11 +23,9 @@ export default function Home() {
           <MobileNavBar />
         </nav>
 
-        <main className="px-10 md:px-36 md:py-16 pt-16 h-full w-screen">
+        <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16  h-screen w-screen overflow-scroll">
           <LandingPage />
         </main>
-
-        <footer className="bg-white dark:bg-black md:pt-0 pt-16" />
       </div>
     </>
   );
