@@ -4,12 +4,10 @@ import Head from "next/head";
 import NavBar from "../../components/NavBar";
 import MobileNavBar from "../../components/MobileNavBar";
 import { certificatesData } from "../../data/certificates";
-import Link from "next/link";
 
 export default function MyCertificate() {
   const router = useRouter();
   const { id } = router.query;
-  console.log(id);
 
   return (
     <>

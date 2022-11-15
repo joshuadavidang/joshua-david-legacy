@@ -15,7 +15,8 @@ export const pastProjects = [
   },
   {
     name: "joshuadavid",
-    description: "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
+    description:
+      "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
     year: 2022,
     techStack: ["Next.js, TailwindCss"],
     icon: MacBookPro,
