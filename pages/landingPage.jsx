@@ -15,6 +15,7 @@ import { FaPython } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
+import Hover from "../shared/Container/hover";
 
 export default function LandingPage(props) {
   const { id } = props;
@@ -91,15 +92,31 @@ export default function LandingPage(props) {
             {"i'm"} comfortable with...
           </div>
 
-          <div className="flex flex-row flex-wrap gap-6 pt-6">
-            <FaPython size={30} />
-            <FaJsSquare size={30} />
-            <FaSwift size={30} />
-            <FaReact size={30} />
-            <TbBrandNextjs size={30} />
-            <FaNode size={30} />
-            <SiMysql size={30} />
-            <SiFlutter size={30} />
+          <div className="flex flex-row flex-wrap gap-3 pt-6">
+            <Hover>
+              <FaPython size={30} />
+            </Hover>
+            <Hover>
+              <FaJsSquare size={30} />
+            </Hover>
+            <Hover>
+              <FaSwift size={30} />
+            </Hover>
+            <Hover>
+              <FaReact size={30} />
+            </Hover>
+            <Hover>
+              <TbBrandNextjs size={30} />
+            </Hover>
+            <Hover>
+              <FaNode size={30} />
+            </Hover>
+            <Hover>
+              <SiMysql size={30} />
+            </Hover>
+            <Hover>
+              <SiFlutter size={30} />
+            </Hover>
           </div>
         </div>
 
