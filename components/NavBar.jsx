@@ -1,7 +1,9 @@
 import Link from "next/link";
 import DarkMode from "./DarkMode";
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { closeBurger } = props;
+
   return (
     <>
       <div
@@ -13,19 +15,28 @@ export default function NavBar() {
         </span>
 
         <Link href="/landingPage" legacyBehavior>
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+          <span
+            className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
+            onClick={closeBurger}
+          >
             <p>about</p>
           </span>
         </Link>
 
         <Link href="/projectPage" legacyBehavior>
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+          <span
+            className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
+            onClick={closeBurger}
+          >
             <p>projects</p>
           </span>
         </Link>
 
         <Link href="/contactPage" legacyBehavior>
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+          <span
+            className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"
+            onClick={closeBurger}
+          >
             <p>contact</p>
           </span>
         </Link>

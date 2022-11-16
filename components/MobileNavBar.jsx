@@ -24,7 +24,7 @@ export default function MobileNavBar() {
         </div>
       </div>
 
-      {hamburger && <NavBar />}
+      {hamburger && <NavBar closeBurger={toggleHamburger} />}
     </>
   );
 }
