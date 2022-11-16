@@ -1,14 +1,10 @@
-import MobileNavBar from "../components/MobileNavBar";
-import NavBar from "../components/NavBar";
 import Card from "../shared/Card/Card";
 import CardBody from "../shared/Card/CardBody";
 import CardHeader from "../shared/Card/CardHeader";
 import Chip from "../shared/Chip";
 import { pastProjects } from "../data/pastProjects";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function ProjectPage() {
   return (

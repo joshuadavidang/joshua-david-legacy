@@ -1,8 +1,5 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
-import Head from "next/head";
-import NavBar from "../../components/NavBar";
-import MobileNavBar from "../../components/MobileNavBar";
 import { certificatesData } from "../../data/certificates";
 
 export default function MyCertificate() {
@@ -14,10 +11,8 @@ export default function MyCertificate() {
       <div className="w-11/12 md:w-1/2">
         {certificatesData.map((cert) => (
           <div key={cert.name}>
-            {id == cert.id ? (
+            {id == cert.id && (
               <Image src={cert.image} alt="list_of_certs" layout="responsive" />
-            ) : (
-              ""
             )}
           </div>
         ))}

@@ -1,11 +1,8 @@
 import Image from "next/image";
-import NavBar from "../components/NavBar";
 import Coffee from "../public/assets/images/Coffee.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import MobileNavBar from "../components/MobileNavBar";
-import Head from "next/head";
 
 export default function ContactPage() {
   return (

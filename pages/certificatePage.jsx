@@ -1,7 +1,4 @@
 import Image from "next/image";
-import NavBar from "../components/NavBar";
-import MobileNavBar from "../components/MobileNavBar";
-import Head from "next/head";
 import { certificatesData } from "../data/certificates";
 import Link from "next/link";
 
