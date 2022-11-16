@@ -12,7 +12,7 @@ export default function NavBar() {
           <DarkMode />
         </span>
 
-        <Link href="/" legacyBehavior>
+        <Link href="/landingPage" legacyBehavior>
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
             <p>about</p>
           </span>

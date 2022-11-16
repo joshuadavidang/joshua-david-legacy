@@ -1,11 +1,9 @@
 import Head from "next/head";
 import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
-import ContactPage from "./contactPage";
 import LandingPage from "./landingPage";
-import ProjectPage from "./projectPage";
 
-export default function Home() {
+export default function Layout({ children }) {
   return (
     <>
       <Head>
@@ -23,9 +21,7 @@ export default function Home() {
           <MobileNavBar />
         </nav>
 
-        <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16  h-screen w-screen overflow-scroll">
-          <LandingPage />
-        </main>
+        <main>{children}</main>
       </div>
     </>
   );
