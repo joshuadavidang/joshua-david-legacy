@@ -15,7 +15,7 @@ export default function MobileNavBar() {
     <>
       <div className="bg-white dark:bg-black flex flex-row justify-between items-center pl-6 w-screen">
         <div className="text-black dark:text-white md:text-3xl text-lg font-sen tracking-tight">
-          <Link href="/">joshuadavid</Link>
+          <Link href="/landingPage">joshuadavid</Link>
         </div>
 
         <div className="flex flex-row items-center justify-end p-6 gap-4">
