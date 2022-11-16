@@ -27,11 +27,7 @@ export default function ContactPage() {
 
         <div className="flex flex-row justify-center gap-0.5">
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-            <Link
-              href="https://github.com/joshuadavidang"
-              target="_blank"
-              legacyBehavior
-            >
+            <Link href="https://github.com/joshuadavidang" target="_blank">
               <FaGithub size={30} className="cursor-pointer" />
             </Link>
           </span>
@@ -40,7 +36,6 @@ export default function ContactPage() {
             <Link
               href="https://linkedin.com/in/joshuadavidang/"
               target="_blank"
-              legacyBehavior
             >
               <FaLinkedin size={30} className="cursor-pointer" />
             </Link>

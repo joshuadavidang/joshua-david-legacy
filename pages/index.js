@@ -1,7 +1,6 @@
 import Head from "next/head";
 import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
-import LandingPage from "./landingPage";
 
 export default function Layout({ children }) {
   return (
