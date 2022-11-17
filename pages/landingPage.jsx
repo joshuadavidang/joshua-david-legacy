@@ -22,7 +22,7 @@ export default function LandingPage(props) {
 
   return (
     <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16  h-screen w-screen overflow-scroll">
-      <div id={id} className="md:pt-32 pt-12 ">
+      <div id={id} className="md:pt-32 pt-12">
         <Post>
           <div className="flex flex-col">
             <TypeAnimation
@@ -66,7 +66,7 @@ export default function LandingPage(props) {
           </span>
 
           <span className="block md:hidden">
-            <Image src={Coding_II} alt="coding_II" width="245" />
+            <Image src={Coding_II} alt="coding_II" width="280" />
           </span>
         </Post>
 
