@@ -61,8 +61,12 @@ export default function LandingPage(props) {
             </div>
           </div>
 
-          <span>
+          <span className="hidden md:block">
             <Image src={Coding_II} alt="coding_II" width="350" />
+          </span>
+
+          <span className="block md:hidden">
+            <Image src={Coding_II} alt="coding_II" width="250" />
           </span>
         </Post>
 
