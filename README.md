@@ -1,6 +1,7 @@
 ## Personal Portfolio
 
-<img src="https://user-images.githubusercontent.com/54788382/202183614-6cc57afa-3868-4c79-aad7-28a99a01d4b3.png" alt="Apple" width="760" />
+<img src="https://user-images.githubusercontent.com/54788382/202328487-1dbe7e16-1e5e-4ca1-9ccd-c6e86b63f6a3.png" alt="Apple" width="760" />
+<br />
 
 ### Tech stack
 Front-end development, built using Next.js & Tailwind CSS.
