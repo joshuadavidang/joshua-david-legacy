@@ -13,7 +13,7 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative bg-white dark:bg-black">
+      <div className="relative bg-white dark:bg-midnight">
         <nav className="fixed hidden md:block z-50">
           <NavBar />
         </nav>

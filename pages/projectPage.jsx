@@ -1,10 +1,10 @@
-import Card from "../shared/Card/Card";
-import CardBody from "../shared/Card/CardBody";
-import CardHeader from "../shared/Card/CardHeader";
-import Chip from "../shared/Chip";
 import { pastProjects } from "../data/pastProjects";
 import Image from "next/image";
 import Link from "next/link";
+import Card from "../components/Card/Card";
+import CardBody from "../components/Card/CardBody";
+import CardHeader from "../components/Card/CardHeader";
+import Chip from "../components/Chip";
 
 export default function ProjectPage() {
   return (

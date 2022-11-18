@@ -4,11 +4,11 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./shared/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
       black: "#121212",
+      midnight: "#000024",
       white: "#ffffff",
       blue: "#1fb6ff",
       blue1: "#6868F6",

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Post from "../shared/Container";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import Coding from "../public/assets/images/Coding.svg";
@@ -15,7 +14,8 @@ import { FaPython } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
-import Hover from "../shared/Container/hover";
+import Hover from "../components/Container/hover";
+import Post from "../components/Container";
 
 export default function LandingPage(props) {
   const { id } = props;
