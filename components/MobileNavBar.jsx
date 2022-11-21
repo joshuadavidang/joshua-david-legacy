@@ -1,15 +1,11 @@
 import { MenuAlt3Icon } from "@heroicons/react/solid";
 import Link from "next/link";
-import { useState } from "react";
+
 import DarkMode from "./DarkMode";
 import NavBar from "./NavBar";
 
-export default function MobileNavBar() {
-  const [hamburger, setHamburger] = useState(false);
-
-  const toggleHamburger = () => {
-    setHamburger(!hamburger);
-  };
+export default function MobileNavBar(props) {
+  const { toggleHamburger, hamburger } = props;
 
   return (
     <>

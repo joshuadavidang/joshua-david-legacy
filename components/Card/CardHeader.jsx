@@ -1,7 +1,7 @@
 export default function CardHeader({ children }) {
   return (
-    <p className="pb-1 pt-3 text-2xl text-white dark:text-blue1 text-left font-bold tracking-loose hover:underline">
-      {children}
+    <p className="pb-2 pt-3 text-2xl text-white dark:text-blue1 text-left font-bold tracking-loose">
+      <span className="hover:border-b-2 pb-0.5">{children}</span>
     </p>
   );
 }

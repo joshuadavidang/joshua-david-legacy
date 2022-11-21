@@ -5,6 +5,8 @@ import Card from "../components/Card/Card";
 import CardBody from "../components/Card/CardBody";
 import CardHeader from "../components/Card/CardHeader";
 import Chip from "../components/Chip";
+import { TbBrandNextjs } from "react-icons/tb";
+import Hover from "../components/Container/hover";
 
 export default function ProjectPage() {
   return (
@@ -15,13 +17,13 @@ export default function ProjectPage() {
             <Image src={project.icon} alt="image" />
           </div>
           <CardHeader>
-            <Link href={project.link} target="_blank" legacyBehavior>
+            <Link href={project.link} target="_blank">
               {project.name}
             </Link>
           </CardHeader>
           <CardBody>
+            <p className="text-sm pb-4">{project.description}</p>
             <Chip chipLabel={project.techStack} />
-            <p className="text-sm pt-4">{project.description}</p>
           </CardBody>
         </Card>
       ))}

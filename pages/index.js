@@ -1,9 +1,16 @@
 import Head from "next/head";
 import MobileNavBar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
+import { useState } from "react";
 
 export default function Layout(props) {
   const { children } = props;
+
+  const [hamburger, setHamburger] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburger(!hamburger);
+  };
 
   return (
     <>
@@ -19,10 +26,13 @@ export default function Layout(props) {
         </nav>
 
         <nav className="fixed md:hidden block z-50">
-          <MobileNavBar />
+          <MobileNavBar
+            toggleHamburger={toggleHamburger}
+            hamburger={hamburger}
+          />
         </nav>
 
-        <main>{children}</main>
+        <main onClick={toggleHamburger}>{children}</main>
       </div>
     </>
   );

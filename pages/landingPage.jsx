@@ -7,7 +7,6 @@ import Coding_III from "../public/assets/images/Coding_III.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
-import { SiFlutter } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
@@ -118,9 +117,6 @@ export default function LandingPage(props) {
               </Hover>
               <Hover>
                 <SiMysql size={30} />
-              </Hover>
-              <Hover>
-                <SiFlutter size={30} />
               </Hover>
             </div>
           </div>
