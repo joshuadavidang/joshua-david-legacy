@@ -12,6 +12,10 @@ export default function Layout(props) {
     setHamburger(!hamburger);
   };
 
+  const closeBurger = () => {
+    setHamburger(false);
+  };
+
   return (
     <>
       <Head>
@@ -32,7 +36,7 @@ export default function Layout(props) {
           />
         </nav>
 
-        <main onClick={toggleHamburger}>{children}</main>
+        <main onClick={closeBurger}>{children}</main>
       </div>
     </>
   );
