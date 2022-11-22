@@ -1,6 +1,6 @@
 import Head from "next/head";
-import MobileNavBar from "../components/MobileNavBar";
-import NavBar from "../components/NavBar";
+import MobileNavBar from "../components/NavBar/MobileNavBar";
+import NavBar from "../components/NavBar/NavBar";
 import { useState } from "react";
 
 export default function Layout(props) {

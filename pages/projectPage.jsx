@@ -4,9 +4,7 @@ import Link from "next/link";
 import Card from "../components/Card/Card";
 import CardBody from "../components/Card/CardBody";
 import CardHeader from "../components/Card/CardHeader";
-import Chip from "../components/Chip";
-import { TbBrandNextjs } from "react-icons/tb";
-import Hover from "../components/Container/hover";
+import Chip from "../components/Chip/Chip";
 
 export default function ProjectPage() {
   return (

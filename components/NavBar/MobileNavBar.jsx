@@ -1,7 +1,6 @@
 import { MenuAlt3Icon } from "@heroicons/react/solid";
 import Link from "next/link";
-
-import DarkMode from "./DarkMode";
+import DarkMode from "../DarkMode/DarkMode";
 import NavBar from "./NavBar";
 
 export default function MobileNavBar(props) {
