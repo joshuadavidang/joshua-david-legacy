@@ -17,7 +17,7 @@ export default function Layout(props) {
   };
 
   return (
-    <>
+    <div>
       <Head>
         <title>Joshua David</title>
         <meta name="description" content="joshua david's" />
@@ -38,6 +38,6 @@ export default function Layout(props) {
 
         <main onClick={closeBurger}>{children}</main>
       </div>
-    </>
+    </div>
   );
 }
