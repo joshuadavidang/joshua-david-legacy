@@ -1,8 +1,13 @@
+import { NextPage } from "next";
 import Link from "next/link";
 import DarkMode from "../DarkMode/DarkMode";
 import { navLinkData } from "../../data/navLink";
 
-export default function NavBar(props) {
+interface NavBarProps {
+  closeBurger?: any;
+}
+
+const NavBar: NextPage<NavBarProps> = (props) => {
   const { closeBurger } = props;
 
   return (
@@ -26,4 +31,6 @@ export default function NavBar(props) {
       ))}
     </div>
   );
-}
+};
+
+export default NavBar;

@@ -1,4 +1,11 @@
-export default function Post(props) {
+import { NextPage } from "next";
+
+interface PostProps {
+  children: any;
+  className: string;
+}
+
+const Post: NextPage<PostProps> = (props) => {
   const { className, children } = props;
   return (
     <div
@@ -7,4 +14,6 @@ export default function Post(props) {
       {children}
     </div>
   );
-}
+};
+
+export default Post;

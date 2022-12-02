@@ -2,7 +2,7 @@ import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 import { useState, useEffect } from "react";
 
-export default function DarkMode() {
+const DarkMode = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -39,4 +39,6 @@ export default function DarkMode() {
   };
 
   return <>{renderThemeChanger()}</>;
-}
+};
+
+export default DarkMode;

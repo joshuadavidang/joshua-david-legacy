@@ -3,7 +3,7 @@ import MobileNavBar from "../components/NavBar/MobileNavBar";
 import NavBar from "../components/NavBar/NavBar";
 import { useState } from "react";
 
-export default function Layout(props) {
+export default function Layout(props: { children: any }) {
   const { children } = props;
 
   const [hamburger, setHamburger] = useState(false);

@@ -1,4 +1,10 @@
-export default function Card(props) {
+import { NextPage } from "next";
+
+interface CardProps {
+  children: any;
+}
+
+const Card: NextPage<CardProps> = (props) => {
   const { children } = props;
 
   return (
@@ -6,4 +12,6 @@ export default function Card(props) {
       {children}
     </div>
   );
-}
+};
+
+export default Card;
