@@ -18,7 +18,7 @@ export const PastProjects = [
     description:
       "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
     year: 2022,
-    techStack: ["Next.js, TailwindCss"],
+    techStack: ["Next.js", "TypeScript", "TailwindCss"],
     icon: MacBookPro,
     link: "https://github.com/joshuadavidang/joshua-david",
   },
@@ -36,7 +36,7 @@ export const PastProjects = [
     description:
       "Developed a one-stop platform for mothers to learn about confinement practices. Notable features include but not limited to receipes and quizes.",
     year: 2019,
-    techStack: ["Ionic"],
+    techStack: ["Ionic", "TypeScript"],
     icon: StillYoung,
     link: "https://github.com/joshuadavidang/",
   },

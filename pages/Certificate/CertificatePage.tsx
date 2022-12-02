@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CertificatesData } from "../../data/certs";
 
-export default function CertificatePage() {
+const CertificatePage = () => {
   return (
     <main className="pt-16 pb-24 md:pb-16 flex flex-col items-center h-screen overflow-scroll">
       <div className="w-11/12 md:w-1/2">
@@ -16,4 +16,6 @@ export default function CertificatePage() {
       </div>
     </main>
   );
-}
+};
+
+export default CertificatePage;

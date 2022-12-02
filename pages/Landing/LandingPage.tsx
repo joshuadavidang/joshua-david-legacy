@@ -13,6 +13,7 @@ import { FaPython } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import Hover from "../../components/Container/hover";
 import Post from "../../components/Container";
 
@@ -97,6 +98,9 @@ const LandingPage = () => {
             <div className="flex flex-row flex-wrap gap-3 pt-6">
               <Hover>
                 <FaPython size={30} />
+              </Hover>
+              <Hover>
+                <SiTypescript size={30} />
               </Hover>
               <Hover>
                 <FaJsSquare size={30} />
