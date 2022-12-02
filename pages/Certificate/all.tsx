@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CertificatesData } from "../../data/certificates";
+import { CertificatesData } from "../../data/certs";
 
 export default function CertificatePage() {
   return (
