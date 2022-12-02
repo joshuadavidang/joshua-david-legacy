@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PastProjects } from "../../data/PastProjects";
 import Card from "../../components/Card/Card";
 import CardBody from "../../components/Card/CardBody";
 import CardHeader from "../../components/Card/CardHeader";
 import Chip from "../../components/Chip/Chip";
+import { PastProjects } from "../../data/pastProjects";
 
 const ProjectPage = () => {
   return (
