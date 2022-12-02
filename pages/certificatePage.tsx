@@ -8,7 +8,7 @@ export default function CertificatePage() {
       <div className="w-11/12 md:w-1/2">
         {certificatesData.map((cert) => (
           <div key={cert.name} className="pt-12">
-            <Link href={`certificatePage/${cert.id}`}>
+            <Link href={`certificate/${cert.id}`}>
               <Image src={cert.image} alt="list_of_certs" layout="responsive" />
             </Link>
           </div>

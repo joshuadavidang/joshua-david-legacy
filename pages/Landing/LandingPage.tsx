@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import Coding from "../public/assets/images/Coding.svg";
-import Coding_II from "../public/assets/images/Coding_II.svg";
-import Coding_III from "../public/assets/images/Coding_III.svg";
+import Coding from "../../public/assets/images/Coding.svg";
+import Coding_II from "../../public/assets/images/Coding_II.svg";
+import Coding_III from "../../public/assets/images/Coding_III.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
@@ -13,8 +13,8 @@ import { FaPython } from "react-icons/fa";
 import { FaSwift } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
-import Hover from "../components/Container/hover";
-import Post from "../components/Container";
+import Hover from "../../components/Container/hover";
+import Post from "../../components/Container";
 
 export default function LandingPage(props) {
   const { id } = props;
