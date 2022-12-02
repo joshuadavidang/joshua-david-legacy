@@ -16,12 +16,10 @@ import { SiMysql } from "react-icons/si";
 import Hover from "../../components/Container/hover";
 import Post from "../../components/Container";
 
-export default function LandingPage(props) {
-  const { id } = props;
-
+export default function LandingPage() {
   return (
     <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16  h-screen w-screen overflow-scroll">
-      <div id={id} className="md:pt-32 pt-12">
+      <div className="md:pt-32 pt-12">
         <Post>
           <div className="flex flex-col">
             <TypeAnimation

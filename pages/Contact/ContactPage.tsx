@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Coffee from "../public/assets/images/Coffee.svg";
+import Coffee from "../../public/assets/images/Coffee.svg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
