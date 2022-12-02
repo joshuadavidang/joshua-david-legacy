@@ -4,11 +4,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
-export default function ContactPage() {
+const ContactPage = () => {
   return (
     <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-48 h-screen text-center">
       <div className="md:w-3/12 w-8/12">
-        <Image src={Coffee} alt="coffee" layout="responsive" />
+        <Image src={Coffee} alt="coffee" />
       </div>
 
       <div className="flex flex-col gap-1.5">
@@ -41,4 +41,6 @@ export default function ContactPage() {
       </div>
     </main>
   );
-}
+};
+
+export default ContactPage;

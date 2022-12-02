@@ -3,7 +3,7 @@ import Sayocode from "../public/assets/images/Sayocode.png";
 import BreadApp from "../public/assets/images/bread_app.png";
 import MacBookPro from "../public/assets/images/macBookPro.png";
 
-export const pastProjects = [
+export const PastProjects = [
   {
     name: "bread",
     description:

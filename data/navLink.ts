@@ -1,4 +1,4 @@
-export const navLinkData = [
+export const NavLinkData = [
   {
     id: 1,
     link: "/Landing/LandingPage",

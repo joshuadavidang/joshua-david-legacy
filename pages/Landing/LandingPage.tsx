@@ -16,7 +16,7 @@ import { SiMysql } from "react-icons/si";
 import Hover from "../../components/Container/hover";
 import Post from "../../components/Container";
 
-export default function LandingPage() {
+const LandingPage = () => {
   return (
     <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16  h-screen w-screen overflow-scroll">
       <div className="md:pt-32 pt-12">
@@ -126,4 +126,6 @@ export default function LandingPage() {
       </div>
     </main>
   );
-}
+};
+
+export default LandingPage;

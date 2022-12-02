@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 interface PostProps {
   children: any;
-  className: string;
+  className?: string;
 }
 
 const Post: NextPage<PostProps> = (props) => {

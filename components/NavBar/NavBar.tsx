@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
+import { NavLinkData } from "../../data/navLink";
 import DarkMode from "../DarkMode/DarkMode";
-import { navLinkData } from "../../data/navLink";
 
 interface NavBarProps {
   closeBurger?: any;
@@ -19,7 +19,7 @@ const NavBar: NextPage<NavBarProps> = (props) => {
         <DarkMode />
       </span>
 
-      {navLinkData.map(({ id, link, name }) => (
+      {NavLinkData.map(({ id, link, name }) => (
         <Link href={link} key={id} legacyBehavior>
           <span
             className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer"

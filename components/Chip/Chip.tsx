@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 
 interface ChipProps {
-  chipLabel: [];
+  chipLabel: string[];
 }
 
 const Chip: NextPage<ChipProps> = (props) => {
