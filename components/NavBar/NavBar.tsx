@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { NavLinkData } from "../../data/NavLink";
+import { NavLinkData } from "../../data/navLink";
 import DarkMode from "../DarkMode/DarkMode";
 
 interface NavBarProps {
