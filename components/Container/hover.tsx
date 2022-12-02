@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 type HoverProps = {
   children: any;
-  className: string;
+  className?: string;
 };
 
 const Hover: NextPage<HoverProps> = (props) => {
