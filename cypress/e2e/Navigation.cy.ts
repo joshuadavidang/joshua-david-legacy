@@ -4,3 +4,5 @@ describe("Navigation", () => {
     cy.url().should("include", "/Landing/LandingPage");
   });
 });
+
+export { }
