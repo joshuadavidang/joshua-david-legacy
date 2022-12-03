@@ -9,6 +9,13 @@ Front-end development, built using Next.js & Tailwind CSS.
 ### To run the project
 ```
 git clone https://github.com/joshuadavidang/joshua-david.git
+```
+
+```
 npm install
+```
+
+```
 npm run dev
 ```
+
