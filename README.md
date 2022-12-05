@@ -4,7 +4,7 @@
 <br />
 
 ### Preview
-Click [here](https://joshuadavid.dev) to access my portfolio.
+Click [here](https://joshuadavid.dev) to access the project.
 
 ### Tech stack
 Front-end development, built using Next.js & Tailwind CSS.
