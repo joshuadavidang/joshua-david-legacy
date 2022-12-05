@@ -14,7 +14,7 @@ interface DownloadFileInfo {
   readonly url: string | undefined;
 }
 
-export const useDownloadFile = ({
+const useDownloadFile = ({
   apiDefinition,
   onError,
   getFileName,
@@ -38,3 +38,5 @@ export const useDownloadFile = ({
 
   return { download, ref, url, name };
 };
+
+export default useDownloadFile;
