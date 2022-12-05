@@ -21,8 +21,8 @@ const ProjectPage = () => {
               </Link>
             </CardHeader>
             <CardBody>
-              <p className="text-sm pb-4">{description}</p>
               <Chip chipLabel={techStack} />
+              <p className="text-sm pt-4">{description}</p>
             </CardBody>
           </Card>
         )
