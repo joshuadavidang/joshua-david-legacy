@@ -1,14 +1,15 @@
 import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon } from "@heroicons/react/solid";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import useToggle from "../../hooks/useToggle";
 
 const DarkMode = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useToggle();
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, [setMounted]);
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
