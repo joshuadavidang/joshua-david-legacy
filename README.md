@@ -1,7 +1,6 @@
 ## Portfolio
 
-<img src="https://user-images.githubusercontent.com/54788382/202767260-c2c3706c-fcc8-4e96-a8c9-79c4237da94c.png" alt="Apple" width="760" />
-<br />
+<img src="https://user-images.githubusercontent.com/54788382/205836961-625f90ef-0f79-4ef2-a91c-b53a91ca6699.png" alt="Apple" width="760" />
 
 ### Preview
 Click [here](https://joshuadavid.dev) to access the project.
