@@ -6,7 +6,7 @@ import Form from "../../components/Form/index";
 
 const ContactPage = () => {
   return (
-    <main className="flex md:flex-row flex-col md:gap-32 items-center md:justify-center md:p-0 pt-40 md:h-screen pb-20 text-center">
+    <main className="flex md:flex-row flex-col md:gap-32 justify-center px-10 items-center h-screen w-screen text-center md:p-0 pt-40 pb-20 overflow-scroll">
       <div className="md:w-3/12 w-8/12">
         <Image src={Coffee} alt="coffee" />
 
@@ -41,9 +41,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-1.5 pt-8">
-        <Form />
-      </div>
+      <Form />
     </main>
   );
 };

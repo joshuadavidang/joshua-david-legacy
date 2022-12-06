@@ -27,7 +27,7 @@ const Form: NextPage<FormProps> = () => {
     <>
       {submit != true ? (
         <div>
-          <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pb-5">
+          <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pb-5 pt-5">
             Leave a message
           </p>
           <form>
