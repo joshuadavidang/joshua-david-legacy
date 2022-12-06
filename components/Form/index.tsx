@@ -10,10 +10,9 @@ interface FormProps {
 
 const Form: NextPage<FormProps> = () => {
   const [form, setForm] = useState({ email: "", message: "" });
-  const [submit, setSubmit] = useState(false);
 
   const sendForm = () => {
-    setSubmit(true);
+    console.log("s");
   };
 
   const handleChange = (event: any) => {
@@ -24,38 +23,30 @@ const Form: NextPage<FormProps> = () => {
   };
 
   return (
-    <>
-      {submit != true ? (
-        <div>
-          <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pb-5 pt-5">
-            Leave a message
-          </p>
-          <form>
-            <div className="flex flex-col gap-y-4">
-              <Input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                data={handleChange}
-                value={form.email}
-              />
-              <TextArea
-                name="message"
-                placeholder="Leave a message..."
-                rows={5}
-                data={handleChange}
-                value={form.message}
-              />
-              <Button btnMessage="Send" sendForm={sendForm} />
-            </div>
-          </form>
+    <div>
+      <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pb-5 pt-4">
+        leave a message
+      </p>
+      <form>
+        <div className="flex flex-col gap-y-4">
+          <Input
+            type="email"
+            name="email"
+            placeholder="enter your email"
+            data={handleChange}
+            value={form.email}
+          />
+          <TextArea
+            name="message"
+            placeholder="leave a message..."
+            rows={5}
+            data={handleChange}
+            value={form.message}
+          />
+          <Button btnMessage="Send" sendForm={sendForm} />
         </div>
-      ) : (
-        <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight">
-          Get back to you soon!
-        </p>
-      )}
-    </>
+      </form>
+    </div>
   );
 };
 
