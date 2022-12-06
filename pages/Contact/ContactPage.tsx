@@ -2,7 +2,6 @@ import Image from "next/image";
 import Coffee from "../../public/assets/images/Coffee.svg";
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import Link from "next/link";
-import Form from "../../components/Form/index";
 
 const ContactPage = () => {
   return (
@@ -44,10 +43,6 @@ const ContactPage = () => {
           </span>
         </div>
       </div>
-
-      {/* <div className="md:w-fit w-10/12 md:mt-0 mt-10">
-        <Form />
-      </div> */}
     </main>
   );
 };
