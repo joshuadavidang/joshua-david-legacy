@@ -15,12 +15,12 @@ const ContactPage = () => {
           stay connected
         </p>
 
-        <p className="hover:bg-lightGray pt-3 dark:hover:bg-gray rounded cursor-pointer">
+        <p className="hover:bg-lightGray p-2 dark:hover:bg-gray rounded cursor-pointer">
           <a href="mailto:joshuadavidang@outlook.sg">
             joshuadavidang@outlook.sg
           </a>
         </p>
-        <div className="flex flex-row justify-center gap-0.5 pt-3">
+        <div className="flex flex-row justify-center gap-0.5 pt-2">
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
             <Link href="https://github.com/joshuadavidang" target="_blank">
               <FaGithub size={30} className="cursor-pointer" />
