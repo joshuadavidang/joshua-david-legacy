@@ -4,18 +4,20 @@ import { TypeAnimation } from "react-type-animation";
 import Coding from "../../public/assets/images/Coding.svg";
 import Coding_II from "../../public/assets/images/Coding_II.svg";
 import Coding_III from "../../public/assets/images/Coding_III.svg";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaJsSquare } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { FaSwift } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMysql } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
 import Hover from "../../components/Container/hover";
 import Post from "../../components/Container";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiTypescript, SiMysql } from "react-icons/si";
+import {
+  FaFileAlt,
+  FaGithub,
+  FaLinkedin,
+  FaJsSquare,
+  FaReact,
+  FaNode,
+  FaPython,
+  FaSwift,
+} from "react-icons/fa";
 
 const LandingPage = () => {
   return (
@@ -55,6 +57,12 @@ const LandingPage = () => {
                 >
                   <FaLinkedin size={30} className="cursor-pointer" />
                 </Link>
+              </span>
+
+              <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+                <a download href="/Joshua David.pdf">
+                  <FaFileAlt size={30} className="cursor-pointer" />
+                </a>
               </span>
             </div>
           </div>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Coffee from "../../public/assets/images/Coffee.svg";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import Link from "next/link";
 
 const ContactPage = () => {
@@ -36,6 +35,12 @@ const ContactPage = () => {
             >
               <FaLinkedin size={30} className="cursor-pointer" />
             </Link>
+          </span>
+
+          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+            <a download href="/Joshua David.pdf">
+              <FaFileAlt size={30} className="cursor-pointer" />
+            </a>
           </span>
         </div>
       </div>
