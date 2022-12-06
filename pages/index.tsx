@@ -5,11 +5,7 @@ import useToggle from "../hooks/useToggle";
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
-  const [hamburger, setHamburger] = useToggle();
-
-  const closeBurger = () => {
-    setHamburger(false);
-  };
+  const [hamburger, closeBurger, setHamburger] = useToggle(false);
 
   return (
     <div>
