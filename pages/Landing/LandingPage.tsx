@@ -21,7 +21,7 @@ import {
 
 const LandingPage = () => {
   return (
-    <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16  h-screen w-screen overflow-scroll">
+    <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16 h-screen w-screen overflow-scroll">
       <div className="md:pt-32 pt-12">
         <Post>
           <div className="flex flex-col">
