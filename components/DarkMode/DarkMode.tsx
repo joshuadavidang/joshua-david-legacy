@@ -5,7 +5,7 @@ import useToggle from "../../hooks/useToggle";
 
 const DarkMode = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useToggle();
+  const [mounted, x, setMounted] = useToggle();
 
   useEffect(() => {
     setMounted(true);
