@@ -45,7 +45,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="md:w-fit w-10/12">
+      <div className="md:w-fit w-10/12 md:mt-0 mt-10">
         <Form />
       </div>
     </main>
