@@ -37,7 +37,7 @@ const ContactPage = () => {
           </span>
 
           <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
-            <a download href="/Joshua David.pdf">
+            <a download href="/Joshua_David.pdf">
               <FaFileAlt size={30} className="cursor-pointer" />
             </a>
           </span>
