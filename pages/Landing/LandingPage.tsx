@@ -7,7 +7,7 @@ import Coding_III from "../../public/assets/images/Coding_III.svg";
 import Hover from "../../components/Container/hover";
 import Post from "../../components/Container";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiTypescript, SiMysql } from "react-icons/si";
+import { SiTypescript, SiMysql, SiLeetcode } from "react-icons/si";
 import {
   FaFileAlt,
   FaGithub,
@@ -56,6 +56,12 @@ const LandingPage = () => {
                   target="_blank"
                 >
                   <FaLinkedin size={30} className="cursor-pointer" />
+                </Link>
+              </span>
+
+              <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+                <Link href="https://leetcode.com/joshdavidang/" target="_blank">
+                  <SiLeetcode size={30} className="cursor-pointer" />
                 </Link>
               </span>
 

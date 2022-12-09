@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Coffee from "../../public/assets/images/Coffee.svg";
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import Link from "next/link";
 
 const ContactPage = () => {
@@ -33,6 +34,12 @@ const ContactPage = () => {
               target="_blank"
             >
               <FaLinkedin size={30} className="cursor-pointer" />
+            </Link>
+          </span>
+
+          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+            <Link href="https://leetcode.com/joshdavidang/" target="_blank">
+              <SiLeetcode size={30} className="cursor-pointer" />
             </Link>
           </span>
 
