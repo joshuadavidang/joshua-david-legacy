@@ -12,6 +12,5 @@ updates:
       time: "01:00"
       timezone: "Asia/Singapore"
     commit-message:
-      prefix: 'fix'
-      prefix-development: 'chore'
+      prefix: 'npm'
       include: 'scope'
