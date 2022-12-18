@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { MenuAlt3Icon } from "@heroicons/react/solid";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import DarkMode from "../DarkMode/DarkMode";
 import NavBar from "./NavBar";
@@ -21,7 +21,7 @@ const MobileNavBar: NextPage<MobileNavBarProps> = (props) => {
 
         <div className="flex flex-row items-center justify-end p-6 gap-4">
           <DarkMode />
-          <MenuAlt3Icon className="w-7 h-7" onClick={toggleHamburger} />
+          <Bars3Icon className="w-7 h-7" onClick={toggleHamburger} />
         </div>
       </div>
 
