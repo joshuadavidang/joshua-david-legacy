@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import Link from "next/link";
 import { NavLinkData } from "../../data/navLinks";
 import DarkMode from "../DarkMode/DarkMode";
@@ -7,9 +6,7 @@ interface NavBarProps {
   closeBurger?: any;
 }
 
-const NavBar: NextPage<NavBarProps> = (props) => {
-  const { closeBurger } = props;
-
+const NavBar = ({ closeBurger }: NavBarProps) => {
   return (
     <div
       className={`bg-white dark:bg-midnight flex md:justify-end md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 

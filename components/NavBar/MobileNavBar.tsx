@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import DarkMode from "../DarkMode/DarkMode";
@@ -9,9 +8,7 @@ interface MobileNavBarProps {
   hamburger: any;
 }
 
-const MobileNavBar: NextPage<MobileNavBarProps> = (props) => {
-  const { toggleHamburger, hamburger } = props;
-
+const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
   return (
     <>
       <div className="bg-white dark:bg-midnight flex flex-row justify-between items-center pl-6 w-screen">

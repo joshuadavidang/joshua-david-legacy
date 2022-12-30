@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import { useState } from "react";
 import { Button } from "../Button/Button";
 import Input from "./input";
@@ -8,7 +7,7 @@ interface FormProps {
   onChange?: string;
 }
 
-const Form: NextPage<FormProps> = () => {
+const Form = ({ onChange }: FormProps) => {
   const [form, setForm] = useState({ email: "", message: "" });
 
   const sendForm = () => {

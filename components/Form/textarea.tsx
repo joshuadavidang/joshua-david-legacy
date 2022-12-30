@@ -1,5 +1,3 @@
-import { NextPage } from "next";
-
 interface TextAreaProps {
   name: string;
   placeholder: string;
@@ -8,9 +6,7 @@ interface TextAreaProps {
   value: string;
 }
 
-const TextArea: NextPage<TextAreaProps> = (props) => {
-  const { placeholder, name, data, rows } = props;
-
+const TextArea = ({ placeholder, name, data, rows }: TextAreaProps) => {
   return (
     <textarea
       id="message"

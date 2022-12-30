@@ -1,12 +1,8 @@
-import { NextPage } from "next";
-
 interface ChipProps {
   chipLabel: string[];
 }
 
-const Chip: NextPage<ChipProps> = (props) => {
-  const { chipLabel } = props;
-
+const Chip = ({ chipLabel }: ChipProps) => {
   return (
     <div className="flex flex-row gap-2 flex-wrap">
       {chipLabel.map((tech, index) => (

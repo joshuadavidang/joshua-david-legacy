@@ -1,5 +1,3 @@
-import { NextPage } from "next";
-
 interface InputProps {
   type: string;
   name: string;
@@ -8,9 +6,7 @@ interface InputProps {
   value: string;
 }
 
-const Input: NextPage<InputProps> = (props) => {
-  const { type, placeholder, data, name } = props;
-
+const Input = ({ type, placeholder, data, name }: InputProps) => {
   return (
     <input
       type={type}
