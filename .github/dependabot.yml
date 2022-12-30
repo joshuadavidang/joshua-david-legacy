@@ -11,6 +11,7 @@ updates:
       interval: "daily"
       time: "01:00"
       timezone: "Asia/Singapore"
+    target-branch: "dev"
     commit-message:
       prefix: 'npm'
       include: 'scope'
