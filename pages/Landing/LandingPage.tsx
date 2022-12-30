@@ -88,8 +88,8 @@ const LandingPage = () => {
 
             <div className="flex flex-col gap-4 pt-3 md:w-5/6 w-full leading-loose text-md">
               <p>
-                hey there! {"i'm"} joshua and i love to build tech to solve
-                everyday challenges. my interest mainly lies in the fields of
+                hey there! {"i'm"} joshua and i love to leverage on technology
+                to solve everyday challenges. my interest lies in the fields of
                 software engineering and artificial intelligence. feel free to
                 reach out!
               </p>
@@ -114,9 +114,6 @@ const LandingPage = () => {
                 <FaJsSquare size={30} />
               </Hover>
               <Hover>
-                <FaSwift size={30} />
-              </Hover>
-              <Hover>
                 <FaReact size={30} />
               </Hover>
               <Hover>
@@ -124,6 +121,9 @@ const LandingPage = () => {
               </Hover>
               <Hover>
                 <FaNode size={30} />
+              </Hover>
+              <Hover>
+                <FaSwift size={30} />
               </Hover>
               <Hover>
                 <SiMysql size={30} />

@@ -4,6 +4,16 @@ import BreadApp from "../public/assets/images/bread_app.png";
 import MacBookPro from "../public/assets/images/macBookPro.png";
 
 export const PastProjects = [
+  // {
+  //   name: "project BBW",
+  //   description: "Lorem ipsum dolor sit amet.",
+  //   year: "2022",
+  //   start: "December",
+  //   end: "Present",
+  //   techStack: ["React.js", "Node.js", "Python"],
+  //   icon: BreadApp,
+  //   link: "https://github.com/joshuadavidang/google_ignite_bread",
+  // },
   {
     name: "bread",
     description:
@@ -18,7 +28,7 @@ export const PastProjects = [
     description:
       "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
     year: 2022,
-    techStack: ["Next.js", "TypeScript", "TailwindCss"],
+    techStack: ["Next.js", "TypeScript", "TailwindCSS"],
     icon: MacBookPro,
     link: "https://github.com/joshuadavidang/joshua-david",
   },

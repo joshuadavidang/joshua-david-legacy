@@ -2,6 +2,7 @@ import Head from "next/head";
 import MobileNavBar from "../components/NavBar/MobileNavBar";
 import NavBar from "../components/NavBar/NavBar";
 import useToggle from "../hooks/useToggle";
+import index from "../styles/index.module.css";
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
@@ -20,7 +21,11 @@ export default function Layout(props: { children: any }) {
           <NavBar />
         </nav>
 
-        <nav className="fixed md:hidden block z-50">
+        <nav
+          className={`fixed md:hidden block z-50 ${
+            hamburger ? index.hamburger : ""
+          }`}
+        >
           <MobileNavBar toggleHamburger={setHamburger} hamburger={hamburger} />
         </nav>
 
