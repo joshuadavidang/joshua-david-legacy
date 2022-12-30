@@ -4,12 +4,11 @@ import { NavLinkData } from "../../data/navLinks";
 import DarkMode from "../DarkMode/DarkMode";
 
 interface NavBarProps {
-  burgerState?: any;
   closeBurger?: any;
 }
 
 const NavBar: NextPage<NavBarProps> = (props) => {
-  const { burgerState, closeBurger } = props;
+  const { closeBurger } = props;
 
   return (
     <div

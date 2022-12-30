@@ -8,6 +8,8 @@ export default function Layout(props: { children: any }) {
   const { children } = props;
   const [hamburger, closeBurger, setHamburger] = useToggle(false);
 
+  console.log(hamburger);
+
   return (
     <div>
       <Head>
@@ -21,11 +23,7 @@ export default function Layout(props: { children: any }) {
           <NavBar />
         </nav>
 
-        <nav
-          className={`fixed md:hidden block z-50 ${
-            hamburger ? index.hamburger : ""
-          }`}
-        >
+        <nav className={`fixed md:hidden block z-50 ${hamburger ? "" : ""}`}>
           <MobileNavBar toggleHamburger={setHamburger} hamburger={hamburger} />
         </nav>
 
