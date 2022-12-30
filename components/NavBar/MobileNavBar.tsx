@@ -25,7 +25,9 @@ const MobileNavBar: NextPage<MobileNavBarProps> = (props) => {
         </div>
       </div>
 
-      {hamburger && <NavBar closeBurger={toggleHamburger} />}
+      {hamburger && (
+        <NavBar burgerState={hamburger} closeBurger={toggleHamburger} />
+      )}
     </>
   );
 };

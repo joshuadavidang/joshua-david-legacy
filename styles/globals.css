@@ -22,13 +22,3 @@ a {
 p {
   font-family: "Sen", "sans-serif";
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */

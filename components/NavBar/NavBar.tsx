@@ -4,16 +4,17 @@ import { NavLinkData } from "../../data/navLinks";
 import DarkMode from "../DarkMode/DarkMode";
 
 interface NavBarProps {
+  burgerState?: any;
   closeBurger?: any;
 }
 
 const NavBar: NextPage<NavBarProps> = (props) => {
-  const { closeBurger } = props;
+  const { burgerState, closeBurger } = props;
 
   return (
     <div
-      className="bg-white dark:bg-midnight flex md:justify-end md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
-      flex-col items-end p-1.5 pr-6"
+      className={`bg-white dark:bg-midnight flex md:justify-end md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
+      flex-col items-end p-1.5 pr-6 ${burgerState ? styles.animate : ""}`}
     >
       <span className="hidden md:block">
         <DarkMode />
