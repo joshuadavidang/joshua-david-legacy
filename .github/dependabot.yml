@@ -13,5 +13,5 @@ updates:
       timezone: "Asia/Singapore"
     target-branch: "dev"
     commit-message:
-      prefix: 'npm'
+      prefix: 'chore'
       include: 'scope'
