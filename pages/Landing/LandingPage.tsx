@@ -18,6 +18,7 @@ import {
   FaPython,
   FaSwift,
 } from "react-icons/fa";
+import { Button } from "../../components/Button/Button";
 
 const LandingPage = () => {
   return (
@@ -66,11 +67,9 @@ const LandingPage = () => {
               </span>
             </div>
           </div>
-
           <span className="hidden md:block">
             <Image src={Coding_II} alt="coding_II" width="350" />
           </span>
-
           <span className="block md:hidden">
             <Image src={Coding_II} alt="coding_II" width="280" />
           </span>

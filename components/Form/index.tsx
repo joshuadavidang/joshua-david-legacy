@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useState } from "react";
-import Button from "../Button/Button";
+import Button from "../Button2/Button";
 import Input from "./input";
 import TextArea from "./textarea";
 
