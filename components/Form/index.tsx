@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useState } from "react";
-import Button from "../Button2/Button";
+import { Button } from "../Button/Button";
 import Input from "./input";
 import TextArea from "./textarea";
 
@@ -43,7 +43,7 @@ const Form: NextPage<FormProps> = () => {
             data={handleChange}
             value={form.message}
           />
-          <Button btnMessage="Send" sendForm={sendForm} />
+          <Button backgroundColor="green">Send Form</Button>
         </div>
       </form>
     </div>

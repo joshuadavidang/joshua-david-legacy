@@ -19,6 +19,7 @@ import {
   FaSwift,
 } from "react-icons/fa";
 import { Button } from "../../components/Button/Button";
+import Form from "../../components/Form";
 
 const LandingPage = () => {
   return (
