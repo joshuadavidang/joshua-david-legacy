@@ -18,7 +18,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
     <Box
       bg={bg}
       className={`bg-blue1 flex md:justify-between md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
-      flex-col items-end pr-6`}
+      flex-col items-end pb-4 pr-6`}
     >
       <div className="flex flex-row gap-0.5 pt-3">
         <span

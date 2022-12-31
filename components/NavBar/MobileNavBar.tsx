@@ -18,7 +18,7 @@ const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
         bg={bg}
         className="flex flex-row justify-between items-center pl-6 w-screen"
       >
-        <div className="md:text-3xl text-lg font-sen tracking-tight">
+        <div className="md:text-3xl text-lg font-sen tracking-tight" onClick={toggleHamburger}>
           <Link href="/Landing/LandingPage">joshuadavid</Link>
         </div>
 
