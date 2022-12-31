@@ -18,13 +18,13 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
     <Box
       bg={bg}
       className={`bg-blue1 flex md:justify-between md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
-      flex-col items-end p-1.5 pr-6`}
+      flex-col items-end pr-6`}
     >
       <div className="flex flex-row gap-0.5 pt-3">
         <span
           className={`${
             colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-          } p-2 rounded cursor-pointer`}
+          } p-2 rounded cursor-pointer hidden md:block`}
         >
           <Link href="https://github.com/joshuadavidang" target="_blank">
             <FaGithub size={23} className="cursor-pointer" />
@@ -34,7 +34,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
         <span
           className={`${
             colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-          } p-2 rounded cursor-pointer`}
+          } p-2 rounded cursor-pointer hidden md:block`}
         >
           <Link href="https://linkedin.com/in/joshuadavidang/" target="_blank">
             <FaLinkedin size={23} className="cursor-pointer" />
@@ -44,7 +44,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
         <span
           className={`${
             colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-          } p-2 rounded cursor-pointer`}
+          } p-2 rounded cursor-pointer hidden md:block`}
         >
           <a download href="/Joshua_David.pdf">
             <FaFileAlt size={23} className="cursor-pointer" />

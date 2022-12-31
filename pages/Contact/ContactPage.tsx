@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Coffee from "../../public/assets/images/Coffee.svg";
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import Link from "next/link";
 import { Box, useColorMode, useColorModeValue, Flex } from "@chakra-ui/react";
@@ -14,24 +12,11 @@ const ContactPage = () => {
       bg={bg}
       className="flex md:gap-32 justify-center items-center h-screen w-screen text-center"
     >
-      {/* <div className="md:w-3/12 w-8/12">
-        <Image src={Coffee} alt="coffee" />
-      </div> */}
-
       <div className="md:w-4/12 w-10/12">
         <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight">
           Stay Connected
         </p>
 
-        {/* <p
-          className={`${
-            colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-          } p-2 rounded cursor-pointer`}
-        >
-          <a href="mailto:joshuadavidang@outlook.sg">
-            joshuadavidang@outlook.sg
-          </a>
-        </p> */}
         <div className="flex flex-row justify-center gap-0.5 pt-3 pb-4">
           <span
             className={`${

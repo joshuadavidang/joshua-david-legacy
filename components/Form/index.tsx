@@ -25,15 +25,25 @@ const Form = ({ onChange }: FormProps) => {
   return (
     <div>
       <form>
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-3">
+          <label className="text-left">Name</label>
+          <Input
+            type="email"
+            name="email"
+            placeholder="Joshua David"
+            data={handleChange}
+            value={form.email}
+          />
+
           <label className="text-left">Email</label>
           <Input
             type="email"
             name="email"
-            placeholder="name@email.com"
+            placeholder="joshuadavidang@outlook.sg"
             data={handleChange}
             value={form.email}
           />
+
           <label className="text-left">Message</label>
           <TextArea
             name="message"
@@ -49,7 +59,7 @@ const Form = ({ onChange }: FormProps) => {
               variant="solid"
               colorScheme="gray"
               onClick={sendForm}
-              icon={<AiOutlineArrowRight />}
+              rightIcon={<AiOutlineArrowRight />}
             >
               Send Message
             </ButtonIcon>

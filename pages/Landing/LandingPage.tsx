@@ -6,8 +6,6 @@ import { SiTypescript, SiMysql } from "react-icons/si";
 import { FaJsSquare, FaReact, FaNode, FaPython, FaSwift } from "react-icons/fa";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
-import ProjectPage from "../Project/ProjectPage";
-import ContactPage from "../Contact/ContactPage";
 
 const LandingPage = () => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
@@ -17,7 +15,7 @@ const LandingPage = () => {
       <Box
         id="landing"
         bg={bg}
-        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10"
+        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10 overflow-scroll"
       >
         <span className="pt-12 md:pt-0 pb-12">
           <Image src={Coding_II} alt="coding_II" width="300" />
@@ -48,7 +46,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<FaPython />}
+              leftIcon={<FaPython />}
             >
               Python
             </ButtonIcon>
@@ -57,7 +55,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<SiTypescript />}
+              leftIcon={<SiTypescript />}
             >
               TypeScript
             </ButtonIcon>
@@ -66,7 +64,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<FaJsSquare />}
+              leftIcon={<FaJsSquare />}
             >
               JavaScript
             </ButtonIcon>
@@ -75,7 +73,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<FaReact />}
+              leftIcon={<FaReact />}
             >
               React
             </ButtonIcon>
@@ -84,7 +82,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<TbBrandNextjs />}
+              leftIcon={<TbBrandNextjs />}
             >
               Next
             </ButtonIcon>
@@ -93,7 +91,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<FaNode />}
+              leftIcon={<FaNode />}
             >
               Node
             </ButtonIcon>
@@ -102,7 +100,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<FaSwift />}
+              leftIcon={<FaSwift />}
             >
               Swift
             </ButtonIcon>
@@ -111,7 +109,7 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              icon={<SiMysql />}
+              leftIcon={<SiMysql />}
             >
               SQL
             </ButtonIcon>
