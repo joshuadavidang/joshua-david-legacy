@@ -11,10 +11,9 @@ interface MobileNavBarProps {
 
 const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
-
+  
   return (
     <>
-      {/* <div className="bg-white dark:bg-midnight flex flex-row justify-between items-center pl-6 w-screen"> */}
       <Box
         bg={bg}
         className="flex flex-row justify-between items-center pl-6 w-screen"
