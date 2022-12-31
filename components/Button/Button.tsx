@@ -14,7 +14,8 @@ interface ButtonProps {
     | "blue"
     | "cyan"
     | "purple"
-    | "pink";
+    | "pink"
+    | "messenger";
 }
 
 export const Button = ({

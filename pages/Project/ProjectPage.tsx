@@ -12,7 +12,7 @@ const ProjectPage = () => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
 
   return (
-    <Box bg={bg} className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16 overflow-scroll">
+    <Box bg={bg} id="projects" className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16 overflow-scroll">
       {PastProjects.map(
         ({ name, description, icon, link, techStack }, index) => (
           <Card key={index}>

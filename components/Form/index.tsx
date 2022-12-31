@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Button } from "../Button/Button";
+import { ButtonIcon } from "../Button/ButtonIcon";
 import Input from "./input";
 import TextArea from "./textarea";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 interface FormProps {
   onChange?: string;
@@ -11,7 +12,7 @@ const Form = ({ onChange }: FormProps) => {
   const [form, setForm] = useState({ email: "", message: "" });
 
   const sendForm = () => {
-    console.log("s");
+    console.log(form);
   };
 
   const handleChange = (event: any) => {
@@ -23,26 +24,35 @@ const Form = ({ onChange }: FormProps) => {
 
   return (
     <div>
-      <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight pb-5 pt-4">
-        leave a message
-      </p>
       <form>
         <div className="flex flex-col gap-y-4">
+          <label className="text-left">Email</label>
           <Input
             type="email"
             name="email"
-            placeholder="enter your email"
+            placeholder="name@email.com"
             data={handleChange}
             value={form.email}
           />
+          <label className="text-left">Message</label>
           <TextArea
             name="message"
-            placeholder="leave a message..."
+            placeholder="Leave a message..."
             rows={5}
             data={handleChange}
             value={form.message}
           />
-          <Button variant="solid" colorScheme="green">Send Form</Button>
+
+          <div className="pt-4">
+            <ButtonIcon
+              variant="solid"
+              colorScheme="gray"
+              onClick={sendForm}
+              icon={<AiOutlineArrowRight />}
+            >
+              Send Message
+            </ButtonIcon>
+          </div>
         </div>
       </form>
     </div>
