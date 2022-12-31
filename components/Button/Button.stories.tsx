@@ -16,17 +16,15 @@ const ButtonTemplate: ComponentStory<typeof Button> = (args) => (
 export const Primary = ButtonTemplate.bind({});
 Primary.args = {
   primary: true,
-  label: "Button",
+  colorScheme: "blue",
 };
 
 export const Secondary = ButtonTemplate.bind({});
 Secondary.args = {
-  label: "Button",
-  backgroundColor: "red",
+  colorScheme: "red",
 };
 
 export const Success = ButtonTemplate.bind({});
 Success.args = {
-  label: "Success",
-  backgroundColor: "green",
+  colorScheme: "green",
 };
