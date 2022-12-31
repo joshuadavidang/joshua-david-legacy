@@ -7,18 +7,26 @@ import NavBar from "./NavBar";
 interface MobileNavBarProps {
   toggleHamburger: any;
   hamburger: any;
+  closeBurger: any;
 }
 
-const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
+const MobileNavBar = ({
+  toggleHamburger,
+  hamburger,
+  closeBurger,
+}: MobileNavBarProps) => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
-  
+
   return (
     <>
       <Box
         bg={bg}
         className="flex flex-row justify-between items-center pl-6 w-screen"
       >
-        <div className="md:text-3xl text-lg font-sen tracking-tight" onClick={toggleHamburger}>
+        <div
+          className="md:text-3xl text-lg font-sen tracking-tight"
+          onClick={closeBurger}
+        >
           <Link href="/Landing/LandingPage">joshuadavid</Link>
         </div>
 

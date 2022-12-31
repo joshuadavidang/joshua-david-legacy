@@ -17,14 +17,18 @@ export default function Layout(props: { children: any }) {
         <meta name="description" content="joshua david's" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <Box className="relative">
         <nav className="fixed hidden md:block z-50">
           <NavBar />
         </nav>
 
         <nav className={`fixed md:hidden block z-50 ${hamburger ? "" : ""}`}>
-          <MobileNavBar toggleHamburger={setHamburger} hamburger={hamburger} />
+          <MobileNavBar
+            closeBurger={closeBurger}
+            toggleHamburger={setHamburger}
+            hamburger={hamburger}
+          />
         </nav>
 
         <main onClick={closeBurger}>{children}</main>
