@@ -1,4 +1,4 @@
-import { Box as ChakraBox, useColorModeValue } from "@chakra-ui/react";
+import { Box as ChakraBox } from "@chakra-ui/react";
 
 interface BoxProps {
   children: any;

@@ -1,5 +1,7 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { NavLinkData } from "../../data/navLinks";
+import Box from "../Box/Box";
 import DarkMode from "../DarkMode/DarkMode";
 
 interface NavBarProps {
@@ -7,9 +9,12 @@ interface NavBarProps {
 }
 
 const NavBar = ({ closeBurger }: NavBarProps) => {
+  const bg = useColorModeValue("#ffffff", "#1a202c");
+
   return (
-    <div
-      className={`flex md:justify-end md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
+    <Box
+      bg={bg}
+      className={`bg-blue1 flex md:justify-end md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
       flex-col items-end p-1.5 pr-6`}
     >
       <span className="hidden md:block">
@@ -26,7 +31,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
           </span>
         </Link>
       ))}
-    </div>
+    </Box>
   );
 };
 
