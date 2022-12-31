@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Coding_II from "../../public/assets/images/Coding_II.svg";
+import QR from "../../public/assets/images/QR.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import { FaJsSquare, FaReact, FaNode, FaPython, FaSwift } from "react-icons/fa";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
+import Text from "../../components/Text/Text";
 
 const LandingPage = () => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
@@ -15,7 +17,7 @@ const LandingPage = () => {
       <Box
         id="landing"
         bg={bg}
-        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10 overflow-scroll"
+        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10"
       >
         <span className="pt-12 md:pt-0 pb-12">
           <Image src={Coding_II} alt="coding_II" width="300" />
@@ -115,6 +117,17 @@ const LandingPage = () => {
             </ButtonIcon>
           </div>
         </div>
+      </Box>
+
+      <Box bg={bg} className="h-1/2 pb-24 flex justify-center items-center">
+        <span>
+          <Text className="pb-6 leading-loose text-md md:text-lg text-center">
+            Grab a copy of my resume here 👇🏻
+          </Text>
+          <a download href="/Joshua_David.pdf" className="cursor-pointer">
+            <Image src={QR} alt="coding_II" width="300" />
+          </a>
+        </span>
       </Box>
     </>
   );

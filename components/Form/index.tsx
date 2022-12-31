@@ -9,7 +9,7 @@ interface FormProps {
 }
 
 const Form = ({ onChange }: FormProps) => {
-  const [form, setForm] = useState({ email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const sendForm = () => {
     console.log(form);
@@ -28,8 +28,8 @@ const Form = ({ onChange }: FormProps) => {
         <div className="flex flex-col gap-y-3">
           <label className="text-left">Name</label>
           <Input
-            type="email"
-            name="email"
+            type="text"
+            name="name"
             placeholder="Joshua David"
             data={handleChange}
             value={form.email}

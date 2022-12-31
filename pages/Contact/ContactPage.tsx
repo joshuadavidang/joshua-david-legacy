@@ -10,7 +10,7 @@ const ContactPage = () => {
     <Box
       id="contact"
       bg={bg}
-      className="flex md:gap-32 justify-center items-center h-screen w-screen text-center"
+      className="flex md:gap-32 justify-center items-center h-screen w-screen text-center overflow-scroll"
     >
       <div className="md:w-4/12 w-10/12">
         <p className="text-blue1 dark:text-blue1 text-2xl md:text-4xl font-sen tracking-tight">
