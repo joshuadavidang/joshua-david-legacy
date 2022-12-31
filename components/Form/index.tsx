@@ -42,7 +42,7 @@ const Form = ({ onChange }: FormProps) => {
             data={handleChange}
             value={form.message}
           />
-          <Button colorScheme="green">Send Form</Button>
+          <Button variant="solid" colorScheme="green">Send Form</Button>
         </div>
       </form>
     </div>

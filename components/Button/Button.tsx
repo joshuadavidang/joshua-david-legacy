@@ -1,20 +1,30 @@
 import { Button as ChakraButton } from "@chakra-ui/react";
 
 interface ButtonProps {
-  primary?: boolean;
   onClick?: () => void;
   children: string;
-  colorScheme: string;
+  variant: "solid" | "ghost" | "outline";
+  colorScheme:
+    | "gray"
+    | "red"
+    | "orange"
+    | "yellow"
+    | "green"
+    | "teal"
+    | "blue"
+    | "cyan"
+    | "purple"
+    | "pink";
 }
 
 export const Button = ({
-  primary = false,
   colorScheme,
+  variant,
   children,
   ...props
 }: ButtonProps) => {
   return (
-    <ChakraButton colorScheme={colorScheme} {...props}>
+    <ChakraButton variant={variant} colorScheme={colorScheme} {...props}>
       {children}
     </ChakraButton>
   );
