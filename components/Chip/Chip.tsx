@@ -6,7 +6,7 @@ interface ChipProps {
 
 const Chip = ({ chipLabel }: ChipProps) => {
   return (
-    <Text className="flex flex-row gap-2 flex-wrap">
+    <Text className="flex flex-row gap-1.5 flex-wrap">
       {chipLabel.map((tech, index) => (
         <div
           className="text-xs font-sen"
