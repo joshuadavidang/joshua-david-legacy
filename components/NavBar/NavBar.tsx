@@ -36,11 +36,6 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
           >
             {name}
           </Text>
-          {/* <span
-            className="hover:bg-lightGray hover:text-black dark:hover:bg-gray p-2 rounded cursor-pointer"
-            onClick={closeBurger}
-          >
-            <p>{name}</p> */}
         </Link>
       ))}
     </Box>

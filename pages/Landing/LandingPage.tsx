@@ -18,10 +18,11 @@ import {
   FaPython,
   FaSwift,
 } from "react-icons/fa";
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 const LandingPage = () => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Box
@@ -50,13 +51,21 @@ const LandingPage = () => {
               <p className="break-words">Singapore Management University</p>
             </div>
             <div className="flex flex-row gap-0.5 pt-3">
-              <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+              <span
+                className={`${
+                  colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+                } p-2 rounded cursor-pointer`}
+              >
                 <Link href="https://github.com/joshuadavidang" target="_blank">
                   <FaGithub size={30} className="cursor-pointer" />
                 </Link>
               </span>
 
-              <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+              <span
+                className={`${
+                  colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+                } p-2 rounded cursor-pointer`}
+              >
                 <Link
                   href="https://linkedin.com/in/joshuadavidang/"
                   target="_blank"
@@ -65,7 +74,11 @@ const LandingPage = () => {
                 </Link>
               </span>
 
-              <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+              <span
+                className={`${
+                  colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+                } p-2 rounded cursor-pointer`}
+              >
                 <a download href="/Joshua_David.pdf">
                   <FaFileAlt size={30} className="cursor-pointer" />
                 </a>

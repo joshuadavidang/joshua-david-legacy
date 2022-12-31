@@ -1,12 +1,18 @@
+import { useColorMode } from "@chakra-ui/react";
+
 type HoverProps = {
   children: any;
   className?: string;
 };
 
 const Hover = ({ children, className }: HoverProps) => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <span
-      className={`hover:bg-lightGray dark:hover:bg-gray p-2 rounded ${className}`}
+      className={`${
+        colorMode === "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+      } p-2 rounded ${className}`}
     >
       {children}
     </span>

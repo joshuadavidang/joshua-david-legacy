@@ -1,4 +1,3 @@
-import { useColorModeValue } from "@chakra-ui/react";
 import Box from "../Box/Box";
 
 interface CardProps {

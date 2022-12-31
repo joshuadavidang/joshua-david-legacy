@@ -2,11 +2,11 @@ import Image from "next/image";
 import Coffee from "../../public/assets/images/Coffee.svg";
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import Link from "next/link";
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 const ContactPage = () => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
-
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box
       bg={bg}
@@ -21,19 +21,31 @@ const ContactPage = () => {
           stay connected
         </p>
 
-        <p className="hover:bg-lightGray p-2 dark:hover:bg-gray rounded cursor-pointer">
+        <p
+          className={`${
+            colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+          } p-2 rounded cursor-pointer`}
+        >
           <a href="mailto:joshuadavidang@outlook.sg">
             joshuadavidang@outlook.sg
           </a>
         </p>
         <div className="flex flex-row justify-center gap-0.5 pt-2">
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+          <span
+            className={`${
+              colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+            } p-2 rounded cursor-pointer`}
+          >
             <Link href="https://github.com/joshuadavidang" target="_blank">
               <FaGithub size={30} className="cursor-pointer" />
             </Link>
           </span>
 
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+          <span
+            className={`${
+              colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+            } p-2 rounded cursor-pointer`}
+          >
             <Link
               href="https://linkedin.com/in/joshuadavidang/"
               target="_blank"
@@ -42,7 +54,11 @@ const ContactPage = () => {
             </Link>
           </span>
 
-          <span className="hover:bg-lightGray dark:hover:bg-gray p-2 rounded cursor-pointer">
+          <span
+            className={`${
+              colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
+            } p-2 rounded cursor-pointer`}
+          >
             <a download href="/Joshua_David.pdf">
               <FaFileAlt size={30} className="cursor-pointer" />
             </a>
