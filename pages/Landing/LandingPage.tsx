@@ -34,23 +34,29 @@ const LandingPage = () => {
             ]}
             cursor={true}
             repeat={1}
-            speed={50}
+            speed={30}
             className="text-blue1 dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl"
           />
 
-          <div className="pt-3 pb-6 leading-loose text-lg">
+          <div className="pt-3 pb-6 leading-loose text-md md:text-lg">
             Undergraduate at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-4 justify-center">
-            <ButtonIcon colorScheme="gray" variant="solid" icon={<FaPython />}>
+          <div className="flex flex-row flex-wrap gap-3 justify-center">
+            <ButtonIcon
+              colorScheme="gray"
+              variant="solid"
+              size="sm"
+              icon={<FaPython />}
+            >
               Python
             </ButtonIcon>
 
             <ButtonIcon
               colorScheme="gray"
               variant="solid"
+              size="sm"
               icon={<SiTypescript />}
             >
               TypeScript
@@ -59,32 +65,54 @@ const LandingPage = () => {
             <ButtonIcon
               colorScheme="gray"
               variant="solid"
+              size="sm"
               icon={<FaJsSquare />}
             >
               JavaScript
             </ButtonIcon>
 
-            <ButtonIcon colorScheme="gray" variant="solid" icon={<FaReact />}>
+            <ButtonIcon
+              colorScheme="gray"
+              variant="solid"
+              size="sm"
+              icon={<FaReact />}
+            >
               React
             </ButtonIcon>
 
             <ButtonIcon
               colorScheme="gray"
               variant="solid"
+              size="sm"
               icon={<TbBrandNextjs />}
             >
               Next
             </ButtonIcon>
 
-            <ButtonIcon colorScheme="gray" variant="solid" icon={<FaNode />}>
+            <ButtonIcon
+              colorScheme="gray"
+              variant="solid"
+              size="sm"
+              icon={<FaNode />}
+            >
               Node
             </ButtonIcon>
 
-            <ButtonIcon colorScheme="gray" variant="solid" icon={<FaSwift />}>
+            <ButtonIcon
+              colorScheme="gray"
+              variant="solid"
+              size="sm"
+              icon={<FaSwift />}
+            >
               Swift
             </ButtonIcon>
 
-            <ButtonIcon colorScheme="gray" variant="solid" icon={<SiMysql />}>
+            <ButtonIcon
+              colorScheme="gray"
+              variant="solid"
+              size="sm"
+              icon={<SiMysql />}
+            >
               SQL
             </ButtonIcon>
           </div>

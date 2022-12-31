@@ -5,6 +5,7 @@ interface ButtonProps {
   icon: any;
   children: string;
   variant: "solid" | "ghost" | "outline";
+  size: "xs" | "sm" | "md" | "lg"
   colorScheme:
     | "gray"
     | "red"
@@ -17,7 +18,7 @@ interface ButtonProps {
     | "purple"
     | "pink"
     | "messenger"
-    | "telegram"
+    | "telegram";
 }
 
 export const ButtonIcon = ({
@@ -25,6 +26,7 @@ export const ButtonIcon = ({
   colorScheme,
   variant,
   children,
+  size,
   ...props
 }: ButtonProps) => {
   return (
@@ -33,6 +35,7 @@ export const ButtonIcon = ({
         leftIcon={icon}
         colorScheme={colorScheme}
         variant={variant}
+        size={size}
         {...props}
       >
         {children}
