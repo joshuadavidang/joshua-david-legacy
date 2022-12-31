@@ -1,8 +1,8 @@
+import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import MobileNavBar from "../components/NavBar/MobileNavBar";
 import NavBar from "../components/NavBar/NavBar";
 import useToggle from "../hooks/useToggle";
-import index from "../styles/index.module.css";
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
@@ -17,8 +17,8 @@ export default function Layout(props: { children: any }) {
         <meta name="description" content="joshua david's" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className="relative bg-white dark:bg-midnight">
+      
+      <Box className="relative">
         <nav className="fixed hidden md:block z-50">
           <NavBar />
         </nav>
@@ -28,7 +28,7 @@ export default function Layout(props: { children: any }) {
         </nav>
 
         <main onClick={closeBurger}>{children}</main>
-      </div>
+      </Box>
     </div>
   );
 }

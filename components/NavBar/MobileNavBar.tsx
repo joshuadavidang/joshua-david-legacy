@@ -11,8 +11,9 @@ interface MobileNavBarProps {
 const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
   return (
     <>
-      <div className="bg-white dark:bg-midnight flex flex-row justify-between items-center pl-6 w-screen">
-        <div className="text-black dark:text-white md:text-3xl text-lg font-sen tracking-tight">
+      {/* <div className="bg-white dark:bg-midnight flex flex-row justify-between items-center pl-6 w-screen"> */}
+      <div className="flex flex-row justify-between items-center pl-6 w-screen">
+        <div className="md:text-3xl text-lg font-sen tracking-tight">
           <Link href="/Landing/LandingPage">joshuadavid</Link>
         </div>
 

@@ -1,9 +1,11 @@
+import Text from "../Text/Text";
+
 interface CardBodyProps {
   children: any;
 }
 
 const CardBody = ({ children }: CardBodyProps) => {
-  return <div className="text-white dark:text-black">{children}</div>;
+  return <Text>{children}</Text>;
 };
 
 export default CardBody;
