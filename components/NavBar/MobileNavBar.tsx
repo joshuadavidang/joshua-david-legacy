@@ -1,5 +1,7 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import Box from "../Box/Box";
 import DarkMode from "../DarkMode/DarkMode";
 import NavBar from "./NavBar";
 
@@ -9,10 +11,15 @@ interface MobileNavBarProps {
 }
 
 const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
+  const bg = useColorModeValue("#ffffff", "#1a202c");
+
   return (
     <>
       {/* <div className="bg-white dark:bg-midnight flex flex-row justify-between items-center pl-6 w-screen"> */}
-      <div className="flex flex-row justify-between items-center pl-6 w-screen">
+      <Box
+        bg={bg}
+        className="flex flex-row justify-between items-center pl-6 w-screen"
+      >
         <div className="md:text-3xl text-lg font-sen tracking-tight">
           <Link href="/Landing/LandingPage">joshuadavid</Link>
         </div>
@@ -21,7 +28,7 @@ const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
           <DarkMode />
           <Bars3Icon className="w-7 h-7" onClick={toggleHamburger} />
         </div>
-      </div>
+      </Box>
 
       {hamburger && <NavBar closeBurger={toggleHamburger} />}
     </>
