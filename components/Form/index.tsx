@@ -45,6 +45,7 @@ const Form = ({ onChange }: FormProps) => {
 
           <div className="pt-4">
             <ButtonIcon
+              size="md"
               variant="solid"
               colorScheme="gray"
               onClick={sendForm}
