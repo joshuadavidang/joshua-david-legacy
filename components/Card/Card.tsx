@@ -6,13 +6,8 @@ interface CardProps {
 }
 
 const Card = ({ children }: CardProps) => {
-  const bg = useColorModeValue("#6868F6", "#ffffff");
-
   return (
-    <Box
-      bg={bg}
-      className="p-6 w-72 h-96 rounded-2xl drop-shadow-md"
-    >
+    <Box className="p-6 w-72 h-96 rounded-2xl drop-shadow-md">
       {children}
     </Box>
   );

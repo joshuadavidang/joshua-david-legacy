@@ -1,15 +1,17 @@
-import { useColorModeValue } from "@chakra-ui/react";
+import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import { NavLinkData } from "../../data/navLinks";
-import Box from "../Box/Box";
 import DarkMode from "../DarkMode/DarkMode";
+import Text from "../Text/Text";
 
 interface NavBarProps {
   closeBurger?: any;
 }
 
 const NavBar = ({ closeBurger }: NavBarProps) => {
-  const bg = useColorModeValue("#ffffff", "#1a202c");
+  const { colorMode, toggleColorMode } = useColorMode();
+  const bg = useColorModeValue("brand.white", "brand.midnight");
+  const color = useColorModeValue("brand.midnight", "brand.white");
 
   return (
     <Box
@@ -23,12 +25,22 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
 
       {NavLinkData.map(({ id, link, name }) => (
         <Link href={link} key={id} legacyBehavior>
-          <span
+          <Text
+            color={color}
+            className={`p-2 rounded cursor-pointer ${
+              colorMode == "dark"
+                ? "hover:bg-gray hover:text-white "
+                : "hover:bg-lightGray hover:text-black"
+            }`}
+            onClick={closeBurger}
+          >
+            {name}
+          </Text>
+          {/* <span
             className="hover:bg-lightGray hover:text-black dark:hover:bg-gray p-2 rounded cursor-pointer"
             onClick={closeBurger}
           >
-            <p>{name}</p>
-          </span>
+            <p>{name}</p> */}
         </Link>
       ))}
     </Box>

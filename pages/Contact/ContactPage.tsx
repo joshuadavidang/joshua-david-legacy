@@ -2,10 +2,16 @@ import Image from "next/image";
 import Coffee from "../../public/assets/images/Coffee.svg";
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import Link from "next/link";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 const ContactPage = () => {
+  const bg = useColorModeValue("brand.white", "brand.midnight");
+
   return (
-    <main className="flex md:flex-row flex-col md:gap-32 justify-center items-center h-screen w-screen text-center">
+    <Box
+      bg={bg}
+      className="flex md:flex-row flex-col md:gap-32 justify-center items-center h-screen w-screen text-center"
+    >
       <div className="md:w-3/12 w-8/12">
         <Image src={Coffee} alt="coffee" />
       </div>
@@ -43,7 +49,7 @@ const ContactPage = () => {
           </span>
         </div>
       </div>
-    </main>
+    </Box>
   );
 };
 

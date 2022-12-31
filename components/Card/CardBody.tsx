@@ -1,3 +1,4 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import Text from "../Text/Text";
 
 interface CardBodyProps {
@@ -5,7 +6,9 @@ interface CardBodyProps {
 }
 
 const CardBody = ({ children }: CardBodyProps) => {
-  return <Text>{children}</Text>;
+  const color = useColorModeValue("brand.white", "brand.midnight");
+
+  return <Text color={color}>{children}</Text>;
 };
 
 export default CardBody;

@@ -4,7 +4,14 @@ import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 const DarkMode = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <div onClick={toggleColorMode} className="hover:bg-lightGray hover:text-darkGray p-2 rounded cursor-pointer">
+    <div
+      onClick={toggleColorMode}
+      className={`p-2 rounded cursor-pointer ${
+        colorMode === "dark"
+          ? "hover:bg-gray hover:text-white"
+          : "hover:bg-lightGray hover:text-black"
+      }`}
+    >
       {colorMode === "light" ? (
         <MoonIcon className="w-6 h-6 md:w-5 md:h-5" role="button" />
       ) : (

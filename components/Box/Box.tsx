@@ -1,12 +1,13 @@
-import { Box as ChakraBox } from "@chakra-ui/react";
+import { Box as ChakraBox, useColorModeValue } from "@chakra-ui/react";
 
 interface BoxProps {
   children: any;
   className?: any;
-  bg: any;
 }
 
-const Box = ({ children, className, bg }: BoxProps) => {
+const Box = ({ children, className }: BoxProps) => {
+  const bg = useColorModeValue("brand.purple", "brand.white");
+
   return (
     <ChakraBox bg={bg} className={className}>
       {children}

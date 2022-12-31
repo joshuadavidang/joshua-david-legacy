@@ -18,10 +18,16 @@ import {
   FaPython,
   FaSwift,
 } from "react-icons/fa";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 const LandingPage = () => {
+  const bg = useColorModeValue("brand.white", "brand.midnight");
+
   return (
-    <main className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16 h-screen w-screen overflow-scroll">
+    <Box
+      bg={bg}
+      className="px-10 md:px-36 md:py-16 pt-16 pb-24 md:pb-16 h-screen w-screen overflow-scroll"
+    >
       <div className="md:pt-28 pt-14">
         <Post>
           <div className="flex flex-col">
@@ -134,7 +140,7 @@ const LandingPage = () => {
           </span>
         </Post>
       </div>
-    </main>
+    </Box>
   );
 };
 

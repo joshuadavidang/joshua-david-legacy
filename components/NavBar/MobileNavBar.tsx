@@ -1,7 +1,6 @@
-import { useColorModeValue } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import Box from "../Box/Box";
 import DarkMode from "../DarkMode/DarkMode";
 import NavBar from "./NavBar";
 
@@ -11,7 +10,7 @@ interface MobileNavBarProps {
 }
 
 const MobileNavBar = ({ toggleHamburger, hamburger }: MobileNavBarProps) => {
-  const bg = useColorModeValue("#ffffff", "#1a202c");
+  const bg = useColorModeValue("brand.white", "brand.midnight");
 
   return (
     <>

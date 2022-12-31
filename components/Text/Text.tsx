@@ -1,14 +1,15 @@
-import { Text as ChakraText, useColorModeValue } from "@chakra-ui/react";
+import { Text as ChakraText } from "@chakra-ui/react";
 
 interface TextProps {
   children: any;
   className?: any;
+  color?: any;
+  onClick?: any;
 }
 
-const Text = ({ children, className }: TextProps) => {
-  const color = useColorModeValue("#ffffff", "#000000");
+const Text = ({ children, className, color, ...props }: TextProps) => {
   return (
-    <ChakraText color={color} className={className}>
+    <ChakraText color={color} className={className} {...props}>
       {children}
     </ChakraText>
   );

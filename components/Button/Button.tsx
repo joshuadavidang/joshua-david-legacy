@@ -8,8 +8,8 @@ interface ButtonProps {
 }
 
 export const Button = ({
-  colorScheme,
   primary = false,
+  colorScheme,
   children,
   ...props
 }: ButtonProps) => {
