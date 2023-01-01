@@ -1,3 +1,4 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import Text from "../Text/Text";
 
 interface ChipProps {
@@ -5,13 +6,12 @@ interface ChipProps {
 }
 
 const Chip = ({ chipLabel }: ChipProps) => {
+  const color = useColorModeValue("brand.lightGray", "brand.gray");
+
   return (
-    <Text className="flex flex-row gap-1.5 flex-wrap">
+    <Text color={color} className="flex flex-row gap-1.5 flex-wrap">
       {chipLabel.map((tech, index) => (
-        <div
-          className="text-xs font-sen"
-          key={index}
-        >
+        <div className=" text-xs font-sen" key={index}>
           {tech}
         </div>
       ))}

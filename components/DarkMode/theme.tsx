@@ -9,7 +9,7 @@ const theme = extendTheme({
     brand: {
       black: "#121212",
       midnight: "#000024",
-      white: "#FAF9F6",
+      white: "#FFFFFF",
       blue: "#1fb6ff",
       purple: "#7e5bef",
       pink: "#ff49db",
