@@ -22,7 +22,11 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
       flex-col items-end pb-4 pr-6`}
     >
       <div className="flex flex-row gap-2">
-        <Link href="https://github.com/joshuadavidang" target="_blank">
+        <Link
+          href="https://github.com/joshuadavidang"
+          target="_blank"
+          className="md:block hidden"
+        >
           <ButtonIcon
             size="sm"
             colorScheme="gray"
@@ -33,7 +37,11 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
           </ButtonIcon>
         </Link>
 
-        <Link href="https://linkedin.com/in/joshuadavidang/" target="_blank">
+        <Link
+          href="https://linkedin.com/in/joshuadavidang/"
+          target="_blank"
+          className="md:block hidden"
+        >
           <ButtonIcon
             size="sm"
             colorScheme="gray"
@@ -44,7 +52,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
           </ButtonIcon>
         </Link>
 
-        <a download href="/Joshua_David.pdf">
+        <a download href="/Joshua_David.pdf" className="md:block hidden">
           <ButtonIcon
             size="sm"
             colorScheme="gray"
