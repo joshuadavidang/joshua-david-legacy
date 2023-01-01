@@ -1,7 +1,7 @@
 import StillYoung from "../public/assets/images/StillYoung.svg";
 import Sayocode from "../public/assets/images/Sayocode.png";
 import BreadApp from "../public/assets/images/bread_app.png";
-import MacBookPro from "../public/assets/images/macBookPro.png";
+import macOS from "../public/assets/images/macOS.png";
 
 export const PastProjects = [
   // {
@@ -28,8 +28,14 @@ export const PastProjects = [
     description:
       "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
     year: 2022,
-    techStack: ["Next.js", "TypeScript", "TailwindCSS", "Chakra UI"],
-    icon: MacBookPro,
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Chakra UI",
+      "Firebase",
+    ],
+    icon: macOS,
     link: "https://github.com/joshuadavidang/joshua-david",
   },
   {
