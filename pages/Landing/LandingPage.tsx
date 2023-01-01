@@ -23,7 +23,7 @@ const LandingPage = () => {
           <Image src={Coding_II} alt="coding_II" width="300" />
         </span>
 
-        <div className="flex flex-col text-center px-10 w-screen md:w-1/2">
+        <div className="flex flex-col text-center md:px-10 w-screen md:w-1/2">
           <TypeAnimation
             sequence={[
               "Joshua David",
