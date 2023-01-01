@@ -60,6 +60,7 @@ const Form = ({ onChange }: FormProps) => {
               colorScheme="gray"
               onClick={sendForm}
               rightIcon={<AiOutlineArrowRight />}
+              isDisabled={true}
             >
               Send Message
             </ButtonIcon>

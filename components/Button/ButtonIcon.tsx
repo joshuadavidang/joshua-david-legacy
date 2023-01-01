@@ -2,6 +2,7 @@ import { Button as ChakraButton, Stack } from "@chakra-ui/react";
 
 interface ButtonProps {
   onClick?: () => void;
+  isDisabled?: true | false;
   leftIcon?: any;
   rightIcon?: any;
   children: string;
@@ -24,6 +25,7 @@ interface ButtonProps {
 
 export const ButtonIcon = ({
   colorScheme,
+  isDisabled,
   variant,
   children,
   size,
@@ -34,6 +36,7 @@ export const ButtonIcon = ({
   return (
     <Stack direction="row" spacing={4}>
       <ChakraButton
+        isDisabled={isDisabled}
         leftIcon={leftIcon}
         rightIcon={rightIcon}
         colorScheme={colorScheme}
