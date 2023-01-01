@@ -18,7 +18,7 @@ const ContactPage = () => {
           Stay Connected
         </p>
 
-        <div className="flex flex-row justify-center gap-2 pt-3 pb-4">
+        <div className="flex flex-row justify-center gap-2.5 pt-3 pb-4">
           <Link href="https://github.com/joshuadavidang" target="_blank">
             <ButtonIcon
               size="sm"
