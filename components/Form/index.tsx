@@ -12,7 +12,7 @@ const Form = ({ onChange }: FormProps) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const sendForm = () => {
-    console.log(form);
+    alert(JSON.stringify(form));
   };
 
   const handleChange = (event: any) => {

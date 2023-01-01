@@ -43,7 +43,7 @@ const LandingPage = () => {
             <p className="break-words">Singapore Management University</p>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-3 justify-center">
+          <div className="flex flex-row flex-wrap gap-2 justify-center">
             <ButtonIcon
               colorScheme="gray"
               variant="solid"

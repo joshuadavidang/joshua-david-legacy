@@ -1,7 +1,8 @@
-import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt, FaLink } from "react-icons/fa";
 import Link from "next/link";
 import { Box, useColorMode, useColorModeValue, Flex } from "@chakra-ui/react";
 import Form from "../../components/Form";
+import { ButtonIcon } from "../../components/Button/ButtonIcon";
 
 const ContactPage = () => {
   const bg = useColorModeValue("brand.white", "brand.midnight");
@@ -17,39 +18,39 @@ const ContactPage = () => {
           Stay Connected
         </p>
 
-        <div className="flex flex-row justify-center gap-0.5 pt-3 pb-4">
-          <span
-            className={`${
-              colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-            } p-2 rounded cursor-pointer`}
-          >
-            <Link href="https://github.com/joshuadavidang" target="_blank">
-              <FaGithub size={30} className="cursor-pointer" />
-            </Link>
-          </span>
-
-          <span
-            className={`${
-              colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-            } p-2 rounded cursor-pointer`}
-          >
-            <Link
-              href="https://linkedin.com/in/joshuadavidang/"
-              target="_blank"
+        <div className="flex flex-row justify-center gap-2 pt-3 pb-4">
+          <Link href="https://github.com/joshuadavidang" target="_blank">
+            <ButtonIcon
+              size="sm"
+              colorScheme="gray"
+              variant="solid"
+              leftIcon={<FaGithub />}
             >
-              <FaLinkedin size={30} className="cursor-pointer" />
-            </Link>
-          </span>
+              GitHub
+            </ButtonIcon>
+          </Link>
 
-          <span
-            className={`${
-              colorMode == "dark" ? "hover:bg-gray" : "hover:bg-lightGray"
-            } p-2 rounded cursor-pointer`}
-          >
-            <a download href="/Joshua_David.pdf">
-              <FaFileAlt size={30} className="cursor-pointer" />
-            </a>
-          </span>
+          <Link href="https://linkedin.com/in/joshuadavidang/" target="_blank">
+            <ButtonIcon
+              size="sm"
+              colorScheme="gray"
+              variant="solid"
+              leftIcon={<FaLinkedin />}
+            >
+              LinkedIn
+            </ButtonIcon>
+          </Link>
+
+          <a download href="/Joshua_David.pdf">
+            <ButtonIcon
+              size="sm"
+              colorScheme="gray"
+              variant="solid"
+              leftIcon={<FaFileAlt />}
+            >
+              Resume
+            </ButtonIcon>
+          </a>
         </div>
 
         <Form />
