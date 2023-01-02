@@ -17,7 +17,7 @@ export default function Layout(props: { children: any }) {
         <meta property="og:url" content="joshuadavid.dev" key="ogurl" />
         <meta
           property="og:image"
-          content={"https://www.joshuadavid.dev/Landing.png"}
+          content={"https://www.joshuadavid.dev/"}
           key="ogimage"
         />
         <meta property="og:title" content="Joshua David" key="ogtitle" />
