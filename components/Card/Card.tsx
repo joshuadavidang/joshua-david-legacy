@@ -1,14 +1,17 @@
 import Box from "../Box/Box";
+import { Card as ChakraCard, useColorModeValue } from "@chakra-ui/react";
 
 interface CardProps {
   children: any;
 }
 
 const Card = ({ children }: CardProps) => {
+  const bg = useColorModeValue("brand.white", "");
+
   return (
-    <Box className="p-6 w-72 h-96 rounded-2xl drop-shadow-md">
+    <ChakraCard borderRadius="12px" maxW="xs" minH="md" bg={bg}>
       {children}
-    </Box>
+    </ChakraCard>
   );
 };
 

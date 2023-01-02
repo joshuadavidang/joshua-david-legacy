@@ -119,15 +119,13 @@ const LandingPage = () => {
         </div>
       </Box>
 
-      <Box bg={bg} className="h-1/2 pb-24 flex justify-center items-center">
-        <span>
-          <Text className="pb-6 leading-loose text-md md:text-lg text-center">
-            Grab a copy of my resume here 👇🏻
-          </Text>
-          <a download href="/Joshua_David.pdf" className="cursor-pointer">
-            <Image src={QR} alt="coding_II" width="300" />
-          </a>
-        </span>
+      <Box bg={bg} className="h-1/2 pb-24 flex flex-col justify-center items-center">
+        <Text className="pb-6 leading-loose text-md md:text-lg text-center">
+          Grab a copy of my resume here 👇🏻
+        </Text>
+        <a download href="/Joshua_David.pdf" className="cursor-pointer">
+          <Image src={QR} alt="coding_II" width="200" />
+        </a>
       </Box>
     </>
   );

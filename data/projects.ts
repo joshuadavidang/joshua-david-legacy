@@ -15,7 +15,7 @@ export const PastProjects = [
   //   link: "https://github.com/joshuadavidang/google_ignite_bread",
   // },
   {
-    name: "bread",
+    name: "Project Bread",
     description:
       "Google Ignite, 4 weeks product sprint to develop a Flutter-based app that aims to streamline the process of food collection.",
     year: 2022,
@@ -24,7 +24,7 @@ export const PastProjects = [
     link: "https://github.com/joshuadavidang/google_ignite_bread",
   },
   {
-    name: "joshuadavid",
+    name: "Joshua David",
     description:
       "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
     year: 2022,
@@ -39,7 +39,7 @@ export const PastProjects = [
     link: "https://github.com/joshuadavidang/joshua-david",
   },
   {
-    name: "sayocode",
+    name: "Project Sayocode",
     description:
       "Web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one's choice.",
     year: 2019,
@@ -48,7 +48,7 @@ export const PastProjects = [
     link: "https://github.com/joshuadavidang/",
   },
   {
-    name: "still young",
+    name: "Project Still Young",
     description:
       "Developed a one-stop platform for mothers to learn about confinement practices. Notable features include but not limited to receipes and quizes.",
     year: 2019,

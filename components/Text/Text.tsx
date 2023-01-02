@@ -5,11 +5,12 @@ interface TextProps {
   className?: any;
   color?: any;
   onClick?: any;
+  fontSize?: any;
 }
 
-const Text = ({ children, className, color, ...props }: TextProps) => {
+const Text = ({ children, className, color, fontSize, ...props }: TextProps) => {
   return (
-    <ChakraText color={color} className={className} {...props}>
+    <ChakraText color={color} className={className} fontSize={fontSize} {...props}>
       {children}
     </ChakraText>
   );
