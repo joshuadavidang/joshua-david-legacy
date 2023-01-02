@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Coding_II from "../../public/assets/images/Coding_II.svg";
-import QR from "../../public/assets/images/QR.png";
+import QR from "../../public/assets/images/qr-code.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import { FaJsSquare, FaReact, FaNode, FaPython, FaSwift } from "react-icons/fa";

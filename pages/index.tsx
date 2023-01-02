@@ -15,7 +15,7 @@ export default function Layout(props: { children: any }) {
       <Head>
         <title>Joshua David</title>
         <meta name="description" content="joshua david's" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        
         <link
           rel="apple-touch-icon"
           sizes="180x180"
