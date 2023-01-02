@@ -13,19 +13,18 @@ export default function Layout(props: { children: any }) {
     <div>
       <Head>
         <title>Joshua David</title>
-
-        <meta property="og:url" content="joshuadavid.dev" key="ogurl" />
         <meta
-          property="og:image"
-          content={"https://www.joshuadavid.dev/"}
-          key="ogimage"
+          name="description"
+          content="Undergraduate at the School of Computing and Information Systems, Singapore Management University"
         />
-        <meta property="og:title" content="Joshua David" key="ogtitle" />
+
+        <meta property="og:title" content="Joshua David" />
+        <meta property="og:image" content="//joshuadavid.dev/Joshua.png" />
         <meta
           property="og:description"
           content="Undergraduate at the School of Computing and Information Systems, Singapore Management University"
-          key="ogdesc"
         />
+        <meta property="og:url" content="//joshuadavid.dev" />
 
         <link
           rel="apple-touch-icon"
