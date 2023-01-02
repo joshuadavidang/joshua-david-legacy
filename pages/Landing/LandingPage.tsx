@@ -42,7 +42,7 @@ const LandingPage = () => {
 
           <div className="flex flex-row flex-wrap gap-2.5 justify-center">
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -54,7 +54,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -66,7 +66,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -78,7 +78,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -90,7 +90,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -102,7 +102,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -114,7 +114,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"
@@ -126,7 +126,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
-              cursor="default"
+              cursor="text"
               hover="none"
               active="none"
               colorScheme="gray"

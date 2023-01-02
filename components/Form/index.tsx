@@ -25,7 +25,7 @@ const Form = ({ onChange }: FormProps) => {
   return (
     <div>
       <form>
-        <div className="flex flex-col gap-y-3">
+        <div className="flex flex-col gap-y-2.5">
           <label className="text-left">Name</label>
           <Input
             type="text"
