@@ -43,6 +43,8 @@ const LandingPage = () => {
           <div className="flex flex-row flex-wrap gap-2.5 justify-center">
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -53,6 +55,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -63,6 +67,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -73,6 +79,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -83,6 +91,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -93,6 +103,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -103,6 +115,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -113,6 +127,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="default"
+              hover="none"
+              active="none"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -129,7 +145,9 @@ const LandingPage = () => {
           Grab a copy of my resume here 👇🏻
         </Text>
         <a download href="/Joshua_David.pdf" className="cursor-pointer">
-          <Image src={QR} alt="coding_II" width="200" />
+          <div className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
+            <Image src={QR} alt="coding_II" width="200" />
+          </div>
         </a>
       </Box>
     </>
