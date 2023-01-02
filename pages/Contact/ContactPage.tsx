@@ -1,16 +1,13 @@
 import { FaGithub, FaLinkedin, FaFileAlt, FaLink } from "react-icons/fa";
 import Link from "next/link";
-import { Box, useColorMode, useColorModeValue, Flex } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Form from "../../components/Form";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
 
 const ContactPage = () => {
-  const bg = useColorModeValue("brand.white", "brand.midnight");
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box
       id="contact"
-      bg={bg}
       className="flex md:gap-32 justify-center items-center h-screen w-screen text-center overflow-scroll"
     >
       <div className="md:w-4/12 w-10/12">

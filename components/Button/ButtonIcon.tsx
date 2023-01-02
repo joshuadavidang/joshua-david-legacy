@@ -6,6 +6,7 @@ interface ButtonProps {
   leftIcon?: any;
   rightIcon?: any;
   children: string;
+  cursor?: any;
   variant: "solid" | "ghost" | "outline";
   size: "xs" | "sm" | "md" | "lg";
   colorScheme:
@@ -31,11 +32,13 @@ export const ButtonIcon = ({
   size,
   leftIcon,
   rightIcon,
+  cursor,
   ...props
 }: ButtonProps) => {
   return (
     <Stack direction="row" spacing={4}>
       <ChakraButton
+        cursor={cursor}
         isDisabled={isDisabled}
         leftIcon={leftIcon}
         rightIcon={rightIcon}

@@ -1,6 +1,5 @@
 import {
   CardHeader as ChakraCardHeader,
-  Heading as ChakraHeading,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Text from "../Text/Text";

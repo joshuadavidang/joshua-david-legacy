@@ -5,18 +5,15 @@ import QR from "../../public/assets/images/qr-code.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import { FaJsSquare, FaReact, FaNode, FaPython, FaSwift } from "react-icons/fa";
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
 import Text from "../../components/Text/Text";
 
 const LandingPage = () => {
-  const bg = useColorModeValue("brand.white", "brand.midnight");
-
   return (
     <>
       <Box
         id="landing"
-        bg={bg}
         className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10"
       >
         <span className="pt-12 md:pt-0 pb-12">
@@ -45,6 +42,7 @@ const LandingPage = () => {
 
           <div className="flex flex-row flex-wrap gap-2.5 justify-center">
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -54,6 +52,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -63,6 +62,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -72,6 +72,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -81,6 +82,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -90,6 +92,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -99,6 +102,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -108,6 +112,7 @@ const LandingPage = () => {
             </ButtonIcon>
 
             <ButtonIcon
+              cursor="default"
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -119,7 +124,7 @@ const LandingPage = () => {
         </div>
       </Box>
 
-      <Box bg={bg} className="h-1/2 pb-24 flex flex-col justify-center items-center">
+      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
         <Text className="pb-6 leading-loose text-md md:text-lg text-center">
           Grab a copy of my resume here 👇🏻
         </Text>
