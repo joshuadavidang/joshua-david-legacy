@@ -10,7 +10,7 @@ const Card = ({ children }: CardProps) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.3, ease: "linear" }}
+      transition={{ delay: 0.3, ease: "easeOut" }}
     >
       <div className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
         <ChakraCard borderRadius="12px" maxW="xs" minH="md">

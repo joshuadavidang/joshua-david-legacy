@@ -145,7 +145,7 @@ const LandingPage = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, ease: "linear" }}
+          transition={{ delay: 0.2, ease: "easeOut" }}
         >
           <Text className="pb-6 leading-loose text-md md:text-lg text-center">
             Grab a copy of my resume here 👇🏻
@@ -155,7 +155,7 @@ const LandingPage = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4, ease: "linear" }}
+          transition={{ delay: 0.4, ease: "easeOut" }}
         >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
             <div className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
