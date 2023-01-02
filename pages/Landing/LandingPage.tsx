@@ -141,18 +141,29 @@ const LandingPage = () => {
         </div>
       </Box>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2}}>
-        <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
+      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
           <Text className="pb-6 leading-loose text-md md:text-lg text-center">
             Grab a copy of my resume here 👇🏻
           </Text>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
             <div className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
               <Image src={QR} alt="coding_II" width="200" />
             </div>
           </a>
-        </Box>{" "}
-      </motion.div>
+        </motion.div>
+      </Box>
     </>
   );
 };
