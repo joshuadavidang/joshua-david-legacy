@@ -31,7 +31,7 @@ export const PastProjects = [
     techStack: [
       "Next.js",
       "TypeScript",
-      "TailwindCSS",
+      "Tailwind CSS",
       "Chakra UI",
       "Supabase",
     ],
