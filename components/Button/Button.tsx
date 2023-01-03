@@ -2,8 +2,13 @@ import { Button as ChakraButton } from "@chakra-ui/react";
 
 interface ButtonProps {
   onClick?: () => void;
+  isDisabled?: true | false;
+  hover?: any;
+  active?: any;
   children: string;
+  cursor?: any;
   variant: "solid" | "ghost" | "outline";
+  size: "xs" | "sm" | "md" | "lg";
   colorScheme:
     | "gray"
     | "red"
@@ -15,7 +20,8 @@ interface ButtonProps {
     | "cyan"
     | "purple"
     | "pink"
-    | "messenger";
+    | "messenger"
+    | "telegram";
 }
 
 export const Button = ({

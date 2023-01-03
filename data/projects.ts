@@ -26,14 +26,14 @@ export const PastProjects = [
   {
     name: "Joshua David",
     description:
-      "Designed and developed a responsive personal website, built on top of Next.js and TailwindCSS framework.",
+      "Designed and developed a responsive personal website, built on top of Next.js and Tailwind CSS framework.",
     year: 2022,
     techStack: [
       "Next.js",
       "TypeScript",
       "TailwindCSS",
       "Chakra UI",
-      "Firebase",
+      "Supabase",
     ],
     icon: macOS,
     link: "https://github.com/joshuadavidang/joshua-david",
@@ -43,7 +43,7 @@ export const PastProjects = [
     description:
       "Web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one's choice.",
     year: 2019,
-    techStack: ["React.js", "Ionic", "Express.js", "TailwindCss", "MongoDB"],
+    techStack: ["React.js", "Ionic", "Express.js", "Tailwind CSS", "MongoDB"],
     icon: Sayocode,
     link: "https://github.com/joshuadavidang/",
   },
