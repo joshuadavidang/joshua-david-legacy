@@ -13,6 +13,7 @@ export default function Layout(props: { children: any }) {
     <div>
       <Head>
         <title>Joshua David</title>
+        <meta name="theme-color" content="#000024" />
         <meta
           name="description"
           content="Undergraduate at the School of Computing and Information Systems, Singapore Management University"
