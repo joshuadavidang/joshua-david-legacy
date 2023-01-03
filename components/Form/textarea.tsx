@@ -1,21 +1,25 @@
+import { Textarea as ChakraTextarea } from "@chakra-ui/react";
+
 interface TextAreaProps {
   name: string;
   placeholder: string;
+  value: string;
   data: any;
   rows: number;
-  value: string;
+  size: "xs" | "sm" | "md" | "lg";
 }
 
-const TextArea = ({ placeholder, name, data, rows }: TextAreaProps) => {
+const TextArea = ({ placeholder, name, data, size, rows }: TextAreaProps) => {
   return (
-    <textarea
+    <ChakraTextarea
+      variant="gray"
       id="message"
-      rows={rows}
-      className="p-2.5 text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      size={size}
       placeholder={placeholder}
       name={name}
       onChange={data}
-      required
+      resize="none"
+      rows={rows}
     />
   );
 };
