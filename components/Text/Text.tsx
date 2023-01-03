@@ -10,7 +10,7 @@ interface TextProps {
 
 const Text = ({ children, className, color, fontSize, ...props }: TextProps) => {
   return (
-    <ChakraText color={color} className={className} fontSize={fontSize} {...props}>
+    <ChakraText color={color} className={className} fontSize={fontSize} lineHeight="8" {...props}>
       {children}
     </ChakraText>
   );

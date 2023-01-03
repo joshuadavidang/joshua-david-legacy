@@ -19,7 +19,7 @@ export default function Layout(props: { children: any }) {
         />
 
         <meta property="og:title" content="Joshua David" />
-        <meta property="og:image" content="//joshuadavid.dev/Joshua.png" />
+        <meta property="og:image" content="//joshuadavid.dev/Banner.png" />
         <meta
           property="og:description"
           content="Undergraduate at the School of Computing and Information Systems, Singapore Management University"

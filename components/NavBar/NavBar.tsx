@@ -4,7 +4,7 @@ import { NavLinkData } from "../../data/navLinks";
 import DarkMode from "../DarkMode/DarkMode";
 import Text from "../Text/Text";
 import { ButtonIcon } from "../Button/ButtonIcon";
-import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
 
 interface NavBarProps {
   closeBurger?: any;
@@ -57,7 +57,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
             size="sm"
             colorScheme="gray"
             variant="solid"
-            leftIcon={<FaFileAlt />}
+            leftIcon={<FaFile />}
           >
             Resume
           </ButtonIcon>

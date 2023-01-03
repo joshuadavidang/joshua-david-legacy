@@ -42,16 +42,25 @@ const LandingPage = () => {
             />
           </Text>
 
-          <div className="pt-3 pb-6 leading-loose text-md md:text-lg">
+          {/* <div className="pt-3 pb-6 leading-loose text-md md:text-lg">
             Undergraduate at the School of Computing and Information Systems,
             <p className="break-words">Singapore Management University</p>
-          </div>
+          </div> */}
+
+          <Text
+            fontSize={{ base: "16px", md: "18px", lg: "19px" }}
+            className="pt-5 pb-8 pl-5 pr-5"
+          >
+            Undergraduate at the School of Computing and Information Systems,{" "}
+            {/* <br /> */}
+            Singapore Management University
+          </Text>
 
           <div className="flex flex-row flex-wrap gap-2.5 justify-center">
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -62,8 +71,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -74,8 +83,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -86,8 +95,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -98,8 +107,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -110,8 +119,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -122,8 +131,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -134,8 +143,8 @@ const LandingPage = () => {
 
             <ButtonIcon
               cursor="text"
-              hover="none"
-              active="none"
+              hover={{}}
+              active={{}}
               colorScheme="gray"
               variant="solid"
               size="sm"
@@ -154,7 +163,7 @@ const LandingPage = () => {
           transition={{ delay: 0.2, ease: "easeOut" }}
         >
           <Text
-            fontSize={{ base: "18px", md: "18px", lg: "19px" }}
+            fontSize={{ base: "16px", md: "18px", lg: "19px" }}
             className="pb-5"
           >
             Grab a copy of my resume here 👇🏻
