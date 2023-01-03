@@ -3,13 +3,20 @@ import { Textarea as ChakraTextarea } from "@chakra-ui/react";
 interface TextAreaProps {
   name: string;
   placeholder: string;
-  value: string;
+  value: any;
   data: any;
   rows: number;
   size: "xs" | "sm" | "md" | "lg";
 }
 
-const TextArea = ({ placeholder, name, data, size, rows }: TextAreaProps) => {
+const TextArea = ({
+  placeholder,
+  data,
+  name,
+  size,
+  value,
+  rows,
+}: TextAreaProps) => {
   return (
     <ChakraTextarea
       variant="gray"
@@ -20,6 +27,7 @@ const TextArea = ({ placeholder, name, data, size, rows }: TextAreaProps) => {
       onChange={data}
       resize="none"
       rows={rows}
+      value={value}
     />
   );
 };

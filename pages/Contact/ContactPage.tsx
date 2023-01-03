@@ -14,7 +14,11 @@ const ContactPage = () => {
       className="flex md:gap-32 justify-center items-center h-screen w-screen text-center overflow-scroll"
     >
       <div className="md:w-4/12 w-10/12">
-        <Text fontSize={{ base: "28px", md: "30px", lg: "33px" }} color={color} className="mb-2">
+        <Text
+          fontSize={{ base: "28px", md: "30px", lg: "33px" }}
+          color={color}
+          className="mb-2"
+        >
           Stay Connected
         </Text>
 

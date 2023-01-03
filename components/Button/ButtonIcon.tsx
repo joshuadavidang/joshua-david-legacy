@@ -1,14 +1,16 @@
 import { Button as ChakraButton, Stack } from "@chakra-ui/react";
 
 interface ButtonIconProps {
-  onClick?: () => void;
+  onClick?: (event: any) => void;
   isDisabled?: true | false;
   leftIcon?: any;
   rightIcon?: any;
   hover?: any;
   active?: any;
-  children: string;
   cursor?: any;
+  isLoading?: true | false;
+  loadingText?: string;
+  children: string;
   variant: "solid" | "ghost" | "outline";
   size: "xs" | "sm" | "md" | "lg";
   colorScheme:
@@ -37,6 +39,8 @@ export const ButtonIcon = ({
   rightIcon,
   cursor,
   active,
+  isLoading,
+  loadingText,
   ...props
 }: ButtonIconProps) => {
   return (
@@ -51,6 +55,8 @@ export const ButtonIcon = ({
         colorScheme={colorScheme}
         variant={variant}
         size={size}
+        isLoading={isLoading}
+        loadingText={loadingText}
         {...props}
       >
         {children}

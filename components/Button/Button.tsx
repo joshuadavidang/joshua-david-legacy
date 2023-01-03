@@ -5,8 +5,9 @@ interface ButtonProps {
   isDisabled?: true | false;
   hover?: any;
   active?: any;
-  children: string;
   cursor?: any;
+  isLoading?: true | false;
+  children: string;
   variant: "solid" | "ghost" | "outline";
   size: "xs" | "sm" | "md" | "lg";
   colorScheme:
@@ -28,10 +29,16 @@ export const Button = ({
   colorScheme,
   variant,
   children,
+  isLoading,
   ...props
 }: ButtonProps) => {
   return (
-    <ChakraButton variant={variant} colorScheme={colorScheme} {...props}>
+    <ChakraButton
+      variant={variant}
+      colorScheme={colorScheme}
+      isLoading={isLoading}
+      {...props}
+    >
       {children}
     </ChakraButton>
   );

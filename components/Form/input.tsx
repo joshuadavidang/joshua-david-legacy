@@ -4,12 +4,12 @@ interface InputProps {
   name: string;
   placeholder: string;
   type: string;
-  value: string;
+  value: any;
   data: any;
   size: "xs" | "sm" | "md" | "lg";
 }
 
-const Input = ({ type, placeholder, data, name, size }: InputProps) => {
+const Input = ({ type, placeholder, data, name, size, value }: InputProps) => {
   return (
     <ChakraInput
       variant="gray"
@@ -18,6 +18,7 @@ const Input = ({ type, placeholder, data, name, size }: InputProps) => {
       placeholder={placeholder}
       name={name}
       onChange={data}
+      value={value}
     />
   );
 };
