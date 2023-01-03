@@ -3,10 +3,17 @@ import { ButtonIcon } from "../Button/ButtonIcon";
 import Input from "./input";
 import TextArea from "./textarea";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { FormControl, FormLabel, Box } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormLabel,
+  Box,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 const Form = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  const color = useColorModeValue("blue", "gray");
 
   const sendForm = () => {
     if (form.name === "" || form.email === "" || form.message === "") {
@@ -65,10 +72,10 @@ const Form = () => {
         <ButtonIcon
           size="md"
           variant="solid"
-          colorScheme="gray"
+          colorScheme={color}
           onClick={sendForm}
           rightIcon={<AiOutlineArrowRight />}
-          isDisabled={false}
+          isDisabled={true}
         >
           Send
         </ButtonIcon>

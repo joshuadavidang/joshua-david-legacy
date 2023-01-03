@@ -5,12 +5,14 @@ import QR from "../../public/assets/images/qr-code.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import { FaJsSquare, FaReact, FaNode, FaPython, FaSwift } from "react-icons/fa";
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
 import Text from "../../components/Text/Text";
 import { motion } from "framer-motion";
 
 const LandingPage = () => {
+  const color = useColorModeValue("brand.purple", "brand.purple");
+
   return (
     <>
       <Box
@@ -22,19 +24,23 @@ const LandingPage = () => {
         </span>
 
         <div className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
-          <TypeAnimation
-            sequence={[
-              "Joshua David",
-              1000,
-              "Aspiring Software Engineer",
-              "Student.",
-              3000,
-            ]}
-            cursor={true}
-            repeat={1}
-            speed={30}
-            className="text-blue1 dark:text-blue1 md:text-4xl font-sen tracking-tight text-2xl"
-          />
+          <Text
+            fontSize={{ base: "28px", md: "33px", lg: "35px" }}
+            color={color}
+          >
+            <TypeAnimation
+              sequence={[
+                "Joshua David",
+                1000,
+                "Aspiring Software Engineer",
+                "Student.",
+                3000,
+              ]}
+              cursor={true}
+              repeat={1}
+              speed={30}
+            />
+          </Text>
 
           <div className="pt-3 pb-6 leading-loose text-md md:text-lg">
             Undergraduate at the School of Computing and Information Systems,
@@ -147,7 +153,10 @@ const LandingPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, ease: "easeOut" }}
         >
-          <Text className="pb-6 leading-loose text-md md:text-lg text-center">
+          <Text
+            fontSize={{ base: "18px", md: "18px", lg: "19px" }}
+            className="pb-5"
+          >
             Grab a copy of my resume here 👇🏻
           </Text>
         </motion.div>

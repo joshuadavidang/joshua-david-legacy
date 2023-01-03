@@ -12,7 +12,7 @@ interface NavBarProps {
 
 const NavBar = ({ closeBurger }: NavBarProps) => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("brand.white", "brand.midnight");
+  const bg = useColorModeValue("brand.offWhite", "brand.midnight");
   const color = useColorModeValue("brand.midnight", "brand.white");
 
   return (
@@ -76,7 +76,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
               className={`p-2.5 rounded cursor-pointer ${
                 colorMode == "dark"
                   ? "hover:bg-gray hover:text-white "
-                  : "hover:bg-lightGray hover:text-black"
+                  : "hover:bg-white hover:text-black"
               }`}
               onClick={closeBurger}
             >

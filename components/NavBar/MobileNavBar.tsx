@@ -15,7 +15,7 @@ const MobileNavBar = ({
   hamburger,
   closeBurger,
 }: MobileNavBarProps) => {
-  const bg = useColorModeValue("brand.white", "brand.midnight");
+  const bg = useColorModeValue("brand.offWhite", "brand.midnight");
 
   return (
     <>

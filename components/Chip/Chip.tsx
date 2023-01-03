@@ -9,7 +9,7 @@ const Chip = ({ chipLabel }: ChipProps) => {
   const color = useColorModeValue("brand.gray", "brand.gray");
 
   return (
-    <Text color={color} className="mt-3 flex flex-row gap-1.5 flex-wrap">
+    <Text color={color} className="mt-1 flex flex-row gap-1.5 flex-wrap">
       {chipLabel.map((tech, index) => (
         <div className=" text-xs font-sen" key={index}>
           {tech}

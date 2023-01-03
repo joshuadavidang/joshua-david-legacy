@@ -9,7 +9,7 @@ const DarkMode = () => {
       className={`p-2 rounded cursor-pointer ${
         colorMode === "dark"
           ? "hover:bg-gray hover:text-white"
-          : "hover:bg-lightGray hover:text-black"
+          : "hover:bg-white hover:text-black"
       }`}
     >
       {colorMode === "light" ? (

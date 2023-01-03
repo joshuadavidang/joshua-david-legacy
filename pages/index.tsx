@@ -7,7 +7,7 @@ import useToggle from "../hooks/useToggle";
 export default function Layout(props: { children: any }) {
   const { children } = props;
   const [hamburger, closeBurger, setHamburger] = useToggle(false);
-  const bg = useColorModeValue("brand.white", "brand.midnight");
+  const bg = useColorModeValue("brand.offWhite", "brand.midnight");
 
   return (
     <div>
@@ -43,7 +43,7 @@ export default function Layout(props: { children: any }) {
           sizes="16x16"
           href="/favicon_io/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/favicon_io/site.webmanifest" />
       </Head>
 
       <Box className="relative" bg={bg}>
