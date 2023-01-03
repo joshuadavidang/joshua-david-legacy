@@ -44,15 +44,20 @@ const Form = () => {
     event.preventDefault();
 
     if (!validateDetails(name, email, message)) {
+      const toast_id = email;
+
       setTimeout(() => {
-        toast({
-          position: "top",
-          title: "Error",
-          description: "Please fill in all the fields.",
-          status: "error",
-          duration: 1000,
-          isClosable: false,
-        });
+        if (!toast.isActive(toast_id)) {
+          toast({
+            id: email,
+            position: "top",
+            title: "Error",
+            description: "Please fill in all the fields.",
+            status: "error",
+            duration: 1000,
+            isClosable: false,
+          });
+        }
       }, 10);
     } else {
       setLoadState(true);
