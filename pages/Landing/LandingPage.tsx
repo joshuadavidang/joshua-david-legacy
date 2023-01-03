@@ -42,17 +42,12 @@ const LandingPage = () => {
             />
           </Text>
 
-          {/* <div className="pt-3 pb-6 leading-loose text-md md:text-lg">
-            Undergraduate at the School of Computing and Information Systems,
-            <p className="break-words">Singapore Management University</p>
-          </div> */}
-
           <Text
             fontSize={{ base: "16px", md: "18px", lg: "19px" }}
             className="pt-5 pb-8 pl-5 pr-5"
+            lineHeight={7}
           >
             Undergraduate at the School of Computing and Information Systems,{" "}
-            {/* <br /> */}
             Singapore Management University
           </Text>
 

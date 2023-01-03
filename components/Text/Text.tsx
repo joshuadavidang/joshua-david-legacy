@@ -6,11 +6,25 @@ interface TextProps {
   color?: any;
   onClick?: any;
   fontSize?: any;
+  lineHeight?: number;
 }
 
-const Text = ({ children, className, color, fontSize, ...props }: TextProps) => {
+const Text = ({
+  children,
+  className,
+  color,
+  fontSize,
+  lineHeight,
+  ...props
+}: TextProps) => {
   return (
-    <ChakraText color={color} className={className} fontSize={fontSize} lineHeight="8" {...props}>
+    <ChakraText
+      color={color}
+      className={className}
+      fontSize={fontSize}
+      lineHeight={lineHeight}
+      {...props}
+    >
       {children}
     </ChakraText>
   );
