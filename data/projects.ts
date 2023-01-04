@@ -54,6 +54,6 @@ export const PastProjects = [
     year: 2019,
     techStack: ["Ionic", "TypeScript"],
     icon: StillYoung,
-    link: "https://github.com/joshuadavidang/",
+    link: "https://www.straitstimes.com/singapore/app-with-updated-info-on-confinement-period-for-young-mums-launched",
   },
 ];

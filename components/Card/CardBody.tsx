@@ -6,13 +6,14 @@ import Text from "../Text/Text";
 
 interface CardBodyProps {
   children: any;
+  paddingTop?: any;
 }
 
-const CardBody = ({ children }: CardBodyProps) => {
+const CardBody = ({ children, paddingTop }: CardBodyProps) => {
   const color = useColorModeValue("brand.midnight", "brand.white");
 
   return (
-    <ChakraCardBody paddingTop="0">
+    <ChakraCardBody paddingTop={paddingTop}>
       <Text color={color}>{children}</Text>
     </ChakraCardBody>
   );
