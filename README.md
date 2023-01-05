@@ -16,12 +16,12 @@
 git clone https://github.com/joshuadavidang/joshua-david.git
 ```
 
-### Install Dependencies
+### Install dependencies
 ```
 npm install
 ```
 
-### Get a free API Key
+### Get a free API key
 
 1. Create an account and get a free API key at [Supabase](https://supabase.com)
 2. Create a file `.env.local` at the root folder
@@ -31,7 +31,7 @@ npm install
    NEXT_PUBLIC_SUPABASE_ANON_KEY = "REPLACE KEY HERE"
    ```
 
-### Run Locally
+### Run locally
 ```
 npm run dev
 ```
