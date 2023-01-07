@@ -166,7 +166,7 @@ const LandingPage = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4, ease: "easeOut" }}
+          transition={{ delay: 0.25, ease: "easeOut" }}
         >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
             <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">

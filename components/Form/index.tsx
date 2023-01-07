@@ -74,7 +74,7 @@ const Form = () => {
           duration: 3000,
           isClosable: false,
         });
-      }, 1000);
+      }, 1200);
     }
   };
 
