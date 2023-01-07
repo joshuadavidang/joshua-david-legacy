@@ -15,18 +15,16 @@ const LandingPage = () => {
 
   return (
     <>
-      <Box
-        id="landing"
-        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10"
-      >
-        <span className="pt-12 md:pt-0 pb-12">
+      <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
+        <Box className="pt-12 md:pt-0 pb-12">
           <Image src={Coding_II} alt="coding_II" width="300" />
-        </span>
+        </Box>
 
-        <div className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
-          <Text
+        <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
+          <Box
             fontSize={{ base: "28px", md: "33px", lg: "35px" }}
             color={color}
+            className="font-sen"
           >
             <TypeAnimation
               sequence={[
@@ -40,7 +38,7 @@ const LandingPage = () => {
               repeat={1}
               speed={30}
             />
-          </Text>
+          </Box>
 
           <Text
             fontSize={{ base: "16px", md: "18px", lg: "19px" }}
@@ -51,7 +49,7 @@ const LandingPage = () => {
             Singapore Management University
           </Text>
 
-          <div className="flex flex-row flex-wrap gap-2.5 justify-center">
+          <Box className="flex flex-row flex-wrap gap-2.5 justify-center">
             <ButtonIcon
               cursor="text"
               hover={{}}
@@ -147,8 +145,8 @@ const LandingPage = () => {
             >
               SQL
             </ButtonIcon>
-          </div>
-        </div>
+          </Box>
+        </Box>
       </Box>
 
       <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
@@ -171,9 +169,9 @@ const LandingPage = () => {
           transition={{ delay: 0.4, ease: "easeOut" }}
         >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
-            <div className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
+            <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
               <Image src={QR} alt="coding_II" width="200" />
-            </div>
+            </Box>
           </a>
         </motion.div>
       </Box>

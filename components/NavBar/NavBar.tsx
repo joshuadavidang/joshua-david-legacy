@@ -70,7 +70,7 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
         </span>
 
         {NavLinkData.map(({ id, link, name }) => (
-          <Link href={link} key={id} legacyBehavior>
+          <Link href={link} key={id}>
             <Text
               color={color}
               className={`p-2.5 rounded cursor-pointer ${
