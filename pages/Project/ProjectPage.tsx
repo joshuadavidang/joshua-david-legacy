@@ -22,44 +22,36 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 
 const ProjectPage = () => {
   const displayIcon = (tech: any) => {
-    if (tech == "Flutter") {
-      return <SiFlutter />;
-    }
+    switch (tech) {
+      case "Flutter":
+        return <SiFlutter />;
 
-    if (tech == "Next.js") {
-      return <TbBrandNextjs />;
-    }
+      case "Next.js":
+        return <TbBrandNextjs />;
 
-    if (tech == "TypeScript") {
-      return <SiTypescript />;
-    }
+      case "TypeScript":
+        return <SiTypescript />;
 
-    if (tech == "Tailwind CSS") {
-      return <SiTailwindcss />;
-    }
+      case "Tailwind CSS":
+        return <SiTailwindcss />;
 
-    if (tech == "Chakra UI") {
-      return <SiChakraui />;
-    }
+      case "Chakra UI":
+        return <SiChakraui />;
 
-    if (tech == "Supabase") {
-      return <SiSupabase />;
-    }
+      case "Supabase":
+        return <SiSupabase />;
 
-    if (tech == "React.js") {
-      return <FaReact />;
-    }
+      case "React.js":
+        return <FaReact />;
 
-    if (tech == "MongoDB") {
-      return <SiMongodb />;
-    }
+      case "MongoDB":
+        return <SiMongodb />;
 
-    if (tech == "Ionic") {
-      return <SiIonic />;
-    }
+      case "Ionic":
+        return <SiIonic />;
 
-    if (tech == "Express.js") {
-      return <FaNodeJs />;
+      case "Express.js":
+        return <FaNodeJs />;
     }
   };
 
