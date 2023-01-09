@@ -7,6 +7,7 @@ interface TextProps {
   onClick?: any;
   fontSize?: any;
   lineHeight?: number;
+  mb?: any;
 }
 
 const Text = ({
@@ -15,6 +16,7 @@ const Text = ({
   color,
   fontSize,
   lineHeight,
+  mb,
   ...props
 }: TextProps) => {
   return (
@@ -23,6 +25,7 @@ const Text = ({
       className={className}
       fontSize={fontSize}
       lineHeight={lineHeight}
+      mb={mb}
       {...props}
     >
       {children}

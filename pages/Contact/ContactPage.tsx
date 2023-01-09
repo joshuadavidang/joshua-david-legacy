@@ -17,7 +17,7 @@ const ContactPage = () => {
         <Text
           fontSize={{ base: "28px", md: "30px", lg: "33px" }}
           color={color}
-          className="mb-2"
+          mb = {{ base: 1, md: 2}}
         >
           Stay Connected
         </Text>
