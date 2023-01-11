@@ -21,26 +21,23 @@ const Form = () => {
   const color = useColorModeValue("blue", "gray");
 
   const postDB = async (uuid: any, name: any, email: any, message: any) => {
-    await supabase
-      .from("form")
-      .insert({
-        uuid: uuid,
-        name: name,
-        email: email,
-        message: message,
-      })
-      .then((res) => {
-        const { error } = res;
+    let result = await supabase.from("form").insert({
+      uuid: uuid,
+      name: name,
+      email: email,
+      message: message,
+    });
 
-        if (error == null) {
-          console.log("sent to database");
-        } else {
-          console.log(error.message);
-        }
-      });
+    const { error } = result;
+    if (error == null) {
+      console.log("sent to database");
+      return true;
+    }
+
+    return false;
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
 
     if (!validateDetails(name, email, message)) {
@@ -61,20 +58,21 @@ const Form = () => {
       }, 10);
     } else {
       setLoadState(true);
-      postDB(uuidv4(), name, email, message);
-      setTimeout(() => {
-        setLoadState(false);
-        clearState();
-
-        toast({
-          position: "top",
-          title: "Success",
-          description: "Thanks for reaching out!",
-          status: "success",
-          duration: 3000,
-          isClosable: false,
-        });
-      }, 1200);
+      let res = await postDB(uuidv4(), name, email, message);
+      if (res === true) {
+        setTimeout(() => {
+          setLoadState(false);
+          clearState();
+          toast({
+            position: "top",
+            title: "Success",
+            description: "Thanks for reaching out!",
+            status: "success",
+            duration: 3000,
+            isClosable: false,
+          });
+        }, 1300);
+      }
     }
   };
 
