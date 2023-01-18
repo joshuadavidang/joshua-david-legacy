@@ -4,7 +4,14 @@ import Coding_II from "../../public/assets/images/Coding_II.svg";
 import QR from "../../public/assets/images/qr.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
-import { FaJsSquare, FaReact, FaNode, FaPython, FaSwift } from "react-icons/fa";
+import {
+  FaJsSquare,
+  FaReact,
+  FaNode,
+  FaPython,
+  FaVuejs,
+  FaPhp,
+} from "react-icons/fa";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
 import Text from "../../components/Text/Text";
@@ -117,6 +124,18 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
+              leftIcon={<FaVuejs />}
+            >
+              Vue
+            </ButtonIcon>
+
+            <ButtonIcon
+              cursor="text"
+              hover={{}}
+              active={{}}
+              colorScheme="gray"
+              variant="solid"
+              size="sm"
               leftIcon={<FaNode />}
             >
               Node
@@ -129,9 +148,9 @@ const LandingPage = () => {
               colorScheme="gray"
               variant="solid"
               size="sm"
-              leftIcon={<FaSwift />}
+              leftIcon={<FaPhp />}
             >
-              Swift
+              PHP
             </ButtonIcon>
 
             <ButtonIcon
