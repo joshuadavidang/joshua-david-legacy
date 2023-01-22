@@ -5,11 +5,7 @@ interface CardFooterProps {
 }
 
 const CardFooter = ({ children }: CardFooterProps) => {
-  return (
-    <ChakraCardFooter>
-      {children}
-    </ChakraCardFooter>
-  );
+  return <ChakraCardFooter>{children}</ChakraCardFooter>;
 };
 
 export default CardFooter;
