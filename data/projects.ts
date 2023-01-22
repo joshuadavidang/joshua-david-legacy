@@ -28,12 +28,7 @@ export const PastProjects = [
     description:
       "Designed and developed a responsive personal website, built on top of Next.js and Tailwind CSS framework.",
     year: 2022,
-    techStack: [
-      "Next.js",
-      "Tailwind CSS",
-      "Chakra UI",
-      "Supabase",
-    ],
+    techStack: ["Next.js", "Tailwind CSS", "Chakra UI", "Supabase"],
     icon: macOS,
     link: "https://github.com/joshuadavidang/joshua-david",
   },

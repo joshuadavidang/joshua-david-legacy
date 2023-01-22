@@ -21,12 +21,7 @@ interface IconProps {
     | "telegram";
 }
 
-export const Icon = ({
-  colorScheme,
-  label,
-  icon,
-  ...props
-}: IconProps) => {
+export const Icon = ({ colorScheme, label, icon, ...props }: IconProps) => {
   return (
     <IconButton
       colorScheme={colorScheme}
