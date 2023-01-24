@@ -23,35 +23,35 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 const ProjectPage = () => {
   const displayIcon = (tech: any) => {
     switch (tech) {
-      case "Flutter":
-        return <SiFlutter />;
+    case "Flutter":
+      return <SiFlutter />;
 
-      case "Next.js":
-        return <TbBrandNextjs />;
+    case "Next.js":
+      return <TbBrandNextjs />;
 
-      case "TypeScript":
-        return <SiTypescript />;
+    case "TypeScript":
+      return <SiTypescript />;
 
-      case "Tailwind CSS":
-        return <SiTailwindcss />;
+    case "Tailwind CSS":
+      return <SiTailwindcss />;
 
-      case "Chakra UI":
-        return <SiChakraui />;
+    case "Chakra UI":
+      return <SiChakraui />;
 
-      case "Supabase":
-        return <SiSupabase />;
+    case "Supabase":
+      return <SiSupabase />;
 
-      case "React.js":
-        return <FaReact />;
+    case "React.js":
+      return <FaReact />;
 
-      case "MongoDB":
-        return <SiMongodb />;
+    case "MongoDB":
+      return <SiMongodb />;
 
-      case "Ionic":
-        return <SiIonic />;
+    case "Ionic":
+      return <SiIonic />;
 
-      case "Express.js":
-        return <FaNodeJs />;
+    case "Express.js":
+      return <FaNodeJs />;
     }
   };
 

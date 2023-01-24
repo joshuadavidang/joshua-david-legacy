@@ -1,7 +1,6 @@
 import {
   CardBody as ChakraCardBody,
   useColorModeValue,
-  Box,
 } from "@chakra-ui/react";
 import Text from "../Text/Text";
 

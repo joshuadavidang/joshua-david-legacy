@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended"
+    ],
+    "rules": {
+        "indent": ["warn", 2],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-unused-vars": "off"
+    }
+}
