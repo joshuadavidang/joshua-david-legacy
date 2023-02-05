@@ -110,7 +110,7 @@ const Form = () => {
           type="text"
           name="name"
           size="md"
-          placeholder="Joshua David"
+          placeholder="Name"
           data={handleChange}
           value={name}
         />
@@ -122,7 +122,7 @@ const Form = () => {
           type="email"
           name="email"
           size="md"
-          placeholder="joshuadavidang@outlook.sg"
+          placeholder="Email"
           data={handleChange}
           value={email}
         />
