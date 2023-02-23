@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import Coding_II from "../../public/assets/images/Coding_II.svg";
+import Coding_III from "../../public/assets/images/Coding_III.svg";
 import QR from "../../public/assets/images/qr.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
@@ -16,6 +16,7 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import { ButtonIcon } from "../../components/Button/ButtonIcon";
 import Text from "../../components/Text/Text";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const LandingPage = () => {
   const color = useColorModeValue("brand.purple", "brand.purple");
@@ -23,9 +24,16 @@ const LandingPage = () => {
   return (
     <>
       <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
-        <Box className="pt-12 md:pt-0 pb-12">
-          <Image src={Coding_II} alt="coding_II" width="300" />
-        </Box>
+        
+        <Link
+          href="https://github.com/joshuadavidang"
+          target="_blank"
+          className="md:block hidden"
+        >
+          <Box className="pt-12 md:pt-0 pb-12 cursor-pointer">
+            <Image src={Coding_III} alt="coding_II" width="350" />
+          </Box>
+        </Link>
 
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
           <Box
