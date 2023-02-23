@@ -24,7 +24,6 @@ const LandingPage = () => {
   return (
     <>
       <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
-        
         <Link
           href="https://github.com/joshuadavidang"
           target="_blank"
