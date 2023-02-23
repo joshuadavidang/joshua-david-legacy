@@ -27,7 +27,6 @@ const LandingPage = () => {
         <Link
           href="https://github.com/joshuadavidang"
           target="_blank"
-          className="md:block hidden"
         >
           <Box className="pt-12 md:pt-0 pb-12 cursor-pointer">
             <Image src={Coding_III} alt="coding_II" width="350" />
