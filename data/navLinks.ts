@@ -1,17 +1,17 @@
 export const NavLinkData = [
   {
     id: 1,
-    link: "/Landing/LandingPage",
+    link: "/home",
     name: "about",
   },
   {
     id: 2,
-    link: "/Project/ProjectPage",
+    link: "/project",
     name: "projects",
   },
   {
     id: 3,
-    link: "/Contact/ContactPage",
+    link: "/contact",
     name: "contact",
   },
 ];

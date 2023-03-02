@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
 import Link from "next/link";
 import { Box, useColorModeValue } from "@chakra-ui/react";
-import Form from "../../components/Form";
-import { ButtonIcon } from "../../components/Button/ButtonIcon";
-import Text from "../../components/Text/Text";
+import Form from "../components/Form";
+import { ButtonIcon } from "../components/Button/ButtonIcon";
+import Text from "../components/Text/Text";
 
 const ContactPage = () => {
   const color = useColorModeValue("brand.purple", "brand.purple");
