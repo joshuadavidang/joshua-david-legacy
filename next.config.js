@@ -11,7 +11,7 @@ module.exports = {
     return [
       {
         source: "/",
-        destination: "/Landing/LandingPage",
+        destination: "/home",
         permanent: true,
       },
     ];

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import Coding_III from "../../public/assets/images/Coding_III.svg";
-import QR from "../../public/assets/images/qr.png";
+import Coding_III from "../public/assets/images/Coding_III.svg";
+import QR from "../public/assets/images/qr.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
 import {
@@ -13,8 +13,8 @@ import {
   FaPhp,
 } from "react-icons/fa";
 import { Box, useColorModeValue } from "@chakra-ui/react";
-import { ButtonIcon } from "../../components/Button/ButtonIcon";
-import Text from "../../components/Text/Text";
+import { ButtonIcon } from "../components/Button/ButtonIcon";
+import Text from "../components/Text/Text";
 import { motion } from "framer-motion";
 import Link from "next/link";
 

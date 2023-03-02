@@ -27,7 +27,7 @@ const MobileNavBar = ({
           className="md:text-3xl text-lg font-sen tracking-tight"
           onClick={closeBurger}
         >
-          <Link href="/Landing/LandingPage">joshuadavid</Link>
+          <Link href="/home">joshuadavid</Link>
         </div>
 
         <div className="flex flex-row items-center justify-end p-6 gap-4">
