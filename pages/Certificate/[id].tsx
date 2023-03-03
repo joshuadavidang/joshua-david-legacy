@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { CertificatesData } from "../../data/certs";
 
-const MyCertificate = () => {
+const IndividualCert = () => {
   const router = useRouter();
   let { id } = router.query;
   const new_id = parseInt(id as string);
@@ -22,4 +22,4 @@ const MyCertificate = () => {
   );
 };
 
-export default MyCertificate;
+export default IndividualCert;

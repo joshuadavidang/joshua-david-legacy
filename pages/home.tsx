@@ -18,7 +18,7 @@ import Text from "../components/Text/Text";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const LandingPage = () => {
+const Home = () => {
   const color = useColorModeValue("brand.purple", "brand.purple");
 
   return (
@@ -204,4 +204,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Home;

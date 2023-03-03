@@ -5,7 +5,7 @@ import Form from "../components/Form";
 import { ButtonIcon } from "../components/Button/ButtonIcon";
 import Text from "../components/Text/Text";
 
-const ContactPage = () => {
+const Contact = () => {
   const color = useColorModeValue("brand.purple", "brand.purple");
 
   return (
@@ -63,4 +63,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;
