@@ -19,7 +19,7 @@ const Contact = () => {
           color={color}
           mb={{ base: 1, md: 2 }}
         >
-          {"Let's"} Connect
+          Stay Connected
         </Text>
 
         <div className="flex flex-row justify-center gap-2.5 pt-3 pb-4">
