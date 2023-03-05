@@ -9,7 +9,7 @@ const All = () => {
       <div className="w-11/12 md:w-1/2">
         {CertificatesData.map(({ id, name, image }) => (
           <div key={name} className="pt-12">
-            <Link href={`/certificate/${id}`}>
+            <Link href={`/certs/${id}`}>
               <Image src={image} alt="list_of_certs" />
             </Link>
           </div>
