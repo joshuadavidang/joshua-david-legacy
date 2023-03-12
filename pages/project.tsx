@@ -70,10 +70,11 @@ const ProjectPage = () => {
                 borderRadius="12px"
                 maxW="xs"
                 minH="md"
+                align="center"
                 className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
               >
-                <div className="flex justify-left pl-5 pt-5 ">
+                <div className="pt-5 ">
                   <Image src={icon} alt="image" width="150" />
                 </div>
 

@@ -44,7 +44,7 @@ export const PastProjects = [
   {
     name: "Project Still Young",
     description:
-      "Developed a one-stop platform for mothers to learn about confinement practices. Notable features include but not limited to receipes and quizes.",
+      "Developed a one-stop platform for mothers to learn about confinement practices, features include receipes and quizes.",
     year: 2019,
     techStack: ["Ionic", "TypeScript"],
     icon: StillYoung,

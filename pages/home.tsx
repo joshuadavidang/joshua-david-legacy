@@ -49,7 +49,7 @@ const Home = () => {
               ]}
               cursor={true}
               repeat={1}
-              speed={30}
+              speed={25}
             />
           </Box>
 
