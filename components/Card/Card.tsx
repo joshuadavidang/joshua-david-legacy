@@ -6,9 +6,10 @@ interface CardProps {
   maxW: any;
   minH: any;
   className?: any;
+  align: string
 }
 
-const Card = ({ children, borderRadius, maxW, minH, className }: CardProps) => {
+const Card = ({ children, borderRadius, maxW, minH, className, align }: CardProps) => {
   const bg = useColorModeValue("brand.white", "");
 
   return (
@@ -18,6 +19,7 @@ const Card = ({ children, borderRadius, maxW, minH, className }: CardProps) => {
       borderRadius={borderRadius}
       maxW={maxW}
       minH={minH}
+      align={align}
     >
       {children}
     </ChakraCard>
