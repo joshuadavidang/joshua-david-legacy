@@ -8,6 +8,7 @@ interface TextProps {
   fontSize?: any;
   lineHeight?: number;
   mb?: any;
+  align?: any;
 }
 
 const Text = ({
@@ -17,6 +18,7 @@ const Text = ({
   fontSize,
   lineHeight,
   mb,
+  align,
   ...props
 }: TextProps) => {
   return (
@@ -26,6 +28,7 @@ const Text = ({
       fontSize={fontSize}
       lineHeight={lineHeight}
       mb={mb}
+      align={align}
       {...props}
     >
       {children}

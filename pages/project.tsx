@@ -74,9 +74,9 @@ const ProjectPage = () => {
                 className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
               >
-                <div className="pt-5 ">
+                <span className="pt-5 ">
                   <Image src={icon} alt="image" width="150" />
-                </div>
+                </span>
 
                 <CardHeader fontSize="2xl">{name}</CardHeader>
 
