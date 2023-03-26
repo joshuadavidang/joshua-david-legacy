@@ -29,50 +29,45 @@ const Form = () => {
     });
 
     const { error } = result;
-    if (error == null) {
-      console.log("sent to database");
+    if (error === null) {
+      console.log("Sent to database");
       return true;
     }
-
     return false;
   };
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-
     if (!validateDetails(name, email, message)) {
       const toast_id = email;
-
-      setTimeout(() => {
-        if (!toast.isActive(toast_id)) {
-          toast({
-            id: email,
-            position: "top",
-            title: "Error",
-            description: "Please fill in all the fields.",
-            status: "error",
-            duration: 1000,
-            isClosable: false,
-          });
-        }
-      }, 10);
+      if (!toast.isActive(toast_id)) {
+        toast({
+          id: email,
+          position: "top",
+          title: "Error",
+          description: "Please fill in all the fields.",
+          status: "error",
+          duration: 1000,
+          isClosable: false,
+        });
+      }
     } else {
       setLoadState(true);
-      let res = await postDB(uuidv4(), name, email, message);
-      if (res === true) {
+      await postDB(uuidv4(), name, email, message).then(() => {
         setTimeout(() => {
           setLoadState(false);
-          clearState();
-          toast({
-            position: "top",
-            title: "Success",
-            description: "Thanks for reaching out!",
-            status: "success",
-            duration: 3000,
-            isClosable: false,
+          clearState().then(() => {
+            toast({
+              position: "top",
+              title: "Success",
+              description: "Thanks for reaching out!",
+              status: "success",
+              duration: 3000,
+              isClosable: false,
+            });
           });
-        }, 1300);
-      }
+        }, 1000);
+      });
     }
   };
 
@@ -80,11 +75,10 @@ const Form = () => {
     if (name === "" || email === "" || message === "") {
       return false;
     }
-
     return /\S+@\S+\.\S+/.test(email);
   };
 
-  const clearState = () => {
+  const clearState = async () => {
     setForm({
       ...form,
       name: "",

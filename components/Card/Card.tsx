@@ -10,7 +10,7 @@ interface CardProps {
 }
 
 const Card = ({ children, borderRadius, maxW, minH, className, align }: CardProps) => {
-  const bg = useColorModeValue("brand.white", "");
+  const bg = useColorModeValue("brand.offwhite", "brand.midnight");
 
   return (
     <ChakraCard
