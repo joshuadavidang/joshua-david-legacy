@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import Coding_III from "../public/assets/images/Coding_III.svg";
+import LandingHero from "../public/assets/images/LandingBanner.svg";
 import QR from "../public/assets/images/qr.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiMysql } from "react-icons/si";
@@ -12,22 +11,20 @@ import {
   FaVuejs,
   FaPhp,
 } from "react-icons/fa";
-import { Box } from "@chakra-ui/react";
 import { ButtonIcon } from "../components/Button/ButtonIcon";
 import Text from "../components/Text/Text";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import { Box } from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <>
       <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
-        <Link
-          href="https://github.com/joshuadavidang"
-          target="_blank"
-        >
+        <Link href="https://github.com/joshuadavidang" target="_blank">
           <Box className="pt-12 md:pt-0 pb-12 cursor-pointer">
-            <Image src={Coding_III} alt="coding_II" width="350" />
+            <Image src={LandingHero} alt="landing-hero" width="350" />
           </Box>
         </Link>
 
@@ -39,14 +36,15 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "Joshua David",
+                "Hey! I'm Joshua David",
                 1000,
-                "Aspiring Software Engineer",
+                "I'm an aspiring Software Engineer",
+                1000,
                 "Student.",
                 3000,
               ]}
               cursor={true}
-              repeat={1}
+              repeat={Infinity}
               speed={25}
             />
           </Box>

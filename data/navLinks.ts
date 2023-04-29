@@ -2,16 +2,16 @@ export const NavLinkData = [
   {
     id: 1,
     link: "/home",
-    name: "About",
+    name: "about",
   },
   {
     id: 2,
     link: "/project",
-    name: "Projects",
+    name: "projects",
   },
   {
     id: 3,
     link: "/contact",
-    name: "Contact",
+    name: "contact",
   },
 ];
