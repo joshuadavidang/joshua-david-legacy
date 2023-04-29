@@ -1,12 +1,11 @@
 import { FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
 import Link from "next/link";
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Form from "../components/Form";
 import { ButtonIcon } from "../components/Button/ButtonIcon";
 import Text from "../components/Text/Text";
 
 const Contact = () => {
-  const color = useColorModeValue("brand.purple", "brand.purple");
 
   return (
     <Box
@@ -16,7 +15,7 @@ const Contact = () => {
       <div className="md:w-4/12 w-10/12">
         <Text
           fontSize={{ base: "28px", md: "30px", lg: "33px" }}
-          color={color}
+          color="brand.purple"
           mb={{ base: 1, md: 2 }}
         >
           Stay Connected
