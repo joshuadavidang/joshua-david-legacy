@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import DarkMode from "../DarkMode/DarkMode";
@@ -15,11 +15,13 @@ const MobileNavBar = ({
   hamburger,
   closeBurger,
 }: MobileNavBarProps) => {
+  const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
 
   return (
     <>
       <Box
         className="flex flex-row justify-between items-center pl-6 w-screen"
+        bg={backgroundColor}
       >
         <div
           className="md:text-3xl text-lg font-sen tracking-tight"

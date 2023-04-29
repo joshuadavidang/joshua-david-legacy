@@ -1,12 +1,11 @@
 import { FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
 import Link from "next/link";
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import Form from "../components/Form";
 import { ButtonIcon } from "../components/Button/ButtonIcon";
 import Text from "../components/Text/Text";
 
 const Contact = () => {
-
   return (
     <Box
       id="contact"
@@ -21,7 +20,7 @@ const Contact = () => {
           Stay Connected
         </Text>
 
-        <div className="flex flex-row justify-center gap-2.5 pt-3 pb-4">
+        <div className="flex flex-row justify-center gap-2.5 pt-3 pb-8">
           <Link href="https://github.com/joshuadavidang" target="_blank">
             <ButtonIcon
               size="sm"
