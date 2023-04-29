@@ -40,7 +40,7 @@ const MobileNavBar = () => {
 
       <Drawer placement={"right"} isOpen={isOpen} onClose={onClose} size={"xs"}>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg={backgroundColor}>
           <DrawerCloseButton />
           <DrawerHeader />
           <DrawerBody>
