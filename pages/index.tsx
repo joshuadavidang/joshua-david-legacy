@@ -52,12 +52,8 @@ export default function Layout(props: { children: any }) {
           <NavBar />
         </nav>
 
-        <nav className={`fixed md:hidden block z-50 ${hamburger ? "" : ""}`}>
-          <MobileNavBar
-            closeBurger={closeBurger}
-            toggleHamburger={setHamburger}
-            hamburger={hamburger}
-          />
+        <nav className={`fixed md:hidden block z-50 ${hamburger && ""}`}>
+          <MobileNavBar />
         </nav>
 
         <main onClick={closeBurger}>{children}</main>
