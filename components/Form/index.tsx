@@ -7,18 +7,18 @@ import {
   FormControl,
   FormLabel,
   Box,
-  useColorModeValue,
   useToast,
+  useColorMode,
 } from "@chakra-ui/react";
 import { supabase } from "../../superbase";
 import { v4 as uuidv4 } from "uuid";
 
+
 const Form = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loadState, setLoadState] = useState(false);
+  const { colorMode, toggleColorMode } = useColorMode();
   const toast = useToast();
-
-  const color = useColorModeValue("blue", "gray");
 
   const postDB = async (uuid: any, name: any, email: any, message: any) => {
     let result = await supabase.from("form").insert({
@@ -140,10 +140,10 @@ const Form = () => {
           loadingText="Sending..."
           size="md"
           variant="solid"
-          colorScheme={color}
           onClick={(event: any) => handleSubmit(event)}
           leftIcon={<AiOutlineArrowRight />}
           isDisabled={false}
+          colorScheme={colorMode == "dark" ? "gray" : "blue"}
         >
           Send
         </ButtonIcon>

@@ -1,6 +1,5 @@
 import {
   CardHeader as ChakraCardHeader,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Text from "../Text/Text";
 
@@ -10,11 +9,9 @@ interface CardHeaderProps {
 }
 
 const CardHeader = ({ children, fontSize }: CardHeaderProps) => {
-  const color = useColorModeValue("brand.purple", "brand.purple");
-
   return (
     <ChakraCardHeader>
-      <Text color={color} fontSize={fontSize}>
+      <Text color={"brand.purple"} fontSize={fontSize}>
         {children}
       </Text>
     </ChakraCardHeader>

@@ -12,14 +12,13 @@ interface NavBarProps {
 
 const NavBar = ({ closeBurger }: NavBarProps) => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("brand.offWhite", "brand.midnight");
-  const color = useColorModeValue("brand.midnight", "brand.white");
+  const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
 
   return (
     <Box
-      bg={bg}
       className={`flex md:justify-between md:flex-row md:gap-5 md:pr-12 md:p-6 w-screen md:items-center 
       flex-col items-end pb-4 pr-6`}
+      bg={backgroundColor}
     >
       <div className="flex flex-row gap-2.5">
         <Link
@@ -72,7 +71,6 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
         {NavLinkData.map(({ id, link, name }) => (
           <Link href={link} key={id}>
             <Text
-              color={color}
               className={`p-2.5 rounded cursor-pointer ${
                 colorMode == "dark"
                   ? "hover:bg-gray hover:text-white "

@@ -1,6 +1,5 @@
 import {
   CardBody as ChakraCardBody,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Text from "../Text/Text";
 
@@ -11,11 +10,9 @@ interface CardBodyProps {
 }
 
 const CardBody = ({ children, paddingTop, fontSize }: CardBodyProps) => {
-  const color = useColorModeValue("brand.midnight", "brand.white");
-
   return (
     <ChakraCardBody paddingTop={paddingTop}>
-      <Text color={color} fontSize={fontSize} align="center">
+      <Text fontSize={fontSize} align="center">
         {children}
       </Text>
     </ChakraCardBody>

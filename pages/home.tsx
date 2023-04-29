@@ -12,15 +12,13 @@ import {
   FaVuejs,
   FaPhp,
 } from "react-icons/fa";
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { ButtonIcon } from "../components/Button/ButtonIcon";
 import Text from "../components/Text/Text";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Home = () => {
-  const color = useColorModeValue("brand.purple", "brand.purple");
-
   return (
     <>
       <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
@@ -36,7 +34,7 @@ const Home = () => {
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
           <Box
             fontSize={{ base: "28px", md: "33px", lg: "35px" }}
-            color={color}
+            color="brand.purple"
             className="font-sen"
           >
             <TypeAnimation

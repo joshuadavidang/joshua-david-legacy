@@ -1,4 +1,4 @@
-import { Card as ChakraCard, useColorModeValue } from "@chakra-ui/react";
+import { Card as ChakraCard } from "@chakra-ui/react";
 
 interface CardProps {
   children: any;
@@ -10,11 +10,9 @@ interface CardProps {
 }
 
 const Card = ({ children, borderRadius, maxW, minH, className, align }: CardProps) => {
-  const bg = useColorModeValue("brand.white", "");
 
   return (
     <ChakraCard
-      bg={bg}
       className={className}
       borderRadius={borderRadius}
       maxW={maxW}
