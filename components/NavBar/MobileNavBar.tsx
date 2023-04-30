@@ -10,8 +10,9 @@ import {
   DrawerCloseButton,
   Stack,
   Divider,
-  Text,
-  DrawerFooter,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
@@ -45,12 +46,17 @@ const MobileNavBar = () => {
           <DrawerHeader />
           <DrawerBody>
             <Stack direction="column" h="100px" p={1}>
-              {NavLinkData.map(({ id, link, name }) => (
+              {NavLinkData.map(({ id, link, name, icon }) => (
                 <Link href={link} key={id}>
-                  <Box pt={4}>
-                    <Text>{name}</Text>
-                    <Divider orientation="horizontal" pt={3} />
-                  </Box>
+                  <List spacing={3}>
+                    <ListItem
+                      className="p-3"
+                    >
+                      <ListIcon as={icon} />
+                      {name}
+                    </ListItem>
+                    <Divider orientation="horizontal" />
+                  </List>
                 </Link>
               ))}
             </Stack>

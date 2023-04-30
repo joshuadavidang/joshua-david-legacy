@@ -3,10 +3,10 @@ import Head from "next/head";
 import MobileNavBar from "../components/NavBar/MobileNavBar";
 import NavBar from "../components/NavBar/NavBar";
 import useToggle from "../hooks/useToggle";
+import { motion } from "framer-motion";
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
-  const [hamburger, closeBurger, setHamburger] = useToggle(false);
   const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
 
   return (
@@ -52,11 +52,17 @@ export default function Layout(props: { children: any }) {
           <NavBar />
         </nav>
 
-        <nav className={`fixed md:hidden block z-50 ${hamburger && ""}`}>
+        <nav className="fixed md:hidden block z-50">
           <MobileNavBar />
         </nav>
 
-        <main onClick={closeBurger}>{children}</main>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, ease: "easeIn" }}
+        >
+          <main>{children}</main>
+        </motion.div>
       </Box>
     </div>
   );

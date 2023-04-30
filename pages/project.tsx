@@ -59,51 +59,44 @@ const ProjectPage = () => {
     <Box className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16 overflow-auto">
       {PastProjects.map(
         ({ name, description, icon, link, techStack }, index) => (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.25, ease: "easeOut" }}
-            key={index}
-          >
-            <Link href={link} target="_blank">
-              <Card
-                borderRadius="12px"
-                maxW="xs"
-                minH="md"
-                align="center"
-                className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
+          <Link href={link} target="_blank" key={index}>
+            <Card
+              borderRadius="12px"
+              maxW="xs"
+              minH="md"
+              align="center"
+              className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
+            >
+              <span className="pt-5 ">
+                <Image src={icon} alt="image" width="150" />
+              </span>
+
+              <CardHeader fontSize="2xl">{name}</CardHeader>
+
+              <CardBody
+                paddingTop="0"
+                fontSize={{ base: "14px", md: "15px", lg: "14px" }}
               >
-                <span className="pt-5 ">
-                  <Image src={icon} alt="image" width="150" />
-                </span>
+                {description}
+              </CardBody>
 
-                <CardHeader fontSize="2xl">{name}</CardHeader>
-
-                <CardBody
-                  paddingTop="0"
-                  fontSize={{ base: "14px", md: "15px", lg: "14px" }}
-                >
-                  {description}
-                </CardBody>
-
-                <CardFooter>
-                  <Box display="flex" flexDirection="row" gap={2}>
-                    {techStack.map((tech, index) => (
-                      <Icon
-                        colorScheme="gray"
-                        icon={displayIcon(tech)}
-                        variant="solid"
-                        size="md"
-                        label="button"
-                        key={index}
-                      />
-                    ))}
-                  </Box>
-                </CardFooter>
-              </Card>
-            </Link>
-          </motion.div>
+              <CardFooter>
+                <Box display="flex" flexDirection="row" gap={2}>
+                  {techStack.map((tech, index) => (
+                    <Icon
+                      colorScheme="gray"
+                      icon={displayIcon(tech)}
+                      variant="solid"
+                      size="md"
+                      label="button"
+                      key={index}
+                    />
+                  ))}
+                </Box>
+              </CardFooter>
+            </Card>
+          </Link>
         )
       )}
     </Box>
