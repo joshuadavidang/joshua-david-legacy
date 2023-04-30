@@ -20,7 +20,7 @@ const Contact = () => {
           Stay Connected
         </Text>
 
-        <div className="flex flex-row justify-center gap-2.5 pt-3 pb-8">
+        <div className="flex flex-row justify-center gap-2.5 pt-4 pb-8">
           <Link href="https://github.com/joshuadavidang" target="_blank">
             <ButtonIcon
               size="sm"

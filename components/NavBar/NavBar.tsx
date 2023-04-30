@@ -1,18 +1,31 @@
-import { Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  useColorMode,
+  useColorModeValue,
+  useDisclosure,
+  Drawer,
+  DrawerContent,
+  DrawerBody,
+  DrawerOverlay,
+  DrawerHeader,
+  DrawerCloseButton,
+  Stack,
+  Divider,
+  List,
+  ListItem,
+  ListIcon,
+} from "@chakra-ui/react";
 import Link from "next/link";
-import { NavLinkData } from "../../data/navLinks";
 import DarkMode from "../DarkMode/DarkMode";
-import Text from "../Text/Text";
 import { ButtonIcon } from "../Button/ButtonIcon";
 import { FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import { NavLinkData } from "../../data/navLinks";
 
-interface NavBarProps {
-  closeBurger?: any;
-}
-
-const NavBar = ({ closeBurger }: NavBarProps) => {
+const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Box
@@ -63,25 +76,55 @@ const NavBar = ({ closeBurger }: NavBarProps) => {
         </a>
       </div>
 
-      <div className="flex md:flex-row flex-col items-center">
+      <div className="flex md:flex-row flex-col items-center gap-1">
         <span className="hidden md:block">
           <DarkMode />
         </span>
 
-        {NavLinkData.map(({ id, link, name }) => (
-          <Link href={link} key={id}>
-            <Text
-              className={`p-2.5 rounded cursor-pointer ${
-                colorMode == "dark"
-                  ? "hover:bg-gray hover:text-white "
-                  : "hover:bg-white hover:text-black"
-              }`}
-              onClick={closeBurger}
-            >
-              {name}
-            </Text>
-          </Link>
-        ))}
+        <Box
+          className={`p-2 rounded cursor-pointer ${
+            colorMode === "dark"
+              ? "hover:bg-gray hover:text-white"
+              : "hover:bg-white hover:text-black"
+          }`}
+          onClick={onOpen}
+        >
+          <Bars3Icon className="w-6 h-6" />
+        </Box>
+
+        <Drawer
+          placement={"right"}
+          isOpen={isOpen}
+          onClose={onClose}
+          size={"xs"}
+        >
+          <DrawerOverlay />
+          <DrawerContent bg={backgroundColor}>
+            <DrawerCloseButton />
+            <DrawerHeader />
+            <DrawerBody>
+              <Stack direction="column" h="100px" p={1}>
+                {NavLinkData.map(({ id, link, name, icon }) => (
+                  <Link href={link} key={id}>
+                    <List spacing={3}>
+                      <ListItem
+                        className={`p-3 rounded cursor-pointer ${
+                          colorMode === "dark"
+                            ? "hover:bg-gray hover:text-white"
+                            : "hover:bg-white hover:text-black"
+                        }`}
+                      >
+                        <ListIcon as={icon} />
+                        {name}
+                      </ListItem>
+                      <Divider orientation="horizontal" />
+                    </List>
+                  </Link>
+                ))}
+              </Stack>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
       </div>
     </Box>
   );

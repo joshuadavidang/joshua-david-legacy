@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         animate={{
           opacity: 1,
         }}
-        transition={{ ease: "easeOut" }}
+        transition={{ ease: "easeIn" }}
       >
         <ChakraProvider theme={theme}>
           <Layout>
