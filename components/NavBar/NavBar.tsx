@@ -18,14 +18,16 @@ import {
 import Link from "next/link";
 import DarkMode from "../DarkMode/DarkMode";
 import { ButtonIcon } from "../Button/ButtonIcon";
-import { FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { FaGithub, FaLinkedin, FaFile, FaHamburger } from "react-icons/fa";
 import { NavLinkData } from "../../data/navLinks";
+import { useRouter } from "next/router";
 
 const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
     <Box
@@ -89,7 +91,7 @@ const NavBar = () => {
           }`}
           onClick={onOpen}
         >
-          <Bars3Icon className="w-6 h-6" />
+          <FaHamburger className="w-5 h-5" />
         </Box>
 
         <Drawer
@@ -106,7 +108,7 @@ const NavBar = () => {
               <Stack direction="column" h="100px" p={1}>
                 {NavLinkData.map(({ id, link, name, icon }) => (
                   <Link href={link} key={id}>
-                    <List spacing={3}>
+                    <List spacing={2}>
                       <ListItem
                         className={`p-3 rounded cursor-pointer ${
                           colorMode === "dark"
@@ -114,7 +116,7 @@ const NavBar = () => {
                             : "hover:bg-white hover:text-black"
                         }`}
                       >
-                        <ListIcon as={icon} />
+                        {pathname == link && <ListIcon as={icon} />}
                         {name}
                       </ListItem>
                       <Divider orientation="horizontal" />

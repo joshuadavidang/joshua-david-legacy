@@ -14,14 +14,17 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
-import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import DarkMode from "../DarkMode/DarkMode";
 import { NavLinkData } from "../../data/navLinks";
+import { useRouter } from "next/router";
+import { FaHamburger } from "react-icons/fa";
 
 const MobileNavBar = () => {
   const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
     <>
@@ -35,7 +38,7 @@ const MobileNavBar = () => {
 
         <div className="flex flex-row items-center justify-end p-6 gap-4">
           <DarkMode />
-          <Bars3Icon className="w-7 h-7" onClick={onOpen} />
+          <FaHamburger className="w-5 h-5" onClick={onOpen} />
         </div>
       </Box>
 
@@ -48,11 +51,9 @@ const MobileNavBar = () => {
             <Stack direction="column" h="100px" p={1}>
               {NavLinkData.map(({ id, link, name, icon }) => (
                 <Link href={link} key={id}>
-                  <List spacing={3}>
-                    <ListItem
-                      className="p-3"
-                    >
-                      <ListIcon as={icon} />
+                  <List spacing={1.5}>
+                    <ListItem className="p-3">
+                      {pathname == link && <ListIcon as={icon} />}
                       {name}
                     </ListItem>
                     <Divider orientation="horizontal" />
