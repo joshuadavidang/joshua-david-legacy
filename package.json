@@ -13,7 +13,7 @@
   "dependencies": {
     "@chakra-ui/react": "^2.6.0",
     "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
+    "@emotion/styled": "^11.10.8",
     "@heroicons/react": "^2.0.17",
     "@supabase/supabase-js": "^2.21.0",
     "axios": "^1.4.0",
