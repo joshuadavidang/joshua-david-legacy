@@ -1,6 +1,6 @@
 ## Coding Portfolio
 
-<img src="https://user-images.githubusercontent.com/54788382/235330181-9949eb57-8a7e-445a-a2cc-32b3a22900e8.png" alt="Apple" width="760" />
+<img src="https://user-images.githubusercontent.com/54788382/235352684-9e6ff14a-4b67-47a0-bb05-3884317690a3.png" alt="Apple" width="760" />
 
 ## Tech Stack
 - [Next.js](https://nextjs.org)
