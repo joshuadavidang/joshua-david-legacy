@@ -38,7 +38,7 @@ const Home = () => {
               sequence={[
                 "Hey! I'm Joshua David",
                 1000,
-                "I'm an aspiring Software Engineer",
+                "An aspiring Software Engineer,",
                 1000,
                 "Student.",
                 3000,
