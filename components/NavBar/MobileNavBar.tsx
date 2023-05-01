@@ -36,7 +36,7 @@ const MobileNavBar = () => {
           <Link href="/home">joshuadavid</Link>
         </div>
 
-        <div className="flex flex-row items-center justify-end p-6 gap-4">
+        <div className="flex flex-row items-center justify-end p-6 gap-1">
           <DarkMode />
           <FaHamburger className="w-5 h-5" onClick={onOpen} />
         </div>
