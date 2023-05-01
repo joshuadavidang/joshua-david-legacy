@@ -10,9 +10,9 @@ import {
   UnorderedList,
   Box,
 } from "@chakra-ui/react";
-import PHL from "../../public/assets/images/PHL.svg";
 import Image from "next/image";
 import { InternshipExperience } from "../../data/internship";
+import PHL from "../../public/assets/images/phl.svg";
 
 const Internship = () => {
   return (
