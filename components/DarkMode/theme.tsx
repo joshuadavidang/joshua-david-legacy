@@ -13,6 +13,7 @@ const theme = extendTheme({
       offWhite: "#F5F5F7",
       gray: "#8492a6",
       purple: "#6868F6",
+      lightGray: "#f2f2f2",
     },
   },
   components: {

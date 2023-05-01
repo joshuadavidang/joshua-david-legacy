@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
+import Internship from "../components/Internship/Internship";
 
 const Home = () => {
   return (
@@ -170,24 +171,49 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
+      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center ml-4 mr-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, ease: "easeOut" }}
         >
-          <Text
-            fontSize={{ base: "16px", md: "18px", lg: "19px" }}
-            className="pb-5"
+          <Box
+            fontSize={{ base: "23px", md: "28px", lg: "30px" }}
+            color="brand.purple"
+            className="font-sen text-center pb-5"
           >
-            Grab a copy of my resume here 👇🏻
-          </Text>
+            <Text>👨🏻‍💻 Internship Experience</Text>
+          </Box>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.25, ease: "easeOut" }}
+        >
+          <Internship />
+        </motion.div>
+      </Box>
+
+      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3, ease: "easeOut" }}
+        >
+          <Text
+            fontSize={{ base: "23px", md: "28px", lg: "30px" }}
+            color="brand.purple"
+            className="font-sen text-center pb-5"
+          >
+            👇🏻 Full Resume
+          </Text>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.35, ease: "easeOut" }}
         >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
             <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
