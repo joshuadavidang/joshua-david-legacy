@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { InternshipExperience } from "../../data/internship";
-import PHL from "../../public/assets/images/PHL.svg";
+import PHL from "../../public/assets/images/phl.svg";
 
 const Internship = () => {
   return (
