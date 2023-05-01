@@ -13,7 +13,6 @@ import {
 import Image from "next/image";
 import { InternshipExperience } from "../../data/internship";
 import PHL from "../../public/assets/images/phl.svg";
-import Cynapse from "../../public/assets/images/cynapse.png";
 
 const Internship = () => {
   return (
@@ -41,15 +40,15 @@ const Internship = () => {
       />
 
       <TabPanels width={100}>
-        {InternshipExperience.map(({ id, title, date, task }) => (
+        {InternshipExperience.map(({ id, title, date, tasks }) => (
           <TabPanel key={id}>
             <Box className="flex flex-col gap-2 text-left">
               <p className="text-purple italic text-lg">{title}</p>
               <p className="text-lightGray text-sm">{date}</p>
               <UnorderedList spacing={1.5} pt={3}>
-                {task.map((individual, index) => (
+                {tasks.map((task, index) => (
                   <ListItem key={index}>
-                    <Text>{individual}</Text>
+                    <Text>{task}</Text>
                   </ListItem>
                 ))}
               </UnorderedList>
