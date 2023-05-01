@@ -104,7 +104,7 @@ const Form = () => {
           type="text"
           name="name"
           size="md"
-          placeholder="Name"
+          placeholder="Joshua"
           data={handleChange}
           value={name}
         />
@@ -116,7 +116,7 @@ const Form = () => {
           type="email"
           name="email"
           size="md"
-          placeholder="Email"
+          placeholder="joshuadavidang@outlook.sg"
           data={handleChange}
           value={email}
         />

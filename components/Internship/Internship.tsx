@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { InternshipExperience } from "../../data/internship";
 import PHL from "../../public/assets/images/phl.svg";
+import Cynapse from "../../public/assets/images/cynapse.png";
 
 const Internship = () => {
   return (
@@ -27,10 +28,17 @@ const Internship = () => {
         <Tab>
           <Image src={PHL} width="130" alt="phl" />
         </Tab>
-        <Tab>BSG</Tab>
+        <Tab>
+          <Text>BSG</Text>
+        </Tab>
       </TabList>
 
-      <TabIndicator mt="-1.5px" height="2px" bg="brand.purple" borderRadius="1px" />
+      <TabIndicator
+        mt="-1.5px"
+        height="2px"
+        bg="brand.purple"
+        borderRadius="1px"
+      />
 
       <TabPanels width={100}>
         {InternshipExperience.map(({ id, title, date, task }) => (
@@ -44,7 +52,9 @@ const Internship = () => {
               </Text>
               <UnorderedList spacing={1.5} pt={3}>
                 {task.map((individual, index) => (
-                  <ListItem key={index}>{individual}</ListItem>
+                  <ListItem key={index}>
+                    <Text>{individual}</Text>
+                  </ListItem>
                 ))}
               </UnorderedList>
             </Box>
