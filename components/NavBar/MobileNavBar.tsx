@@ -53,7 +53,7 @@ const MobileNavBar = () => {
                 <Link href={link} key={id}>
                   <List spacing={1.5}>
                     <ListItem className="p-3">
-                      {pathname == link && <ListIcon as={icon} />}
+                      {pathname === link && <ListIcon as={icon} />}
                       {name}
                     </ListItem>
                     <Divider orientation="horizontal" />

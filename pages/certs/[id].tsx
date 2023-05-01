@@ -12,7 +12,7 @@ const IndividualCert = () => {
       <div className="w-11/12 md:w-1/2">
         {CertificatesData.map((cert) => (
           <div key={cert.name}>
-            {new_id == cert.id && (
+            {new_id === cert.id && (
               <Image src={cert.image} alt="list_of_certs" />
             )}
           </div>
