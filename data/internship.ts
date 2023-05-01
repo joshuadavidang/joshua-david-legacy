@@ -2,7 +2,7 @@ export const InternshipExperience = [
   {
     id: 1,
     title: "Software Engineer Intern  @ Pigeonhole Live (PigeonLab)",
-    date: "May 2022 - Jul 2022",
+    date: "Jan 2023 - Mar 2023",
     task: [
       "Developed responsive front-end webpages",
       "Collaborated with engineers and designers to develop features",
