@@ -15,7 +15,7 @@ import {
   ListIcon,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import DarkMode from "../DarkMode/DarkMode";
+import DarkModeIcon from "../DarkMode/DarkModeIcon";
 import { NavLinkData } from "../../data/navLinks";
 import { useRouter } from "next/router";
 import { FaHamburger } from "react-icons/fa";
@@ -37,7 +37,7 @@ const MobileNavBar = () => {
         </div>
 
         <div className="flex flex-row items-center justify-end p-6 gap-2">
-          <DarkMode />
+          <DarkModeIcon />
           <FaHamburger className="w-5 h-5" onClick={onOpen} />
         </div>
       </Box>
