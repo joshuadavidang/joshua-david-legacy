@@ -42,7 +42,6 @@ const Internship = () => {
               <Text as="sub" color="brand.gray">
                 {date}
               </Text>
-
               <UnorderedList spacing={1.5} pt={3}>
                 {task.map((individual, index) => (
                   <ListItem key={index}>{individual}</ListItem>
