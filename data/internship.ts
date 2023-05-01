@@ -7,6 +7,7 @@ export const InternshipExperience = [
       "Developed responsive front-end webpages",
       "Collaborated with engineers and designers to develop features",
       "Wrote unit test cases, and fixed production bugs",
+      "Technologies: Vue.js, Jest, JavaScript, Docker"
     ],
   },
   {

@@ -11,7 +11,8 @@ module.exports = {
       midnight: "#000024",
       white: "#ffffff",
       gray: "#8492a6",
-      lightGray: "#f2f2f2",
+      lightGray: "#8492a6",
+      purple: "#6868F6",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],

@@ -43,13 +43,9 @@ const Internship = () => {
       <TabPanels width={100}>
         {InternshipExperience.map(({ id, title, date, task }) => (
           <TabPanel key={id}>
-            <Box className="flex flex-col gap-3 text-left">
-              <Text as="em" color="brand.purple">
-                {title}
-              </Text>
-              <Text as="sub" color="brand.gray">
-                {date}
-              </Text>
+            <Box className="flex flex-col gap-2 text-left">
+              <p className="text-purple italic text-lg">{title}</p>
+              <p className="text-lightGray text-sm">{date}</p>
               <UnorderedList spacing={1.5} pt={3}>
                 {task.map((individual, index) => (
                   <ListItem key={index}>
