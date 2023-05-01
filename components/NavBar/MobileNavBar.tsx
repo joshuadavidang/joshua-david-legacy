@@ -12,7 +12,6 @@ import {
   Divider,
   List,
   ListItem,
-  ListIcon,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import DarkModeIcon from "../DarkMode/DarkModeIcon";
@@ -49,12 +48,14 @@ const MobileNavBar = () => {
           <DrawerHeader />
           <DrawerBody>
             <Stack direction="column" h="100px" p={1}>
-              {NavLinkData.map(({ id, link, name, icon }) => (
+              {NavLinkData.map(({ id, link, name }) => (
                 <Link href={link} key={id}>
                   <List spacing={1.5}>
                     <ListItem className="p-3">
-                      {pathname === link && <ListIcon as={icon} />}
-                      {name}
+                      <p>
+                        {pathname === link && "🔥 "}
+                        {name}
+                      </p>
                     </ListItem>
                     <Divider orientation="horizontal" />
                   </List>

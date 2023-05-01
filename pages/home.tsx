@@ -37,7 +37,7 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "Hey! I'm Joshua David",
+                "👋🏻 Hey! I'm Joshua David",
                 1000,
                 "An aspiring Software Engineer,",
                 1000,
@@ -189,7 +189,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.25, ease: "easeOut" }}
+          transition={{ delay: 0.3, ease: "easeOut" }}
         >
           <Internship />
         </motion.div>
@@ -206,14 +206,14 @@ const Home = () => {
             color="brand.purple"
             className="font-sen text-center pb-5"
           >
-            👇🏻 Full Resume
+            Full Resume 👇🏻
           </Text>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.35, ease: "easeOut" }}
+          transition={{ delay: 0.4, ease: "easeOut" }}
         >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
             <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">

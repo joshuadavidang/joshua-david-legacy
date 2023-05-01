@@ -17,7 +17,7 @@ const Contact = () => {
           color="brand.purple"
           mb={{ base: 1, md: 2 }}
         >
-          Stay Connected
+          🔥 Stay Connected
         </Text>
 
         <div className="flex flex-row justify-center gap-2.5 pt-4 pb-8">
