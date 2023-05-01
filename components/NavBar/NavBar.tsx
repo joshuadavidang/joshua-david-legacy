@@ -78,7 +78,7 @@ const NavBar = () => {
         </a>
       </div>
 
-      <div className="flex md:flex-row flex-col items-center gap-1">
+      <div className="flex md:flex-row flex-col items-center gap-0.5">
         <span className="hidden md:block">
           <DarkMode />
         </span>
@@ -116,7 +116,7 @@ const NavBar = () => {
                             : "hover:bg-white hover:text-black"
                         }`}
                       >
-                        {pathname == link && <ListIcon as={icon} />}
+                        {pathname === link && <ListIcon as={icon} />}
                         {name}
                       </ListItem>
                       <Divider orientation="horizontal" />
