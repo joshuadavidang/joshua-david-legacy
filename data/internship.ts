@@ -1,7 +1,7 @@
 export const InternshipExperience = [
   {
     id: 1,
-    title: "Software Engineer Intern  @ Pigeonhole Live (PigeonLab)",
+    title: "Software Engineer Intern at Pigeonhole Live (PigeonLab)",
     date: "Jan 2023 - Mar 2023",
     task: [
       "Developed responsive front-end webpages",
@@ -11,7 +11,7 @@ export const InternshipExperience = [
   },
   {
     id: 2,
-    title: "Software Engineer Intern @ Blockchain Solutions (BSG)",
+    title: "Software Engineer Intern at Blockchain Solutions (BSG)",
     date: "May 2022 - Jul 2022",
     task: [
       "Spearheaded front-end development of a NFT marketplace",

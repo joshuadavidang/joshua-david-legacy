@@ -16,7 +16,7 @@ import {
   ListIcon,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import DarkMode from "../DarkMode/DarkMode";
+import DarkModeIcon from "../DarkMode/DarkModeIcon";
 import { ButtonIcon } from "../Button/ButtonIcon";
 import { FaGithub, FaLinkedin, FaFile, FaHamburger } from "react-icons/fa";
 import { NavLinkData } from "../../data/navLinks";
@@ -80,7 +80,7 @@ const NavBar = () => {
 
       <div className="flex md:flex-row flex-col items-center gap-0.5">
         <span className="hidden md:block">
-          <DarkMode />
+          <DarkModeIcon />
         </span>
 
         <Box
