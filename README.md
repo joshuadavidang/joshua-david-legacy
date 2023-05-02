@@ -23,8 +23,8 @@ npm install
 
 ### Get a free API key
 
-1. Create an account and get a free API key at [Supabase](https://supabase.com)
-2. Create a file `.env.local` at the root folder
+1. Get a free API key at [Supabase](https://supabase.com)
+2. Create the file `.env.local` at the root folder
 2. Enter the following code
    ```
    NEXT_PUBLIC_SUPABASE_URL = "REPLACE URL HERE'
