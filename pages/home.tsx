@@ -23,11 +23,9 @@ const Home = () => {
   return (
     <>
       <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
-        <Link href="https://github.com/joshuadavidang" target="_blank">
-          <Box className="pt-12 md:pt-0 pb-12 cursor-pointer">
-            <Image src={LandingHero} alt="landing-hero" width="350" />
-          </Box>
-        </Link>
+        <Box className="pt-12 md:pt-0 pb-12">
+          <Image src={LandingHero} alt="landing-hero" width="350" />
+        </Box>
 
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
           <Box
@@ -37,7 +35,7 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "👋🏻 Hey! I'm Joshua David",
+                "Hey! I'm Joshua David",
                 1000,
                 "An aspiring Software Engineer,",
                 1000,
