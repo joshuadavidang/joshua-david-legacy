@@ -45,7 +45,7 @@ const Form = () => {
           id: email,
           position: "top",
           title: "Error",
-          description: "Please fill in all the fields.",
+          description: "Please fill in all the fields",
           status: "error",
           duration: 1000,
           isClosable: false,
