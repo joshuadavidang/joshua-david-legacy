@@ -40,21 +40,23 @@ const Internship = () => {
       />
 
       <TabPanels width={100}>
-        {InternshipExperience.map(({ id, title, date, tasks }) => (
-          <TabPanel key={id}>
-            <Box className="flex flex-col gap-2 text-left">
-              <p className="text-purple italic text-lg">{title}</p>
-              <p className="text-lightGray text-sm">{date}</p>
-              <UnorderedList spacing={1.5} pt={3}>
-                {tasks.map((task, index) => (
-                  <ListItem key={index}>
-                    <Text>{task}</Text>
-                  </ListItem>
-                ))}
-              </UnorderedList>
-            </Box>
-          </TabPanel>
-        ))}
+        {InternshipExperience.map(({ id, title, date, tasks }) => {
+          return (
+            <TabPanel key={id}>
+              <Box className="flex flex-col gap-2 text-left">
+                <p className="text-purple italic text-lg">{title}</p>
+                <p className="text-lightGray text-sm">{date}</p>
+                <UnorderedList spacing={1.5} pt={3}>
+                  {tasks.map((task, index) => (
+                    <ListItem key={index}>
+                      <Text>{task}</Text>
+                    </ListItem>
+                  ))}
+                </UnorderedList>
+              </Box>
+            </TabPanel>
+          );
+        })}
       </TabPanels>
     </Tabs>
   );
