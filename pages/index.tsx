@@ -4,6 +4,7 @@ import MobileNavBar from "../components/NavBar/MobileNavBar";
 import NavBar from "../components/NavBar/NavBar";
 import useToggle from "../hooks/useToggle";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
@@ -63,6 +64,8 @@ export default function Layout(props: { children: any }) {
         >
           <main>{children}</main>
         </motion.div>
+
+        <Footer />
       </Box>
     </div>
   );

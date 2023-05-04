@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <Box
       id="contact"
-      className="flex md:gap-32 justify-center items-center h-screen w-screen text-center overflow-scroll"
+      className="flex md:gap-32 justify-center items-center h-screen w-screen text-center"
     >
       <div className="md:w-4/12 w-10/12">
         <Text
