@@ -35,7 +35,7 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "Hey! I'm Joshua David",
+                "Hey! I'm Joshua",
                 1000,
                 "An aspiring Software Engineer,",
                 1000,

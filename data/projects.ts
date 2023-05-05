@@ -2,18 +2,18 @@ import StillYoung from "../public/assets/images/StillYoung.svg";
 import Sayocode from "../public/assets/images/Sayocode.png";
 import BreadApp from "../public/assets/images/bread_app.png";
 import macOS from "../public/assets/images/macOS.png";
+import Placeholder from "../public/assets/images/Placeholder.png";
 
 export const PastProjects = [
-  // {
-  //   name: "project BBW",
-  //   description: "Lorem ipsum dolor sit amet.",
-  //   year: "2022",
-  //   start: "December",
-  //   end: "Present",
-  //   techStack: ["React.js", "Node.js", "Python"],
-  //   icon: BreadApp,
-  //   link: "https://github.com/joshuadavidang/google_ignite_bread",
-  // },
+  {
+    name: "Project X",
+    description:
+      "Development in Progress",
+    year: 2023,
+    techStack: ["Next.js", "Chakra UI", "Supabase"],
+    icon: Placeholder,
+    link: "",
+  },
   {
     name: "Project Bread",
     description:
@@ -24,9 +24,9 @@ export const PastProjects = [
     link: "https://github.com/joshuadavidang/google_ignite_bread",
   },
   {
-    name: "Joshua David",
+    name: "Coding Portfolio",
     description:
-      "Designed and developed a responsive personal website, built on top of Next.js and Tailwind CSS framework.",
+      "Designed and developed a fully responsive personal portfolio that showcases past projects.",
     year: 2022,
     techStack: ["Next.js", "Tailwind CSS", "Chakra UI", "Supabase"],
     icon: macOS,

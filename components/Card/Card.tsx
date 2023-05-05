@@ -3,13 +3,14 @@ import { Card as ChakraCard } from "@chakra-ui/react";
 interface CardProps {
   children: any;
   borderRadius: any;
-  maxW: any;
-  minH: any;
+  maxW: string;
+  minH: string;
+  minW: string;
   className?: any;
   align: string
 }
 
-const Card = ({ children, borderRadius, maxW, minH, className, align }: CardProps) => {
+const Card = ({ children, borderRadius, maxW, minH, minW, className, align }: CardProps) => {
 
   return (
     <ChakraCard
@@ -17,6 +18,7 @@ const Card = ({ children, borderRadius, maxW, minH, className, align }: CardProp
       borderRadius={borderRadius}
       maxW={maxW}
       minH={minH}
+      minW={minW}
       align={align}
     >
       {children}
