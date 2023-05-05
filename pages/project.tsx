@@ -64,11 +64,12 @@ const ProjectPage = () => {
               borderRadius="12px"
               maxW="xs"
               minH="md"
+              minW="xs"
               align="center"
               className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
             >
-              <span className="pt-5 ">
+              <span className="pt-7">
                 <Image src={icon} alt="image" width="150" />
               </span>
 
