@@ -65,7 +65,13 @@ export default function Layout(props: { children: any }) {
           <main>{children}</main>
         </motion.div>
 
-        <Footer />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, ease: "easeIn" }}
+        >
+          <Footer />
+        </motion.div>
       </Box>
     </div>
   );
