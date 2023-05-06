@@ -9,6 +9,7 @@ import {
   ListItem,
   UnorderedList,
   Box,
+  Link,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { InternshipExperience } from "../../data/internship";
@@ -40,11 +41,20 @@ const Internship = () => {
       />
 
       <TabPanels width={100}>
-        {InternshipExperience.map(({ id, title, date, tasks }) => {
+        {InternshipExperience.map(({ id, title, date, link, tasks }) => {
+          const data = title.split("Software Engineer Intern at");
+          const company = data[data.length - 1];
           return (
             <TabPanel key={id}>
               <Box className="flex flex-col gap-2 text-left">
-                <p className="text-purple italic text-lg">{title}</p>
+                <p className="text-lg">
+                  Software Engineer Intern at{" "}
+                  <Link href={link} isExternal>
+                    <Text as="i" color="brand.purple">
+                      {company}
+                    </Text>
+                  </Link>
+                </p>
                 <p className="text-lightGray text-sm">{date}</p>
                 <UnorderedList spacing={1.5} pt={3}>
                   {tasks.map((task, index) => (
