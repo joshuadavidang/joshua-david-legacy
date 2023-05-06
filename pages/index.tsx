@@ -45,7 +45,7 @@ export default function Layout(props: { children: any }) {
           sizes="16x16"
           href="/favicon_io/favicon-16x16.png"
         />
-        <link rel="manifest" href="/favicon_io/site.webmanifest" />
+        <link rel="manifest" href="/favicon_io/manifest.json" />
       </Head>
 
       <Box className="relative" bg={backgroundColor}>

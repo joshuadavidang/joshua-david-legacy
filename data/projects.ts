@@ -2,18 +2,8 @@ import StillYoung from "../public/assets/images/StillYoung.svg";
 import Sayocode from "../public/assets/images/Sayocode.png";
 import BreadApp from "../public/assets/images/bread_app.png";
 import macOS from "../public/assets/images/macOS.png";
-import Placeholder from "../public/assets/images/Placeholder.png";
 
 export const PastProjects = [
-  {
-    name: "Project X",
-    description:
-      "Development in Progress",
-    year: 2023,
-    techStack: ["Next.js", "Chakra UI", "Supabase"],
-    icon: Placeholder,
-    link: "",
-  },
   {
     name: "Project Bread",
     description:
