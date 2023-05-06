@@ -2,7 +2,6 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import Head from "next/head";
 import MobileNavBar from "../components/NavBar/MobileNavBar";
 import NavBar from "../components/NavBar/NavBar";
-import useToggle from "../hooks/useToggle";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 

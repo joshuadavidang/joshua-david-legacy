@@ -13,6 +13,7 @@ import {
   Divider,
   List,
   ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import DarkModeIcon from "../DarkMode/DarkModeIcon";
@@ -20,6 +21,7 @@ import { ButtonIcon } from "../Button/ButtonIcon";
 import { FaGithub, FaLinkedin, FaFile, FaHamburger } from "react-icons/fa";
 import { NavLinkData } from "../../data/navLinks";
 import { useRouter } from "next/router";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -116,7 +118,9 @@ const NavBar = () => {
                         }`}
                       >
                         <p>
-                          {pathname === link && "🔥 "}
+                          {pathname === link && (
+                            <ListIcon as={MdKeyboardDoubleArrowRight} />
+                          )}
                           {name}
                         </p>
                       </ListItem>

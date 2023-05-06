@@ -35,7 +35,7 @@ const Home = () => {
           >
             <TypeAnimation
               sequence={[
-                "Hey! I'm Joshua",
+                "Hey! I'm Joshua,",
                 1000,
                 "An aspiring Software Engineer,",
                 1000,
@@ -53,7 +53,7 @@ const Home = () => {
             className="pt-5 pb-8 pl-5 pr-5"
             lineHeight={7}
           >
-            Undergraduate at the School of Computing and Information Systems,{" "}
+            Sophomore at the School of Computing and Information Systems,{" "}
             Singapore Management University
           </Text>
 

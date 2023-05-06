@@ -12,12 +12,14 @@ import {
   Divider,
   List,
   ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import DarkModeIcon from "../DarkMode/DarkModeIcon";
 import { NavLinkData } from "../../data/navLinks";
 import { useRouter } from "next/router";
 import { FaHamburger } from "react-icons/fa";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const MobileNavBar = () => {
   const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
@@ -53,7 +55,9 @@ const MobileNavBar = () => {
                   <List spacing={1.5}>
                     <ListItem className="p-3">
                       <p>
-                        {pathname === link && "🔥 "}
+                        {pathname === link && (
+                          <ListIcon as={MdKeyboardDoubleArrowRight} />
+                        )}
                         {name}
                       </p>
                     </ListItem>
