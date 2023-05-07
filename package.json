@@ -18,7 +18,7 @@
     "@heroicons/react": "^2.0.17",
     "@supabase/supabase-js": "^2.21.0",
     "axios": "^1.4.0",
-    "framer-motion": "^10.12.4",
+    "framer-motion": "^10.12.8",
     "next": "^13.3.2",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
