@@ -13,7 +13,6 @@ import {
 import { supabase } from "../../superbase";
 import { v4 as uuidv4 } from "uuid";
 
-
 const Form = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loadState, setLoadState] = useState(false);
