@@ -14,7 +14,6 @@ import {
 import { ButtonIcon } from "../components/Button/ButtonIcon";
 import Text from "../components/Text/Text";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 import Internship from "../components/Internship/Internship";
