@@ -19,6 +19,15 @@ const Form = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const toast = useToast();
 
+  /**
+   * 
+   * @param uuid int
+   * @param name string
+   * @param email string
+   * @param message string
+   * @returns true || false
+   */
+
   const postDB = async (uuid: any, name: any, email: any, message: any) => {
     let result = await supabase.from("form").insert({
       uuid: uuid,
@@ -34,6 +43,11 @@ const Form = () => {
     }
     return false;
   };
+
+  /**
+   * 
+   * @param event any
+   */
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
@@ -69,6 +83,14 @@ const Form = () => {
       });
     }
   };
+
+  /**
+   * 
+   * @param name string
+   * @param email string
+   * @param message string
+   * @returns true || false
+   */
 
   const validateDetails = (name: any, email: any, message: any) => {
     if (name === "" || email === "" || message === "") {
