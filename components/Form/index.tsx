@@ -20,15 +20,20 @@ const Form = () => {
   const toast = useToast();
 
   /**
-   * 
-   * @param uuid int
-   * @param name string
-   * @param email string
-   * @param message string
-   * @returns true || false
+   *
+   * @param uuid any - form's unique Id
+   * @param name string - visitor's name
+   * @param email string - visitor's email
+   * @param message string - visitor's message
+   * @returns boolean true || false
    */
 
-  const postDB = async (uuid: any, name: any, email: any, message: any) => {
+  const postDB = async (
+    uuid: any,
+    name: string,
+    email: string,
+    message: string
+  ) => {
     let result = await supabase.from("form").insert({
       uuid: uuid,
       name: name,
@@ -43,11 +48,6 @@ const Form = () => {
     }
     return false;
   };
-
-  /**
-   * 
-   * @param event any
-   */
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
@@ -85,14 +85,14 @@ const Form = () => {
   };
 
   /**
-   * 
-   * @param name string
-   * @param email string
-   * @param message string
-   * @returns true || false
+   *
+   * @param name string - visitor's name
+   * @param email string - visitor's email
+   * @param message string - visitor's message
+   * @returns boolean true || false
    */
 
-  const validateDetails = (name: any, email: any, message: any) => {
+  const validateDetails = (name: string, email: string, message: string) => {
     if (name === "" || email === "" || message === "") {
       return false;
     }
