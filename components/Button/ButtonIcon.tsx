@@ -1,6 +1,7 @@
 import { Button as ChakraButton, Stack } from "@chakra-ui/react";
 
 interface ButtonIconProps {
+  // eslint-disable-next-line no-unused-vars
   onClick?: (event: any) => void;
   isDisabled?: true | false;
   leftIcon?: any;
