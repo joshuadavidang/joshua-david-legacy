@@ -1,5 +1,15 @@
 export const InternshipExperience = [
   {
+    id: 1,
+    title: "Software Engineer Intern at Cynapse",
+    date: "May 2023 - Present",
+    link: "https://cynapse.ai",
+    tasks: [
+      "Application Development Team",
+      "Technologies: React.js, GitLab, mySQL",
+    ],
+  },
+  {
     id: 2,
     title: "Software Engineer Intern at Pigeonhole Live (PigeonLab)",
     date: "Jan 2023 - Mar 2023",
