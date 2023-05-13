@@ -1,7 +1,6 @@
 import { Button as ChakraButton, Stack } from "@chakra-ui/react";
 
 interface ButtonIconProps {
-  onClick?: (event: any) => void;
   isDisabled?: true | false;
   leftIcon?: any;
   rightIcon?: any;
