@@ -24,7 +24,7 @@ import { useRouter } from "next/router";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const NavBar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();

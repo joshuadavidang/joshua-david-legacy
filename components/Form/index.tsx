@@ -16,7 +16,7 @@ import { v4 as uuidv4 } from "uuid";
 const Form = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loadState, setLoadState] = useState(false);
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const toast = useToast();
 
   /**

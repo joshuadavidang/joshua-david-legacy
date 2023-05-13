@@ -8,7 +8,7 @@ export const InternshipExperience = [
       "Developed responsive front-end webpages",
       "Collaborated with engineers and designers to develop features",
       "Wrote unit test cases, and fixed production bugs",
-      "Technologies - Vue.js, Jest, JavaScript, Docker, GitLab",
+      "Technologies: Vue.js, Jest, JavaScript, Docker, GitLab",
     ],
   },
   {
@@ -21,7 +21,7 @@ export const InternshipExperience = [
       "Wrote production-quality code and maintained cleanliness of codebase",
       "Built reusable components and customised CSS libraries",
       "Collaborated with UI/UX designer to ensure feasibility of technical designs",
-      "Technologies - React.js, Next.js, Web3.js, Tailwind CSS, Firebase",
+      "Technologies: React.js, Next.js, Web3.js, Tailwind CSS, Firebase",
     ],
   },
 ];

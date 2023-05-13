@@ -1,7 +1,7 @@
-import StillYoung from "../public/assets/images/StillYoung.svg";
-import Sayocode from "../public/assets/images/Sayocode.png";
-import BreadApp from "../public/assets/images/bread_app.png";
-import macOS from "../public/assets/images/macOS.png";
+import StillYoung from "../public/assets/images/Projects/StillYoung.svg";
+import Sayocode from "../public/assets/images/Projects/Sayocode.png";
+import BreadApp from "../public/assets/images/Projects/bread_app.png";
+import macOS from "../public/assets/images/Projects/macOS.png";
 
 export const PastProjects = [
   {
