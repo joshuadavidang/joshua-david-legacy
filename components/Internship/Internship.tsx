@@ -10,12 +10,16 @@ import {
   UnorderedList,
   Box,
   Link,
+  useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { InternshipExperience } from "../../data/internship";
-import PHL from "../../public/assets/images/phl.svg";
+import PigeonLab from "../../public/assets/images/Internship/PigeonLab.svg";
+import CynapseLight from "../../public/assets/images/Internship/CynapseLight.png";
+import CynapseDark from "../../public/assets/images/Internship/CynapseDark.png";
 
 const Internship = () => {
+  const { colorMode } = useColorMode();
   return (
     <Tabs
       position="relative"
@@ -25,8 +29,15 @@ const Internship = () => {
       orientation="horizontal"
     >
       <TabList>
+        {/* <Tab>
+          <Image
+            src={colorMode === "dark" ? CynapseLight : CynapseDark}
+            width="100"
+            alt="Cynapse"
+          />
+        </Tab> */}
         <Tab>
-          <Image src={PHL} width="130" alt="phl" />
+          <Image src={PigeonLab} width="130" alt="PigeonLab" />
         </Tab>
         <Tab>
           <Text>BSG</Text>

@@ -6,7 +6,7 @@ type HoverProps = {
 };
 
 const Hover = ({ children, className }: HoverProps) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <span
