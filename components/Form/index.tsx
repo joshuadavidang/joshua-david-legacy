@@ -28,7 +28,7 @@ const Form = () => {
    * @returns boolean true || false
    */
 
-  const postDB = async (
+  const addFormToDB = async (
     uuid: any,
     name: string,
     email: string,
@@ -42,11 +42,8 @@ const Form = () => {
     });
 
     const { error } = result;
-    if (error === null) {
-      console.log("Sent to database");
-      return true;
-    }
-    return false;
+    
+    return error === null;
   };
 
   const handleSubmit = async (event: any) => {
@@ -66,7 +63,7 @@ const Form = () => {
       }
     } else {
       setLoadState(true);
-      await postDB(uuidv4(), name, email, message).then(() => {
+      await addFormToDB(uuidv4(), name, email, message).then(() => {
         setTimeout(() => {
           setLoadState(false);
           clearState().then(() => {
