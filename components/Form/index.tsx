@@ -25,7 +25,7 @@ const Form = () => {
    * @param name string - visitor's name
    * @param email string - visitor's email
    * @param message string - visitor's message
-   * @returns boolean true || false
+   * @returns boolean - true || false
    */
 
   const addFormToDB = async (
