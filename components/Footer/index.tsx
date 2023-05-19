@@ -1,4 +1,5 @@
 import { Box, Text, Link } from "@chakra-ui/react";
+import { FULL_NAME } from "../../constants";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
           isExternal
           color={"brand.purple"}
         >
-          Joshua David
+          {FULL_NAME}
         </Link>
       </Text>
     </Box>

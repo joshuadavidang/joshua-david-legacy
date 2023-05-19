@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 import Internship from "../components/Internship/Internship";
+import { DESCRIPTION } from "../constants";
 
 const Home = () => {
   return (
@@ -52,8 +53,7 @@ const Home = () => {
             className="pt-5 pb-8 pl-5 pr-5"
             lineHeight={7}
           >
-            Sophomore at the School of Computing and Information Systems,{" "}
-            Singapore Management University
+            {DESCRIPTION}
           </Text>
 
           <Box className="flex flex-row flex-wrap gap-2.5 justify-center">
