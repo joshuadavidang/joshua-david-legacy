@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react';
 import Form from '../components/Form';
 import { ButtonIcon } from '../components/Button/ButtonIcon';
 import Text from '../components/Text/Text';
+import { CONTACT_HEADER } from '../constants';
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
           color="brand.purple"
           mb={{ base: 1, md: 2 }}
         >
-          🔥 Stay Connected
+          {CONTACT_HEADER}
         </Text>
 
         <div className="flex flex-row justify-center gap-2.5 pt-4 pb-8">
