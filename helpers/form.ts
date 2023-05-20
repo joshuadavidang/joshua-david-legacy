@@ -1,6 +1,8 @@
 import { supabase } from "../superbase";
 
 /**
+ * Checks if any of the form input is empty
+ * Checks if email is valid
  *
  * @param name string - visitor's name
  * @param email string - visitor's email
@@ -16,6 +18,7 @@ const validateDetails = (name: string, email: string, message: string) => {
 };
 
 /**
+ * Takes in form data and saves it to database
  *
  * @param uuid any - form's unique Id
  * @param name string - visitor's name
