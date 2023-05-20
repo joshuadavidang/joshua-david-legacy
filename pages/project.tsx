@@ -1,13 +1,13 @@
-import { Box } from "@chakra-ui/react";
-import Image from "next/image";
-import Link from "next/link";
-import Card from "../components/Card/Card";
-import CardBody from "../components/Card/CardBody";
-import CardHeader from "../components/Card/CardHeader";
-import { PastProjects } from "../data/projects";
-import CardFooter from "../components/Card/CardFooter";
-import { Icon } from "../components/Button/Icon";
-import { TbBrandNextjs } from "react-icons/tb";
+import { Box } from '@chakra-ui/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Card from '../components/Card/Card';
+import CardBody from '../components/Card/CardBody';
+import CardHeader from '../components/Card/CardHeader';
+import { PastProjects } from '../data/projects';
+import CardFooter from '../components/Card/CardFooter';
+import { Icon } from '../components/Button/Icon';
+import { TbBrandNextjs } from 'react-icons/tb';
 import {
   SiTypescript,
   SiFlutter,
@@ -16,40 +16,40 @@ import {
   SiSupabase,
   SiChakraui,
   SiIonic,
-} from "react-icons/si";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+} from 'react-icons/si';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 
 const ProjectPage = () => {
   const displayIcon = (tech: any) => {
     switch (tech) {
-    case "Flutter":
+    case 'Flutter':
       return <SiFlutter />;
 
-    case "Next.js":
+    case 'Next.js':
       return <TbBrandNextjs />;
 
-    case "TypeScript":
+    case 'TypeScript':
       return <SiTypescript />;
 
-    case "Tailwind CSS":
+    case 'Tailwind CSS':
       return <SiTailwindcss />;
 
-    case "Chakra UI":
+    case 'Chakra UI':
       return <SiChakraui />;
 
-    case "Supabase":
+    case 'Supabase':
       return <SiSupabase />;
 
-    case "React.js":
+    case 'React.js':
       return <FaReact />;
 
-    case "MongoDB":
+    case 'MongoDB':
       return <SiMongodb />;
 
-    case "Ionic":
+    case 'Ionic':
       return <SiIonic />;
 
-    case "Express.js":
+    case 'Express.js':
       return <FaNodeJs />;
     }
   };
@@ -76,7 +76,7 @@ const ProjectPage = () => {
 
               <CardBody
                 paddingTop="0"
-                fontSize={{ base: "14px", md: "15px", lg: "14px" }}
+                fontSize={{ base: '14px', md: '15px', lg: '14px' }}
               >
                 {description}
               </CardBody>

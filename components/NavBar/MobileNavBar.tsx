@@ -13,16 +13,16 @@ import {
   List,
   ListItem,
   ListIcon,
-} from "@chakra-ui/react";
-import Link from "next/link";
-import DarkModeIcon from "../DarkMode/DarkModeIcon";
-import { NavLinkData } from "../../data/navLinks";
-import { useRouter } from "next/router";
-import { FaHamburger } from "react-icons/fa";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+} from '@chakra-ui/react';
+import Link from 'next/link';
+import DarkModeIcon from '../DarkMode/DarkModeIcon';
+import { NavLinkData } from '../../data/navLinks';
+import { useRouter } from 'next/router';
+import { FaHamburger } from 'react-icons/fa';
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 const MobileNavBar = () => {
-  const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const { pathname } = router;
@@ -43,7 +43,7 @@ const MobileNavBar = () => {
         </div>
       </Box>
 
-      <Drawer placement={"right"} isOpen={isOpen} onClose={onClose} size={"xs"}>
+      <Drawer placement={'right'} isOpen={isOpen} onClose={onClose} size={'xs'}>
         <DrawerOverlay />
         <DrawerContent bg={backgroundColor}>
           <DrawerCloseButton />

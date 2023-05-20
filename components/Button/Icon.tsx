@@ -1,24 +1,24 @@
-import { IconButton } from "@chakra-ui/react";
+import { IconButton } from '@chakra-ui/react';
 
 interface IconProps {
   onClick?: () => void;
   icon: any;
   label: any;
-  variant: "solid" | "ghost" | "outline";
-  size: "xs" | "sm" | "md" | "lg";
+  variant: 'solid' | 'ghost' | 'outline';
+  size: 'xs' | 'sm' | 'md' | 'lg';
   colorScheme:
-    | "gray"
-    | "red"
-    | "orange"
-    | "yellow"
-    | "green"
-    | "teal"
-    | "blue"
-    | "cyan"
-    | "purple"
-    | "pink"
-    | "messenger"
-    | "telegram";
+    | 'gray'
+    | 'red'
+    | 'orange'
+    | 'yellow'
+    | 'green'
+    | 'teal'
+    | 'blue'
+    | 'cyan'
+    | 'purple'
+    | 'pink'
+    | 'messenger'
+    | 'telegram';
 }
 
 export const Icon = ({ colorScheme, label, icon, ...props }: IconProps) => {

@@ -1,4 +1,4 @@
-import { Card as ChakraCard } from "@chakra-ui/react";
+import { Card as ChakraCard } from '@chakra-ui/react';
 
 interface CardProps {
   children: any;

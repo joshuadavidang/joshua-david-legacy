@@ -1,4 +1,4 @@
-import { Button as ChakraButton } from "@chakra-ui/react";
+import { Button as ChakraButton } from '@chakra-ui/react';
 
 interface ButtonProps {
   onClick?: () => void;
@@ -8,21 +8,21 @@ interface ButtonProps {
   cursor?: any;
   isLoading?: true | false;
   children: string;
-  variant: "solid" | "ghost" | "outline";
-  size: "xs" | "sm" | "md" | "lg";
+  variant: 'solid' | 'ghost' | 'outline';
+  size: 'xs' | 'sm' | 'md' | 'lg';
   colorScheme:
-    | "gray"
-    | "red"
-    | "orange"
-    | "yellow"
-    | "green"
-    | "teal"
-    | "blue"
-    | "cyan"
-    | "purple"
-    | "pink"
-    | "messenger"
-    | "telegram";
+    | 'gray'
+    | 'red'
+    | 'orange'
+    | 'yellow'
+    | 'green'
+    | 'teal'
+    | 'blue'
+    | 'cyan'
+    | 'purple'
+    | 'pink'
+    | 'messenger'
+    | 'telegram';
 }
 
 export const Button = ({

@@ -1,20 +1,20 @@
-import { useState } from "react";
-import { ButtonIcon } from "../Button/ButtonIcon";
-import Input from "./input";
-import TextArea from "./textarea";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { useState } from 'react';
+import { ButtonIcon } from '../Button/ButtonIcon';
+import Input from './input';
+import TextArea from './textarea';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import {
   FormControl,
   FormLabel,
   Box,
   useToast,
   useColorMode,
-} from "@chakra-ui/react";
-import { v4 as uuidv4 } from "uuid";
-import { validateDetails, addFormToDB } from "../../helpers/form";
+} from '@chakra-ui/react';
+import { v4 as uuidv4 } from 'uuid';
+import { validateDetails, addFormToDB } from '../../helpers/form';
 
 const Form = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [loadState, setLoadState] = useState(false);
   const { colorMode } = useColorMode();
   const toast = useToast();
@@ -26,10 +26,10 @@ const Form = () => {
       if (!toast.isActive(toast_id)) {
         toast({
           id: email,
-          position: "top",
-          title: "Error",
-          description: "Please fill in all the fields",
-          status: "error",
+          position: 'top',
+          title: 'Error',
+          description: 'Please fill in all the fields',
+          status: 'error',
           duration: 1000,
           isClosable: false,
         });
@@ -41,10 +41,10 @@ const Form = () => {
           setLoadState(false);
           clearState().then(() => {
             toast({
-              position: "top",
-              title: "Success",
-              description: "Thanks for reaching out!",
-              status: "success",
+              position: 'top',
+              title: 'Success',
+              description: 'Thanks for reaching out!',
+              status: 'success',
               duration: 3000,
               isClosable: false,
             });
@@ -72,9 +72,9 @@ const Form = () => {
   const clearState = async () => {
     setForm({
       ...form,
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     });
   };
 
@@ -134,7 +134,7 @@ const Form = () => {
           onClick={(event: any) => handleSubmit(event)}
           leftIcon={<AiOutlineArrowRight />}
           isDisabled={false}
-          colorScheme={colorMode == "dark" ? "gray" : "messenger"}
+          colorScheme={colorMode == 'dark' ? 'gray' : 'messenger'}
         >
           Send
         </ButtonIcon>

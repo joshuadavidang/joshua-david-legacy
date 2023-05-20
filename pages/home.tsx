@@ -1,8 +1,8 @@
-import { TypeAnimation } from "react-type-animation";
-import LandingHero from "../public/assets/images/LandingBanner.svg";
-import QR from "../public/assets/images/qr.png";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiTypescript, SiMysql } from "react-icons/si";
+import { TypeAnimation } from 'react-type-animation';
+import LandingHero from '../public/assets/images/LandingBanner.svg';
+import QR from '../public/assets/images/qr.png';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { SiTypescript, SiMysql } from 'react-icons/si';
 import {
   FaJsSquare,
   FaReact,
@@ -10,14 +10,14 @@ import {
   FaPython,
   FaVuejs,
   FaPhp,
-} from "react-icons/fa";
-import { ButtonIcon } from "../components/Button/ButtonIcon";
-import Text from "../components/Text/Text";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { Box } from "@chakra-ui/react";
-import Internship from "../components/Internship/Internship";
-import { DESCRIPTION } from "../constants";
+} from 'react-icons/fa';
+import { ButtonIcon } from '../components/Button/ButtonIcon';
+import Text from '../components/Text/Text';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Box } from '@chakra-ui/react';
+import Internship from '../components/Internship/Internship';
+import { DESCRIPTION } from '../constants';
 
 const Home = () => {
   return (
@@ -29,17 +29,17 @@ const Home = () => {
 
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
           <Box
-            fontSize={{ base: "28px", md: "33px", lg: "35px" }}
+            fontSize={{ base: '28px', md: '33px', lg: '35px' }}
             color="brand.purple"
             className="font-sen"
           >
             <TypeAnimation
               sequence={[
-                "Hey! I'm Joshua,",
+                'Hey! I\'m Joshua,',
                 1000,
-                "An aspiring Software Engineer,",
+                'An aspiring Software Engineer,',
                 1000,
-                "Student.",
+                'Student.',
                 3000,
               ]}
               cursor={true}
@@ -49,7 +49,7 @@ const Home = () => {
           </Box>
 
           <Text
-            fontSize={{ base: "16px", md: "18px", lg: "19px" }}
+            fontSize={{ base: '16px', md: '18px', lg: '19px' }}
             className="pt-5 pb-8 pl-5 pr-5"
             lineHeight={7}
           >
@@ -172,10 +172,10 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, ease: "easeOut" }}
+          transition={{ delay: 0.2, ease: 'easeOut' }}
         >
           <Box
-            fontSize={{ base: "23px", md: "28px", lg: "30px" }}
+            fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
             className="font-sen text-center pb-5"
           >
@@ -186,7 +186,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, ease: "easeOut" }}
+          transition={{ delay: 0.3, ease: 'easeOut' }}
         >
           <Internship />
         </motion.div>
@@ -196,10 +196,10 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, ease: "easeOut" }}
+          transition={{ delay: 0.3, ease: 'easeOut' }}
         >
           <Text
-            fontSize={{ base: "23px", md: "28px", lg: "30px" }}
+            fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
             className="font-sen text-center pb-5"
           >
@@ -210,7 +210,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4, ease: "easeOut" }}
+          transition={{ delay: 0.4, ease: 'easeOut' }}
         >
           <a download href="/Joshua_David.pdf" className="cursor-pointer">
             <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">

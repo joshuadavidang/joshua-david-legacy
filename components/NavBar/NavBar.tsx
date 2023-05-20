@@ -14,18 +14,18 @@ import {
   List,
   ListItem,
   ListIcon,
-} from "@chakra-ui/react";
-import Link from "next/link";
-import DarkModeIcon from "../DarkMode/DarkModeIcon";
-import { ButtonIcon } from "../Button/ButtonIcon";
-import { FaGithub, FaLinkedin, FaFile, FaHamburger } from "react-icons/fa";
-import { NavLinkData } from "../../data/navLinks";
-import { useRouter } from "next/router";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+} from '@chakra-ui/react';
+import Link from 'next/link';
+import DarkModeIcon from '../DarkMode/DarkModeIcon';
+import { ButtonIcon } from '../Button/ButtonIcon';
+import { FaGithub, FaLinkedin, FaFile, FaHamburger } from 'react-icons/fa';
+import { NavLinkData } from '../../data/navLinks';
+import { useRouter } from 'next/router';
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 const NavBar = () => {
   const { colorMode } = useColorMode();
-  const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const { pathname } = router;
@@ -86,9 +86,9 @@ const NavBar = () => {
 
         <Box
           className={`p-2 rounded cursor-pointer ${
-            colorMode === "dark"
-              ? "hover:bg-gray hover:text-white"
-              : "hover:bg-white hover:text-black"
+            colorMode === 'dark'
+              ? 'hover:bg-gray hover:text-white'
+              : 'hover:bg-white hover:text-black'
           }`}
           onClick={onOpen}
         >
@@ -96,10 +96,10 @@ const NavBar = () => {
         </Box>
 
         <Drawer
-          placement={"right"}
+          placement={'right'}
           isOpen={isOpen}
           onClose={onClose}
-          size={"xs"}
+          size={'xs'}
         >
           <DrawerOverlay />
           <DrawerContent bg={backgroundColor}>
@@ -112,9 +112,9 @@ const NavBar = () => {
                     <List spacing={2}>
                       <ListItem
                         className={`p-3 rounded cursor-pointer ${
-                          colorMode === "dark"
-                            ? "hover:bg-gray hover:text-white"
-                            : "hover:bg-white hover:text-black"
+                          colorMode === 'dark'
+                            ? 'hover:bg-gray hover:text-white'
+                            : 'hover:bg-white hover:text-black'
                         }`}
                       >
                         <p>

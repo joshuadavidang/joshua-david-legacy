@@ -10,10 +10,10 @@ import {
   UnorderedList,
   Box,
   Link,
-} from "@chakra-ui/react";
-import Image from "next/image";
-import { InternshipExperience } from "../../data/internship";
-import PigeonLab from "../../public/assets/images/Internship/PigeonLab.svg";
+} from '@chakra-ui/react';
+import Image from 'next/image';
+import { InternshipExperience } from '../../data/internship';
+import PigeonLab from '../../public/assets/images/Internship/PigeonLab.svg';
 
 const Internship = () => {
   return (
@@ -42,13 +42,13 @@ const Internship = () => {
 
       <TabPanels width={100}>
         {InternshipExperience.map(({ id, title, date, link, tasks }) => {
-          const data = title.split("Software Engineer Intern at");
+          const data = title.split('Software Engineer Intern at');
           const company = data[data.length - 1];
           return (
             <TabPanel key={id}>
               <Box className="flex flex-col gap-2 text-left">
                 <p className="text-lg">
-                  Software Engineer Intern at{" "}
+                  Software Engineer Intern at{' '}
                   <Link href={link} isExternal>
                     <Text as="i" color="brand.purple">
                       {company}

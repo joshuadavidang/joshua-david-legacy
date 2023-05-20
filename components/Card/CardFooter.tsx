@@ -1,4 +1,4 @@
-import { CardFooter as ChakraCardFooter } from "@chakra-ui/react";
+import { CardFooter as ChakraCardFooter } from '@chakra-ui/react';
 
 interface CardFooterProps {
   children: any;

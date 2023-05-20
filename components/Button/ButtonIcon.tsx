@@ -1,4 +1,4 @@
-import { Button as ChakraButton, Stack } from "@chakra-ui/react";
+import { Button as ChakraButton, Stack } from '@chakra-ui/react';
 
 interface ButtonIconProps {
   // eslint-disable-next-line no-unused-vars
@@ -12,21 +12,21 @@ interface ButtonIconProps {
   isLoading?: true | false;
   loadingText?: string;
   children: string;
-  variant: "solid" | "ghost" | "outline";
-  size: "xs" | "sm" | "md" | "lg";
+  variant: 'solid' | 'ghost' | 'outline';
+  size: 'xs' | 'sm' | 'md' | 'lg';
   colorScheme:
-    | "gray"
-    | "red"
-    | "orange"
-    | "yellow"
-    | "green"
-    | "teal"
-    | "blue"
-    | "cyan"
-    | "purple"
-    | "pink"
-    | "messenger"
-    | "telegram";
+    | 'gray'
+    | 'red'
+    | 'orange'
+    | 'yellow'
+    | 'green'
+    | 'teal'
+    | 'blue'
+    | 'cyan'
+    | 'purple'
+    | 'pink'
+    | 'messenger'
+    | 'telegram';
 }
 
 export const ButtonIcon = ({

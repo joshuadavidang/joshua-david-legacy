@@ -1,7 +1,7 @@
 import {
   CardBody as ChakraCardBody,
-} from "@chakra-ui/react";
-import Text from "../Text/Text";
+} from '@chakra-ui/react';
+import Text from '../Text/Text';
 
 interface CardBodyProps {
   children: any;

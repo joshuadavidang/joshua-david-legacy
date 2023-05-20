@@ -1,7 +1,7 @@
 import {
   CardHeader as ChakraCardHeader,
-} from "@chakra-ui/react";
-import Text from "../Text/Text";
+} from '@chakra-ui/react';
+import Text from '../Text/Text';
 
 interface CardHeaderProps {
   children: any;
@@ -11,7 +11,7 @@ interface CardHeaderProps {
 const CardHeader = ({ children, fontSize }: CardHeaderProps) => {
   return (
     <ChakraCardHeader>
-      <Text color={"brand.purple"} fontSize={fontSize}>
+      <Text color={'brand.purple'} fontSize={fontSize}>
         {children}
       </Text>
     </ChakraCardHeader>
