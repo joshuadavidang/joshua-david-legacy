@@ -1,13 +1,13 @@
-import { Box, useColorModeValue } from "@chakra-ui/react";
-import Head from "next/head";
-import MobileNavBar from "../components/NavBar/MobileNavBar";
-import NavBar from "../components/NavBar/NavBar";
-import { motion } from "framer-motion";
-import Footer from "../components/Footer";
+import { Box, useColorModeValue } from '@chakra-ui/react';
+import Head from 'next/head';
+import MobileNavBar from '../components/NavBar/MobileNavBar';
+import NavBar from '../components/NavBar/NavBar';
+import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
-  const backgroundColor = useColorModeValue("brand.offWhite", "brand.midnight");
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
 
   return (
     <div>
@@ -59,7 +59,7 @@ export default function Layout(props: { children: any }) {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.1, ease: "easeIn" }}
+          transition={{ delay: 0.1, ease: 'easeIn' }}
         >
           <main>{children}</main>
         </motion.div>
@@ -67,7 +67,7 @@ export default function Layout(props: { children: any }) {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.1, ease: "easeIn" }}
+          transition={{ delay: 0.1, ease: 'easeIn' }}
         >
           <Footer />
         </motion.div>

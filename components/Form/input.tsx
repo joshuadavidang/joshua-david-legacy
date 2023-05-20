@@ -1,4 +1,4 @@
-import { Input as ChakraInput } from "@chakra-ui/react";
+import { Input as ChakraInput } from '@chakra-ui/react';
 
 interface InputProps {
   name: string;
@@ -6,7 +6,7 @@ interface InputProps {
   type: string;
   value: any;
   data: any;
-  size: "xs" | "sm" | "md" | "lg";
+  size: 'xs' | 'sm' | 'md' | 'lg';
 }
 
 const Input = ({ type, placeholder, data, name, size, value }: InputProps) => {

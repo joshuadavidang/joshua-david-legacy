@@ -1,4 +1,4 @@
-import { Textarea as ChakraTextarea } from "@chakra-ui/react";
+import { Textarea as ChakraTextarea } from '@chakra-ui/react';
 
 interface TextAreaProps {
   name: string;
@@ -6,7 +6,7 @@ interface TextAreaProps {
   value: any;
   data: any;
   rows: number;
-  size: "xs" | "sm" | "md" | "lg";
+  size: 'xs' | 'sm' | 'md' | 'lg';
 }
 
 const TextArea = ({

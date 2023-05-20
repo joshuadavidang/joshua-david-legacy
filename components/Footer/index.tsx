@@ -1,5 +1,5 @@
-import { Box, Text, Link } from "@chakra-ui/react";
-import { FULL_NAME } from "../../constants";
+import { Box, Text, Link } from '@chakra-ui/react';
+import { FULL_NAME } from '../../constants';
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
         <Link
           href="https://www.linkedin.com/in/joshuadavidang/"
           isExternal
-          color={"brand.purple"}
+          color={'brand.purple'}
         >
           {FULL_NAME}
         </Link>
