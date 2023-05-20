@@ -17,7 +17,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Box } from '@chakra-ui/react';
 import Internship from '../components/Internship/Internship';
-import { DESCRIPTION } from '../constants';
+import { DESCRIPTION, INTERNSHIP_HEADER, RESUME_HEADER } from '../constants';
 
 const Home = () => {
   return (
@@ -179,7 +179,7 @@ const Home = () => {
             color="brand.purple"
             className="font-sen text-center pb-5"
           >
-            <Text>👨🏻‍💻 Internship Experience</Text>
+            <Text>{INTERNSHIP_HEADER}</Text>
           </Box>
         </motion.div>
 
@@ -203,7 +203,7 @@ const Home = () => {
             color="brand.purple"
             className="font-sen text-center pb-5"
           >
-            Full Resume 👇🏻
+            {RESUME_HEADER}
           </Text>
         </motion.div>
 

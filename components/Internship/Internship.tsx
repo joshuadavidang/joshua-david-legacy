@@ -14,6 +14,7 @@ import {
 import Image from 'next/image';
 import { InternshipExperience } from '../../data/internship';
 import PigeonLab from '../../public/assets/images/Internship/PigeonLab.svg';
+import { ROLE } from '../../constants';
 
 const Internship = () => {
   return (
@@ -41,14 +42,12 @@ const Internship = () => {
       />
 
       <TabPanels width={100}>
-        {InternshipExperience.map(({ id, title, date, link, tasks }) => {
-          const data = title.split('Software Engineer Intern at');
-          const company = data[data.length - 1];
+        {InternshipExperience.map(({ id, company, date, link, tasks }) => {
           return (
             <TabPanel key={id}>
               <Box className="flex flex-col gap-2 text-left">
                 <p className="text-lg">
-                  Software Engineer Intern at{' '}
+                  {ROLE} at{' '}
                   <Link href={link} isExternal>
                     <Text as="i" color="brand.purple">
                       {company}
