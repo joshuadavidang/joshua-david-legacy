@@ -45,7 +45,7 @@ const Internship = () => {
         {InternshipExperience.map(({ id, company, date, link, tasks }) => {
           return (
             <TabPanel key={id}>
-              <Box className="flex flex-col gap-2 text-left">
+              <Box className="flex flex-col gap-2 text-left md:w-3/5">
                 <p className="text-lg">
                   {ROLE} at{' '}
                   <Link href={link} isExternal>
