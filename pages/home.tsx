@@ -1,15 +1,15 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import LandingHero from '../public/assets/images/LandingBanner.svg';
-import QR from '../public/assets/images/qr.png';
-import { ButtonIcon } from '../components/Button/ButtonIcon';
-import Text from '../components/Text/Text';
+import LandingHero from '@/images/LandingBanner.svg';
+import QR from '@/images/qr.png';
+import { ButtonIcon } from '@/components/Button/ButtonIcon';
+import Text from '@/components/Text/Text';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Box } from '@chakra-ui/react';
-import Internship from '../components/Internship/Internship';
-import { DESCRIPTION, INTERNSHIP_HEADER, RESUME_HEADER } from '../constants';
-import { Skills } from '../data/skills';
+import Internship from '@/components/Internship/Internship';
+import { DESCRIPTION, INTERNSHIP_HEADER, RESUME_HEADER } from '@/constants/index';
+import { Skills } from '@/data/skills';
 
 const Home = () => {
   return (

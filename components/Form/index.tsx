@@ -11,7 +11,7 @@ import {
   useColorMode,
 } from '@chakra-ui/react';
 import { v4 as uuidv4 } from 'uuid';
-import { validateDetails, addFormToDB } from '../../helpers/form';
+import { validateDetails, addFormToDB } from '@/helpers/form';
 
 const Form = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });

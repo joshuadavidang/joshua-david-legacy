@@ -19,11 +19,11 @@ import Link from 'next/link';
 import DarkModeIcon from '../DarkMode/DarkModeIcon';
 import { ButtonIcon } from '../Button/ButtonIcon';
 import { FaHamburger } from 'react-icons/fa';
-import { NavLinkData } from '../../data/navLinks';
+import { NavLinkData } from '@/data/navLinks';
 import { useRouter } from 'next/router';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import React from 'react';
-import { ContactMe } from '../../data/contactMe';
+import { ContactMe } from '@/data/contactMe';
 
 const NavBar = () => {
   const { colorMode } = useColorMode();
@@ -41,16 +41,18 @@ const NavBar = () => {
       <div className="flex flex-row gap-2.5">
         {ContactMe.map(({ link, icon, title, isPDF }) => {
           return isPDF ? (
-            <a download href={link} className="md:block hidden">
-              <ButtonIcon
-                size="sm"
-                colorScheme="gray"
-                variant="solid"
-                leftIcon={React.createElement(icon)}
-              >
-                {title}
-              </ButtonIcon>
-            </a>
+            <span key={title}>
+              <a download href={link} className="md:block hidden">
+                <ButtonIcon
+                  size="sm"
+                  colorScheme="gray"
+                  variant="solid"
+                  leftIcon={React.createElement(icon)}
+                >
+                  {title}
+                </ButtonIcon>
+              </a>
+            </span>
           ) : (
             <span key={title}>
               <Link href={link} target="_blank" className="md:block hidden">

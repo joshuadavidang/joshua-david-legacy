@@ -1,12 +1,12 @@
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Card from '../components/Card/Card';
-import CardBody from '../components/Card/CardBody';
-import CardHeader from '../components/Card/CardHeader';
+import Card from '@/components/Card/Card';
+import CardBody from '@/components/Card/CardBody';
+import CardHeader from '@/components/Card/CardHeader';
 import { PastProjects } from '../data/projects';
-import CardFooter from '../components/Card/CardFooter';
-import { Icon } from '../components/Button/Icon';
+import CardFooter from '@/components/Card/CardFooter';
+import { Icon } from '@/components/Button/Icon';
 import { TbBrandNextjs } from 'react-icons/tb';
 import {
   SiTypescript,

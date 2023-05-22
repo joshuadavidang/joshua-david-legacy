@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { Box } from '@chakra-ui/react';
-import Form from '../components/Form';
-import { ButtonIcon } from '../components/Button/ButtonIcon';
-import Text from '../components/Text/Text';
-import { CONTACT_HEADER } from '../constants';
-import { ContactMe } from '../data/contactMe';
+import Form from '@/components/Form';
+import { ButtonIcon } from '@/components/Button/ButtonIcon';
+import Text from '@/components/Text/Text';
+import { CONTACT_HEADER } from '@/constants/index';
+import { ContactMe } from '@/data/contactMe';
 
 import React from 'react';
 

@@ -1,5 +1,5 @@
 import { Box, Text, Link } from '@chakra-ui/react';
-import { FULL_NAME } from '../../constants';
+import { FULL_NAME } from '@/constants/index';
 
 const Footer = () => {
   return (

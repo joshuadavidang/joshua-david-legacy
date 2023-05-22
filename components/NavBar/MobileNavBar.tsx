@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import DarkModeIcon from '../DarkMode/DarkModeIcon';
-import { NavLinkData } from '../../data/navLinks';
+import { NavLinkData } from '@/data/navLinks';
 import { useRouter } from 'next/router';
 import { FaHamburger } from 'react-icons/fa';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';

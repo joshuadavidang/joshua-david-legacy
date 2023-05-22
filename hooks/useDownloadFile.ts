@@ -1,5 +1,5 @@
-import { AxiosResponse } from "axios";
-import React, { useRef, useState } from "react";
+import { AxiosResponse } from 'axios';
+import React, { useRef, useState } from 'react';
 
 interface DownloadFileProps {
   readonly apiDefinition: () => Promise<AxiosResponse<Blob>>;
