@@ -1,10 +1,12 @@
-import { FaGithub, FaLinkedin, FaFile } from 'react-icons/fa';
 import Link from 'next/link';
 import { Box } from '@chakra-ui/react';
 import Form from '../components/Form';
 import { ButtonIcon } from '../components/Button/ButtonIcon';
 import Text from '../components/Text/Text';
 import { CONTACT_HEADER } from '../constants';
+import { ContactMe } from '../data/contactMe';
+
+import React from 'react';
 
 const Contact = () => {
   return (
@@ -22,40 +24,34 @@ const Contact = () => {
         </Text>
 
         <div className="flex flex-row justify-center gap-2.5 pt-4 pb-8">
-          <Link href="https://github.com/joshuadavidang" target="_blank">
-            <ButtonIcon
-              size="sm"
-              colorScheme="gray"
-              variant="solid"
-              leftIcon={<FaGithub />}
-            >
-              GitHub
-            </ButtonIcon>
-          </Link>
-
-          <Link href="https://linkedin.com/in/joshuadavidang/" target="_blank">
-            <ButtonIcon
-              size="sm"
-              colorScheme="gray"
-              variant="solid"
-              leftIcon={<FaLinkedin />}
-            >
-              LinkedIn
-            </ButtonIcon>
-          </Link>
-
-          <a download href="/Joshua_David.pdf">
-            <ButtonIcon
-              size="sm"
-              colorScheme="gray"
-              variant="solid"
-              leftIcon={<FaFile />}
-            >
-              Resume
-            </ButtonIcon>
-          </a>
+          {ContactMe.map(({ link, icon, title, isPDF }) => {
+            return isPDF ? (
+              <a download href={link}>
+                <ButtonIcon
+                  size="sm"
+                  colorScheme="gray"
+                  variant="solid"
+                  leftIcon={React.createElement(icon)}
+                >
+                  {title}
+                </ButtonIcon>
+              </a>
+            ) : (
+              <span key={title}>
+                <Link href={link} target="_blank">
+                  <ButtonIcon
+                    size="sm"
+                    colorScheme="gray"
+                    variant="solid"
+                    leftIcon={React.createElement(icon)}
+                  >
+                    {title}
+                  </ButtonIcon>
+                </Link>
+              </span>
+            );
+          })}
         </div>
-
         <Form />
       </div>
     </Box>

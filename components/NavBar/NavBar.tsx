@@ -18,10 +18,12 @@ import {
 import Link from 'next/link';
 import DarkModeIcon from '../DarkMode/DarkModeIcon';
 import { ButtonIcon } from '../Button/ButtonIcon';
-import { FaGithub, FaLinkedin, FaFile, FaHamburger } from 'react-icons/fa';
+import { FaHamburger } from 'react-icons/fa';
 import { NavLinkData } from '../../data/navLinks';
 import { useRouter } from 'next/router';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import React from 'react';
+import { ContactMe } from '../../data/contactMe';
 
 const NavBar = () => {
   const { colorMode } = useColorMode();
@@ -37,46 +39,33 @@ const NavBar = () => {
       bg={backgroundColor}
     >
       <div className="flex flex-row gap-2.5">
-        <Link
-          href="https://github.com/joshuadavidang"
-          target="_blank"
-          className="md:block hidden"
-        >
-          <ButtonIcon
-            size="sm"
-            colorScheme="gray"
-            variant="solid"
-            leftIcon={<FaGithub />}
-          >
-            GitHub
-          </ButtonIcon>
-        </Link>
-
-        <Link
-          href="https://linkedin.com/in/joshuadavidang/"
-          target="_blank"
-          className="md:block hidden"
-        >
-          <ButtonIcon
-            size="sm"
-            colorScheme="gray"
-            variant="solid"
-            leftIcon={<FaLinkedin />}
-          >
-            LinkedIn
-          </ButtonIcon>
-        </Link>
-
-        <a download href="/Joshua_David.pdf" className="md:block hidden">
-          <ButtonIcon
-            size="sm"
-            colorScheme="gray"
-            variant="solid"
-            leftIcon={<FaFile />}
-          >
-            Resume
-          </ButtonIcon>
-        </a>
+        {ContactMe.map(({ link, icon, title, isPDF }) => {
+          return isPDF ? (
+            <a download href={link} className="md:block hidden">
+              <ButtonIcon
+                size="sm"
+                colorScheme="gray"
+                variant="solid"
+                leftIcon={React.createElement(icon)}
+              >
+                {title}
+              </ButtonIcon>
+            </a>
+          ) : (
+            <span key={title}>
+              <Link href={link} target="_blank" className="md:block hidden">
+                <ButtonIcon
+                  size="sm"
+                  colorScheme="gray"
+                  variant="solid"
+                  leftIcon={React.createElement(icon)}
+                >
+                  {title}
+                </ButtonIcon>
+              </Link>
+            </span>
+          );
+        })}
       </div>
 
       <div className="flex md:flex-row flex-col items-center gap-0.5">
