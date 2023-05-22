@@ -12,9 +12,9 @@ import {
   Link,
 } from '@chakra-ui/react';
 import Image from 'next/image';
-import { InternshipExperience } from '../../data/internship';
-import PigeonLab from '../../public/assets/images/Internship/PigeonLab.svg';
-import { ROLE } from '../../constants';
+import { InternshipExperience } from '@/data/internship';
+import PigeonLab from '@/images/Internship/PigeonLab.svg';
+import { ROLE } from '@/constants/index';
 
 const Internship = () => {
   return (
