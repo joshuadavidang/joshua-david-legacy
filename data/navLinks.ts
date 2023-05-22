@@ -1,23 +1,24 @@
+import { randomUniqueId } from '@/helpers/randomUniqueId';
+
 export interface NavLinkDataType {
-  id: number,
+  id: string,
   link: string,
   name: string
 }
 
 export const NavLinkData: NavLinkDataType[] = [
   {
-    id: 1,
+    id: randomUniqueId(),
     link: '/home',
     name: 'about',
-
   },
   {
-    id: 2,
+    id: randomUniqueId(),
     link: '/project',
     name: 'projects',
   },
   {
-    id: 3,
+    id: randomUniqueId(),
     link: '/contact',
     name: 'contact',
   },

@@ -1,26 +1,27 @@
 import GoogleIgnite from '../public/assets/images/Certs/cert_two.png';
 import CodeIT from '../public/assets/images/Certs/cert_one.png';
 import CodeXtreme from '../public/assets/images/Certs/cert_three.png';
+import { randomUniqueId } from '@/helpers/randomUniqueId';
 
 export interface CertificatesDataType {
-  id: number;
+  id: string;
   name: string;
   image: any;
 }
 
 export const CertificatesData: CertificatesDataType[] = [
   {
-    id: 1,
+    id: randomUniqueId(),
     name: 'GoogleIgnite',
     image: GoogleIgnite,
   },
   {
-    id: 2,
+    id: randomUniqueId(),
     name: 'CodeIT',
     image: CodeIT,
   },
   {
-    id: 3,
+    id: randomUniqueId(),
     name: 'CodeXtreme',
     image: CodeXtreme,
   },
