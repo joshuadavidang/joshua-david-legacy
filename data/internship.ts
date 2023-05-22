@@ -1,5 +1,7 @@
+import { randomUniqueId } from '@/helpers/randomUniqueId';
+
 export interface InternshipExperienceType {
-  id: number,
+  id: string,
   company: string,
   date: string,
   link: string,
@@ -8,7 +10,7 @@ export interface InternshipExperienceType {
 
 export const InternshipExperience: InternshipExperienceType[] = [
   {
-    id: 2,
+    id: randomUniqueId(),
     company: 'Pigeonhole Live (PigeonLab)',
     date: 'Jan 2023 - Mar 2023',
     link: 'https://pigeonholelive.com/',
@@ -20,7 +22,7 @@ export const InternshipExperience: InternshipExperienceType[] = [
     ],
   },
   {
-    id: 3,
+    id: randomUniqueId(),
     company: 'Blockchain Solutions (BSG)',
     date: 'May 2022 - Jul 2022',
     link: 'https://blockchainsg.com/',
