@@ -3,7 +3,16 @@ import Sayocode from '../public/assets/images/Projects/Sayocode.png';
 import BreadApp from '../public/assets/images/Projects/bread_app.png';
 import macOS from '../public/assets/images/Projects/macOS.png';
 
-export const PastProjects = [
+export interface PastProjectsType {
+  name: string,
+  description: string,
+  year: number,
+  techStack: string[],
+  icon: any,
+  link: string
+}
+
+export const PastProjects: PastProjectsType[] = [
   {
     name: 'Project Bread',
     description:

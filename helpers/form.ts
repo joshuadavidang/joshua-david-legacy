@@ -1,4 +1,4 @@
-import { supabase } from "../superbase";
+import { supabase } from '../superbase';
 
 /**
  * Checks if any of the form input is empty
@@ -11,7 +11,7 @@ import { supabase } from "../superbase";
  */
 
 const validateDetails = (name: string, email: string, message: string) => {
-  if (name === "" || email === "" || message === "") {
+  if (name === '' || email === '' || message === '') {
     return false;
   }
   return /\S+@\S+\.\S+/.test(email);
@@ -33,7 +33,7 @@ const addFormToDB = async (
   email: string,
   message: string
 ) => {
-  let result = await supabase.from("form").insert({
+  let result = await supabase.from('form').insert({
     uuid: uuid,
     name: name,
     email: email,
