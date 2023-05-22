@@ -1,16 +1,7 @@
+import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import LandingHero from '../public/assets/images/LandingBanner.svg';
 import QR from '../public/assets/images/qr.png';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { SiTypescript, SiMysql } from 'react-icons/si';
-import {
-  FaJsSquare,
-  FaReact,
-  FaNode,
-  FaPython,
-  FaVuejs,
-  FaPhp,
-} from 'react-icons/fa';
 import { ButtonIcon } from '../components/Button/ButtonIcon';
 import Text from '../components/Text/Text';
 import { motion } from 'framer-motion';
@@ -18,6 +9,7 @@ import Image from 'next/image';
 import { Box } from '@chakra-ui/react';
 import Internship from '../components/Internship/Internship';
 import { DESCRIPTION, INTERNSHIP_HEADER, RESUME_HEADER } from '../constants';
+import { Skills } from '../data/skills';
 
 const Home = () => {
   return (
@@ -57,113 +49,21 @@ const Home = () => {
           </Text>
 
           <Box className="flex flex-row flex-wrap gap-2.5 justify-center">
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<FaPython />}
-            >
-              Python
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<SiTypescript />}
-            >
-              TypeScript
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<FaJsSquare />}
-            >
-              JavaScript
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<FaReact />}
-            >
-              React
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<TbBrandNextjs />}
-            >
-              Next
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<FaVuejs />}
-            >
-              Vue
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<FaNode />}
-            >
-              Node
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<FaPhp />}
-            >
-              PHP
-            </ButtonIcon>
-
-            <ButtonIcon
-              cursor="text"
-              hover={{}}
-              active={{}}
-              colorScheme="gray"
-              variant="solid"
-              size="sm"
-              leftIcon={<SiMysql />}
-            >
-              SQL
-            </ButtonIcon>
+            {Skills.map(({ programmingLanguage, icon }) => (
+              <span key={programmingLanguage}>
+                <ButtonIcon
+                  cursor="text"
+                  hover={{}}
+                  active={{}}
+                  colorScheme="gray"
+                  variant="solid"
+                  size="sm"
+                  leftIcon={React.createElement(icon)}
+                >
+                  {programmingLanguage}
+                </ButtonIcon>
+              </span>
+            ))}
           </Box>
         </Box>
       </Box>

@@ -1,4 +1,12 @@
-export const InternshipExperience = [
+export interface InternshipExperienceType {
+  id: number,
+  company: string,
+  date: string,
+  link: string,
+  tasks: string[]
+}
+
+export const InternshipExperience: InternshipExperienceType[] = [
   {
     id: 2,
     company: 'Pigeonhole Live (PigeonLab)',

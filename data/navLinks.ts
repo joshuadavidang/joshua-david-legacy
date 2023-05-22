@@ -1,4 +1,10 @@
-export const NavLinkData = [
+export interface NavLinkDataType {
+  id: number,
+  link: string,
+  name: string
+}
+
+export const NavLinkData: NavLinkDataType[] = [
   {
     id: 1,
     link: '/home',
