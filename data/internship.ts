@@ -1,24 +1,14 @@
 import { randomUniqueId } from '@/helpers/randomUniqueId';
 
 export interface InternshipExperienceType {
-  id: string,
-  company: string,
-  date: string,
-  link: string,
-  tasks: string[]
+  id: string;
+  company: string;
+  date: string;
+  link: string;
+  tasks: string[];
 }
 
 export const InternshipExperience: InternshipExperienceType[] = [
-  {
-    id: randomUniqueId(),
-    company: 'Cynapse',
-    date: 'May 2023 - Present',
-    link: 'https://cynapse.ai',
-    tasks: [
-      'Application Development Team',
-      'Technologies: React.js, GitLab, mySQL',
-    ],
-  },
   {
     id: randomUniqueId(),
     company: 'Pigeonhole Live (PigeonLab)',
