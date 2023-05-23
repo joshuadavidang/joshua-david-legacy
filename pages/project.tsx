@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,53 +8,8 @@ import CardHeader from '@/components/Card/CardHeader';
 import { PastProjects } from '@/data/projects';
 import CardFooter from '@/components/Card/CardFooter';
 import { Icon } from '@/components/Button/Icon';
-import { TbBrandNextjs } from 'react-icons/tb';
-import {
-  SiTypescript,
-  SiFlutter,
-  SiMongodb,
-  SiTailwindcss,
-  SiSupabase,
-  SiChakraui,
-  SiIonic,
-} from 'react-icons/si';
-import { FaReact, FaNodeJs } from 'react-icons/fa';
 
 const ProjectPage = () => {
-  const displayIcon = (tech: any) => {
-    switch (tech) {
-    case 'Flutter':
-      return <SiFlutter />;
-
-    case 'Next.js':
-      return <TbBrandNextjs />;
-
-    case 'TypeScript':
-      return <SiTypescript />;
-
-    case 'Tailwind CSS':
-      return <SiTailwindcss />;
-
-    case 'Chakra UI':
-      return <SiChakraui />;
-
-    case 'Supabase':
-      return <SiSupabase />;
-
-    case 'React.js':
-      return <FaReact />;
-
-    case 'MongoDB':
-      return <SiMongodb />;
-
-    case 'Ionic':
-      return <SiIonic />;
-
-    case 'Express.js':
-      return <FaNodeJs />;
-    }
-  };
-
   return (
     <Box className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16 overflow-auto">
       {PastProjects.map(
@@ -86,7 +42,7 @@ const ProjectPage = () => {
                   {techStack.map((tech, index) => (
                     <Icon
                       colorScheme="gray"
-                      icon={displayIcon(tech)}
+                      icon={React.createElement(tech)}
                       variant="solid"
                       size="md"
                       label="button"

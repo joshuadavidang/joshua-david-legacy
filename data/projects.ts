@@ -2,6 +2,17 @@ import StillYoung from '../public/assets/images/Projects/StillYoung.svg';
 import Sayocode from '../public/assets/images/Projects/Sayocode.png';
 import BreadApp from '../public/assets/images/Projects/bread_app.png';
 import macOS from '../public/assets/images/Projects/macOS.png';
+import { TbBrandNextjs } from 'react-icons/tb';
+import {
+  SiTypescript,
+  SiFlutter,
+  SiMongodb,
+  SiTailwindcss,
+  SiSupabase,
+  SiChakraui,
+  SiIonic,
+} from 'react-icons/si';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { randomUniqueId } from '@/helpers/randomUniqueId';
 
 export interface PastProjectsType {
@@ -9,7 +20,7 @@ export interface PastProjectsType {
   name: string;
   description: string;
   year: number;
-  techStack: string[];
+  techStack: any[];
   icon: any;
   link: string;
 }
@@ -21,7 +32,7 @@ export const PastProjects: PastProjectsType[] = [
     description:
       'Google Ignite, 4 weeks product sprint to develop a Flutter-based app that aims to streamline the process of food collection.',
     year: 2022,
-    techStack: ['Flutter'],
+    techStack: [SiFlutter],
     icon: BreadApp,
     link: 'https://github.com/joshuadavidang/google_ignite_bread',
   },
@@ -31,7 +42,13 @@ export const PastProjects: PastProjectsType[] = [
     description:
       'Designed and developed a fully responsive personal portfolio that showcases past projects.',
     year: 2022,
-    techStack: ['Next.js', 'Tailwind CSS', 'Chakra UI', 'Supabase'],
+    techStack: [
+      TbBrandNextjs,
+      SiTypescript,
+      SiTailwindcss,
+      SiChakraui,
+      SiSupabase,
+    ],
     icon: macOS,
     link: 'https://github.com/joshuadavidang/joshua-david',
   },
@@ -41,7 +58,7 @@ export const PastProjects: PastProjectsType[] = [
     description:
       'Web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one\'s choice.',
     year: 2019,
-    techStack: ['React.js', 'Ionic', 'Express.js', 'Tailwind CSS', 'MongoDB'],
+    techStack: [FaReact, SiIonic, SiTailwindcss, FaNodeJs, SiMongodb],
     icon: Sayocode,
     link: 'https://github.com/joshuadavidang/',
   },
@@ -51,7 +68,7 @@ export const PastProjects: PastProjectsType[] = [
     description:
       'Developed a one-stop platform for mothers to learn about confinement practices, features include receipes and quizes.',
     year: 2019,
-    techStack: ['Ionic', 'TypeScript'],
+    techStack: [SiIonic, SiTypescript],
     icon: StillYoung,
     link: 'https://www.straitstimes.com/singapore/app-with-updated-info-on-confinement-period-for-young-mums-launched',
   },
