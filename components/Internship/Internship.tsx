@@ -37,7 +37,6 @@ const Internship = () => {
             alt="Cynapse"
           />
         </Tab>
-        
         <Tab>
           <Image src={PigeonLab} width="130" alt="PigeonLab" />
         </Tab>

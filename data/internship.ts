@@ -1,11 +1,11 @@
 import { randomUniqueId } from '@/helpers/randomUniqueId';
 
 export interface InternshipExperienceType {
-  id: string,
-  company: string,
-  date: string,
-  link: string,
-  tasks: string[]
+  id: string;
+  company: string;
+  date: string;
+  link: string;
+  tasks: string[];
 }
 
 export const InternshipExperience: InternshipExperienceType[] = [
