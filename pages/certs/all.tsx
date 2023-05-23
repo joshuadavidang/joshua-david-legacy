@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CertificatesData } from '../../data/certs';
+import { CertificatesData } from '@/data/certs';
 
 const All = () => {
   return (
