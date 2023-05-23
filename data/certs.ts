@@ -1,6 +1,6 @@
-import GoogleIgnite from '../public/assets/images/Certs/cert_two.png';
-import CodeIT from '../public/assets/images/Certs/cert_one.png';
-import CodeXtreme from '../public/assets/images/Certs/cert_three.png';
+import GoogleIgnite from '@/images/Certs/cert_two.png';
+import CodeIT from '@/images/Certs/cert_one.png';
+import CodeXtreme from '@/images/Certs/cert_three.png';
 
 export interface CertificatesDataType {
   id: number;

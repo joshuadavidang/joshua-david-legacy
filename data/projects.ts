@@ -1,7 +1,7 @@
-import StillYoung from '../public/assets/images/Projects/StillYoung.svg';
-import Sayocode from '../public/assets/images/Projects/Sayocode.png';
-import BreadApp from '../public/assets/images/Projects/bread_app.png';
-import macOS from '../public/assets/images/Projects/macOS.png';
+import StillYoung from '@/images/Projects/StillYoung.svg';
+import Sayocode from '@/images/Projects/Sayocode.png';
+import BreadApp from '@/images/Projects/bread_app.png';
+import macOS from '@/images/Projects/macOS.png';
 import { TbBrandNextjs } from 'react-icons/tb';
 import {
   SiTypescript,

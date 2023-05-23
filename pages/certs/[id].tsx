@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { CertificatesData } from '../../data/certs';
+import { CertificatesData } from '@/data/certs';
 
 const IndividualCert = () => {
   const router = useRouter();

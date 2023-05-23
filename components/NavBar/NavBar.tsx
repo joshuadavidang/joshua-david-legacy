@@ -16,8 +16,8 @@ import {
   ListIcon,
 } from '@chakra-ui/react';
 import Link from 'next/link';
-import DarkModeIcon from '../DarkMode/DarkModeIcon';
-import { ButtonIcon } from '../Button/ButtonIcon';
+import DarkModeIcon from '@/components/DarkMode/DarkModeIcon';
+import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import { FaHamburger } from 'react-icons/fa';
 import { NavLinkData } from '@/data/navLinks';
 import { useRouter } from 'next/router';
