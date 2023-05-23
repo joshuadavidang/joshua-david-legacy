@@ -16,14 +16,14 @@ export default function Layout(props: { children: any }) {
         <meta name="theme-color" content="#000024" />
         <meta
           name="description"
-          content="Undergraduate at the School of Computing and Information Systems, Singapore Management University"
+          content="Sophomore at the School of Computing and Information Systems, Singapore Management University"
         />
 
         <meta property="og:title" content="Joshua David" />
         <meta property="og:image" content="//joshuadavid.dev/Banner.png" />
         <meta
           property="og:description"
-          content="Undergraduate at the School of Computing and Information Systems, Singapore Management University"
+          content="Sophomore at the School of Computing and Information Systems, Singapore Management University"
         />
         <meta property="og:url" content="//joshuadavid.dev" />
 
