@@ -26,6 +26,7 @@ export default function Layout(props: { children: any }) {
           content="Sophomore at the School of Computing and Information Systems, Singapore Management University"
         />
         <meta property="og:url" content="//joshuadavid.dev" />
+        <meta name="author" content="Joshua David" />
 
         <link
           rel="apple-touch-icon"
