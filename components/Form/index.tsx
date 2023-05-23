@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ButtonIcon } from '../Button/ButtonIcon';
+import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import Input from './input';
 import TextArea from './textarea';
 import { AiOutlineArrowRight } from 'react-icons/ai';
