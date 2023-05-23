@@ -10,7 +10,7 @@ import {
   UnorderedList,
   Box,
   Link,
-  useColorMode
+  useColorMode,
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { InternshipExperience } from '@/data/internship';
