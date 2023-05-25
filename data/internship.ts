@@ -11,16 +11,6 @@ export interface InternshipExperienceType {
 export const InternshipExperience: InternshipExperienceType[] = [
   {
     id: randomUniqueId(),
-    company: 'Cynapse',
-    date: 'May 2023 - Present',
-    link: 'https://cynapse.ai',
-    tasks: [
-      'Application Development Team',
-      'Technologies: React.js, GitLab, mySQL',
-    ],
-  },
-  {
-    id: randomUniqueId(),
     company: 'Pigeonhole Live (PigeonLab)',
     date: 'Jan 2023 - Mar 2023',
     link: 'https://pigeonholelive.com/',
