@@ -13,7 +13,7 @@ export const InternshipExperience: InternshipExperienceType[] = [
     id: randomUniqueId(),
     company: 'Cynapse',
     date: 'May 2023 - Present',
-    link: 'https://www.cynapse.ai',
+    link: 'https://cynapse.ai',
     tasks: [
       'Application Development Team',
       'Technologies: React.js, GitLab, mySQL',
