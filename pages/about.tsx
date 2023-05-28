@@ -8,10 +8,14 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Box } from '@chakra-ui/react';
 import Internship from '@/components/Internship/Internship';
-import { DESCRIPTION, INTERNSHIP_HEADER, RESUME_HEADER } from '@/constants/index';
+import {
+  DESCRIPTION,
+  INTERNSHIP_HEADER,
+  RESUME_HEADER,
+} from '@/constants/index';
 import { Skills } from '@/data/skills';
 
-const Home = () => {
+export default function About() {
   return (
     <>
       <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
@@ -121,6 +125,4 @@ const Home = () => {
       </Box>
     </>
   );
-};
-
-export default Home;
+}
