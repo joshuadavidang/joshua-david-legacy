@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import { Box } from '@chakra-ui/react';
 import Form from '@/components/Form';
@@ -6,9 +7,7 @@ import Text from '@/components/Text/Text';
 import { CONTACT_HEADER } from '@/constants/index';
 import { ContactMe } from '@/data/contactMe';
 
-import React from 'react';
-
-const Contact = () => {
+export default function Contact() {
   return (
     <Box
       id="contact"
@@ -56,6 +55,4 @@ const Contact = () => {
       </div>
     </Box>
   );
-};
-
-export default Contact;
+}

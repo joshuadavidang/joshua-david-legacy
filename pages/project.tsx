@@ -9,7 +9,7 @@ import { PastProjects } from '@/data/projects';
 import CardFooter from '@/components/Card/CardFooter';
 import { Icon } from '@/components/Button/Icon';
 
-const ProjectPage = () => {
+export default function ProjectPage() {
   return (
     <Box className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16 overflow-auto">
       {PastProjects.map(
@@ -57,6 +57,4 @@ const ProjectPage = () => {
       )}
     </Box>
   );
-};
-
-export default ProjectPage;
+}
