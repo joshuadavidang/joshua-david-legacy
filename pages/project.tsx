@@ -11,7 +11,7 @@ import { Icon } from '@/components/Button/Icon';
 
 export default function ProjectPage() {
   return (
-    <Box className="flex flex-col gap-9 justify-center items-center md:items-start md:h-screen md:flex-row flex-wrap pt-36 pb-24 md:pb-16 overflow-auto">
+    <Box className="flex flex-col gap-9 justify-center items-center lg:items-start lg:h-screen lg:flex-row flex-wrap pt-36 pb-24 lg:pb-16 overflow-auto">
       {PastProjects.map(
         ({ name, description, icon, link, techStack }, index) => (
           <Link href={link} target="_blank" key={index}>
