@@ -27,7 +27,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.1",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/uuid": "^9.0.1",
