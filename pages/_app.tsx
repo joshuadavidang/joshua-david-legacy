@@ -2,7 +2,7 @@ import '@/styles/globals.css';
 import Layout from './index';
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
-import theme from '@/components/DarkMode/theme';
+import theme from '@/styles/theme';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 

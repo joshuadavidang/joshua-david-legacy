@@ -16,18 +16,6 @@ const theme = extendTheme({
       lightGray: '#f2f2f2',
     },
   },
-  components: {
-    Input: {
-      variants: {
-        gray: '#8492a6',
-      },
-    },
-    Textarea: {
-      variants: {
-        gray: '#8492a6',
-      },
-    },
-  },
 });
 
 export default theme;
