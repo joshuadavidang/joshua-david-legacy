@@ -1,3 +1,4 @@
+import Client01 from '@/images/Projects/Client01.png';
 import StillYoung from '@/images/Projects/StillYoung.svg';
 import Sayocode from '@/images/Projects/Sayocode.png';
 import BreadApp from '@/images/Projects/bread_app.png';
@@ -26,6 +27,16 @@ export interface PastProjectsType {
 }
 
 export const PastProjects: PastProjectsType[] = [
+  {
+    id: randomUniqueId(),
+    name: 'Client\'s Project',
+    description:
+      'Designed and developed a fully responsive personal portfolio for clients.',
+    year: 2023,
+    techStack: [TbBrandNextjs, SiTypescript, SiTailwindcss, SiChakraui],
+    icon: Client01,
+    link: 'https://celineongjw.com',
+  },
   {
     id: randomUniqueId(),
     name: 'Project Bread',
