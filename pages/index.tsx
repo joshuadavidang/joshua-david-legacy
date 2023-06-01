@@ -1,12 +1,15 @@
-import { Box, useColorModeValue } from '@chakra-ui/react';
+import { Box, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head';
 import MobileNavBar from '@/components/NavBar/MobileNavBar';
 import NavBar from '@/components/NavBar/NavBar';
-import { motion } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import Footer from '@/components/Footer';
+import About from './about';
 
+// eslint-disable-next-line no-unused-vars
 export default function Layout(props: { children: any }) {
-  const { children } = props;
+  const { colorMode } = useColorMode();
+  const { scrollYProgress } = useScroll();
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
 
   return (
@@ -50,6 +53,12 @@ export default function Layout(props: { children: any }) {
 
       <Box className="relative" bg={backgroundColor}>
         <nav className="fixed hidden md:block z-50">
+          <motion.div
+            className={`progress-bar ${
+              colorMode === 'dark' ? 'bg-white' : 'bg-black'
+            } `}
+            style={{ scaleX: scrollYProgress }}
+          />
           <NavBar />
         </nav>
 
@@ -57,13 +66,15 @@ export default function Layout(props: { children: any }) {
           <MobileNavBar />
         </nav>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.1, ease: 'easeIn' }}
         >
           <main>{children}</main>
-        </motion.div>
+        </motion.div> */}
+
+        <About about="about" experience="experience" contact="contact" />
 
         <motion.div
           initial={{ opacity: 0 }}

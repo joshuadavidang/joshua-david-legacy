@@ -14,18 +14,24 @@ import {
   ListItem,
   ListIcon,
 } from '@chakra-ui/react';
-import Link from 'next/link';
 import DarkModeIcon from '@/components/DarkMode/DarkModeIcon';
 import { NavLinkData } from '@/data/navLinks';
 import { useRouter } from 'next/router';
 import { FaHamburger } from 'react-icons/fa';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import useScrollToSection from 'hooks/useScrollToSection';
 
 const MobileNavBar = () => {
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const { pathname } = router;
+
+  const scrollToSection = useScrollToSection();
+  const handleScroll = (id: any) => {
+    scrollToSection(id);
+    onClose();
+  };
 
   return (
     <>
@@ -34,7 +40,7 @@ const MobileNavBar = () => {
         bg={backgroundColor}
       >
         <div className="md:text-3xl text-lg font-sen tracking-tight">
-          <Link href="/about">joshuadavid</Link>
+          <div onClick={() => handleScroll('about')}>joshuadavid</div>
         </div>
 
         <div className="flex flex-row items-center justify-end p-6 gap-2">
@@ -51,7 +57,7 @@ const MobileNavBar = () => {
           <DrawerBody>
             <Stack direction="column" h="100px" p={1}>
               {NavLinkData.map(({ id, link, name }) => (
-                <Link href={link} key={id}>
+                <div key={id} onClick={() => handleScroll(link)}>
                   <List spacing={1.5}>
                     <ListItem className="p-3">
                       <p>
@@ -63,7 +69,7 @@ const MobileNavBar = () => {
                     </ListItem>
                     <Divider orientation="horizontal" />
                   </List>
-                </Link>
+                </div>
               ))}
             </Stack>
           </DrawerBody>

@@ -9,17 +9,17 @@ export interface NavLinkDataType {
 export const NavLinkData: NavLinkDataType[] = [
   {
     id: randomUniqueId(),
-    link: '/about',
+    link: 'about',
     name: 'about',
   },
   {
     id: randomUniqueId(),
-    link: '/project',
-    name: 'projects',
+    link: 'experience',
+    name: 'experience',
   },
   {
     id: randomUniqueId(),
-    link: '/contact',
+    link: 'contact',
     name: 'contact',
   },
 ];

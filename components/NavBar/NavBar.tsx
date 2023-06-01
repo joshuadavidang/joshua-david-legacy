@@ -2,35 +2,24 @@ import {
   Box,
   useColorMode,
   useColorModeValue,
-  useDisclosure,
-  Drawer,
-  DrawerContent,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerHeader,
-  DrawerCloseButton,
-  Stack,
-  Divider,
   List,
   ListItem,
-  ListIcon,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import DarkModeIcon from '@/components/DarkMode/DarkModeIcon';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
-import { FaHamburger } from 'react-icons/fa';
 import { NavLinkData } from '@/data/navLinks';
-import { useRouter } from 'next/router';
-import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import React from 'react';
 import { ContactMe } from '@/data/contactMe';
+import useScrollToSection from 'hooks/useScrollToSection';
 
 const NavBar = () => {
   const { colorMode } = useColorMode();
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const router = useRouter();
-  const { pathname } = router;
+  const scrollToSection = useScrollToSection();
+  const handleScroll = (id: any) => {
+    scrollToSection(id);
+  };
 
   return (
     <Box
@@ -75,54 +64,23 @@ const NavBar = () => {
           <DarkModeIcon />
         </span>
 
-        <Box
-          className={`p-2 rounded cursor-pointer ${
-            colorMode === 'dark'
-              ? 'hover:bg-gray hover:text-white'
-              : 'hover:bg-white hover:text-black'
-          }`}
-          onClick={onOpen}
-        >
-          <FaHamburger className="w-5 h-5" />
+        <Box className="flex flex-row gap-1 items-center md:pt-0 pt-6">
+          {NavLinkData.map(({ id, link, name }) => (
+            <div key={id} onClick={() => handleScroll(link)}>
+              <List spacing={2}>
+                <ListItem
+                  className={`p-3 rounded cursor-pointer ${
+                    colorMode === 'dark'
+                      ? 'hover:bg-gray hover:text-white'
+                      : 'hover:bg-white hover:text-black'
+                  }`}
+                >
+                  {name}
+                </ListItem>
+              </List>
+            </div>
+          ))}
         </Box>
-
-        <Drawer
-          placement={'right'}
-          isOpen={isOpen}
-          onClose={onClose}
-          size={'xs'}
-        >
-          <DrawerOverlay />
-          <DrawerContent bg={backgroundColor}>
-            <DrawerCloseButton />
-            <DrawerHeader />
-            <DrawerBody>
-              <Stack direction="column" h="100px" p={1}>
-                {NavLinkData.map(({ id, link, name }) => (
-                  <Link href={link} key={id}>
-                    <List spacing={2}>
-                      <ListItem
-                        className={`p-3 rounded cursor-pointer ${
-                          colorMode === 'dark'
-                            ? 'hover:bg-gray hover:text-white'
-                            : 'hover:bg-white hover:text-black'
-                        }`}
-                      >
-                        <p>
-                          {pathname === link && (
-                            <ListIcon as={MdKeyboardDoubleArrowRight} />
-                          )}
-                          {name}
-                        </p>
-                      </ListItem>
-                      <Divider orientation="horizontal" />
-                    </List>
-                  </Link>
-                ))}
-              </Stack>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer>
       </div>
     </Box>
   );
