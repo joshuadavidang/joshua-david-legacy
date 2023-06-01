@@ -15,10 +15,14 @@ import {
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
 
-export default function About() {
+export default function About(props: any) {
+  const { about, experience, contact } = props;
   return (
     <>
-      <Box className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10">
+      <Box
+        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10"
+        id={about}
+      >
         <Box className="pt-12 md:pt-0 pb-12">
           <Image src={LandingHero} alt="landing-hero" width="350" />
         </Box>
@@ -72,7 +76,10 @@ export default function About() {
         </Box>
       </Box>
 
-      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center ml-4 mr-4">
+      <Box
+        className="h-1/2 pb-24 flex flex-col justify-center items-center ml-4 mr-4"
+        id={experience}
+      >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -96,7 +103,10 @@ export default function About() {
         </motion.div>
       </Box>
 
-      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
+      <Box
+        className="h-1/2 pb-24 flex flex-col justify-center items-center"
+        id={contact}
+      >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
