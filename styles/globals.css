@@ -19,10 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-p {
-  font-family: "Sen", "sans-serif";
-}
-
 .progress-bar {
   position: fixed;
   top: 0;

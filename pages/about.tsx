@@ -31,7 +31,6 @@ export default function About(props: any) {
           <Box
             fontSize={{ base: '28px', md: '33px', lg: '35px' }}
             color="brand.purple"
-            className="font-sen"
           >
             <TypeAnimation
               sequence={[
@@ -88,7 +87,7 @@ export default function About(props: any) {
           <Box
             fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
-            className="font-sen text-center pb-5"
+            className="text-center pb-5"
           >
             <Text>{INTERNSHIP_HEADER}</Text>
           </Box>
@@ -115,7 +114,7 @@ export default function About(props: any) {
           <Text
             fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
-            className="font-sen text-center pb-5"
+            className="text-center pb-5"
           >
             {RESUME_HEADER}
           </Text>
