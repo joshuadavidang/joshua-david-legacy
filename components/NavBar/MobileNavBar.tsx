@@ -12,21 +12,15 @@ import {
   Divider,
   List,
   ListItem,
-  ListIcon,
 } from '@chakra-ui/react';
 import DarkModeIcon from '@/components/DarkMode/DarkModeIcon';
 import { NavLinkData } from '@/data/navLinks';
-import { useRouter } from 'next/router';
 import { FaHamburger } from 'react-icons/fa';
-import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import useScrollToSection from 'hooks/useScrollToSection';
 
 const MobileNavBar = () => {
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const router = useRouter();
-  const { pathname } = router;
-
   const scrollToSection = useScrollToSection();
   const handleScroll = (id: any) => {
     scrollToSection(id);
@@ -39,7 +33,7 @@ const MobileNavBar = () => {
         className="flex flex-row justify-between items-center pl-6 w-screen"
         bg={backgroundColor}
       >
-        <div className="md:text-3xl text-lg font-sen tracking-tight">
+        <div className="md:text-3xl text-lg tracking-tight">
           <div onClick={() => handleScroll('about')}>joshuadavid</div>
         </div>
 
@@ -60,12 +54,7 @@ const MobileNavBar = () => {
                 <div key={id} onClick={() => handleScroll(link)}>
                   <List spacing={1.5}>
                     <ListItem className="p-3">
-                      <p>
-                        {pathname === link && (
-                          <ListIcon as={MdKeyboardDoubleArrowRight} />
-                        )}
-                        {name}
-                      </p>
+                      {name}
                     </ListItem>
                     <Divider orientation="horizontal" />
                   </List>

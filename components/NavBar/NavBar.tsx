@@ -59,7 +59,7 @@ const NavBar = () => {
         })}
       </div>
 
-      <div className="flex md:flex-row flex-col items-center gap-0.5">
+      <div className="flex md:flex-row flex-col items-center gap-1">
         <span className="hidden md:block">
           <DarkModeIcon />
         </span>
@@ -69,13 +69,13 @@ const NavBar = () => {
             <div key={id} onClick={() => handleScroll(link)}>
               <List spacing={2}>
                 <ListItem
-                  className={`p-3 rounded cursor-pointer ${
+                  className={`p-2 rounded cursor-pointer ${
                     colorMode === 'dark'
                       ? 'hover:bg-gray hover:text-white'
                       : 'hover:bg-white hover:text-black'
                   }`}
                 >
-                  {name}
+                  <p>{name}</p>
                 </ListItem>
               </List>
             </div>
