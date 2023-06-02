@@ -45,7 +45,7 @@ const Internship = () => {
         {InternshipExperience.map(({ id, company, date, link, tasks }) => {
           return (
             <TabPanel key={id}>
-              <Box className="flex flex-col gap-2 text-left md:max-w-lg">
+              <Box className="flex flex-col gap-1.5 text-left md:max-w-lg">
                 <p className="text-md">
                   {ROLE} at{' '}
                   <Link href={link} isExternal>
@@ -54,7 +54,7 @@ const Internship = () => {
                     </Text>
                   </Link>
                 </p>
-                <p className="text-lightGray text-xs">{date}</p>
+                <p className="text-gray text-xs">{date}</p>
                 <UnorderedList spacing={2} pt={3}>
                   {tasks.map((task, index) => (
                     <ListItem key={index}>

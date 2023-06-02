@@ -58,5 +58,3 @@ export default function ProjectPage() {
     </div>
   );
 }
-
-// <Box className="flex flex-col gap-9 justify-center items-center lg:items-start lg:h-screen lg:flex-row flex-wrap pt-36 pb-24 lg:pb-16">
