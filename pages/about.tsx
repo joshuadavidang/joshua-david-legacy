@@ -14,6 +14,7 @@ import {
   RESUME_HEADER,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
+import Contact from '@/components/Contact';
 
 export default function About(props: any) {
   const { about, experience, contact } = props;
@@ -102,10 +103,7 @@ export default function About(props: any) {
         </motion.div>
       </Box>
 
-      <Box
-        className="h-1/2 pb-24 flex flex-col justify-center items-center"
-        id={contact}
-      >
+      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -131,6 +129,13 @@ export default function About(props: any) {
             </Box>
           </a>
         </motion.div>
+      </Box>
+
+      <Box
+        className="h-1/2 pb-24 flex flex-col justify-center items-center ml-4 mr-4"
+        id={contact}
+      >
+        <Contact />
       </Box>
     </>
   );
