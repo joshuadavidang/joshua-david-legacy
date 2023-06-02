@@ -11,21 +11,21 @@ import { Icon } from '@/components/Button/Icon';
 
 export default function ProjectPage() {
   return (
-    <Box className="flex flex-col gap-9 justify-center items-center lg:items-start lg:h-screen lg:flex-row flex-wrap pt-36 pb-24 lg:pb-16 overflow-auto">
+    <div className="grid lg:grid-cols-3 gap-12">
       {PastProjects.map(
         ({ name, description, icon, link, techStack }, index) => (
           <Link href={link} target="_blank" key={index}>
             <Card
               borderRadius="12px"
               maxW="xs"
-              minH="md"
+              minH="sm"
               minW="xs"
               align="center"
               className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
             >
               <span className="pt-7">
-                <Image src={icon} alt="image" width="150" />
+                <Image src={icon} alt="image" width="100" />
               </span>
 
               <CardHeader fontSize="2xl">{name}</CardHeader>
@@ -55,6 +55,8 @@ export default function ProjectPage() {
           </Link>
         )
       )}
-    </Box>
+    </div>
   );
 }
+
+// <Box className="flex flex-col gap-9 justify-center items-center lg:items-start lg:h-screen lg:flex-row flex-wrap pt-36 pb-24 lg:pb-16">

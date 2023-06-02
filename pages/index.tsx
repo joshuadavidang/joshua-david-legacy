@@ -66,15 +66,12 @@ export default function Layout(props: { children: any }) {
           <MobileNavBar />
         </nav>
 
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.1, ease: 'easeIn' }}
-        >
-          <main>{children}</main>
-        </motion.div> */}
-
-        <About about="about" experience="experience" contact="contact" />
+        <About
+          about="about"
+          experience="experience"
+          projects="projects"
+          contact="contact"
+        />
 
         <motion.div
           initial={{ opacity: 0 }}
