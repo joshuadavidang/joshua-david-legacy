@@ -46,7 +46,7 @@ const Internship = () => {
           return (
             <TabPanel key={id}>
               <Box className="flex flex-col gap-2 text-left md:max-w-lg">
-                <p className="text-lg">
+                <p className="text-md">
                   {ROLE} at{' '}
                   <Link href={link} isExternal>
                     <Text as="i" color="brand.purple">
@@ -54,11 +54,11 @@ const Internship = () => {
                     </Text>
                   </Link>
                 </p>
-                <p className="text-lightGray text-sm">{date}</p>
-                <UnorderedList spacing={1.5} pt={3}>
+                <p className="text-lightGray text-xs">{date}</p>
+                <UnorderedList spacing={2} pt={3}>
                   {tasks.map((task, index) => (
                     <ListItem key={index}>
-                      <Text>{task}</Text>
+                      <Text className='text-sm'>{task}</Text>
                     </ListItem>
                   ))}
                 </UnorderedList>

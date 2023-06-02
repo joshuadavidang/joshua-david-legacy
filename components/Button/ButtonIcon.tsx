@@ -59,6 +59,7 @@ export const ButtonIcon = ({
         isLoading={isLoading}
         loadingText={loadingText}
         {...props}
+        className='font-mono'
       >
         {children}
       </ChakraButton>
