@@ -31,7 +31,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'Client\'s Project',
     description:
-      'Designed and developed a fully responsive personal portfolio for clients.',
+      'Fully responsive personal website for clients.',
     year: 2023,
     techStack: [TbBrandNextjs, SiTypescript, SiTailwindcss, SiChakraui],
     icon: Client01,
@@ -41,7 +41,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'Project Bread',
     description:
-      'Google Ignite, 4 weeks product sprint to develop a Flutter-based app that aims to streamline the process of food collection.',
+      'Mobile App to streamline process of food collection.',
     year: 2022,
     techStack: [SiFlutter],
     icon: BreadApp,
@@ -51,7 +51,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'Coding Portfolio',
     description:
-      'Designed and developed a fully responsive personal portfolio that showcases past projects.',
+      'Fully responsive personal portfolio that showcases past projects.',
     year: 2022,
     techStack: [
       TbBrandNextjs,
@@ -67,7 +67,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'Project Sayocode',
     description:
-      'Web builder that automates the process of app creation through a seamless method of dragging and dropping components to a mobile screen of one\'s choice.',
+      'Web builder that automates the process of app creation.',
     year: 2019,
     techStack: [FaReact, SiIonic, SiTailwindcss, FaNodeJs, SiMongodb],
     icon: Sayocode,
@@ -77,7 +77,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'Project Still Young',
     description:
-      'Developed a one-stop platform for mothers to learn about confinement practices, features include receipes and quizes.',
+      'One-stop platform for mothers to learn about confinement practices.',
     year: 2019,
     techStack: [SiIonic, SiTypescript],
     icon: StillYoung,

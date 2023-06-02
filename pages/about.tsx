@@ -11,17 +11,19 @@ import Internship from '@/components/Internship/Internship';
 import {
   DESCRIPTION,
   INTERNSHIP_HEADER,
+  PROJECT_HEADER,
   RESUME_HEADER,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
 import Contact from '@/components/Contact';
+import ProjectPage from './project';
 
 export default function About(props: any) {
-  const { about, experience, contact } = props;
+  const { about, experience, projects, contact } = props;
   return (
     <>
       <Box
-        className="md:pt-10 h-screen w-screen flex flex-col justify-center items-center px-10"
+        className="flex flex-col justify-center items-center w-screen py-16 lg:py-36"
         id={about}
       >
         <Box className="pt-12 md:pt-0 pb-12">
@@ -77,7 +79,7 @@ export default function About(props: any) {
       </Box>
 
       <Box
-        className="h-1/2 pb-24 flex flex-col justify-center items-center ml-4 mr-4"
+        className="flex flex-col justify-center items-center w-screen px-4 py-16"
         id={experience}
       >
         <motion.div
@@ -88,7 +90,7 @@ export default function About(props: any) {
           <Box
             fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
-            className="text-center pb-5"
+            className="text-center pb-8"
           >
             <Text>{INTERNSHIP_HEADER}</Text>
           </Box>
@@ -103,16 +105,36 @@ export default function About(props: any) {
         </motion.div>
       </Box>
 
-      <Box className="h-1/2 pb-24 flex flex-col justify-center items-center">
+      <Box
+        className="flex flex-col justify-center items-center w-screen py-16"
+        id={projects}
+      >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, ease: 'easeOut' }}
+          transition={{ delay: 0.4, ease: 'easeOut' }}
         >
           <Text
             fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
-            className="text-center pb-5"
+            className="text-center pb-8"
+          >
+            {PROJECT_HEADER}
+          </Text>
+          <ProjectPage />
+        </motion.div>
+      </Box>
+
+      <Box className="flex flex-col justify-center items-center w-screen py-16">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4, ease: 'easeOut' }}
+        >
+          <Text
+            fontSize={{ base: '23px', md: '28px', lg: '30px' }}
+            color="brand.purple"
+            className="text-center pb-8"
           >
             {RESUME_HEADER}
           </Text>
@@ -132,7 +154,7 @@ export default function About(props: any) {
       </Box>
 
       <Box
-        className="h-1/2 pb-24 flex flex-col justify-center items-center ml-4 mr-4"
+        className="flex flex-col justify-center items-center w-screen py-16"
         id={contact}
       >
         <Contact />

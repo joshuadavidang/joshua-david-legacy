@@ -10,9 +10,9 @@ module.exports = {
       colors: {
         black: '#121212',
         midnight: '#000024',
-        white: '#ffffff',
-        gray: '#8492a6',
-        lightGray: '#8492a6',
+        white: '#FFFFFF',
+        gray: '#8492A6',
+        lightGray: '#F2F2F2',
         purple: '#6868F6',
       },
       fontFamily: {

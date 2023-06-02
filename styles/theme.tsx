@@ -11,9 +11,9 @@ const theme = extendTheme({
       midnight: '#000024',
       white: '#FFFFFF',
       offWhite: '#F5F5F7',
-      gray: '#8492a6',
+      gray: '#8492A6',
       purple: '#6868F6',
-      lightGray: '#f2f2f2',
+      lightGray: '#F2F2F2',
     },
   },
 });
