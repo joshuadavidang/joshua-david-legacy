@@ -89,7 +89,7 @@ const Form = () => {
 
   return (
     <FormControl isRequired>
-      <Box mb="5">
+      <Box mb="5" mt="6">
         <FormLabel>Name</FormLabel>
         <Input
           type="text"
