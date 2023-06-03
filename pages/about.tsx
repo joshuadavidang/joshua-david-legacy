@@ -15,11 +15,13 @@ import {
   RESUME_HEADER,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
-import Contact from '@/components/Contact';
 import ProjectPage from './project';
+import Contact from '@/components/Contact';
+import Section from '@/components/Section';
 
 export default function About(props: any) {
   const { about, experience, projects, contact } = props;
+
   return (
     <>
       <Box
@@ -78,10 +80,7 @@ export default function About(props: any) {
         </Box>
       </Box>
 
-      <Box
-        className="flex flex-col justify-center items-center w-screen px-4 py-16"
-        id={experience}
-      >
+      <Section id={experience}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -103,12 +102,9 @@ export default function About(props: any) {
         >
           <Internship />
         </motion.div>
-      </Box>
+      </Section>
 
-      <Box
-        className="flex flex-col justify-center items-center w-screen py-16"
-        id={projects}
-      >
+      <Section id={projects}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -123,9 +119,9 @@ export default function About(props: any) {
           </Text>
           <ProjectPage />
         </motion.div>
-      </Box>
+      </Section>
 
-      <Box className="flex flex-col justify-center items-center w-screen py-16">
+      <Section id={null}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -151,14 +147,11 @@ export default function About(props: any) {
             </Box>
           </a>
         </motion.div>
-      </Box>
+      </Section>
 
-      <Box
-        className="flex flex-col justify-center items-center w-screen py-16"
-        id={contact}
-      >
+      <Section id={contact}>
         <Contact />
-      </Box>
+      </Section>
     </>
   );
 }

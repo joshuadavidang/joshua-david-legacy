@@ -15,7 +15,7 @@ import useScrollToSection from 'hooks/useScrollToSection';
 
 const NavBar = () => {
   const { colorMode } = useColorMode();
-  const backgroundColor = useColorModeValue('brand.white', 'brand.midnight');
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const scrollToSection = useScrollToSection();
   const handleScroll = (id: any) => {
     scrollToSection(id);
