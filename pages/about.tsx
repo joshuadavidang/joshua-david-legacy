@@ -95,13 +95,7 @@ export default function About(props: any) {
           </Box>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, ease: 'easeOut' }}
-        >
-          <Internship />
-        </motion.div>
+        <Internship />
       </Section>
 
       <Section id={projects}>

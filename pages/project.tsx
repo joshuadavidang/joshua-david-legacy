@@ -5,13 +5,18 @@ import Card from '@/components/Card/Card';
 import CardBody from '@/components/Card/CardBody';
 import CardHeader from '@/components/Card/CardHeader';
 import { PastProjects } from '@/components/Projects';
+import { motion } from 'framer-motion';
 
 export default function ProjectPage() {
   return (
     <div className="grid lg:grid-cols-3 gap-12">
-      {PastProjects.map(
-        ({ name, description, icon, link }, index) => (
-          <Link href={link} target="_blank" key={index}>
+      {PastProjects.map(({ name, description, icon, link }, index) => (
+        <Link href={link} target="_blank" key={index}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4, ease: 'easeOut' }}
+          >
             <Card
               borderRadius="12px"
               maxW="xs"
@@ -33,25 +38,10 @@ export default function ProjectPage() {
               >
                 {description}
               </CardBody>
-
-              {/* <CardFooter>
-                <Box display="flex" flexDirection="row" gap={2}>
-                  {techStack.map((tech, index) => (
-                    <Icon
-                      colorScheme="gray"
-                      icon={React.createElement(tech)}
-                      variant="solid"
-                      size="md"
-                      label="button"
-                      key={index}
-                    />
-                  ))}
-                </Box>
-              </CardFooter> */}
             </Card>
-          </Link>
-        )
-      )}
+          </motion.div>
+        </Link>
+      ))}
     </div>
   );
 }
