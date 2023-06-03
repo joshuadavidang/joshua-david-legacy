@@ -2,7 +2,7 @@ import { Box, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head';
 import MobileNavBar from '@/components/NavBar/MobileNavBar';
 import NavBar from '@/components/NavBar/NavBar';
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import Footer from '@/components/Footer';
 import About from './about';
 
@@ -10,6 +10,12 @@ import About from './about';
 export default function Layout(props: { children: any }) {
   const { colorMode } = useColorMode();
   const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
 
   return (
@@ -57,7 +63,7 @@ export default function Layout(props: { children: any }) {
             className={`progress-bar ${
               colorMode === 'dark' ? 'bg-white' : 'bg-black'
             } `}
-            style={{ scaleX: scrollYProgress }}
+            style={{ scaleX }}
           />
           <NavBar />
         </nav>
