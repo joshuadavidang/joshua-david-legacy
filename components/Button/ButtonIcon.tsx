@@ -26,7 +26,7 @@ interface ButtonIconProps {
     | 'purple'
     | 'pink'
     | 'messenger'
-    | 'telegram';
+    | 'telegram'
 }
 
 export const ButtonIcon = ({
@@ -58,6 +58,7 @@ export const ButtonIcon = ({
         size={size}
         isLoading={isLoading}
         loadingText={loadingText}
+        fontWeight="normal"
         {...props}
       >
         {children}

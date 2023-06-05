@@ -134,7 +134,7 @@ const Form = () => {
           onClick={(event: any) => handleSubmit(event)}
           leftIcon={<AiOutlineArrowRight />}
           isDisabled={false}
-          colorScheme={colorMode == 'dark' ? 'gray' : 'messenger'}
+          colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
         >
           Send
         </ButtonIcon>

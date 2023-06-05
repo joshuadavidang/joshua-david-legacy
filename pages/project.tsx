@@ -20,7 +20,7 @@ export default function ProjectPage() {
             <Card
               borderRadius="12px"
               maxW="xs"
-              minH="xs"
+              minH='xs'
               minW="xs"
               align="center"
               className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
