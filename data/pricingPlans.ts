@@ -6,6 +6,8 @@ export interface PricingPlanDataType {
   currency?: string;
   price: any;
   features: string[];
+  link: string,
+  callToAction: string;
 }
 
 export const PricingPlanData: PricingPlanDataType[] = [
@@ -21,7 +23,10 @@ export const PricingPlanData: PricingPlanDataType[] = [
       'Priority Support',
       'Single Page Application',
       'Basic Animations',
+      'Deliver in 7 Days',
     ],
+    link: 'https://celineongjw.com',
+    callToAction: 'View Sample Project',
   },
   {
     id: randomUniqueId(),
@@ -35,7 +40,10 @@ export const PricingPlanData: PricingPlanDataType[] = [
       'Priority Support',
       'Multiple Page Application',
       'Custom Animations',
+      'Deliver in 3 Days',
     ],
+    link: 'https://joshuadavid.dev/contact',
+    callToAction: 'Get Started',
   },
   {
     id: randomUniqueId(),
@@ -52,5 +60,7 @@ export const PricingPlanData: PricingPlanDataType[] = [
       'Back-end Integration',
       'Analytics',
     ],
+    link: 'https://joshuadavid.dev/contact',
+    callToAction: 'Contact Me',
   },
 ];

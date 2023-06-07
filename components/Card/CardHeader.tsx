@@ -2,7 +2,7 @@ import { CardHeader as ChakraCardHeader } from '@chakra-ui/react';
 
 interface CardHeaderProps {
   children: any;
-  fontSize: string;
+  fontSize?: string;
   className?: string;
 }
 
