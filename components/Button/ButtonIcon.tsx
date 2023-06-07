@@ -3,6 +3,7 @@ import { Button as ChakraButton, Stack } from '@chakra-ui/react';
 interface ButtonIconProps {
   // eslint-disable-next-line no-unused-vars
   onClick?: (event: any) => void;
+  className?: string;
   isDisabled?: true | false;
   leftIcon?: any;
   rightIcon?: any;
@@ -13,7 +14,7 @@ interface ButtonIconProps {
   loadingText?: string;
   children: string;
   variant: 'solid' | 'ghost' | 'outline';
-  size: 'xs' | 'sm' | 'md' | 'lg';
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   colorScheme:
     | 'gray'
     | 'red'
@@ -26,7 +27,7 @@ interface ButtonIconProps {
     | 'purple'
     | 'pink'
     | 'messenger'
-    | 'telegram'
+    | 'telegram';
 }
 
 export const ButtonIcon = ({
@@ -42,6 +43,7 @@ export const ButtonIcon = ({
   active,
   isLoading,
   loadingText,
+  className,
   ...props
 }: ButtonIconProps) => {
   return (
@@ -59,6 +61,7 @@ export const ButtonIcon = ({
         isLoading={isLoading}
         loadingText={loadingText}
         fontWeight="normal"
+        className={className}
         {...props}
       >
         {children}

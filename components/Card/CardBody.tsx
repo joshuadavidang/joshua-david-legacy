@@ -1,6 +1,4 @@
-import {
-  CardBody as ChakraCardBody,
-} from '@chakra-ui/react';
+import { CardBody as ChakraCardBody } from '@chakra-ui/react';
 import Text from '@/components/Text/Text';
 
 interface CardBodyProps {

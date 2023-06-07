@@ -6,33 +6,33 @@ import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import Text from '@/components/Text/Text';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Box } from '@chakra-ui/react';
+import { Box, useColorMode } from '@chakra-ui/react';
 import Internship from '@/components/Internship/Internship';
 import {
   DESCRIPTION,
+  HIRING_HEADER,
   INTERNSHIP_HEADER,
   PROJECT_HEADER,
   RESUME_HEADER,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
 import ProjectPage from './project';
-import Contact from '@/components/Contact';
 import Section from '@/components/Section';
+import Link from 'next/link';
 
-export default function About(props: any) {
-  const { about, experience, projects, contact } = props;
-
+export default function Discover() {
+  const { colorMode } = useColorMode();
   return (
     <>
       <Box
-        className="flex flex-col justify-center items-center w-screen py-16 lg:py-36"
-        id={about}
+        className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
+        id="about"
       >
-        <Box className="pt-12 md:pt-0 pb-12">
+        <Box className="px-16 py-12 md:pt-0">
           <Image src={LandingHero} alt="landing-hero" width="350" />
         </Box>
 
-        <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2">
+        <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2 px-4">
           <Box
             fontSize={{ base: '28px', md: '33px', lg: '35px' }}
             color="brand.purple"
@@ -80,7 +80,7 @@ export default function About(props: any) {
         </Box>
       </Box>
 
-      <Section id={experience}>
+      <Section id="experience">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -98,7 +98,7 @@ export default function About(props: any) {
         <Internship />
       </Section>
 
-      <Section id={projects}>
+      <Section id="projects">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -116,36 +116,68 @@ export default function About(props: any) {
       </Section>
 
       <Section id={null}>
+        <a download href="/Joshua_David.pdf" className="cursor-pointer">
+          <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.5, ease: 'easeOut' }}
+            >
+              <Text
+                fontSize={{ base: '23px', md: '28px', lg: '30px' }}
+                color="brand.purple"
+                className="text-center pb-8"
+              >
+                {RESUME_HEADER}
+              </Text>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.5, ease: 'easeOut' }}
+            >
+              <Image src={QR} alt="coding_II" width="200" />{' '}
+            </motion.div>
+          </Box>
+        </a>
+      </Section>
+
+      <Box
+        id="contact"
+        className="flex flex-col justify-center items-center w-screen h-80 gap-2"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4, ease: 'easeOut' }}
+          transition={{ delay: 0.6, ease: 'easeOut' }}
         >
           <Text
             fontSize={{ base: '23px', md: '28px', lg: '30px' }}
             color="brand.purple"
             className="text-center pb-8"
           >
-            {RESUME_HEADER}
+            {HIRING_HEADER}
           </Text>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4, ease: 'easeOut' }}
+          transition={{ delay: 0.7, ease: 'easeOut' }}
         >
-          <a download href="/Joshua_David.pdf" className="cursor-pointer">
-            <Box className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300">
-              <Image src={QR} alt="coding_II" width="200" />
-            </Box>
-          </a>
+          <Link href="/pricing" target="_blank">
+            <ButtonIcon
+              size="xl"
+              variant="solid"
+              isDisabled={false}
+              colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
+            >
+              Hire Me
+            </ButtonIcon>
+          </Link>
         </motion.div>
-      </Section>
-
-      <Section id={contact}>
-        <Contact />
-      </Section>
+      </Box>
     </>
   );
 }

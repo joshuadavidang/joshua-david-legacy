@@ -33,11 +33,11 @@ const MobileNavBar = () => {
         className="flex flex-row justify-between items-center pl-6 w-screen"
         bg={backgroundColor}
       >
-        <div className="md:text-3xl text-lg tracking-tight">
+        <div className="text-lg tracking-tight">
           <div onClick={() => handleScroll('about')}>joshuadavid</div>
         </div>
 
-        <div className="flex flex-row items-center justify-end p-6 gap-2">
+        <div className="flex flex-row items-center justify-end p-8 gap-2">
           <DarkModeIcon />
           <FaHamburger className="w-5 h-5" onClick={onOpen} />
         </div>
@@ -53,9 +53,7 @@ const MobileNavBar = () => {
               {NavLinkData.map(({ id, link, name }) => (
                 <div key={id} onClick={() => handleScroll(link)}>
                   <List spacing={1.5}>
-                    <ListItem className="p-3">
-                      {name}
-                    </ListItem>
+                    <ListItem className="p-3">{name}</ListItem>
                     <Divider orientation="horizontal" />
                   </List>
                 </div>
