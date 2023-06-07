@@ -9,7 +9,7 @@ const SpecialNavBar = () => {
 
   return (
     <Box
-      className="flex flex-row justify-end w-screen items-center pr-8 md:pr-24 md:pt-3"
+      className="flex flex-row justify-end w-screen items-center pr-8 md:pr-24 md:p-3"
       bg={backgroundColor}
     >
       <Box className="flex flex-row justify-center items-center gap-2 md:pt-3 pt-6">

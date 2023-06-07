@@ -31,11 +31,11 @@ export default function Pricing() {
             borderRadius="25px"
             minW={{ base: 'xs', md: 'md', lg: 'sm' }}
             align="center"
-            className="pb-2 justify-evenly transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
+            className="py-2 justify-evenly transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
           >
             <CardHeader fontSize="2xl">
               {tier === 'Pro' && (
-                <Tag size="lg" colorScheme="green" variant="solid">
+                <Tag size="sm" colorScheme="red" variant="solid">
                   Most Popular
                 </Tag>
               )}
