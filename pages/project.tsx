@@ -20,7 +20,7 @@ export default function ProjectPage() {
             <Card
               borderRadius="12px"
               maxW="xs"
-              minH='xs'
+              minH="xs"
               minW="xs"
               align="center"
               className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
@@ -30,7 +30,9 @@ export default function ProjectPage() {
                 <Image src={icon} alt="image" width="100" />
               </span>
 
-              <CardHeader fontSize="2xl">{name}</CardHeader>
+              <CardHeader fontSize="2xl" className="text-purple">
+                {name}
+              </CardHeader>
 
               <CardBody
                 paddingTop="0"

@@ -6,10 +6,7 @@ import { CONTACT_HEADER } from '@/constants/index';
 
 export default function Contact() {
   return (
-    <Box
-      id="contact"
-      className="flex justify-center items-center h-fit w-screen text-center"
-    >
+    <Box className="flex justify-center items-center h-screen w-screen text-center">
       <div className="md:w-4/12 w-10/12">
         <Text
           fontSize={{ base: '28px', md: '30px', lg: '33px' }}

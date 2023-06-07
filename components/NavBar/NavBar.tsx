@@ -22,8 +22,7 @@ const NavBar = () => {
   };
   return (
     <Box
-      className={`flex md:justify-between md:flex-row md:gap-5 md:pr-12 md:p-5 w-screen md:items-center 
-      flex-col items-end pb-4 pr-6`}
+      className="flex flex-row justify-between w-screen items-center px-10 pt-6"
       bg={backgroundColor}
     >
       <div className="flex flex-row gap-2.5">

@@ -16,6 +16,17 @@ const theme = extendTheme({
       lightGray: '#F2F2F2',
     },
   },
+  components: {
+    Button: {
+      sizes: {
+        xl: {
+          h: '55px',
+          fontSize: 'lg',
+          px: '45px',
+        },
+      },
+    },
+  },
 });
 
 export default theme;

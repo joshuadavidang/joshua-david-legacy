@@ -4,16 +4,19 @@ import MobileNavBar from '@/components/NavBar/MobileNavBar';
 import NavBar from '@/components/NavBar/NavBar';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import Footer from '@/components/Footer';
-import About from './about';
+import { useRouter } from 'next/router';
+import SpecialNavBar from '@/components/NavBar/SpecialNavBar';
 
-// eslint-disable-next-line no-unused-vars
 export default function Layout(props: { children: any }) {
+  const { children } = props;
+  const router = useRouter();
+  const { pathname } = router;
   const { colorMode } = useColorMode();
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
 
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
@@ -58,7 +61,15 @@ export default function Layout(props: { children: any }) {
       </Head>
 
       <Box className="relative" bg={backgroundColor}>
-        <nav className="fixed hidden md:block z-50">
+        <nav
+          className={`fixed ${
+            pathname === '/404' ||
+            pathname === '/contact' ||
+            pathname === '/pricing'
+              ? 'hidden'
+              : 'md:block'
+          } hidden z-50`}
+        >
           <motion.div
             className={`progress-bar ${
               colorMode === 'dark' ? 'bg-white' : 'bg-black'
@@ -68,16 +79,31 @@ export default function Layout(props: { children: any }) {
           <NavBar />
         </nav>
 
-        <nav className="fixed md:hidden block z-50">
+        <nav
+          className={`fixed ${
+            pathname === '/404' ||
+            pathname === '/contact' ||
+            pathname === '/pricing'
+              ? 'md:block'
+              : 'hidden'
+          } z-50`}
+        >
+          <SpecialNavBar />
+        </nav>
+
+        <nav
+          className={`fixed ${
+            pathname === '/404' ||
+            pathname === '/contact' ||
+            pathname === '/pricing'
+              ? 'hidden'
+              : 'block'
+          } md:hidden z-50`}
+        >
           <MobileNavBar />
         </nav>
 
-        <About
-          about="about"
-          experience="experience"
-          projects="projects"
-          contact="contact"
-        />
+        <main>{children}</main>
 
         <motion.div
           initial={{ opacity: 0 }}

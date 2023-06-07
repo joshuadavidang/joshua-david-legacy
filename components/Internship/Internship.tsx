@@ -57,7 +57,6 @@ const Internship = () => {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.2, ease: 'easeIn' }}
-                  key={id}
                 >
                   <p className="text-md">
                     {ROLE} at{' '}
@@ -76,9 +75,9 @@ const Internship = () => {
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 0.2, ease: 'easeIn' }}
-                      key={id}
+                      key={index}
                     >
-                      <ListItem key={index}>
+                      <ListItem>
                         <Text className="text-sm">{task}</Text>
                       </ListItem>
                     </motion.div>
