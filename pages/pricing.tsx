@@ -14,15 +14,14 @@ export default function Pricing() {
   const { colorMode } = useColorMode();
 
   return (
-    <Box className="flex flex-col gap-12 justify-center items-center h-fit lg:h-screen py-24 w-screen text-center">
-      <div className="lg:pt-12">
-        <Text
-          fontSize={{ base: '20px', md: '30px', lg: '30px' }}
-          color="brand.purple"
-        >
-          {HIRING_HEADER}
-        </Text>
-      </div>
+    <Box className="flex flex-col justify-center items-center w-screen py-16 md:py-36 text-center">
+      <Text
+        fontSize={{ base: '20px', md: '30px', lg: '30px' }}
+        color="brand.purple"
+        className="py-12 md:pt-0"
+      >
+        {HIRING_HEADER}
+      </Text>
 
       <div className="grid lg:grid-cols-3 gap-12">
         {PricingPlanData.map(({ id, currency, price, tier, features }) => (
@@ -35,7 +34,7 @@ export default function Pricing() {
           >
             <CardHeader fontSize="2xl">
               {tier === 'Pro' && (
-                <Tag size="sm" colorScheme="red" variant="solid">
+                <Tag size="md" colorScheme="red" variant="solid">
                   Most Popular
                 </Tag>
               )}
