@@ -63,11 +63,7 @@ export default function Layout(props: { children: any }) {
       <Box className="relative" bg={backgroundColor}>
         <nav
           className={`fixed ${
-            pathname === '/404' ||
-            pathname === '/contact' ||
-            pathname === '/pricing'
-              ? 'hidden'
-              : 'md:block'
+            pathname !== '/discover' ? 'hidden' : 'md:block'
           } hidden z-50`}
         >
           <motion.div
@@ -81,11 +77,7 @@ export default function Layout(props: { children: any }) {
 
         <nav
           className={`fixed ${
-            pathname === '/404' ||
-            pathname === '/contact' ||
-            pathname === '/pricing'
-              ? 'md:block'
-              : 'hidden'
+            pathname !== '/discover' ? 'md:block' : 'hidden'
           } z-50`}
         >
           <SpecialNavBar />
