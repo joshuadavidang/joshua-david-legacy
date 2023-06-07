@@ -166,7 +166,7 @@ export default function Discover() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7, ease: 'easeOut' }}
         >
-          <Link href="/pricing" target="_blank">
+          <Link href="/pricing">
             <ButtonIcon
               size="xl"
               variant="solid"

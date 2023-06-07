@@ -6,6 +6,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import Footer from '@/components/Footer';
 import { useRouter } from 'next/router';
 import SpecialNavBar from '@/components/NavBar/SpecialNavBar';
+import SpecialMobileNavBar from '@/components/NavBar/SpecialMobileNavBar';
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
@@ -63,8 +64,8 @@ export default function Layout(props: { children: any }) {
       <Box className="relative" bg={backgroundColor}>
         <nav
           className={`fixed ${
-            pathname !== '/discover' ? 'hidden' : 'md:block'
-          } hidden z-50`}
+            pathname !== '/discover' && 'hidden'
+          } md:block z-50`}
         >
           <motion.div
             className={`progress-bar ${
@@ -77,22 +78,26 @@ export default function Layout(props: { children: any }) {
 
         <nav
           className={`fixed ${
-            pathname !== '/discover' ? 'md:block' : 'hidden'
-          } z-50`}
+            pathname !== '/discover' ? 'hidden' : 'block'
+          } md:hidden z-50`}
+        >
+          <MobileNavBar />
+        </nav>
+
+        <nav
+          className={`fixed ${
+            pathname !== '/discover' && 'md:block'
+          } hidden z-50`}
         >
           <SpecialNavBar />
         </nav>
 
         <nav
           className={`fixed ${
-            pathname === '/404' ||
-            pathname === '/contact' ||
-            pathname === '/pricing'
-              ? 'hidden'
-              : 'block'
+            pathname !== '/discover' ? 'block' : 'hidden'
           } md:hidden z-50`}
         >
-          <MobileNavBar />
+          <SpecialMobileNavBar />
         </nav>
 
         <main>{children}</main>
