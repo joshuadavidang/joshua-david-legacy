@@ -20,6 +20,7 @@ const NavBar = () => {
   const handleScroll = (id: any) => {
     scrollToSection(id);
   };
+  
   return (
     <Box
       className="flex flex-row justify-between w-screen items-center px-10 pt-6"

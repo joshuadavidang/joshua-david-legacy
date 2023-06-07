@@ -9,10 +9,16 @@ const SpecialNavBar = () => {
 
   return (
     <Box
-      className="flex flex-row justify-end w-screen items-center pr-8 md:pr-24 md:p-3"
+      className="flex flex-row justify-between w-screen items-center px-10 py-6"
       bg={backgroundColor}
     >
-      <Box className="flex flex-row justify-center items-center gap-2 md:pt-3 py-6">
+      <Box>
+        <Link href="/discover">
+          <p>joshuadavid</p>
+        </Link>
+      </Box>
+
+      <Box className="flex md:flex-row justify-center items-center gap-2">
         <DarkModeIcon />
 
         <Link href="/discover">

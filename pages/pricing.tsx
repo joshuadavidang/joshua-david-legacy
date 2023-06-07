@@ -23,7 +23,7 @@ export default function Pricing() {
         {HIRING_HEADER}
       </Text>
 
-      <div className="grid lg:grid-cols-3 gap-12">
+      <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
         {PricingPlanData.map(({ id, currency, price, tier, features }) => (
           <Card
             key={id}
