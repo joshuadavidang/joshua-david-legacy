@@ -3,9 +3,9 @@ import { Card as ChakraCard } from '@chakra-ui/react';
 interface CardProps {
   children: any;
   borderRadius: any;
-  maxW?: any;
+  maxW?: string;
   minH?: string;
-  minW?: string;
+  minW?: any;
   className?: any;
   align: string
 }
