@@ -15,7 +15,7 @@ export default function Pricing() {
 
   return (
     <Box className="flex flex-col gap-12 justify-center items-center h-fit lg:h-screen py-24 w-screen text-center">
-      <div className="">
+      <div className="lg:pt-12">
         <Text
           fontSize={{ base: '20px', md: '30px', lg: '30px' }}
           color="brand.purple"
