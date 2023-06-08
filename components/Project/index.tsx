@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Card from '@/components/Card/Card';
 import CardBody from '@/components/Card/CardBody';
 import CardHeader from '@/components/Card/CardHeader';
-import { PastProjects } from '@/components/Projects';
+import { PastProjects } from '@/data/pastProjects';
 import { motion } from 'framer-motion';
 
 export default function ProjectPage() {
@@ -20,10 +20,10 @@ export default function ProjectPage() {
             <Card
               borderRadius="12px"
               maxW="xs"
-              minH="xs"
+              minH="xxs"
               minW="xs"
               align="center"
-              className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
+              className="pb-5 pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
             >
               <div className="pt-7">

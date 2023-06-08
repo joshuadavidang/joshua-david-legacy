@@ -21,6 +21,12 @@
     @apply text-purple;
     @apply text-center;
   }
+  h4 {
+    @apply text-lg;
+    @apply font-normal;
+    @apply text-purple;
+    @apply text-center;
+  }
 }
 
 html,
