@@ -23,7 +23,7 @@ export const PricingPlanData: PricingPlanDataType[] = [
       'Custom Domain',
       'Unlimited Revisions',
       'Optimised for Search Engines',
-      'Life-time Support',
+      'Priority Support',
       'Deliver in 7 Working Days',
     ],
     link: 'https://celineongjw.com',
