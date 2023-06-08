@@ -29,23 +29,12 @@ export interface PastProjectsType {
 export const PastProjects: PastProjectsType[] = [
   {
     id: randomUniqueId(),
-    name: 'Client\'s Project',
-    description:
-      'Fully responsive personal website for clients.',
+    name: 'Project Freelance',
+    description: 'Fully responsive personal website for clients.',
     year: 2023,
     techStack: [TbBrandNextjs, SiTypescript, SiTailwindcss, SiChakraui],
     icon: Client01,
     link: 'https://celineongjw.com',
-  },
-  {
-    id: randomUniqueId(),
-    name: 'Project Bread',
-    description:
-      'Mobile App to streamline process of food collection.',
-    year: 2022,
-    techStack: [SiFlutter],
-    icon: BreadApp,
-    link: 'https://github.com/joshuadavidang/google_ignite_bread',
   },
   {
     id: randomUniqueId(),
@@ -66,8 +55,7 @@ export const PastProjects: PastProjectsType[] = [
   {
     id: randomUniqueId(),
     name: 'Project Sayocode',
-    description:
-      'Web builder that automates the process of app creation.',
+    description: 'Web builder that automates the process of app creation.',
     year: 2019,
     techStack: [FaReact, SiIonic, SiTailwindcss, FaNodeJs, SiMongodb],
     icon: Sayocode,
@@ -82,5 +70,14 @@ export const PastProjects: PastProjectsType[] = [
     techStack: [SiIonic, SiTypescript],
     icon: StillYoung,
     link: 'https://www.straitstimes.com/singapore/app-with-updated-info-on-confinement-period-for-young-mums-launched',
+  },
+  {
+    id: randomUniqueId(),
+    name: 'Project Bread',
+    description: 'Mobile App to streamline process of food collection.',
+    year: 2022,
+    techStack: [SiFlutter],
+    icon: BreadApp,
+    link: 'https://github.com/joshuadavidang/google_ignite_bread',
   },
 ];

@@ -10,7 +10,7 @@ interface CardBodyProps {
 const CardBody = ({ children, paddingTop, fontSize }: CardBodyProps) => {
   return (
     <ChakraCardBody paddingTop={paddingTop}>
-      <Text fontSize={fontSize} align="center">
+      <Text fontSize={fontSize} align="left">
         {children}
       </Text>
     </ChakraCardBody>
