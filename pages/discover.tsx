@@ -16,14 +16,19 @@ import {
   RESUME_HEADER,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
-import ProjectPage from './project';
+import ProjectPage from '../components/Project';
 import Section from '@/components/Section';
 import Link from 'next/link';
+import Head from 'next/head';
 
+Discover.title = 'Homepage';
 export default function Discover() {
   const { colorMode } = useColorMode();
   return (
     <>
+      <Head>
+        <title>Discover - Joshua David</title>
+      </Head>
       <Box
         className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
         id="about"
