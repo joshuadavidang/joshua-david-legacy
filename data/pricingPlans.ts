@@ -6,7 +6,7 @@ export interface PricingPlanDataType {
   currency?: string;
   price: any;
   features: string[];
-  link: string,
+  link: string;
   callToAction: string;
 }
 
@@ -18,10 +18,12 @@ export const PricingPlanData: PricingPlanDataType[] = [
     price: '$2,000',
     features: [
       'One-time Purchase',
+      'One Page Website',
+      'Basic Animations',
       'Custom Domain',
       'Unlimited Revisions',
-      'Single Page Application',
-      'Basic Animations',
+      'Optimised for Search Engines',
+      'Life-time Support',
       'Deliver in 7 Working Days',
     ],
     link: 'https://celineongjw.com',
@@ -34,11 +36,12 @@ export const PricingPlanData: PricingPlanDataType[] = [
     price: '$3,000',
     features: [
       'One-time Purchase',
+      'Multiple Pages Website',
+      'Custom Animations',
       'Custom Domain',
       'Unlimited Revisions',
+      'Optimised for Search Engines',
       'Priority Support',
-      'Multiple Page Application',
-      'Custom Animations',
       'Deliver in 3 Working Days',
     ],
     link: 'https://joshuadavid.dev/contact',
@@ -50,14 +53,14 @@ export const PricingPlanData: PricingPlanDataType[] = [
     price: 'Custom',
     features: [
       'One-time Purchase',
+      'Multiple Pages Website',
+      'Advanced Animations',
       'Custom Domain',
       'Unlimited Revisions',
+      'Optimised for Search Engines',
       'Priority Support',
-      'Multiple Page Application',
-      'Advanced Animations',
       'Contact Form',
       'Back-end Integration',
-      'Analytics',
     ],
     link: 'https://joshuadavid.dev/contact',
     callToAction: 'Contact Me',

@@ -19,7 +19,7 @@ export default function Pricing() {
         color="brand.purple"
         className="py-9 md:pt-0"
       >
-        Choose the plan that fits your needs.
+        Choose a plan that fits your needs.
       </Text>
 
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
