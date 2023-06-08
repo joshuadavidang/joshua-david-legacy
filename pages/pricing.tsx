@@ -8,92 +8,98 @@ import { PricingPlanData } from '@/data/pricingPlans';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import CardFooter from '@/components/Card/CardFooter';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Pricing() {
   const { colorMode } = useColorMode();
 
   return (
-    <Box className="flex flex-col justify-center items-center w-screen py-16 md:py-32 text-center">
-      <Text
-        fontSize={{ base: '18px', md: '23px', lg: '25px' }}
-        color="brand.purple"
-        className="py-9 md:pt-0"
-      >
-        Choose a plan that fits your needs.
-      </Text>
+    <>
+      <Head>
+        <title>Pricing - Joshua David</title>
+      </Head>
+      <Box className="flex flex-col justify-center items-center w-screen py-16 md:py-32 text-center">
+        <Text
+          fontSize={{ base: '18px', md: '23px', lg: '25px' }}
+          color="brand.purple"
+          className="py-9 md:pt-0"
+        >
+          Choose a plan that fits your needs.
+        </Text>
 
-      <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
-        {PricingPlanData.map(
-          ({ id, currency, price, tier, features, link, callToAction }) => (
-            <Card
-              key={id}
-              borderRadius="25px"
-              minW={{ base: 'xs', md: 'md', lg: 'xs' }}
-              align="center"
-              className="py-3 justify-evenly transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
-            >
-              <Box className="py-4">
-                {tier === 'Pro' ? (
-                  <Tag size="md" colorScheme="red" variant="solid">
-                    Most Popular
-                  </Tag>
-                ) : (
-                  <Tag size="md" variant="ghost" />
-                )}
-              </Box>
-
-              <CardHeader
-                fontSize="2xl"
-                className="flex flex-col flex-grow"
-                padding="0"
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
+          {PricingPlanData.map(
+            ({ id, currency, price, tier, features, link, callToAction }) => (
+              <Card
+                key={id}
+                borderRadius="25px"
+                minW={{ base: 'xs', md: 'md', lg: 'xs' }}
+                align="center"
+                className="py-3 justify-evenly transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
               >
-                <h2 className="text-purple">{tier}</h2>
+                <Box className="py-4">
+                  {tier === 'Pro' ? (
+                    <Tag size="md" colorScheme="red" variant="solid">
+                      Most Popular
+                    </Tag>
+                  ) : (
+                    <Tag size="md" variant="ghost" />
+                  )}
+                </Box>
 
-                <div className="flex flex-row items-center justify-center py-4 gap-3">
-                  <p className="text-sm">{currency}</p>
+                <CardHeader
+                  fontSize="2xl"
+                  className="flex flex-col flex-grow"
+                  padding="0"
+                >
+                  <h2 className="text-purple">{tier}</h2>
 
-                  <h1
-                    className={`${
-                      colorMode === 'dark' ? 'text-white' : 'text-black'
-                    } text-4xl`}
-                  >
-                    {price}
-                  </h1>
-                </div>
+                  <div className="flex flex-row items-center justify-center py-4 gap-3">
+                    <p className="text-sm">{currency}</p>
 
-                <div className="list-none text-sm text-left">
-                  {features.map((feature, i) => {
-                    return (
-                      <ButtonIcon
-                        key={i}
-                        size="sm"
-                        colorScheme="gray"
-                        variant="ghost"
-                        className="cursor-default"
-                        leftIcon={<FcApproval />}
-                      >
-                        {feature}
-                      </ButtonIcon>
-                    );
-                  })}
-                </div>
-              </CardHeader>
+                    <h1
+                      className={`${
+                        colorMode === 'dark' ? 'text-white' : 'text-black'
+                      } text-4xl`}
+                    >
+                      {price}
+                    </h1>
+                  </div>
 
-              <CardFooter>
-                <Link href={link} target="_blank">
-                  <ButtonIcon
-                    size="md"
-                    colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
-                    variant="solid"
-                  >
-                    {callToAction}
-                  </ButtonIcon>
-                </Link>
-              </CardFooter>
-            </Card>
-          )
-        )}
-      </div>
-    </Box>
+                  <div className="list-none text-sm text-left">
+                    {features.map((feature, i) => {
+                      return (
+                        <ButtonIcon
+                          key={i}
+                          size="sm"
+                          colorScheme="gray"
+                          variant="ghost"
+                          className="cursor-default"
+                          leftIcon={<FcApproval />}
+                        >
+                          {feature}
+                        </ButtonIcon>
+                      );
+                    })}
+                  </div>
+                </CardHeader>
+
+                <CardFooter>
+                  <Link href={link} target="_blank">
+                    <ButtonIcon
+                      size="md"
+                      colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
+                      variant="solid"
+                    >
+                      {callToAction}
+                    </ButtonIcon>
+                  </Link>
+                </CardFooter>
+              </Card>
+            )
+          )}
+        </div>
+      </Box>
+    </>
   );
 }

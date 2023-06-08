@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function Custom404() {
   const router = useRouter();
@@ -9,11 +10,16 @@ export default function Custom404() {
     router.push('/discover');
   };
   return (
-    <Box
-      className="flex flex-col justify-center items-center w-screen h-screen"
-      onClick={handleClick}
-    >
-      Go Home
-    </Box>
+    <>
+      <Head>
+        <title>404 - Joshua David</title>
+      </Head>
+      <Box
+        className="flex flex-col justify-center items-center w-screen h-screen"
+        onClick={handleClick}
+      >
+        Go Home
+      </Box>
+    </>
   );
 }
