@@ -4,11 +4,21 @@ interface CardHeaderProps {
   children: any;
   fontSize?: string;
   className?: string;
+  padding?: string;
 }
 
-const CardHeader = ({ children, fontSize, className }: CardHeaderProps) => {
+const CardHeader = ({
+  children,
+  fontSize,
+  className,
+  padding,
+}: CardHeaderProps) => {
   return (
-    <ChakraCardHeader fontSize={fontSize} className={className}>
+    <ChakraCardHeader
+      fontSize={fontSize}
+      className={className}
+      padding={padding}
+    >
       {children}
     </ChakraCardHeader>
   );

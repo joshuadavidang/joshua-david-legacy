@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Tag, useColorMode } from '@chakra-ui/react';
 import Text from '@/components/Text/Text';
-import { HIRING_HEADER } from '@/constants/index';
 import Card from '@/components/Card/Card';
 import { FcApproval } from 'react-icons/fc';
 import CardHeader from '@/components/Card/CardHeader';
@@ -16,11 +15,11 @@ export default function Pricing() {
   return (
     <Box className="flex flex-col justify-center items-center w-screen py-16 md:py-32 text-center">
       <Text
-        fontSize={{ base: '20px', md: '30px', lg: '30px' }}
+        fontSize={{ base: '18px', md: '23px', lg: '25px' }}
         color="brand.purple"
-        className="py-12 md:pt-0"
+        className="py-9 md:pt-0"
       >
-        {HIRING_HEADER}
+        Choose the plan that fits your needs.
       </Text>
 
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
@@ -29,11 +28,11 @@ export default function Pricing() {
             <Card
               key={id}
               borderRadius="25px"
-              minW={{ base: 'xs', md: 'md', lg: 'sm' }}
+              minW={{ base: 'xs', md: 'md', lg: 'xs' }}
               align="center"
               className="py-3 justify-evenly transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
             >
-              <Box className="pt-6">
+              <Box className="py-4">
                 {tier === 'Pro' ? (
                   <Tag size="md" colorScheme="red" variant="solid">
                     Most Popular
@@ -43,7 +42,11 @@ export default function Pricing() {
                 )}
               </Box>
 
-              <CardHeader fontSize="2xl" className="flex flex-col flex-grow">
+              <CardHeader
+                fontSize="2xl"
+                className="flex flex-col flex-grow"
+                padding="0"
+              >
                 <h2 className="text-purple">{tier}</h2>
 
                 <div className="flex flex-row items-center justify-center py-4 gap-3">
