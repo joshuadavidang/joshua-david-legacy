@@ -91,13 +91,9 @@ export default function Discover() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, ease: 'easeOut' }}
         >
-          <Box
-            fontSize={{ base: '23px', md: '28px', lg: '30px' }}
-            color="brand.purple"
-            className="text-center pb-8"
-          >
-            <Text>{INTERNSHIP_HEADER}</Text>
-          </Box>
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {INTERNSHIP_HEADER}
+          </h1>
         </motion.div>
 
         <Internship />
@@ -109,13 +105,9 @@ export default function Discover() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4, ease: 'easeOut' }}
         >
-          <Text
-            fontSize={{ base: '23px', md: '28px', lg: '30px' }}
-            color="brand.purple"
-            className="text-center pb-8"
-          >
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {PROJECT_HEADER}
-          </Text>
+          </h1>
           <ProjectPage />
         </motion.div>
       </Section>
@@ -128,13 +120,9 @@ export default function Discover() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.5, ease: 'easeOut' }}
             >
-              <Text
-                fontSize={{ base: '23px', md: '28px', lg: '30px' }}
-                color="brand.purple"
-                className="text-center pb-8"
-              >
+              <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
                 {RESUME_HEADER}
-              </Text>
+              </h1>
             </motion.div>
 
             <motion.div
@@ -157,13 +145,9 @@ export default function Discover() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.6, ease: 'easeOut' }}
         >
-          <Text
-            fontSize={{ base: '23px', md: '28px', lg: '30px' }}
-            color="brand.purple"
-            className="text-center pb-8"
-          >
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {HIRING_HEADER}
-          </Text>
+          </h1>
         </motion.div>
 
         <motion.div
