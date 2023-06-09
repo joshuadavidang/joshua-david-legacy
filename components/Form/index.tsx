@@ -90,12 +90,12 @@ const Form = () => {
   return (
     <FormControl isRequired>
       <Box mb="5" mt="8">
-        <FormLabel>Name</FormLabel>
+        <FormLabel>First name</FormLabel>
         <Input
           type="text"
           name="name"
           size="md"
-          placeholder="Your name"
+          placeholder="First name"
           data={handleChange}
           value={name}
         />

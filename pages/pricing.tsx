@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Tag, useColorMode } from '@chakra-ui/react';
-import Text from '@/components/Text/Text';
 import Card from '@/components/Card/Card';
 import { FcApproval } from 'react-icons/fc';
 import CardHeader from '@/components/Card/CardHeader';
@@ -9,6 +8,7 @@ import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import CardFooter from '@/components/Card/CardFooter';
 import Link from 'next/link';
 import Head from 'next/head';
+import { PRICING_HEADER } from '../constants';
 
 export default function Pricing() {
   const { colorMode } = useColorMode();
@@ -19,13 +19,9 @@ export default function Pricing() {
         <title>Pricing - Joshua David</title>
       </Head>
       <Box className="flex flex-col justify-center items-center w-screen py-16 md:py-32 text-center">
-        <Text
-          fontSize={{ base: '18px', md: '23px', lg: '25px' }}
-          color="brand.purple"
-          className="py-9 md:pt-0"
-        >
-          Choose a plan that fits your needs.
-        </Text>
+        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+          {PRICING_HEADER}
+        </h1>
 
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
           {PricingPlanData.map(
