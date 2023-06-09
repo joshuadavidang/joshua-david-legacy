@@ -20,10 +20,10 @@ export default function ProjectPage() {
             <Card
               borderRadius="12px"
               maxW="xs"
-              minH="xxs"
+              minH="xs"
               minW="xs"
               align="center"
-              className="pb-5 pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
+              className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
             >
               <div className="pt-7">
