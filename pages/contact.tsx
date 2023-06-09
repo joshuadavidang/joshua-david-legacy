@@ -38,7 +38,7 @@ export default function Contact() {
           </Center>
         </div>
 
-        <div className="md:w-4/12 w-9/12">
+        <div className="md:w-4/12 w-10/12">
           <Form />
         </div>
       </Box>
