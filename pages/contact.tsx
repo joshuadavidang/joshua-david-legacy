@@ -14,7 +14,7 @@ export default function Contact() {
       <Head>
         <title>Contact - Joshua David</title>
       </Head>
-      <Box className="flex md:flex-row flex-col gap-6 md:gap-36 justify-center items-center md:h-screen h-fit w-screen text-center py-36">
+      <Box className="flex lg:flex-row flex-col gap-6 lg:gap-36 justify-center items-center lg:h-screen h-fit w-screen text-center py-36">
         <div className="flex flex-col items-center gap-3">
           <Image src={Joshua} alt="joshua" className="rounded-lg" width="250" />
           <h1 className="pt-3 text-2xl">{CONTACT_HEADER}</h1>
@@ -29,7 +29,7 @@ export default function Contact() {
           </a>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Center height="500px">
             <Divider
               orientation="vertical"
