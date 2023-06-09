@@ -33,7 +33,7 @@ export default function Discover() {
         className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
         id="about"
       >
-        <Box className="px-16 py-12 md:pt-0">
+        <Box className="px-16 py-12 md:pt-2.5">
           <Image src={LandingHero} alt="landing-hero" width="350" />
         </Box>
 
