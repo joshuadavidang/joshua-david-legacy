@@ -80,7 +80,7 @@ export default function Pricing() {
                   </div>
                 </CardHeader>
 
-                <CardFooter>
+                <CardFooter pt="10">
                   <Link href={link} target="_blank">
                     <ButtonIcon
                       size="md"
