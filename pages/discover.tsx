@@ -18,12 +18,19 @@ import {
 import { Skills } from '@/data/skills';
 import ProjectPage from '../components/Project';
 import Section from '@/components/Section';
-import Link from 'next/link';
 import Head from 'next/head';
+import { GlowingButton } from '@/components/Button/GlowingButton';
+import { useRouter } from 'next/router';
 
 Discover.title = 'Homepage';
 export default function Discover() {
   const { colorMode } = useColorMode();
+  const router = useRouter();
+
+  const navigatePage = () => {
+    router.push('/pricing');
+  };
+
   return (
     <>
       <Head>
@@ -155,16 +162,21 @@ export default function Discover() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7, ease: 'easeOut' }}
         >
-          <Link href="/pricing">
+          {colorMode === 'dark' ? (
+            <GlowingButton onClick={() => navigatePage()}>
+              Hire Me
+            </GlowingButton>
+          ) : (
             <ButtonIcon
               size="xl"
               variant="solid"
               isDisabled={false}
-              colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
+              colorScheme="telegram"
+              onClick={() => navigatePage()}
             >
               Hire Me
             </ButtonIcon>
-          </Link>
+          )}
         </motion.div>
       </Box>
     </>
