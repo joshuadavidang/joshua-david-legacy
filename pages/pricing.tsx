@@ -23,7 +23,7 @@ export default function Pricing() {
           {PRICING_HEADER}
         </h1>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-14">
           {PricingPlanData.map(
             ({ id, currency, price, tier, features, link, callToAction }) => (
               <Card
