@@ -26,7 +26,7 @@ export default function Discover() {
   const { colorMode } = useColorMode();
   const router = useRouter();
   const navigatePage = () => {
-    router.push('/pricing');
+    router.push('/contact');
   };
 
   return (
