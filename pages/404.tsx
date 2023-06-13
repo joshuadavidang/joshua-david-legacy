@@ -21,15 +21,15 @@ export default function Custom404() {
       </Head>
 
       <Box className="flex flex-col md:flex-row justify-center items-center md:gap-32 w-screen h-screen">
-        <Image src={Lost} alt="404-hero" className="md:w-1/4 w-9/12" />
+        <Image src={Lost} alt="404-hero" className="md:w-1/4 w-8/12" />
 
-        <div className="flex flex-col gap-5 justify-start items-center md:items-start md:justify-center md:pt-0 pt-12">
-          <h1
+        <div className="flex flex-col gap-2 justify-start items-center md:items-start md:justify-center md:pt-0 pt-12">
+          <h2
             className={`${colorMode === 'dark' ? 'text-white' : 'text-black'}`}
           >
             Oh No! Error 404
-          </h1>
-          <h3>Page Not Found</h3>
+          </h2>
+          <h3 className="pb-6">Page Not Found</h3>
 
           {colorMode === 'dark' ? (
             <GlowingButton onClick={() => navigatePage()}>
