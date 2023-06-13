@@ -1,13 +1,18 @@
 import React from 'react';
-import { useColorMode } from '@chakra-ui/react';
+import { Box, useColorMode } from '@chakra-ui/react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Lost from '@/images/Lost.svg';
-import Link from 'next/link';
+import { GlowingButton } from '@/components/Button/GlowingButton';
+import { useRouter } from 'next/router';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
 
 export default function Custom404() {
   const { colorMode } = useColorMode();
+  const router = useRouter();
+  const navigatePage = () => {
+    router.push('/discover');
+  };
 
   return (
     <>
@@ -15,30 +20,34 @@ export default function Custom404() {
         <title>404 - Joshua David</title>
       </Head>
 
-      <div className="grid grid-cols-1 gap-4 w-screen h-screen md:grid-cols-3">
-        <div className="flex justify-center items-end md:col-span-2 md:items-center">
-          <Image src={Lost} alt="404-hero" className="md:w-1/2 w-10/12" />
-        </div>
+      <Box className="flex flex-col md:flex-row justify-center items-center md:gap-32 w-screen h-screen">
+        <Image src={Lost} alt="404-hero" className="md:w-1/4 w-9/12" />
 
-        <div className="flex flex-col gap-3 justify-start items-center md:items-start md:justify-center pt-12">
+        <div className="flex flex-col gap-5 justify-start items-center md:items-start md:justify-center md:pt-0 pt-12">
           <h1
             className={`${colorMode === 'dark' ? 'text-white' : 'text-black'}`}
           >
             Oh No! Error 404
           </h1>
           <h3>Page Not Found</h3>
-          <Link href="/discover" className="pt-6">
+
+          {colorMode === 'dark' ? (
+            <GlowingButton onClick={() => navigatePage()}>
+              Back To Home
+            </GlowingButton>
+          ) : (
             <ButtonIcon
-              size="md"
+              size="xl"
               variant="solid"
               isDisabled={false}
-              colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
+              colorScheme="telegram"
+              onClick={() => navigatePage()}
             >
               Back To Home
             </ButtonIcon>
-          </Link>
+          )}
         </div>
-      </div>
+      </Box>
     </>
   );
 }
