@@ -1,10 +1,11 @@
-import { Box } from '@chakra-ui/react';
+import { Box, useColorMode } from '@chakra-ui/react';
 import useScrollToSection from 'hooks/useScrollToSection';
 import { IoChevronUp } from 'react-icons/io5';
 import { Icon } from '../Button/Icon';
 import { useRouter } from 'next/router';
 
 export default function ScrollToTop() {
+  const { colorMode } = useColorMode();
   const router = useRouter();
   const { pathname } = router;
   const scrollToSection = useScrollToSection();
@@ -19,7 +20,7 @@ export default function ScrollToTop() {
     >
       <Icon
         variant="solid"
-        colorScheme="gray"
+        colorScheme={`${colorMode === 'dark' ? 'gray' : 'telegram'}`}
         label="scroll-to-top"
         size="md"
         icon={<IoChevronUp />}
