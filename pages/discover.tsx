@@ -22,11 +22,9 @@ import Head from 'next/head';
 import { GlowingButton } from '@/components/Button/GlowingButton';
 import { useRouter } from 'next/router';
 
-Discover.title = 'Homepage';
 export default function Discover() {
   const { colorMode } = useColorMode();
   const router = useRouter();
-
   const navigatePage = () => {
     router.push('/pricing');
   };

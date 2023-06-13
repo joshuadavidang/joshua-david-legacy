@@ -21,13 +21,6 @@ interface IconProps {
     | 'telegram';
 }
 
-export const Icon = ({ colorScheme, label, icon, ...props }: IconProps) => {
-  return (
-    <IconButton
-      colorScheme={colorScheme}
-      aria-label={label}
-      icon={icon}
-      {...props}
-    />
-  );
+export const Icon = ({ label, ...props }: IconProps) => {
+  return <IconButton aria-label={label} {...props} />;
 };

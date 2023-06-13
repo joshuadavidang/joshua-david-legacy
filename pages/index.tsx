@@ -7,6 +7,9 @@ import Footer from '@/components/Footer';
 import { useRouter } from 'next/router';
 import SpecialNavBar from '@/components/NavBar/SpecialNavBar';
 import SpecialMobileNavBar from '@/components/NavBar/SpecialMobileNavBar';
+import { Icon } from '@/components/Button/Icon';
+import { IoChevronUp } from 'react-icons/io5';
+import useScrollToSection from 'hooks/useScrollToSection';
 
 export default function Layout(props: { children: any }) {
   const { children } = props;
@@ -14,11 +17,17 @@ export default function Layout(props: { children: any }) {
   const { pathname } = router;
   const { colorMode } = useColorMode();
   const { scrollYProgress } = useScroll();
+
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
+
+  const scrollToSection = useScrollToSection();
+  const handleScroll = (id: any) => {
+    scrollToSection(id);
+  };
 
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
 
@@ -100,6 +109,17 @@ export default function Layout(props: { children: any }) {
         </nav>
 
         <main>{children}</main>
+
+        <Box className="flex justify-end pr-8 pb-6">
+          <Icon
+            variant="solid"
+            colorScheme={`${colorMode === 'dark' ? 'gray' : 'telegram'}`}
+            label="scroll-to-top"
+            size="md"
+            icon={<IoChevronUp />}
+            onClick={() => handleScroll('about')}
+          />
+        </Box>
 
         <motion.div
           initial={{ opacity: 0 }}

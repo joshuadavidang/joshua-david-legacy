@@ -7,21 +7,8 @@ interface CardHeaderProps {
   padding?: string;
 }
 
-const CardHeader = ({
-  children,
-  fontSize,
-  className,
-  padding,
-}: CardHeaderProps) => {
-  return (
-    <ChakraCardHeader
-      fontSize={fontSize}
-      className={className}
-      padding={padding}
-    >
-      {children}
-    </ChakraCardHeader>
-  );
+const CardHeader = ({ children, ...props }: CardHeaderProps) => {
+  return <ChakraCardHeader {...props}>{children}</ChakraCardHeader>;
 };
 
 export default CardHeader;
