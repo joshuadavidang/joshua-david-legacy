@@ -6,8 +6,10 @@ import CardBody from '@/components/Card/CardBody';
 import CardHeader from '@/components/Card/CardHeader';
 import { PastProjects } from '@/data/pastProjects';
 import { motion } from 'framer-motion';
+import { useColorMode } from '@chakra-ui/react';
 
 export default function ProjectPage() {
+  const { colorMode } = useColorMode();
   return (
     <div className="grid lg:grid-cols-3 gap-12">
       {PastProjects.map(({ name, description, icon, link }, index) => (
@@ -23,6 +25,7 @@ export default function ProjectPage() {
               minH="xs"
               minW="xs"
               align="center"
+              backgroundColor={`${colorMode === 'dark' ? 'lightGray' : 'white'}`}
               className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
             >

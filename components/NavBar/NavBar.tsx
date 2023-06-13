@@ -15,12 +15,12 @@ import useScrollToSection from 'hooks/useScrollToSection';
 
 const NavBar = () => {
   const { colorMode } = useColorMode();
-  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
+  const backgroundColor = useColorModeValue('offWhite', 'midnight');
   const scrollToSection = useScrollToSection();
   const handleScroll = (id: any) => {
     scrollToSection(id);
   };
-  
+
   return (
     <Box
       className="flex flex-row justify-between w-screen items-center px-10 py-6"

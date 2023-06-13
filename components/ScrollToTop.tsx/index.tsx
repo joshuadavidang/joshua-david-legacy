@@ -14,7 +14,7 @@ export default function ScrollToTop() {
   };
   return (
     <Box
-      className={`flex justify-end pr-8 pb-6 ${
+      className={`flex justify-end pr-8 ${
         pathname !== '/discover' && 'hidden'
       }`}
     >

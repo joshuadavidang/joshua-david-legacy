@@ -43,7 +43,7 @@ const Internship = () => {
         <TabIndicator
           mt="-1.5px"
           height="2px"
-          bg="brand.purple"
+          bg="purple"
           borderRadius="1px"
         />
       </motion.div>
@@ -61,7 +61,7 @@ const Internship = () => {
                   <p className="text-md">
                     {ROLE} at{' '}
                     <Link href={link} isExternal>
-                      <Text as="i" color="brand.purple">
+                      <Text as="i" color="purple">
                         {company}
                       </Text>
                     </Link>

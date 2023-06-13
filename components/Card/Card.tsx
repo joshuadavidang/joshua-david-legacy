@@ -2,6 +2,7 @@ import { Card as ChakraCard } from '@chakra-ui/react';
 
 interface CardProps {
   children: any;
+  backgroundColor: string;
   borderRadius: any;
   align: string;
   maxW?: string;
@@ -10,8 +11,12 @@ interface CardProps {
   className?: any;
 }
 
-const Card = ({ children, ...props }: CardProps) => {
-  return <ChakraCard {...props}>{children}</ChakraCard>;
+const Card = ({ backgroundColor, children, ...props }: CardProps) => {
+  return (
+    <ChakraCard bg={backgroundColor} {...props}>
+      {children}
+    </ChakraCard>
+  );
 };
 
 export default Card;

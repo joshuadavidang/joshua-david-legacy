@@ -14,7 +14,7 @@ import { useRouter } from 'next/router';
 
 const SpecialNavBar = () => {
   const { colorMode } = useColorMode();
-  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
+  const backgroundColor = useColorModeValue('offWhite', 'midnight');
   const router = useRouter();
   const handleRoute = () => {
     router.push('/discover');
