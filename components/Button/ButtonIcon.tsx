@@ -30,40 +30,10 @@ interface ButtonIconProps {
     | 'telegram';
 }
 
-export const ButtonIcon = ({
-  colorScheme,
-  isDisabled,
-  hover,
-  variant,
-  children,
-  size,
-  leftIcon,
-  rightIcon,
-  cursor,
-  active,
-  isLoading,
-  loadingText,
-  className,
-  ...props
-}: ButtonIconProps) => {
+export const ButtonIcon = ({ children, ...props }: ButtonIconProps) => {
   return (
     <Stack direction="row" spacing={4}>
-      <ChakraButton
-        cursor={cursor}
-        _hover={hover}
-        _active={active}
-        isDisabled={isDisabled}
-        leftIcon={leftIcon}
-        rightIcon={rightIcon}
-        colorScheme={colorScheme}
-        variant={variant}
-        size={size}
-        isLoading={isLoading}
-        loadingText={loadingText}
-        fontWeight="normal"
-        className={className}
-        {...props}
-      >
+      <ChakraButton fontWeight="normal" {...props}>
         {children}
       </ChakraButton>
     </Stack>

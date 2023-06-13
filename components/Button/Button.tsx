@@ -26,20 +26,8 @@ interface ButtonProps {
 }
 
 export const Button = ({
-  colorScheme,
-  variant,
   children,
-  isLoading,
   ...props
 }: ButtonProps) => {
-  return (
-    <ChakraButton
-      variant={variant}
-      colorScheme={colorScheme}
-      isLoading={isLoading}
-      {...props}
-    >
-      {children}
-    </ChakraButton>
-  );
+  return <ChakraButton {...props}>{children}</ChakraButton>;
 };
