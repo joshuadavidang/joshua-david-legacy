@@ -45,7 +45,7 @@ export default function Discover() {
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2 px-4">
           <Box
             fontSize={{ base: '28px', md: '33px', lg: '35px' }}
-            color="brand.purple"
+            color="purple"
           >
             <TypeAnimation
               sequence={[

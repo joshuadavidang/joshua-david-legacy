@@ -31,6 +31,9 @@ export default function Pricing() {
                 borderRadius="25px"
                 minW={{ base: 'xs', md: 'md', lg: 'xs' }}
                 align="center"
+                backgroundColor={`${
+                  colorMode === 'dark' ? 'lightGray' : 'white'
+                }`}
                 className="py-3 justify-evenly transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
               >
                 <Box className="py-4">

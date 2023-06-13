@@ -19,7 +19,7 @@ import { FaHamburger } from 'react-icons/fa';
 import useScrollToSection from 'hooks/useScrollToSection';
 
 const MobileNavBar = () => {
-  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
+  const backgroundColor = useColorModeValue('offWhite', 'midnight');
   const { isOpen, onOpen, onClose } = useDisclosure();
   const scrollToSection = useScrollToSection();
   const handleScroll = (id: any) => {

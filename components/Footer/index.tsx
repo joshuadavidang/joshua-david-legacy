@@ -3,7 +3,7 @@ import { FULL_NAME } from '@/constants/index';
 
 const Footer = () => {
   return (
-    <Box className="flex flex-row justify-center items-center w-screen pb-6">
+    <Box className="flex flex-row justify-center items-center w-screen py-6">
       <Text fontSize="xs">
         Developed in &nbsp;
         <span role="img" aria-label="flag-sg">
@@ -13,7 +13,7 @@ const Footer = () => {
         <Link
           href="https://www.linkedin.com/in/joshuadavidang/"
           isExternal
-          color={'brand.purple'}
+          color="purple"
         >
           {FULL_NAME}
         </Link>
