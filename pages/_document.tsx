@@ -11,7 +11,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className='font-sen'>
+      <body className="font-sen overflow-x-hidden">
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Main />
         <NextScript />
