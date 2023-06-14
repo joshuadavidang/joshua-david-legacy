@@ -9,7 +9,6 @@ import {
   DrawerHeader,
   DrawerCloseButton,
   Stack,
-  Divider,
   List,
   ListItem,
 } from '@chakra-ui/react';
@@ -52,7 +51,6 @@ const SpecialMobileNavBar = () => {
               <div onClick={() => handleRoute()}>
                 <List spacing={1.5}>
                   <ListItem className="p-3">Discover</ListItem>
-                  <Divider orientation="horizontal" />
                 </List>
               </div>
             </Stack>
