@@ -32,6 +32,7 @@ const Form = () => {
           status: 'error',
           duration: 1000,
           isClosable: false,
+          containerStyle: { color: 'black' },
         });
       }
     } else {
@@ -47,6 +48,7 @@ const Form = () => {
               status: 'success',
               duration: 3000,
               isClosable: false,
+              containerStyle: { color: 'black' },
             });
           });
         }, 1000);
