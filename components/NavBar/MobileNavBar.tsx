@@ -9,7 +9,6 @@ import {
   DrawerHeader,
   DrawerCloseButton,
   Stack,
-  Divider,
   List,
   ListItem,
 } from '@chakra-ui/react';
@@ -52,9 +51,8 @@ const MobileNavBar = () => {
             <Stack direction="column" h="100px" p={1}>
               {NavLinkData.map(({ id, link, name }) => (
                 <div key={id} onClick={() => handleScroll(link)}>
-                  <List spacing={1.5}>
+                  <List>
                     <ListItem className="p-3">{name}</ListItem>
-                    <Divider orientation="horizontal" />
                   </List>
                 </div>
               ))}

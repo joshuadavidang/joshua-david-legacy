@@ -25,7 +25,9 @@ export default function ProjectPage() {
               minH="xs"
               minW="xs"
               align="center"
-              backgroundColor={`${colorMode === 'dark' ? 'lightGray' : 'white'}`}
+              backgroundColor={`${
+                colorMode === 'dark' ? 'lightGray' : 'white'
+              }`}
               className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "
             >
@@ -33,7 +35,10 @@ export default function ProjectPage() {
                 <Image src={icon} alt="image" width="100" />
               </div>
 
-              <CardHeader fontSize="2xl" className="text-purple">
+              <CardHeader
+                fontSize={{ base: 'xl', md: '2xl', lg: '2xl' }}
+                className="text-purple"
+              >
                 {name}
               </CardHeader>
 

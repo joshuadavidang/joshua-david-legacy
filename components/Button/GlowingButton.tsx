@@ -15,7 +15,7 @@ export const GlowingButton = ({ onClick, children }: GlowingButtonProps) => {
       />
 
       <button className="relative py-5 px-12 bg-black w-full rounded-lg leading-none">
-        <p className="md:text-lg text-md">{children}</p>
+        <p className="text-lg">{children}</p>
       </button>
     </Box>
   );
