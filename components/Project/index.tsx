@@ -26,7 +26,7 @@ export default function ProjectPage() {
               minW="xs"
               align="center"
               backgroundColor={`${
-                colorMode === 'dark' ? 'lightGray' : 'white'
+                colorMode === 'dark' ? 'brand.lightGray' : 'brand.white'
               }`}
               className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
               "

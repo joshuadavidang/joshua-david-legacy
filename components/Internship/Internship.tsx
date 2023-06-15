@@ -61,7 +61,7 @@ const Internship = () => {
                   <p className="text-md">
                     {ROLE} at{' '}
                     <Link href={link} isExternal>
-                      <Text as="i" color="purple">
+                      <Text as="i" color="brand.purple">
                         {company}
                       </Text>
                     </Link>

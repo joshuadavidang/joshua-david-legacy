@@ -25,9 +25,10 @@ interface ButtonProps {
     | 'telegram';
 }
 
-export const Button = ({
-  children,
-  ...props
-}: ButtonProps) => {
-  return <ChakraButton {...props}>{children}</ChakraButton>;
+export const Button = ({ children, ...props }: ButtonProps) => {
+  return (
+    <ChakraButton fontWeight="normal" {...props}>
+      {children}
+    </ChakraButton>
+  );
 };
