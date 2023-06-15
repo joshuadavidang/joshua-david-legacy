@@ -33,7 +33,7 @@ const MobileNavBar = () => {
         bg={backgroundColor}
       >
         <div className="text-lg tracking-tight">
-          <div onClick={() => handleScroll('about')}>joshuadavid</div>
+          <div onClick={() => handleScroll('landing')}>joshuadavid</div>
         </div>
 
         <div className="flex flex-row items-center justify-end p-8 gap-2">

@@ -24,7 +24,7 @@ export default function ScrollToTop() {
         label="scroll-to-top"
         size="md"
         icon={<IoChevronUp />}
-        onClick={() => handleScroll('about')}
+        onClick={() => handleScroll('landing')}
       />
     </Box>
   );

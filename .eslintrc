@@ -5,6 +5,7 @@
     "quotes": ["error", "single", { "allowTemplateLiterals": true }],
     "semi": ["error", "always"],
     "no-unused-vars": "error",
-    "no-console": "error"
+    "no-console": "error",
+    "react/no-unescaped-entities": 0
   }
 }
