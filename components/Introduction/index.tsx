@@ -14,19 +14,19 @@ const Introduction = () => {
     <>
       <Box className="flex flex-row justify-center items-center lg:w-1/2 w-4/5 pb-6 lg:pb-8">
         <Text
-          fontSize={{ base: '16px', md: '18px', lg: '18px' }}
+          fontSize={{ base: '16px', md: '17px', lg: '17px' }}
           lineHeight={8}
           noOfLines={showMore ? 0 : 2}
         >
-          Hey 👋🏻, {'I\'m'} Joshua, a <span className="italic">Sophomore</span> at{' '}
+          Hey 👋🏻 {'I\'m'} Joshua, a <span className="italic">Sophomore</span> at{' '}
           Singapore Management University, majoring in{' '}
           <span className="italic">Information Systems.</span> Ever since my
           polytechnic days, I've developed a deep passion for technology and its
-          ability to enhance the lives of individuals. {'I\'m'} currenly
-          proficient in <span className="italic">front-end development</span>{' '}
-          through past internship experience and various freelance projects. As
-          an aspiring Software Engineer, {'I\'m'} always seeking opportunties for
-          internships to further my skills and knowledge in this field.
+          ability to enhance the lives of individuals. {'I\'m'} currently
+          proficient in front-end development through past internship experience
+          and various freelance projects. As an aspiring Software Engineer,{' '}
+          {'I\'m'} constantly seeking opportunties for internships to further my
+          skills and knowledge in this field.
         </Text>
       </Box>
 
