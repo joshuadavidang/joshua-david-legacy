@@ -3,9 +3,18 @@ import { Box } from '@chakra-ui/react';
 interface GlowingButtonProps {
   onClick: () => void;
   children: string;
+  paddingX: string;
+  paddingY: string;
+  textSize: string;
 }
 
-export const GlowingButton = ({ onClick, children }: GlowingButtonProps) => {
+export const GlowingButton = ({
+  onClick,
+  children,
+  paddingX,
+  paddingY,
+  textSize,
+}: GlowingButtonProps) => {
   return (
     <Box className="relative group" onClick={onClick}>
       <Box
@@ -14,8 +23,10 @@ export const GlowingButton = ({ onClick, children }: GlowingButtonProps) => {
     transition duration-500 group-hover:duration-200 animate-tilt"
       />
 
-      <button className="relative py-5 px-12 bg-black w-full rounded-lg leading-none">
-        <p className="text-lg">{children}</p>
+      <button
+        className={`relative ${paddingX} ${paddingY} bg-black w-full rounded-lg leading-none`}
+      >
+        <p className={textSize}>{children}</p>
       </button>
     </Box>
   );

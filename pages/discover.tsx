@@ -12,6 +12,7 @@ import {
   DESCRIPTION,
   HIRING_HEADER,
   INTERNSHIP_HEADER,
+  INTRODUCTION,
   PROJECT_HEADER,
   RESUME_HEADER,
 } from '@/constants/index';
@@ -21,6 +22,7 @@ import Section from '@/components/Section';
 import Head from 'next/head';
 import { GlowingButton } from '@/components/Button/GlowingButton';
 import { useRouter } from 'next/router';
+import Introduction from '@/components/Introduction';
 
 export default function Discover() {
   const { colorMode } = useColorMode();
@@ -36,7 +38,7 @@ export default function Discover() {
       </Head>
       <Box
         className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
-        id="about"
+        id="landing"
       >
         <Box className="px-16 py-12 md:pt-2.5">
           <Image src={LandingHero} alt="landing-hero" width="350" />
@@ -44,14 +46,14 @@ export default function Discover() {
 
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2 px-4">
           <Box
-            fontSize={{ base: '28px', md: '33px', lg: '35px' }}
+            fontSize={{ base: '28px', md: '30px', lg: '30px' }}
             color="purple"
           >
             <TypeAnimation
               sequence={[
-                'Hey! I\'m Joshua,',
+                'Aspiring Software Engineer',
                 1000,
-                'An aspiring Software Engineer,',
+                'Web/App Developer',
                 1000,
                 'Student.',
                 3000,
@@ -90,17 +92,29 @@ export default function Discover() {
         </Box>
       </Box>
 
-      <Section id="experience">
+      <Section id="about">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, ease: 'easeOut' }}
         >
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {INTRODUCTION}
+          </h1>
+        </motion.div>
+        <Introduction />
+      </Section>
+
+      <Section id="experience">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3, ease: 'easeOut' }}
+        >
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {INTERNSHIP_HEADER}
           </h1>
         </motion.div>
-
         <Internship />
       </Section>
 
@@ -108,7 +122,7 @@ export default function Discover() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4, ease: 'easeOut' }}
+          transition={{ delay: 0.5, ease: 'easeOut' }}
         >
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {PROJECT_HEADER}
@@ -123,7 +137,7 @@ export default function Discover() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, ease: 'easeOut' }}
+              transition={{ delay: 0.6, ease: 'easeOut' }}
             >
               <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
                 {RESUME_HEADER}
@@ -133,7 +147,7 @@ export default function Discover() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, ease: 'easeOut' }}
+              transition={{ delay: 0.6, ease: 'easeOut' }}
             >
               <Image src={QR} alt="coding_II" width="200" />{' '}
             </motion.div>
@@ -148,7 +162,7 @@ export default function Discover() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.6, ease: 'easeOut' }}
+          transition={{ delay: 0.7, ease: 'easeOut' }}
         >
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {HIRING_HEADER}
@@ -158,10 +172,15 @@ export default function Discover() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.7, ease: 'easeOut' }}
+          transition={{ delay: 0.8, ease: 'easeOut' }}
         >
           {colorMode === 'dark' ? (
-            <GlowingButton onClick={() => navigatePage()}>
+            <GlowingButton
+              paddingX="px-12"
+              paddingY="py-5"
+              textSize="text-lg"
+              onClick={() => navigatePage()}
+            >
               Hire Me
             </GlowingButton>
           ) : (

@@ -30,7 +30,8 @@ export const PastProjects: PastProjectsType[] = [
   {
     id: randomUniqueId(),
     name: 'Project Freelance',
-    description: 'Fully responsive personal website for clients.',
+    description:
+      'Developed a custom personal brand website for clients using the latest web technologies, while adhering to industry best practices.',
     year: 2023,
     techStack: [TbBrandNextjs, SiTypescript, SiTailwindcss, SiChakraui],
     icon: Client01,
@@ -40,7 +41,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'Coding Portfolio',
     description:
-      'Fully responsive personal portfolio that showcases past projects.',
+      'Designed and developed a responsive coding portfolio, built on top of Next.js & Tailwind CSS, deployed to Vercel.',
     year: 2022,
     techStack: [
       TbBrandNextjs,

@@ -32,7 +32,12 @@ export default function Custom404() {
           <h3 className="pb-6">Page Not Found</h3>
 
           {colorMode === 'dark' ? (
-            <GlowingButton onClick={() => navigatePage()}>
+            <GlowingButton
+              paddingX="px-5"
+              paddingY="py-5"
+              textSize="text-lg"
+              onClick={() => navigatePage()}
+            >
               Back To Home
             </GlowingButton>
           ) : (

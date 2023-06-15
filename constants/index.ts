@@ -1,6 +1,7 @@
 const FULL_NAME: string = 'Joshua David';
 const DESCRIPTION: string =
-  'Sophomore at the School of Computing and Information Systems, Singapore Management University';
+  'I\'m Joshua, a Sophomore at the School of Computing and Information Systems, Singapore Management University';
+const INTRODUCTION: string = 'Who Am I 🤔';
 const ROLE: string = 'Software Engineer Intern';
 const INTERNSHIP_HEADER: string = '👨🏻‍💻 Internship Experience';
 const PRICING_HEADER: string = 'Choose a plan that fits your needs.';
@@ -12,6 +13,7 @@ const HIRING_HEADER: string = 'Need An App Developer? 👨🏻‍💻';
 export {
   FULL_NAME,
   DESCRIPTION,
+  INTRODUCTION,
   ROLE,
   INTERNSHIP_HEADER,
   PRICING_HEADER,
