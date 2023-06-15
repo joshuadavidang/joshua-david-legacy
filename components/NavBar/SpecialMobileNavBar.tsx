@@ -17,7 +17,7 @@ import { FaHamburger } from 'react-icons/fa';
 import { useRouter } from 'next/router';
 
 const SpecialMobileNavBar = () => {
-  const backgroundColor = useColorModeValue('offWhite', 'midnight');
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const handleRoute = () => {

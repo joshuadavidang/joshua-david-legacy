@@ -29,7 +29,11 @@ const Introduction = () => {
           skills and knowledge in the field. If you're interested in
           collaborating, or have an opportunity in mind, feel free to drop me a
           message{' '}
-          <span className="border-b-2">
+          <span
+            className={`border-b-2 hover:opacity-90 ${
+              colorMode === 'dark' ? 'border-white' : 'border-black'
+            }`}
+          >
             <Link href="/contact">here</Link>
           </span>
           !

@@ -6,13 +6,15 @@ const theme = extendTheme({
     useSystemColorMode: true,
   },
   colors: {
-    black: '#121212',
-    midnight: '#000024',
-    white: '#FFFFFF',
-    offWhite: '#F0FFFF',
-    gray: '#8492A6',
-    purple: '#6868F6',
-    lightGray: '#2D3748',
+    brand: {
+      black: '#121212',
+      midnight: '#000024',
+      white: '#FFFFFF',
+      offWhite: '#F0FFFF',
+      gray: '#8492A6',
+      purple: '#6868F6',
+      lightGray: '#2D3748',
+    },
   },
   components: {
     Button: {

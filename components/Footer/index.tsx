@@ -13,7 +13,7 @@ const Footer = () => {
         <Link
           href="https://www.linkedin.com/in/joshuadavidang/"
           isExternal
-          color="purple"
+          color="brand.purple"
         >
           {FULL_NAME}
         </Link>

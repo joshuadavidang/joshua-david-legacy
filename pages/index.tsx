@@ -22,7 +22,7 @@ export default function Layout(props: { children: any }) {
     restDelta: 0.001,
   });
 
-  const backgroundColor = useColorModeValue('offWhite', 'midnight');
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
 
   return (
     <div>

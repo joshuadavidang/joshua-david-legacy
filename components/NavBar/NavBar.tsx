@@ -1,10 +1,4 @@
-import {
-  Box,
-  useColorMode,
-  useColorModeValue,
-  List,
-  ListItem,
-} from '@chakra-ui/react';
+import { Box, useColorModeValue } from '@chakra-ui/react';
 import Link from 'next/link';
 import DarkModeIcon from '@/components/DarkMode/DarkModeIcon';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
@@ -12,10 +6,10 @@ import { NavLinkData } from '@/data/navLinks';
 import React from 'react';
 import { ContactMe } from '@/data/contactMe';
 import useScrollToSection from 'hooks/useScrollToSection';
+import { Button } from '../Button/Button';
 
 const NavBar = () => {
-  const { colorMode } = useColorMode();
-  const backgroundColor = useColorModeValue('offWhite', 'midnight');
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
   const scrollToSection = useScrollToSection();
   const handleScroll = (id: any) => {
     scrollToSection(id);
@@ -58,26 +52,22 @@ const NavBar = () => {
         })}
       </div>
 
-      <div className="flex md:flex-row flex-col items-center gap-2">
+      <div className="flex md:flex-row flex-col items-center">
         <span className="hidden md:block">
           <DarkModeIcon />
         </span>
 
-        <Box className="flex flex-row gap-2 items-center md:pt-0 pt-6">
+        <Box className="flex flex-row items-center md:pt-0 pt-6">
           {NavLinkData.map(({ id, link, name }) => (
-            <div key={id} onClick={() => handleScroll(link)}>
-              <List spacing={2}>
-                <ListItem
-                  className={`p-2 rounded cursor-pointer ${
-                    colorMode === 'dark'
-                      ? 'hover:bg-gray hover:text-white'
-                      : 'hover:bg-white hover:text-black'
-                  }`}
-                >
-                  <p>{name}</p>
-                </ListItem>
-              </List>
-            </div>
+            <Button
+              size="md"
+              colorScheme="gray"
+              variant="ghost"
+              key={id}
+              onClick={() => handleScroll(link)}
+            >
+              {name}
+            </Button>
           ))}
         </Box>
       </div>
