@@ -21,8 +21,8 @@ const Introduction = () => {
           Hey 👋🏻 {'I\'m'} Joshua, a <span className="italic">Sophomore</span> at{' '}
           Singapore Management University, majoring in{' '}
           <span className="italic">Information Systems.</span> Ever since my
-          polytechnic days, I've developed a deep passion for technology and its
-          ability to enhance the lives of individuals. {'I\'m'} currently
+          polytechnic days, I've developed a deep passion for technology because
+          of its ability to enhance the lives of individuals. {'I\'m'} currently
           proficient in front-end development through past internship experience
           and various freelance projects. As an aspiring Software Engineer,{' '}
           {'I\'m'} constantly seeking opportunties for internships to further my
