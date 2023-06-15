@@ -2,6 +2,7 @@ import { Box, Text, useColorMode } from '@chakra-ui/react';
 import { GlowingButton } from '../Button/GlowingButton';
 import { useState } from 'react';
 import { ButtonIcon } from '../Button/ButtonIcon';
+import Link from 'next/link';
 
 const Introduction = () => {
   const { colorMode } = useColorMode();
@@ -12,21 +13,26 @@ const Introduction = () => {
 
   return (
     <>
-      <Box className="flex flex-row justify-center items-center lg:w-1/2 w-4/5 pb-6 lg:pb-8">
+      <Box className="flex flex-row justify-center items-center lg:w-3/5 w-11/12 pb-6 lg:pb-12">
         <Text
           fontSize={{ base: '16px', md: '17px', lg: '17px' }}
-          lineHeight={8}
-          noOfLines={showMore ? 0 : 2}
+          lineHeight={9}
+          noOfLines={showMore ? 0 : 3}
         >
-          Hey 👋🏻 {'I\'m'} Joshua, a <span className="italic">Sophomore</span> at{' '}
-          Singapore Management University, majoring in{' '}
-          <span className="italic">Information Systems.</span> Ever since my
-          polytechnic days, I've developed a deep passion for technology because
-          of its ability to enhance the lives of individuals. {'I\'m'} currently
-          proficient in front-end development through past internship experience
-          and various freelance projects. As an aspiring Software Engineer,{' '}
-          {'I\'m'} constantly seeking opportunties for internships to further my
-          skills and knowledge in this field.
+          Hey there 👋🏻 I'm Joshua, a Sophomore at Singapore Management
+          University, majoring in Information Systems. Since my polytechnic
+          days, I've discovered a passion for technology and its ability to make
+          a positive impact on people's lives. I'm particularly passionate about
+          front-end development, and I've gained valuable experience through
+          internships and freelancing. As an aspiring Software Engineer, I'm
+          constantly on the lookout for exciting opportunities to develop my
+          skills and knowledge in the field. If you're interested in
+          collaborating, or have an opportunity in mind, feel free to drop me a
+          message{' '}
+          <span className="border-b-2">
+            <Link href="/contact">here</Link>
+          </span>
+          !
         </Text>
       </Box>
 
