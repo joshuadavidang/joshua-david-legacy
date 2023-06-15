@@ -12,9 +12,9 @@ const Introduction = () => {
 
   return (
     <>
-      <Box className="flex flex-row justify-center items-center lg:w-1/2 w-3/4 pb-6 lg:pb-8">
+      <Box className="flex flex-row justify-center items-center lg:w-1/2 w-4/5 pb-6 lg:pb-8">
         <Text
-          fontSize={{ base: '13px', md: '15px', lg: '16px' }}
+          fontSize={{ base: '16px', md: '18px', lg: '18px' }}
           lineHeight={8}
           noOfLines={showMore ? 0 : 2}
         >
