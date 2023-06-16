@@ -43,7 +43,7 @@ const Internship = () => {
         <TabIndicator
           mt="-1.5px"
           height="2px"
-          bg="purple"
+          bg="brand.purple"
           borderRadius="1px"
         />
       </motion.div>
