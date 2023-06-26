@@ -14,7 +14,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@heroicons/react": "^2.0.18",
-    "@supabase/supabase-js": "^2.24.0",
+    "@supabase/supabase-js": "^2.26.0",
     "axios": "^1.4.0",
     "framer-motion": "^10.12.17",
     "next": "^13.4.6",
