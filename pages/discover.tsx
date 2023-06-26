@@ -132,24 +132,28 @@ export default function Discover() {
       </Section>
 
       <Section id={null}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.6, ease: 'easeOut' }}
+        >
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {RESUME_HEADER}
+          </h1>
+        </motion.div>
+
         <a download href="/Joshua_David.pdf" className="cursor-pointer">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6, ease: 'easeOut' }}
           >
-            <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-              {RESUME_HEADER}
-            </h1>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.6, ease: 'easeOut' }}
-            className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
-          >
-            <Image src={QR} alt="coding_II" width="200" />{' '}
+            <Image
+              src={QR}
+              alt="coding_II"
+              width="200"
+              className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
+            />{' '}
           </motion.div>
         </a>
       </Section>
