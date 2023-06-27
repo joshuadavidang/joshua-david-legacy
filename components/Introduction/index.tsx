@@ -16,7 +16,7 @@ const Introduction = () => {
       <Box className="flex flex-row justify-center items-center lg:w-3/5 w-11/12 pb-6 lg:pb-12">
         <Text
           fontSize={{ base: '16px', md: '17px', lg: '17px' }}
-          lineHeight={9}
+          lineHeight={8}
           noOfLines={showMore ? 0 : 3}
         >
           Hey there 👋🏻 I'm Joshua, a Sophomore at Singapore Management
@@ -25,12 +25,11 @@ const Introduction = () => {
           a positive impact on people's lives. I'm particularly passionate about
           front-end development, and I've gained valuable experience through
           internships and freelancing. As an aspiring Software Engineer, I'm
-          constantly on the lookout for exciting opportunities to develop my
-          skills and knowledge in the field. If you're interested in
-          collaborating, or have an opportunity in mind, feel free to drop me a
-          message{' '}
+          constantly on the lookout for opportunities to develop my skills and
+          knowledge in the field. If you're interested in collaborating, or have
+          an opportunity in mind, feel free to drop me a message{' '}
           <span
-            className={`border-b-2 hover:opacity-90 ${
+            className={`border-b hover:opacity-90 ${
               colorMode === 'dark' ? 'border-white' : 'border-black'
             }`}
           >
