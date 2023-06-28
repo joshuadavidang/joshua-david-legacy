@@ -1,10 +1,11 @@
-import { IconButton } from '@chakra-ui/react';
+import { IconButton, useColorMode } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { storeInArray } from '@/helpers/storeInArray';
 
 export default function Carousel({ content }: any) {
+  const { colorMode } = useColorMode();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [handleNextButton, setHandleNextButton] = useState(false);
   const bulletIndicator = storeInArray(content);
@@ -43,7 +44,7 @@ export default function Carousel({ content }: any) {
         <div>
           <IconButton
             variant="ghost"
-            colorScheme="telegram"
+            colorScheme="gray"
             aria-label="left-circle"
             size="lg"
             icon={<AiFillLeftCircle style={{ fontSize: '1.8rem' }} />}
@@ -64,7 +65,7 @@ export default function Carousel({ content }: any) {
         <div>
           <IconButton
             variant="ghost"
-            colorScheme="telegram"
+            colorScheme="gray"
             aria-label="right-circle"
             size="lg"
             icon={<AiFillRightCircle style={{ fontSize: '1.8rem' }} />}
@@ -75,15 +76,23 @@ export default function Carousel({ content }: any) {
       </div>
 
       <div className="flex justify-center mt-12">
-        {bulletIndicator.map((bullet) => (
-          <button
-            key={bullet}
-            className={`h-2 w-2 rounded-full mx-1 ${
-              bullet === currentIndex ? 'bg-purple' : 'bg-gray'
-            }`}
-            onClick={() => setCurrentIndex(bullet)}
-          />
-        ))}
+        {bulletIndicator.map((bullet) => {
+          let selectedBulletColor = '';
+          if (colorMode === 'dark') {
+            selectedBulletColor = 'bg-white';
+          } else {
+            selectedBulletColor = 'bg-black';
+          }
+          return (
+            <button
+              key={bullet}
+              className={`h-2 w-2 rounded-full mx-1 ${
+                bullet === currentIndex ? selectedBulletColor : 'bg-gray'
+              }`}
+              onClick={() => setCurrentIndex(bullet)}
+            />
+          );
+        })}
       </div>
     </>
   );
