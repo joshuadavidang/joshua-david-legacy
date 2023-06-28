@@ -7,51 +7,96 @@ import CardHeader from '@/components/Card/CardHeader';
 import { PastProjects } from '@/data/pastProjects';
 import { motion } from 'framer-motion';
 import { useColorMode } from '@chakra-ui/react';
+import Carousel from '../Carousel';
 
 export default function ProjectPage() {
   const { colorMode } = useColorMode();
-  return (
-    <div className="grid lg:grid-cols-3 gap-12">
-      {PastProjects.map(({ name, description, icon, link }, index) => (
-        <Link href={link} target="_blank" key={index}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.4, ease: 'easeOut' }}
+
+  const content = PastProjects.map(
+    ({ name, description, icon, link }, index) => (
+      <Link href={link} target="_blank" key={index}>
+        <Card
+          borderRadius="12px"
+          maxW="xs"
+          minH="xs"
+          minW="sm"
+          align="center"
+          backgroundColor={`${
+            colorMode === 'dark' ? 'brand.lightGray' : 'brand.white'
+          }`}
+          className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
+        "
+        >
+          <div className="pt-7">
+            <Image src={icon} alt="image" width="100" />
+          </div>
+
+          <CardHeader
+            fontSize={{ base: 'xl', md: '2xl', lg: '2xl' }}
+            className="text-purple"
           >
-            <Card
-              borderRadius="12px"
-              maxW="xs"
-              minH="xs"
-              minW="xs"
-              align="center"
-              backgroundColor={`${
-                colorMode === 'dark' ? 'brand.lightGray' : 'brand.white'
-              }`}
-              className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
-              "
+            {name}
+          </CardHeader>
+
+          <CardBody
+            paddingTop="0"
+            fontSize={{ base: '14px', md: '15px', lg: '14px' }}
+          >
+            {description}
+          </CardBody>
+        </Card>
+      </Link>
+    )
+  );
+
+  return (
+    <>
+      <div className="hidden md:block">
+        <Carousel content={content} />
+      </div>
+
+      <div className="md:hidden block grid lg:grid-cols-3 gap-12">
+        {PastProjects.map(({ name, description, icon, link }, index) => (
+          <Link href={link} target="_blank" key={index}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.4, ease: 'easeOut' }}
             >
-              <div className="pt-7">
-                <Image src={icon} alt="image" width="100" />
-              </div>
-
-              <CardHeader
-                fontSize={{ base: 'xl', md: '2xl', lg: '2xl' }}
-                className="text-purple"
+              <Card
+                borderRadius="12px"
+                maxW="xs"
+                minH="xs"
+                minW="xs"
+                align="center"
+                backgroundColor={`${
+                  colorMode === 'dark' ? 'brand.lightGray' : 'brand.white'
+                }`}
+                className="pl-3 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300
+              "
               >
-                {name}
-              </CardHeader>
+                <div className="pt-7">
+                  <Image src={icon} alt="image" width="100" />
+                </div>
 
-              <CardBody
-                paddingTop="0"
-                fontSize={{ base: '14px', md: '15px', lg: '14px' }}
-              >
-                {description}
-              </CardBody>
-            </Card>
-          </motion.div>
-        </Link>
-      ))}
-    </div>
+                <CardHeader
+                  fontSize={{ base: 'xl', md: '2xl', lg: '2xl' }}
+                  className="text-purple"
+                >
+                  {name}
+                </CardHeader>
+
+                <CardBody
+                  paddingTop="0"
+                  fontSize={{ base: '14px', md: '15px', lg: '14px' }}
+                >
+                  {description}
+                </CardBody>
+              </Card>
+            </motion.div>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 }
