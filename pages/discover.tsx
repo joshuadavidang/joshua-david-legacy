@@ -6,7 +6,7 @@ import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import Text from '@/components/Text/Text';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Box, useColorMode } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Internship from '@/components/Internship/Internship';
 import {
   DESCRIPTION,
@@ -20,12 +20,10 @@ import { Skills } from '@/data/skills';
 import ProjectPage from '../components/Project';
 import Section from '@/components/Section';
 import Head from 'next/head';
-import { GlowingButton } from '@/components/Button/GlowingButton';
 import { useRouter } from 'next/router';
 import Introduction from '@/components/Introduction';
 
 export default function Discover() {
-  const { colorMode } = useColorMode();
   const router = useRouter();
   const navigatePage = () => {
     router.push('/contact');
@@ -177,26 +175,15 @@ export default function Discover() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.8, ease: 'easeOut' }}
         >
-          {colorMode === 'dark' ? (
-            <GlowingButton
-              paddingX="px-12"
-              paddingY="py-5"
-              textSize="text-lg"
-              onClick={() => navigatePage()}
-            >
-              Hire Me
-            </GlowingButton>
-          ) : (
-            <ButtonIcon
-              size="xl"
-              variant="solid"
-              isDisabled={false}
-              colorScheme="telegram"
-              onClick={() => navigatePage()}
-            >
-              Hire Me
-            </ButtonIcon>
-          )}
+          <ButtonIcon
+            size="xl"
+            variant="solid"
+            isDisabled={false}
+            colorScheme="gray"
+            onClick={() => navigatePage()}
+          >
+            Hire Me
+          </ButtonIcon>
         </motion.div>
       </Box>
     </>
