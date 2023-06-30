@@ -1,11 +1,10 @@
-import { Box, useColorMode } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import useScrollToSection from 'hooks/useScrollToSection';
 import { IoChevronUp } from 'react-icons/io5';
 import { Icon } from '../Button/Icon';
 import { useRouter } from 'next/router';
 
 export default function ScrollToTop() {
-  const { colorMode } = useColorMode();
   const router = useRouter();
   const { pathname } = router;
   const scrollToSection = useScrollToSection();
@@ -14,13 +13,13 @@ export default function ScrollToTop() {
   };
   return (
     <Box
-      className={`flex justify-end pr-8 ${
+      className={`flex justify-end pr-12 ${
         pathname !== '/discover' && 'hidden'
       }`}
     >
       <Icon
         variant="solid"
-        colorScheme={`${colorMode === 'dark' ? 'gray' : 'telegram'}`}
+        colorScheme="gray"
         label="scroll-to-top"
         size="md"
         icon={<IoChevronUp />}

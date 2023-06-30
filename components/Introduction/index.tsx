@@ -1,5 +1,4 @@
 import { Box, Text, useColorMode } from '@chakra-ui/react';
-import { GlowingButton } from '../Button/GlowingButton';
 import { useState } from 'react';
 import { ButtonIcon } from '../Button/ButtonIcon';
 import Link from 'next/link';
@@ -13,7 +12,7 @@ const Introduction = () => {
 
   return (
     <>
-      <Box className="flex flex-row justify-center items-center lg:w-3/5 w-11/12 pb-6 lg:pb-12">
+      <Box className="flex flex-row justify-center items-center lg:w-3/5 w-11/12 pb-6 lg:pb-8">
         <Text
           fontSize={{ base: '16px', md: '17px', lg: '17px' }}
           lineHeight={8}
@@ -39,26 +38,15 @@ const Introduction = () => {
         </Text>
       </Box>
 
-      {colorMode === 'dark' ? (
-        <GlowingButton
-          onClick={learnMore}
-          paddingX="px-4"
-          paddingY="py-3"
-          textSize="text-md"
-        >
-          {showMore ? 'Show Less' : 'Learn More'}
-        </GlowingButton>
-      ) : (
-        <ButtonIcon
-          size="md"
-          variant="solid"
-          isDisabled={false}
-          colorScheme="telegram"
-          onClick={learnMore}
-        >
-          {showMore ? 'Show Less' : 'Learn More'}
-        </ButtonIcon>
-      )}
+      <ButtonIcon
+        size="sm"
+        variant="solid"
+        isDisabled={false}
+        colorScheme="gray"
+        onClick={learnMore}
+      >
+        {showMore ? 'Show Less' : 'Learn More'}
+      </ButtonIcon>
     </>
   );
 };
