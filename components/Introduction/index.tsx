@@ -19,8 +19,8 @@ const Introduction = () => {
             lineHeight={8}
           >
             Currently a Sophomore at Singapore Management University, majoring
-            in Information Systems. Ever since I was young, I've had a passion
-            for technology due to its potential to bring positive changes to
+            in Information Systems. Since young, I've had a passion for
+            technology due to its potential to bring positive changes to
             people's lives. I'm particularly fond of web/mobile application
             development and I've actively built projects over the years. During
             my free time, you can find me either at the gym or simply brewing a
