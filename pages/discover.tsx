@@ -63,7 +63,7 @@ export default function Discover() {
           </Box>
 
           <Text
-            fontSize={{ base: '16px', md: '18px', lg: '19px' }}
+            fontSize={{ base: '15px', md: '17px', lg: '18px' }}
             className="pt-5 pb-8 pl-5 pr-5"
             lineHeight={7}
           >

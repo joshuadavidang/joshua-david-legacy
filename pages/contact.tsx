@@ -20,7 +20,7 @@ export default function Contact() {
           <h1 className="pt-3 text-2xl">{CONTACT_HEADER}</h1>
           <a href="mailto:joshuadavidang@outlook.sg">
             <p
-              className={`border-b w-fit ${
+              className={`border-b w-fit hover:opacity-90 ${
                 colorMode === 'dark' ? 'border-white' : 'border-black'
               }`}
             >
