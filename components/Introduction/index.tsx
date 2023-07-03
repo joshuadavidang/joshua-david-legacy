@@ -18,16 +18,17 @@ const Introduction = () => {
             fontSize={{ base: '15px', md: '16px', lg: '16px' }}
             lineHeight={8}
           >
-            Currently a Sophomore at Singapore Management University, majoring
-            in Information Systems. Since young, I've had a passion for
-            technology due to its potential to bring positive changes to
-            people's lives. I'm particularly fond of web/mobile application
-            development and I've actively built projects over the years. During
-            my free time, you can find me either at the gym or simply brewing a
-            cup of coffee with a v60. As an aspiring Software Engineer, I'm
-            constantly on the lookout for opportunities to develop my skills and
-            knowledge in the field. If you're interested in collaborating, or
-            have an opportunity in mind, feel free to drop me a message{' '}
+            Hey, I'm Joshua! Currently a Sophomore at Singapore Management
+            University, majoring in Information Systems. Ever since I was a
+            child, I've been amazed by how technology works and its potential to
+            make a positive impact on people's lives. I'm particularly fond of
+            web and mobile application development, and I've actively built
+            projects over the years. When I'm not coding, you can find me either
+            at the gym or simply brewing a cup of coffee with a V60. As an
+            aspiring Software Engineer, I'm always on the lookout for
+            opportunities to expand my knowledge in this field. If you're
+            interested in collaborating, or have an opportunity in mind, feel
+            free to drop me a message{' '}
             <span
               className={`border-b hover:opacity-90 ${
                 colorMode === 'dark' ? 'border-white' : 'border-black'
