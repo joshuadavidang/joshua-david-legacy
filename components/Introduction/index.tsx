@@ -1,14 +1,11 @@
 import { Box, Text, useColorMode } from '@chakra-ui/react';
-import { useState } from 'react';
 import { ButtonIcon } from '../Button/ButtonIcon';
 import Link from 'next/link';
+import useToggle from 'hooks/useToggle';
 
 const Introduction = () => {
   const { colorMode } = useColorMode();
-  const [showMore, setShowMore] = useState(false);
-  const learnMore = () => {
-    setShowMore(!showMore);
-  };
+  const [showMore, handleToggle] = useToggle();
 
   return (
     <>
@@ -46,7 +43,7 @@ const Introduction = () => {
         variant="solid"
         isDisabled={false}
         colorScheme="gray"
-        onClick={learnMore}
+        onClick={handleToggle}
       >
         {showMore ? 'Show Less' : 'Learn More'}
       </ButtonIcon>
