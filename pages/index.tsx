@@ -43,6 +43,13 @@ export default function Layout(props: { children: any }) {
         <meta name="author" content="Joshua David" />
 
         <link
+          rel="icon"
+          type="image/svg+xml"
+          sizes="any"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
+        />
+
+        <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicon_io/apple-touch-icon.png"
@@ -104,7 +111,7 @@ export default function Layout(props: { children: any }) {
         <main>{children}</main>
 
         <ScrollToTop />
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
