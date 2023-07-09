@@ -59,14 +59,14 @@ const Internship = () => {
                   transition={{ delay: 0.2, ease: 'easeIn' }}
                 >
                   <p className="text-md">
-                    {ROLE} at{' '}
+                    {ROLE} @{' '}
                     <Link href={link} isExternal>
                       <Text as="i" color="brand.purple">
                         {company}
                       </Text>
                     </Link>
                   </p>
-                  <p className="text-gray text-xs">{date}</p>
+                  <p className="text-gray text-xs pt-1.5">{date}</p>
                 </motion.div>
 
                 <UnorderedList spacing={2} pt={3}>

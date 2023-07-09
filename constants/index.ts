@@ -6,7 +6,7 @@ const ROLE: string = 'Software Engineer Intern';
 const INTERNSHIP_HEADER: string = '⌨️ Where I\'ve Worked';
 const PRICING_HEADER: string = 'Choose a plan that fits your needs.';
 const CONTACT_HEADER: string = 'Get in Touch.';
-const PROJECT_HEADER: string = 'Things I\'ve Built 👇🏻';
+const PROJECT_HEADER: string = 'Things I\'ve Built 👷🏻‍♂️';
 const RESUME_HEADER: string = '👇🏻 Full Resume';
 const HIRING_HEADER: string = 'Need An App Developer? 👨🏻‍💻';
 
