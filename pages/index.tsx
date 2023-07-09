@@ -73,7 +73,7 @@ export default function Layout(props: { children: any }) {
         <nav
           className={`fixed ${
             pathname !== '/discover' && 'hidden'
-          } md:block z-50`}
+          } lg:block z-50`}
         >
           <motion.div
             className={`progress-bar ${
@@ -87,14 +87,14 @@ export default function Layout(props: { children: any }) {
         <nav
           className={`fixed ${
             pathname !== '/discover' ? 'hidden' : 'block'
-          } md:hidden z-50`}
+          } lg:hidden z-50`}
         >
           <MobileNavBar />
         </nav>
 
         <nav
           className={`fixed ${
-            pathname !== '/discover' && 'md:block'
+            pathname !== '/discover' && 'lg:block'
           } hidden z-50`}
         >
           <SpecialNavBar />
@@ -103,7 +103,7 @@ export default function Layout(props: { children: any }) {
         <nav
           className={`fixed ${
             pathname !== '/discover' ? 'block' : 'hidden'
-          } md:hidden z-50`}
+          } lg:hidden z-50`}
         >
           <SpecialMobileNavBar />
         </nav>
