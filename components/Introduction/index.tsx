@@ -13,19 +13,17 @@ const Introduction = () => {
         <Box className="flex flex-col gap-12" noOfLines={showMore ? 0 : 3}>
           <Text
             fontSize={{ base: '15px', md: '16px', lg: '16px' }}
-            lineHeight={8}
+            lineHeight={7}
           >
-            Hey, I'm Joshua! Currently a Sophomore at Singapore Management
-            University, majoring in Information Systems. Since I was a child,
-            I've been amazed by how technology works and its potential to make a
-            positive impact on people's lives. I'm particularly fond of web and
-            mobile application development, and I've actively built projects
-            over the years. When I'm not coding, you can find me either at the
-            gym or simply brewing a cup of coffee with a V60. As an aspiring
-            Software Engineer, I'm always on the lookout for opportunities to
-            expand my knowledge in this field. If you're interested in
-            collaborating, or have an opportunity in mind, feel free to drop me
-            a message{' '}
+            Hey, I'm Joshua! A Sophomore at Singapore Management University,
+            majoring in Information Systems. Since I was a child, I've been
+            amazed by the power of technology and its ability to make an impact
+            on people's lives. I'm particularly passionate about web/mobile
+            application development, and I've built a couple of projects over
+            the years. As an aspiring software engineer, I'm constantly looking
+            for opportunities to expand my knowledge in this field. If you're
+            interested in collaborating, or have an opportunity in mind, feel
+            free to drop me a message{' '}
             <span
               className={`border-b hover:opacity-90 ${
                 colorMode === 'dark' ? 'border-white' : 'border-black'
