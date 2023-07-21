@@ -15,15 +15,13 @@ const Introduction = () => {
             fontSize={{ base: '15px', md: '16px', lg: '16px' }}
             lineHeight={7}
           >
-            Hey I'm Joshua! I'm Sophomore at Singapore Management University,
-            majoring in Information Systems. Since young, I've always been
-            interested in technology and how it can make a positive impact on
-            people's lives. I'm particularly passionate about web/mobile
-            application development, and I've built a couple of projects over
-            the years. As an aspiring software engineer, I'm constantly looking
-            for opportunities to expand my knowledge in this field. If you're
-            interested in collaborating, or have an opportunity in mind, feel
-            free to drop me a message{' '}
+            Hey, I'm Joshua! I'm a Sophomore at Singapore Management University,
+            majoring in Information Systems. I'm particularly passionate about
+            web/mobile application development, and I've built a couple of
+            projects over the years. As an aspiring software engineer, I'm
+            constantly looking for opportunities to expand my knowledge in this
+            field. If you're interested in collaborating, or have an opportunity
+            in mind, feel free to drop me a message{' '}
             <span
               className={`border-b hover:opacity-90 ${
                 colorMode === 'dark' ? 'border-white' : 'border-black'
