@@ -1,10 +1,8 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import LandingHero from '@/images/LandingBanner.svg';
-import QR from '@/images/qr.png';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import Text from '@/components/Text/Text';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Box } from '@chakra-ui/react';
 import Internship from '@/components/Internship/Internship';
@@ -14,7 +12,6 @@ import {
   INTERNSHIP_HEADER,
   INTRODUCTION,
   PROJECT_HEADER,
-  RESUME_HEADER,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
 import ProjectPage from '../components/Project';
@@ -22,6 +19,7 @@ import Section from '@/components/Section';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Introduction from '@/components/Introduction';
+import CustomTab from '@/components/CustomTab';
 
 export default function Discover() {
   const router = useRouter();
@@ -49,6 +47,8 @@ export default function Discover() {
           >
             <TypeAnimation
               sequence={[
+                'Hey! I\'m Joshua!',
+                3000,
                 'Aspiring Software Engineer',
                 1000,
                 'Web/App Developer',
@@ -91,100 +91,48 @@ export default function Discover() {
       </Box>
 
       <Section id="about">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, ease: 'easeOut' }}
-        >
-          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-            {INTRODUCTION}
-          </h1>
-        </motion.div>
+        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+          {INTRODUCTION}
+        </h1>
         <Introduction />
       </Section>
 
       <Section id="experience">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, ease: 'easeOut' }}
-        >
-          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-            {INTERNSHIP_HEADER}
-          </h1>
-        </motion.div>
-        <Internship />
+        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+          {INTERNSHIP_HEADER}
+        </h1>
+        <div className="hidden lg:block">
+          <CustomTab />
+        </div>
+        <div className="block lg:hidden">
+          <Internship />
+        </div>
       </Section>
 
       <Section id="projects">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5, ease: 'easeOut' }}
-        >
-          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-            {PROJECT_HEADER}
-          </h1>
-          <ProjectPage />
-        </motion.div>
-      </Section>
-
-      <Section id={null}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.6, ease: 'easeOut' }}
-        >
-          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-            {RESUME_HEADER}
-          </h1>
-        </motion.div>
-
-        <a download href="/Joshua_David.pdf" className="cursor-pointer">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.6, ease: 'easeOut' }}
-          >
-            <Image
-              src={QR}
-              alt="coding_II"
-              width="200"
-              className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300"
-            />{' '}
-          </motion.div>
-        </a>
+        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+          {PROJECT_HEADER}
+        </h1>
+        <ProjectPage />
       </Section>
 
       <Box
         id="contact"
         className="flex flex-col justify-center items-center w-screen h-80 gap-2"
       >
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.7, ease: 'easeOut' }}
-        >
-          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-            {HIRING_HEADER}
-          </h1>
-        </motion.div>
+        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+          {HIRING_HEADER}
+        </h1>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.8, ease: 'easeOut' }}
+        <ButtonIcon
+          size="xl"
+          variant="solid"
+          isDisabled={false}
+          colorScheme="gray"
+          onClick={() => navigatePage()}
         >
-          <ButtonIcon
-            size="xl"
-            variant="solid"
-            isDisabled={false}
-            colorScheme="gray"
-            onClick={() => navigatePage()}
-          >
-            Hire Me
-          </ButtonIcon>
-        </motion.div>
+          Hire Me
+        </ButtonIcon>
       </Box>
     </>
   );

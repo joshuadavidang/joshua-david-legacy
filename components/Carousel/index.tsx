@@ -21,7 +21,7 @@ export default function Carousel({ content }: any) {
           return Math.min(prevIndex + 1, content.length - 1);
         }
       });
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [content]);

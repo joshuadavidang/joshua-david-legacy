@@ -19,20 +19,6 @@ const DarkModeIcon = () => {
   };
 
   return (
-    // <div
-    //   onClick={handleClick}
-    //   className={`p-2 rounded cursor-pointer ${
-    //     colorMode === 'dark'
-    //       ? 'hover:bg-gray hover:text-white'
-    //       : 'hover:bg-white hover:text-black'
-    //   }`}
-    // >
-    //   {colorMode === 'light' ? (
-    //     <MoonIcon className="w-6 h-6 md:w-5 md:h-5" role="button" />
-    //   ) : (
-    //     <SunIcon className="w-6 h-6 md:w-5 md:h-5" role="button" />
-    //   )}
-    // </div>
     <Icon
       variant="ghost"
       colorScheme="gray"
