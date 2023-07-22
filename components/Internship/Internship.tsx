@@ -14,6 +14,7 @@ import {
 import Image from 'next/image';
 import { InternshipExperience } from '@/data/internship';
 import PigeonLab from '@/images/Internship/PigeonLab.svg';
+import vibefam from '@/images/Internship/vibefam.png';
 import { ROLE } from '@/constants/index';
 import { motion } from 'framer-motion';
 
@@ -32,6 +33,9 @@ const Internship = () => {
         transition={{ delay: 0.2, ease: 'easeIn' }}
       >
         <TabList>
+          <Tab>
+            <Image src={vibefam} width="35" alt="vibefam" />
+          </Tab>
           <Tab>
             <Image src={PigeonLab} width="130" alt="PigeonLab" />
           </Tab>
@@ -69,20 +73,23 @@ const Internship = () => {
                   <p className="text-gray text-xs pt-1.5">{date}</p>
                 </motion.div>
 
-                <UnorderedList spacing={2} pt={3}>
-                  {tasks.map((task, index) => (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ delay: 0.2, ease: 'easeIn' }}
-                      key={index}
-                    >
-                      <ListItem>
-                        <Text className="text-sm">{task}</Text>
-                      </ListItem>
-                    </motion.div>
-                  ))}
-                </UnorderedList>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 0.2, ease: 'easeIn' }}
+                >
+                  {tasks.length == 1 ? (
+                    <Text className="text-sm pt-3">{tasks[0]}</Text>
+                  ) : (
+                    <UnorderedList spacing={2} pt={3}>
+                      {tasks.map((task, index) => (
+                        <ListItem key={index}>
+                          <Text className="text-sm">{task}</Text>
+                        </ListItem>
+                      ))}
+                    </UnorderedList>
+                  )}
+                </motion.div>
               </Box>
             </TabPanel>
           );

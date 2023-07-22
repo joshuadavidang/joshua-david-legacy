@@ -110,7 +110,13 @@ export default function Layout(props: { children: any }) {
 
         <main>{children}</main>
 
-        <ScrollToTop />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1, ease: 'easeIn' }}
+        >
+          <ScrollToTop />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

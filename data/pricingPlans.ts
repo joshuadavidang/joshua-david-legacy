@@ -15,7 +15,7 @@ export const PricingPlanData: PricingPlanDataType[] = [
     id: randomUniqueId(),
     tier: 'Starter',
     currency: 'SGD',
-    price: '$2,000',
+    price: '$1,000',
     features: [
       'One-time Purchase',
       'One Page Website',
@@ -33,7 +33,7 @@ export const PricingPlanData: PricingPlanDataType[] = [
     id: randomUniqueId(),
     tier: 'Pro',
     currency: 'SGD',
-    price: '$3,000',
+    price: '$2,000',
     features: [
       'One-time Purchase',
       'Multiple Page Website',
