@@ -12,6 +12,7 @@ module.exports = {
         midnight: '#000024',
         white: '#FFFFFF',
         gray: '#8492A6',
+        graySecond: '#718096',
         lightGray: '#F2F2F2',
         purple: '#6868F6',
       },

@@ -42,10 +42,10 @@ const CustomTab = () => {
               className={`${
                 selectedId === index
                   ? colorMode === 'dark'
-                    ? 'bg-gray'
+                    ? 'bg-graySecond'
                     : 'bg-purple text-white'
                   : ''
-              } flex flex-row gap-6 items-center cursor-pointer rounded-lg px-10 py-2`}
+              } flex flex-row gap-6 items-center cursor-pointer rounded-lg px-12 py-3`}
               key={id}
               onClick={() => toggleInternship(index, tasks)}
             >
