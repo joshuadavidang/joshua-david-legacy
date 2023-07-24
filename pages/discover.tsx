@@ -7,8 +7,8 @@ import Image from 'next/image';
 import { Box } from '@chakra-ui/react';
 import Internship from '@/components/Internship/Internship';
 import {
+  CONTACT_HEADER,
   DESCRIPTION,
-  HIRING_HEADER,
   INTERNSHIP_HEADER,
   INTRODUCTION,
   PROJECT_HEADER,
@@ -121,7 +121,7 @@ export default function Discover() {
         className="flex flex-col justify-center items-center w-screen h-80 gap-2"
       >
         <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-          {HIRING_HEADER}
+          {CONTACT_HEADER}
         </h1>
 
         <ButtonIcon
@@ -131,7 +131,7 @@ export default function Discover() {
           colorScheme="gray"
           onClick={() => navigatePage()}
         >
-          Hire Me
+          Contact
         </ButtonIcon>
       </Box>
     </>
