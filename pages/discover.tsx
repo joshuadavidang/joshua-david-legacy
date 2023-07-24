@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import LandingHero from '@/images/LandingBanner.svg';
+import LandingHero from '@/images/LandingHero.svg';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import Text from '@/components/Text/Text';
 import Image from 'next/image';
