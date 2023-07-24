@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InternshipExperience } from '@/data/internship';
-import PigeonLab from '@/images/Internship/PigeonLab.svg';
+import PigeonLab from '@/images/Internship/PigeonLab.png';
 import vibefam from '@/images/Internship/vibefam.png';
 import Image from 'next/image';
 import {
@@ -51,7 +51,7 @@ const CustomTab = () => {
             >
               <div>
                 {imageToShow ? (
-                  <Image src={imageToShow} width="50" alt={company} />
+                  <Image src={imageToShow} width="40" alt={company} />
                 ) : (
                   <Avatar />
                 )}
