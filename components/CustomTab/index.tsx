@@ -32,7 +32,7 @@ const CustomTab = () => {
       <div className="flex flex-col gap-y-8">
         {InternshipExperience.map(({ id, company, date, tasks }, index) => {
           let imageToShow = null;
-          if (company === 'vibefam') {
+          if (company === 'vibefam Singapore') {
             imageToShow = vibefam;
           } else if (company === 'Pigeonhole Live (PigeonLab)') {
             imageToShow = PigeonLab;

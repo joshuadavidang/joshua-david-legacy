@@ -3,7 +3,6 @@ import { Box, useColorMode } from '@chakra-ui/react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Lost from '@/images/Lost.svg';
-import { GlowingButton } from '@/components/Button/GlowingButton';
 import { useRouter } from 'next/router';
 import { ButtonIcon } from '@/components/Button/ButtonIcon';
 
@@ -31,26 +30,15 @@ export default function Custom404() {
           </h2>
           <h3 className="pb-6">Page Not Found</h3>
 
-          {colorMode === 'dark' ? (
-            <GlowingButton
-              paddingX="px-5"
-              paddingY="py-5"
-              textSize="text-lg"
-              onClick={() => navigatePage()}
-            >
-              Back To Home
-            </GlowingButton>
-          ) : (
-            <ButtonIcon
-              size="xl"
-              variant="solid"
-              isDisabled={false}
-              colorScheme="telegram"
-              onClick={() => navigatePage()}
-            >
-              Back To Home
-            </ButtonIcon>
-          )}
+          <ButtonIcon
+            size="xl"
+            variant="solid"
+            isDisabled={false}
+            colorScheme="gray"
+            onClick={() => navigatePage()}
+          >
+            Back To Home
+          </ButtonIcon>
         </div>
       </Box>
     </>

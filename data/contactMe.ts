@@ -1,5 +1,6 @@
 import { randomUniqueId } from '@/helpers/randomUniqueId';
 import { FaFile, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 export interface ContactMeType {
   id: string;
@@ -10,6 +11,13 @@ export interface ContactMeType {
 }
 
 export const ContactMe: ContactMeType[] = [
+  {
+    id: randomUniqueId(),
+    link: 'https://leetcode.com/joshdavidang/',
+    icon: SiLeetcode,
+    title: 'LeetCode',
+    isPDF: false,
+  },
   {
     id: randomUniqueId(),
     link: 'https://github.com/joshuadavidang',
