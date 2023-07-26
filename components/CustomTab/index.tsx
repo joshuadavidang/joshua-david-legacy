@@ -19,7 +19,7 @@ const CustomTab = () => {
 
   const toggleInternship = (index: any, tasks: string[]) => {
     if (selectedId === index) {
-      setSelectedId(null);
+      return;
     } else {
       setShowTask(true);
       setSelectedId(index);
