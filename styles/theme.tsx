@@ -8,6 +8,7 @@ const theme = extendTheme({
   colors: {
     brand: {
       black: '#121212',
+      lightsOut: '#000000',
       midnight: '#000024',
       white: '#FFFFFF',
       offWhite: '#F0FFFF',
