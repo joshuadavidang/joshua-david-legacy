@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import { Button } from '../Button/Button';
 
 const SpecialNavBar = () => {
-  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.midnight');
+  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.lightsOut');
   const router = useRouter();
   const handleRoute = () => {
     router.push('/discover');
