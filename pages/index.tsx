@@ -27,7 +27,7 @@ export default function Layout(props: { children: any }) {
   return (
     <div>
       <Head>
-        <meta name="theme-color" content="#000024" />
+        <meta name="theme-color" content="#000000" />
         <meta
           name="description"
           content="Sophomore at the School of Computing and Information Systems, Singapore Management University"
