@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { InternshipExperience } from '@/data/internship';
 import PigeonLab from '@/images/Internship/PigeonLab.png';
-import vibefam from '@/images/Internship/vibefam.png';
 import Image from 'next/image';
 import {
   Avatar,
@@ -32,9 +31,7 @@ const CustomTab = () => {
       <div className="flex flex-col gap-y-8">
         {InternshipExperience.map(({ id, company, date, tasks }, index) => {
           let imageToShow = null;
-          if (company === 'vibefam Singapore') {
-            imageToShow = vibefam;
-          } else if (company === 'Pigeonhole Live (PigeonLab)') {
+          if (company === 'Pigeonhole Live (PigeonLab)') {
             imageToShow = PigeonLab;
           }
           return (

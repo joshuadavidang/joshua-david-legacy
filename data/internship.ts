@@ -9,17 +9,6 @@ export interface InternshipExperienceType {
 }
 
 export const InternshipExperience: InternshipExperienceType[] = [
-  // {
-  //   id: randomUniqueId(),
-  //   company: 'vibefam Singapore',
-  //   date: 'Jul 2023 - Dec 2023',
-  //   link: 'https://www.vibefam.com/',
-  //   tasks: [
-  //     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, animi',
-  //     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, animi',
-  //     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, animi',
-  //   ],
-  // },
   {
     id: randomUniqueId(),
     company: 'Pigeonhole Live (PigeonLab)',
