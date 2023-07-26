@@ -14,7 +14,6 @@ import {
 import Image from 'next/image';
 import { InternshipExperience } from '@/data/internship';
 import PigeonLab from '@/images/Internship/PigeonLab.svg';
-// import vibefam from '@/images/Internship/vibefam.png';
 import { ROLE } from '@/constants/index';
 import { motion } from 'framer-motion';
 
@@ -33,9 +32,6 @@ const Internship = () => {
         transition={{ delay: 0.2, ease: 'easeIn' }}
       >
         <TabList>
-          {/* <Tab>
-            <Image src={vibefam} width="35" alt="vibefam" />
-          </Tab> */}
           <Tab>
             <Image src={PigeonLab} width="130" alt="PigeonLab" />
           </Tab>
