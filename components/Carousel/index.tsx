@@ -1,5 +1,5 @@
 import { IconButton, useColorMode } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { storeInArray } from '@/helpers/storeInArray';
@@ -9,22 +9,6 @@ export default function Carousel({ content }: any) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [handleNextButton, setHandleNextButton] = useState(false);
   const bulletIndicator = storeInArray(content);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        if (prevIndex === content.length - 1) {
-          setHandleNextButton(false);
-          return 0;
-        } else {
-          setHandleNextButton(true);
-          return Math.min(prevIndex + 1, content.length - 1);
-        }
-      });
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [content]);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
