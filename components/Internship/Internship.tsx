@@ -10,10 +10,11 @@ import {
   UnorderedList,
   Box,
   Link,
+  Avatar,
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { InternshipExperience } from '@/data/internship';
-import PigeonLab from '@/images/Internship/PigeonLab.svg';
+import PigeonLab from '@/images/Internship/PigeonLab.png';
 import { ROLE } from '@/constants/index';
 import { motion } from 'framer-motion';
 
@@ -33,10 +34,10 @@ const Internship = () => {
       >
         <TabList>
           <Tab>
-            <Image src={PigeonLab} width="130" alt="PigeonLab" />
+            <Image src={PigeonLab} width="30" alt="PigeonLab" />
           </Tab>
           <Tab>
-            <Text>BSG</Text>
+            <Avatar size="sm" />
           </Tab>
         </TabList>
 
