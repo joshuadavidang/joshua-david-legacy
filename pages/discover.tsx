@@ -47,14 +47,12 @@ export default function Discover() {
           >
             <TypeAnimation
               sequence={[
-                'Hey! I\'m Joshua!',
-                3000,
+                'Hey, I\'m Joshua!',
+                2000,
                 'Aspiring Software Engineer',
-                1000,
-                'Web/App Developer',
-                1000,
-                'Student.',
-                3000,
+                2000,
+                'Sophomore @ SMU',
+                2000,
               ]}
               cursor={true}
               repeat={Infinity}
