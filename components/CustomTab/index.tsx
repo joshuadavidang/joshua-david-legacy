@@ -8,6 +8,7 @@ import {
   UnorderedList,
   useColorMode,
 } from '@chakra-ui/react';
+import { BsCodeSlash } from 'react-icons/bs';
 
 const CustomTab = () => {
   const { colorMode } = useColorMode();
@@ -50,7 +51,7 @@ const CustomTab = () => {
                 {imageToShow ? (
                   <Image src={imageToShow} width="40" alt={company} />
                 ) : (
-                  <Avatar />
+                  <Avatar icon={<BsCodeSlash />} />
                 )}
               </div>
 

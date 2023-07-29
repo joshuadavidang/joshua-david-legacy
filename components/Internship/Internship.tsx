@@ -17,6 +17,7 @@ import { InternshipExperience } from '@/data/internship';
 import PigeonLab from '@/images/Internship/PigeonLab.png';
 import { ROLE } from '@/constants/index';
 import { motion } from 'framer-motion';
+import { BsCodeSlash } from 'react-icons/bs';
 
 const Internship = () => {
   return (
@@ -37,7 +38,7 @@ const Internship = () => {
             <Image src={PigeonLab} width="30" alt="PigeonLab" />
           </Tab>
           <Tab>
-            <Avatar size="sm" />
+            <Avatar size="sm" icon={<BsCodeSlash />} />
           </Tab>
         </TabList>
 
