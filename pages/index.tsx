@@ -22,7 +22,10 @@ export default function Layout(props: { children: any }) {
     restDelta: 0.001,
   });
 
-  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.lightsOut');
+  const backgroundColor = useColorModeValue(
+    'brand.offWhite',
+    'brand.lightsOut'
+  );
 
   return (
     <div>
@@ -41,13 +44,6 @@ export default function Layout(props: { children: any }) {
         />
         <meta property="og:url" content="//joshuadavid.dev" />
         <meta name="author" content="Joshua David" />
-
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          sizes="any"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
-        />
 
         <link
           rel="apple-touch-icon"
