@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Joshua from '@/images/Joshua.png';
 import Image from 'next/image';
 import { Divider } from '@chakra-ui/react';
+import { Button } from '@/components/Button/Button';
 
 export default function Contact() {
   const { colorMode } = useColorMode();
@@ -19,13 +20,9 @@ export default function Contact() {
           <Image src={Joshua} alt="joshua" className="rounded-lg" width="250" />
           <h1 className="pt-3 text-2xl">{CONTACT_HEADER}</h1>
           <a href="mailto:joshuadavidang@outlook.sg">
-            <p
-              className={`border-b w-fit hover:opacity-90 ${
-                colorMode === 'dark' ? 'border-white' : 'border-black'
-              }`}
-            >
+            <Button size="md" colorScheme="gray" variant="ghost">
               joshuadavidang@outlook.sg
-            </p>
+            </Button>
           </a>
         </div>
 
