@@ -18,6 +18,7 @@ import PigeonLab from '@/images/Internship/PigeonLab.png';
 import { ROLE } from '@/constants/index';
 import { motion } from 'framer-motion';
 import { BsCodeSlash } from 'react-icons/bs';
+import { hoverDecorationNone } from '@/helpers/hoverDecorationNone';
 
 const Internship = () => {
   return (
@@ -62,7 +63,7 @@ const Internship = () => {
                 >
                   <p className="text-md">
                     {ROLE} @{' '}
-                    <Link href={link} isExternal>
+                    <Link href={link} isExternal {...hoverDecorationNone()}>
                       <Text as="i" color="brand.purple">
                         {company}
                       </Text>
