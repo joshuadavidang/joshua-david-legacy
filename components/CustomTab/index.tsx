@@ -40,7 +40,7 @@ const CustomTab = () => {
               className={`${
                 selectedId === index
                   ? colorMode === 'dark'
-                    ? 'bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600'
+                    ? 'bg-purple'
                     : 'bg-purple text-white'
                   : ''
               } flex flex-row gap-6 items-center cursor-pointer rounded-lg px-10 py-4`}

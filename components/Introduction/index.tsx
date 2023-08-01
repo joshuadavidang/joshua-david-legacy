@@ -23,13 +23,13 @@ const Introduction = () => {
             field. If you're interested in collaborating, or have an opportunity
             in mind, feel free to drop me a message{' '}
             <span
-              className={`border-b ${
+              className={`border-b hover:opacity-90 ${
                 colorMode === 'dark' ? 'border-white' : 'border-black'
               }`}
             >
               <Link href="/contact">here</Link>
             </span>
-            .
+            !
           </Text>
         </Box>
       </Box>

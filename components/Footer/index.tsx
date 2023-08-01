@@ -1,6 +1,5 @@
 import { Box, Text, Link } from '@chakra-ui/react';
 import { FULL_NAME } from '@/constants/index';
-import { hoverDecorationNone } from '@/helpers/hoverDecorationNone';
 
 const Footer = () => {
   return (
@@ -15,7 +14,6 @@ const Footer = () => {
           href="https://www.linkedin.com/in/joshuadavidang/"
           isExternal
           color="brand.purple"
-          {...hoverDecorationNone()}
         >
           {FULL_NAME}
         </Link>
