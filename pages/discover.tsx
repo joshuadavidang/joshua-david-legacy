@@ -21,11 +21,17 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Introduction from '@/components/Introduction';
 import CustomTab from '@/components/CustomTab';
+import useScrollToSection from 'hooks/useScrollToSection';
 
 export default function Discover() {
   const router = useRouter();
   const navigatePage = () => {
     router.push('/contact');
+  };
+  
+  const scrollToSection = useScrollToSection();
+  const handleScroll = (id: any) => {
+    scrollToSection(id);
   };
 
   return (
@@ -37,8 +43,13 @@ export default function Discover() {
         className="flex flex-col justify-center items-center w-screen py-16 md:py-32"
         id="landing"
       >
-        <Box className="px-16 py-12 md:pt-2.5">
-          <Image src={LandingHero} alt="landing-hero" width="350" />
+        <Box className="px-16 py-12 md:pt-2.5 cursor-pointer">
+          <Image
+            src={LandingHero}
+            alt="landing-hero"
+            width="350"
+            onClick={() => handleScroll('about')}
+          />
         </Box>
 
         <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2 px-4">
