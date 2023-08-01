@@ -8,13 +8,14 @@ import { Box } from '@chakra-ui/react';
 import Internship from '@/components/Internship/Internship';
 import {
   CONTACT_HEADER,
-  DESCRIPTION,
+  EMOJIS,
   INTERNSHIP_HEADER,
   INTRODUCTION,
   PROJECT_HEADER,
+  STUDENT_ROLE,
 } from '@/constants/index';
 import { Skills } from '@/data/skills';
-import ProjectPage from '../components/Project';
+import ProjectPage from '@/components/Project';
 import Section from '@/components/Section';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -33,7 +34,7 @@ export default function Discover() {
         <title>Discover - Joshua David</title>
       </Head>
       <Box
-        className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
+        className="flex flex-col justify-center items-center w-screen py-16 md:py-32"
         id="landing"
       >
         <Box className="px-16 py-12 md:pt-2.5">
@@ -62,10 +63,10 @@ export default function Discover() {
 
           <Text
             fontSize={{ base: '15px', md: '17px', lg: '18px' }}
-            className="pt-5 pb-8 pl-5 pr-5"
+            className="pt-5 pb-4 pl-5 pr-5"
             lineHeight={7}
           >
-            {DESCRIPTION}
+            {STUDENT_ROLE}
           </Text>
 
           <Box className="flex flex-row flex-wrap gap-2.5 justify-center">
@@ -89,16 +90,28 @@ export default function Discover() {
       </Box>
 
       <Section id="about">
-        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-          {INTRODUCTION}
-        </h1>
+        <div className="flex flex-row gap-3.5">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {INTRODUCTION}
+          </h1>
+
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {EMOJIS[0]}
+          </h1>
+        </div>
         <Introduction />
       </Section>
 
       <Section id="experience">
-        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-          {INTERNSHIP_HEADER}
-        </h1>
+        <div className="flex flex-row gap-3.5">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {INTERNSHIP_HEADER}
+          </h1>
+
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {EMOJIS[1]}
+          </h1>
+        </div>
         <div className="hidden lg:block">
           <CustomTab />
         </div>
@@ -108,9 +121,15 @@ export default function Discover() {
       </Section>
 
       <Section id="projects">
-        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-          {PROJECT_HEADER}
-        </h1>
+        <div className="flex flex-row gap-3.5">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {PROJECT_HEADER}
+          </h1>
+
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {EMOJIS[2]}
+          </h1>
+        </div>
         <ProjectPage />
       </Section>
 
@@ -118,10 +137,15 @@ export default function Discover() {
         id="contact"
         className="flex flex-col justify-center items-center w-screen h-80 gap-2"
       >
-        <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
-          {CONTACT_HEADER}
-        </h1>
+        <div className="flex flex-row gap-3.5">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {CONTACT_HEADER}
+          </h1>
 
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
+            {EMOJIS[3]}
+          </h1>
+        </div>
         <ButtonIcon
           size="xl"
           variant="solid"
