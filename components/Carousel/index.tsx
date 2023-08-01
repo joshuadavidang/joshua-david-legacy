@@ -68,12 +68,11 @@ export default function Carousel({ content }: any) {
             selectedBulletColor = 'bg-black';
           }
           return (
-            <button
+            <div
               key={bullet}
               className={`h-2 w-2 rounded-full mx-1 ${
                 bullet === currentIndex ? selectedBulletColor : 'bg-gray'
               }`}
-              onClick={() => setCurrentIndex(bullet)}
             />
           );
         })}
