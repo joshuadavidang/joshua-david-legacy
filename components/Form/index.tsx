@@ -56,21 +56,6 @@ const Form = () => {
     }
   };
 
-  // /**
-  //  *
-  //  * @param name string - visitor's name
-  //  * @param email string - visitor's email
-  //  * @param message string - visitor's message
-  //  * @returns boolean true || false
-  //  */
-
-  // const validateDetails = (name: string, email: string, message: string) => {
-  //   if (name === "" || email === "" || message === "") {
-  //     return false;
-  //   }
-  //   return /\S+@\S+\.\S+/.test(email);
-  // };
-
   const clearState = async () => {
     setForm({
       ...form,
