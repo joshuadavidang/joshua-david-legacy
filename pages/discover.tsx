@@ -90,7 +90,7 @@ export default function Discover() {
       </Box>
 
       <Section id="about">
-        <div className="flex flex-row gap-3.5">
+        <div className="flex flex-row gap-2.5">
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {INTRODUCTION}
           </h1>
@@ -103,7 +103,7 @@ export default function Discover() {
       </Section>
 
       <Section id="experience">
-        <div className="flex flex-row gap-3.5">
+        <div className="flex flex-row gap-3">
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {INTERNSHIP_HEADER}
           </h1>
@@ -121,7 +121,7 @@ export default function Discover() {
       </Section>
 
       <Section id="projects">
-        <div className="flex flex-row gap-3.5">
+        <div className="flex flex-row gap-2.5">
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {PROJECT_HEADER}
           </h1>
@@ -137,7 +137,7 @@ export default function Discover() {
         id="contact"
         className="flex flex-col justify-center items-center w-screen h-80 gap-2"
       >
-        <div className="flex flex-row gap-3.5">
+        <div className="flex flex-row gap-3">
           <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {CONTACT_HEADER}
           </h1>
