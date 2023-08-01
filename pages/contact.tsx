@@ -32,7 +32,7 @@ export default function Contact() {
             />
           </Link>
 
-          <div className="flex flex-row gap-3.5">
+          <div className="flex flex-row gap-3">
             <h1 className="pt-3 text-2xl">{CONTACT_HEADER}</h1>
             <h1 className="pt-3 text-2xl"> {EMOJIS[3]}</h1>
           </div>
