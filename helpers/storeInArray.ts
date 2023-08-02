@@ -4,7 +4,7 @@
  * @returns an array
  */
 
-const storeInArray = (content: any) => {
+const storeInArray = (content: any): number[] => {
   const arrayData = [];
   for (let i = 0; i < content.length; i++) {
     arrayData.push(i);

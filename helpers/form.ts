@@ -10,7 +10,7 @@ import { supabase } from '../superbase';
  * @returns boolean true || false
  */
 
-const validateDetails = (name: string, email: string, message: string) => {
+const validateDetails = (name: string, email: string, message: string): boolean => {
   if (name === '' || email === '' || message === '') {
     return false;
   }
