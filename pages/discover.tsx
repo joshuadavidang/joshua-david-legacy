@@ -34,7 +34,7 @@ export default function Discover() {
         <title>Discover - Joshua David</title>
       </Head>
       <Box
-        className="flex flex-col justify-center items-center w-screen py-16 md:py-40"
+        className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
         id="landing"
       >
         <Box className="px-16 py-12 md:pt-2.5">
@@ -69,7 +69,7 @@ export default function Discover() {
             {STUDENT_ROLE}
           </Text>
 
-          <Box className="flex flex-row flex-wrap gap-2.5 justify-center">
+          <Box className="flex flex-row flex-wrap gap-2.5 justify-center pt-3">
             {Skills.map(({ programmingLanguage, icon }) => (
               <span key={programmingLanguage}>
                 <ButtonIcon
