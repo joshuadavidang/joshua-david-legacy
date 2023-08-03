@@ -8,7 +8,7 @@ import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import CardFooter from '@/components/Card/CardFooter';
 import Link from 'next/link';
 import Head from 'next/head';
-import { PRICING_HEADER } from '../constants';
+import { PRICING_HEADER } from '@/constants/index';
 
 export default function Pricing() {
   const { colorMode } = useColorMode();

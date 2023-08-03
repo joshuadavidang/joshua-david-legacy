@@ -6,7 +6,7 @@ import { NavLinkData } from '@/data/navLinks';
 import React from 'react';
 import { ContactMe } from '@/data/contactMe';
 import useScrollToSection from 'hooks/useScrollToSection';
-import { Button } from '../Button/Button';
+import { Button } from '@/components/Button/Button';
 
 const NavBar = () => {
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.lightsOut');

@@ -7,7 +7,7 @@ import CardHeader from '@/components/Card/CardHeader';
 import { PastProjects } from '@/data/pastProjects';
 import { motion } from 'framer-motion';
 import { useColorMode } from '@chakra-ui/react';
-import Carousel from '../Carousel';
+import Carousel from '@/components/Carousel';
 
 export default function ProjectPage() {
   const { colorMode } = useColorMode();

@@ -21,6 +21,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Introduction from '@/components/Introduction';
 import CustomTab from '@/components/CustomTab';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function Discover() {
   const router = useRouter();
@@ -152,6 +153,7 @@ export default function Discover() {
           isDisabled={false}
           colorScheme="gray"
           onClick={() => navigatePage()}
+          leftIcon={<AiOutlineArrowRight />}
         >
           Contact
         </ButtonIcon>

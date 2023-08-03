@@ -5,7 +5,7 @@ import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import React from 'react';
 import { ContactMe } from '@/data/contactMe';
 import { useRouter } from 'next/router';
-import { Button } from '../Button/Button';
+import { Button } from '@/components/Button/Button';
 
 const SpecialNavBar = () => {
   const backgroundColor = useColorModeValue('brand.offWhite', 'brand.lightsOut');
