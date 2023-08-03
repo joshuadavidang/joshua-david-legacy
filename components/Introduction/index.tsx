@@ -1,5 +1,5 @@
 import { Box, Text, useColorMode } from '@chakra-ui/react';
-import { ButtonIcon } from '../Button/ButtonIcon';
+import { ButtonIcon } from '@/components/Button/ButtonIcon';
 import Link from 'next/link';
 import useToggle from 'hooks/useToggle';
 

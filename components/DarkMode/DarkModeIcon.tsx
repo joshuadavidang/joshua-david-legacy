@@ -1,6 +1,6 @@
 import { useColorMode } from '@chakra-ui/react';
 import { IoMoonSharp, IoSunnySharp } from 'react-icons/io5';
-import { Icon } from '../Button/Icon';
+import { Icon } from '@/components/Button/Icon';
 
 const DarkModeIcon = () => {
   const { colorMode, toggleColorMode } = useColorMode();

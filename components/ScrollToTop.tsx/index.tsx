@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import useScrollToSection from 'hooks/useScrollToSection';
 import { IoChevronUp } from 'react-icons/io5';
-import { Icon } from '../Button/Icon';
+import { Icon } from '@/components/Button/Icon';
 import { useRouter } from 'next/router';
 
 export default function ScrollToTop() {
