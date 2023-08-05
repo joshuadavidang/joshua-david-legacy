@@ -1,5 +1,5 @@
 import { randomUniqueId } from '@/helpers/randomUniqueId';
-import { FaFile, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaFilePdf, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 
 export interface ContactMeType {
@@ -35,7 +35,7 @@ export const ContactMe: ContactMeType[] = [
   {
     id: randomUniqueId(),
     link: '/Joshua_David.pdf',
-    icon: FaFile,
+    icon: FaFilePdf,
     title: 'Resume',
     isPDF: true,
   },
