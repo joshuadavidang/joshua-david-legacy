@@ -32,7 +32,7 @@ export default function Discover() {
   return (
     <>
       <Head>
-        <title>Discover - Joshua David</title>
+        <title>Discover - Joshua</title>
       </Head>
       <Box
         className="flex flex-col justify-center items-center w-screen py-16 md:py-36"
