@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact - Joshua David</title>
+        <title>Contact - Joshua</title>
       </Head>
       <Box className="flex lg:flex-row flex-col gap-6 lg:gap-36 justify-center items-center lg:h-screen h-fit w-screen text-center py-36">
         <div className="flex flex-col items-center gap-2">
