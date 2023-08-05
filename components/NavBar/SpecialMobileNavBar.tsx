@@ -15,24 +15,47 @@ import {
 import DarkModeIcon from '@/components/DarkMode/DarkModeIcon';
 import { FaHamburger } from 'react-icons/fa';
 import { useRouter } from 'next/router';
+import { ContactMe } from '@/data/contactMe';
+import Link from 'next/link';
+import { Icon } from '@/components/Button/Icon';
+import React from 'react';
 
 const SpecialMobileNavBar = () => {
-  const backgroundColor = useColorModeValue('brand.offWhite', 'brand.lightsOut');
+  const backgroundColor = useColorModeValue(
+    'brand.offWhite',
+    'brand.lightsOut'
+  );
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const handleRoute = () => {
     router.push('/discover');
     onClose();
   };
-  
+
   return (
     <>
       <Box
         className="flex flex-row justify-between items-center pl-6 w-screen"
         bg={backgroundColor}
       >
-        <div className="text-lg tracking-tight">
-          <div onClick={() => handleRoute()}>joshuadavid</div>
+        <div className="flex flex-row">
+          {ContactMe.map(
+            ({ link, icon, title }, index) =>
+              index != 0 &&
+              index != ContactMe.length - 1 && (
+                <span key={title}>
+                  <Link href={link} target="_blank">
+                    <Icon
+                      label="social media"
+                      size="md"
+                      colorScheme="gray"
+                      variant="ghost"
+                      icon={React.createElement(icon)}
+                    />
+                  </Link>
+                </span>
+              )
+          )}
         </div>
 
         <div className="flex flex-row items-center justify-end p-8 gap-2">

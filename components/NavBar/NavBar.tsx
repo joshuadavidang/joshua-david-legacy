@@ -6,7 +6,7 @@ import React from 'react';
 import { ContactMe } from '@/data/contactMe';
 import useScrollToSection from 'hooks/useScrollToSection';
 import { Button } from '@/components/Button/Button';
-import { Icon } from '../Button/Icon';
+import { Icon } from '@/components/Button/Icon';
 
 const NavBar = () => {
   const backgroundColor = useColorModeValue(
