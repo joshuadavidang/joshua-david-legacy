@@ -1,4 +1,4 @@
-import { Button as ChakraButton, Code } from '@chakra-ui/react';
+import { Button as ChakraButton } from '@chakra-ui/react';
 
 interface ButtonProps {
   onClick?: () => void;
