@@ -4,23 +4,25 @@
 Describe the changes here
 -->
 
+Updated scroll to top icon, from arrow to rocket.
+
 ## What type of PR is this?
 
 <!--
 Please check all that is applicable (put an x between the square brackets)
 -->
 
-- [] 🍕 Feature
-- [] 🐛 Bug Fix
-- [] 📝 Documentation Update
-- [] 🎨 Style
-- [] 👨🏻‍💻 Code Refactor
-- [] 🔥 Performance Improvements
-- [] ✅ Test
-- [] 🤖 Build
-- [] 🔁 CI
-- [] 📦 Chore (Release)
-- [] ⏩ Revert
+- [ ] 🍕 Feature
+- [ ] 🐛 Bug Fix
+- [ ] 📝 Documentation Update
+- [ ] 🎨 Style
+- [ ] 👨🏻‍💻 Code Refactor
+- [ ] 🔥 Performance Improvements
+- [ ] ✅ Test
+- [ ] 🤖 Build
+- [ ] 🔁 CI
+- [ ] 📦 Chore (Release)
+- [ ] ⏩ Revert
 
 ## Desktop and mobile screenshots/recordings
 
@@ -30,12 +32,12 @@ Please check all that is applicable (put an x between the square brackets)
 
 ## Added tests?
 
-- [] 👍🏻 yes
-- [] 🙅🏻‍♂️ no, not needed
-- [] 🙅🏻‍♂️ no, because I need help
+- [ ] 👍🏻 yes
+- [ ] 🙅🏻‍♂️ no, not needed
+- [ ] 🙅🏻‍♂️ no, because I need help
 
 ## Added to documentation?
 
-- [] 📜 README.md
-- [] 📕 storybook
-- [] 🙅🏻‍♂️ no documentation needed
+- [ ] 📜 README.md
+- [ ] 📕 storybook
+- [ ] 🙅🏻‍♂️ no documentation needed
