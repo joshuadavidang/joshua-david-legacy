@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import useScrollToSection from 'hooks/useScrollToSection';
-import { IoChevronUp } from 'react-icons/io5';
+import { BsFillRocketFill } from 'react-icons/bs';
 import { Icon } from '@/components/Button/Icon';
 import { useRouter } from 'next/router';
 
@@ -22,7 +22,7 @@ export default function ScrollToTop() {
         colorScheme="gray"
         label="scroll-to-top"
         size="md"
-        icon={<IoChevronUp />}
+        icon={<BsFillRocketFill />}
         onClick={() => handleScroll('landing')}
       />
     </Box>
