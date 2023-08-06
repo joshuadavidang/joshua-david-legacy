@@ -4,8 +4,6 @@
 Describe the changes here
 -->
 
-Updated scroll to top icon, from arrow to rocket.
-
 ## What type of PR is this?
 
 <!--
