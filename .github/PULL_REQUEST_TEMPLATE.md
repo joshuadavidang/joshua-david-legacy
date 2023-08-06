@@ -1,31 +1,37 @@
 ## Description
-<!-- 
-This PR [adds/removes/fixes/replaces] the [feature/bug/etc]. 
+
+<!--
+Describe the changes here
 -->
 
 ## What type of PR is this? (check all applicable)
-<!-- Enter x to check the items -->
-- [ ] 🍕 Feature
-- [ ] 🐛 Bug Fix
-- [ ] 📝 Documentation Update
-- [ ] 🎨 Style
-- [ ] 👨🏻‍💻 Code Refactor
-- [ ] 🔥 Performance Improvements
-- [ ] ✅ Test
-- [ ] 🤖 Build
-- [ ] 🔁 CI
-- [ ] 📦 Chore (Release)
-- [ ] ⏩ Revert
+
+- [] 🍕 Feature
+- [] 🐛 Bug Fix
+- [] 📝 Documentation Update
+- [] 🎨 Style
+- [] 👨🏻‍💻 Code Refactor
+- [] 🔥 Performance Improvements
+- [] ✅ Test
+- [] 🤖 Build
+- [] 🔁 CI
+- [] 📦 Chore (Release)
+- [] ⏩ Revert
 
 ## Mobile & Desktop Screenshots/Recordings
-<!-- Visual changes require screenshots -->
+
+<!--
+[optional] Only visual changes require screenshots
+-->
 
 ## Added tests?
-- [ ] 👍🏻 yes
-- [ ] 🙅🏻‍♂️ no, not needed
-- [ ] 🙅🏻‍♂️ no, because I need help
+
+- [] 👍🏻 yes
+- [] 🙅🏻‍♂️ no, not needed
+- [] 🙅🏻‍♂️ no, because I need help
 
 ## Added to documentation?
-- [ ] 📜 README.md
-- [ ] 📕 storybook
-- [ ] 🙅🏻‍♂️ no documentation needed
+
+- [] 📜 README.md
+- [] 📕 storybook
+- [] 🙅🏻‍♂️ no documentation needed
