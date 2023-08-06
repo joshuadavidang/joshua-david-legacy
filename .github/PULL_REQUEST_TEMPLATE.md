@@ -4,7 +4,11 @@
 Describe the changes here
 -->
 
-## What type of PR is this? (check all applicable)
+## What type of PR is this?
+
+<!--
+Please check all that is applicable (put an x between the square brackets)
+-->
 
 - [] 🍕 Feature
 - [] 🐛 Bug Fix
@@ -18,7 +22,7 @@ Describe the changes here
 - [] 📦 Chore (Release)
 - [] ⏩ Revert
 
-## Mobile & Desktop Screenshots/Recordings
+## Desktop and mobile screenshots/recordings
 
 <!--
 [optional] Only visual changes require screenshots
