@@ -11,7 +11,7 @@
 ## Tech Stack
 
 - [Next.js](https://nextjs.org)
-- [Tailwind CSS](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
 - [Chakra UI](https://chakra-ui.com)
 - [Supabase](https://supabase.com)
 - [Vercel](https://vercel.com)
