@@ -1,4 +1,5 @@
 ## Coding Portfolio
+
 ![Issue](https://img.shields.io/github/issues/joshuadavidang/joshua-david)
 ![Pull Request](https://img.shields.io/github/issues-pr/joshuadavidang/joshua-david)
 ![Release Badge](https://img.shields.io/github/v/release/joshuadavidang/joshua-david) <br />
@@ -8,6 +9,7 @@
 [View Project](https://joshuadavid.dev)
 
 ## Tech Stack
+
 - [Next.js](https://nextjs.org)
 - [Tailwind CSS](https://nextjs.org)
 - [Chakra UI](https://chakra-ui.com)
@@ -29,15 +31,16 @@
    ```
 
 3. Set up environment variables
- - Get a free API key at [Supabase](https://supabase.com)
- - Create the file `.env.local` at the root folder
- - Enter the following code
 
-   ```
-   NEXT_PUBLIC_SUPABASE_URL = 'REPLACE URL HER'
-   NEXT_PUBLIC_SUPABASE_ANON_KEY = 'REPLACE KEY HERE'
-   ```
-   
+- Get a free API key at [Supabase](https://supabase.com)
+- Create the file `.env.local` at the root folder
+- Enter the following code
+
+  ```
+  NEXT_PUBLIC_SUPABASE_URL = 'REPLACE URL HER'
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = 'REPLACE KEY HERE'
+  ```
+
 4. Run the project in development environment
 
    ```
