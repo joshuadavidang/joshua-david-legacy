@@ -6,7 +6,8 @@
 
 <img src="https://github.com/joshuadavidang/joshua-david/assets/54788382/6e3e2d11-4660-4b4a-bce1-da992e8b8e1b" alt="Apple" width="760" />
 
-[View Project](https://joshuadavid.dev)
+- [View Project](https://joshuadavid.dev)
+- [Report Bug](https://github.com/joshuadavidang/joshua-david/issues/new/choose)
 
 ## Tech Stack
 
