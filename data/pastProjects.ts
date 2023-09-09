@@ -3,6 +3,7 @@ import StillYoung from '@/images/Projects/StillYoung.svg';
 import Sayocode from '@/images/Projects/Sayocode.png';
 import BreadApp from '@/images/Projects/bread_app.png';
 import macOS from '@/images/Projects/macOS.png';
+import Docusaurus from '@/images/Projects/Docusaurus.png';
 import { TbBrandNextjs } from 'react-icons/tb';
 import {
   SiTypescript,
@@ -27,6 +28,16 @@ export interface PastProjectsType {
 }
 
 export const PastProjects: PastProjectsType[] = [
+  {
+    id: randomUniqueId(),
+    name: 'Notes',
+    description:
+      'Documentation of what I\'ve learnt over the years. Built with Docusaurus, a project for building and maintaining open source websites.',
+    year: 2023,
+    techStack: ['Docusaurus'],
+    icon: Docusaurus,
+    link: 'https://notes.joshuadavid.dev',
+  },
   {
     id: randomUniqueId(),
     name: 'Project Freelance',
