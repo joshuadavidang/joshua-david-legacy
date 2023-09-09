@@ -1,6 +1,6 @@
 import { randomUniqueId } from '@/helpers/randomUniqueId';
 import { FaFilePdf, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiLeetcode } from 'react-icons/si';
+import { CgNotes } from 'react-icons/cg';
 
 export interface ContactMeType {
   id: string;
@@ -13,8 +13,8 @@ export interface ContactMeType {
 export const ContactMe: ContactMeType[] = [
   {
     id: randomUniqueId(),
-    link: 'https://leetcode.com/joshdavidang/',
-    icon: SiLeetcode,
+    link: 'https://notes.joshuadavid.dev/',
+    icon: CgNotes,
     title: 'LeetCode',
     isPDF: false,
   },
