@@ -10,6 +10,7 @@ import {
   CONTACT_HEADER,
   EMOJIS,
   INTERNSHIP_HEADER,
+  INTERNSHIP_ROLE,
   INTRODUCTION,
   PROJECT_HEADER,
   STUDENT_ROLE,
@@ -22,6 +23,7 @@ import { useRouter } from 'next/router';
 import Introduction from '@/components/Introduction';
 import CustomTab from '@/components/CustomTab';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import useScrollToSection from 'hooks/useScrollToSection';
 
 export default function Discover() {
   const router = useRouter();
@@ -29,27 +31,29 @@ export default function Discover() {
     router.push('/contact');
   };
 
+  const scrollToSection = useScrollToSection();
+  const handleScroll = () => {
+    scrollToSection('experience');
+  };
+
   return (
     <>
       <Head>
         <title>Discover - Joshua</title>
       </Head>
-      <Box
-        className='flex flex-col justify-center items-center w-screen py-16 md:py-36'
-        id='landing'
-      >
-        <Box className='px-16 py-12 md:pt-2.5'>
-          <Image src={LandingHero} alt='landing-hero' width='350' />
+      <Box className="center-layout py-16 md:py-32" id="landing">
+        <Box className="px-16 py-12 md:pt-2.5">
+          <Image src={LandingHero} alt="landing-hero" width="350" />
         </Box>
 
-        <Box className='flex flex-col text-center lg:px-10 w-screen md:w-1/2 px-4'>
+        <Box className="flex flex-col text-center lg:px-10 w-screen md:w-1/2 px-4">
           <Box
             fontSize={{ base: '28px', md: '28px', lg: '28px' }}
-            color='brand.purple'
+            color="brand.purple"
           >
             <TypeAnimation
               sequence={[
-                'Hey, I\'m Joshua!',
+                "Hey, I'm Joshua!",
                 2000,
                 'Software Engineer',
                 2000,
@@ -64,22 +68,36 @@ export default function Discover() {
 
           <Text
             fontSize={{ base: '15px', md: '17px', lg: '18px' }}
-            className='pt-5 pb-4 pl-5 pr-5'
+            className="pt-5 pb-4 pl-5 pr-5"
             lineHeight={7}
           >
             {STUDENT_ROLE}
           </Text>
 
-          <Box className='flex flex-row flex-wrap gap-2.5 justify-center pt-3'>
+          <Text
+            fontSize={{ base: '15px', md: '17px', lg: '18px' }}
+            className="pb-4 pl-5 pr-5"
+            lineHeight={7}
+          >
+            {INTERNSHIP_ROLE}{' '}
+            <span
+              className="italic text-purple cursor-pointer"
+              onClick={handleScroll}
+            >
+              GovTech Singapore
+            </span>
+          </Text>
+
+          <Box className="flex flex-row flex-wrap gap-2.5 justify-center pt-3">
             {Skills.map(({ programmingLanguage, icon }) => (
               <span key={programmingLanguage}>
                 <ButtonIcon
-                  cursor='text'
+                  cursor="text"
                   hover={{}}
                   active={{}}
-                  colorScheme='gray'
-                  variant='solid'
-                  size='sm'
+                  colorScheme="gray"
+                  variant="solid"
+                  size="sm"
                   leftIcon={React.createElement(icon)}
                 >
                   {programmingLanguage}
@@ -90,68 +108,66 @@ export default function Discover() {
         </Box>
       </Box>
 
-      <Section id='about'>
-        <div className='flex flex-row gap-2.5'>
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+      <Section id="about">
+        <div className="flex flex-row gap-2.5">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {INTRODUCTION}
           </h1>
 
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {EMOJIS[0]}
           </h1>
         </div>
         <Introduction />
       </Section>
 
-      <Section id='experience'>
-        <div className='flex flex-row gap-3'>
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+      <Section id="experience">
+        <div className="flex flex-row gap-3">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {INTERNSHIP_HEADER}
           </h1>
 
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {EMOJIS[1]}
           </h1>
         </div>
-        <div className='hidden lg:block'>
+        <div className="hidden lg:block">
           <CustomTab />
         </div>
-        <div className='block lg:hidden'>
+        <div className="block lg:hidden">
           <Internship />
         </div>
       </Section>
 
-      <Section id='projects'>
-        <div className='flex flex-row gap-2.5'>
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+      <Section id="projects">
+        <div className="flex flex-row gap-2.5">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {PROJECT_HEADER}
           </h1>
 
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {EMOJIS[2]}
           </h1>
         </div>
         <ProjectPage />
       </Section>
 
-      <Box
-        id='contact'
-        className='flex flex-col justify-center items-center w-screen h-80 gap-2'
-      >
-        <div className='flex flex-row gap-3'>
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+      <Box id="contact" className="center-layout h-80 gap-2">
+        <div className="flex flex-row gap-3">
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {CONTACT_HEADER}
           </h1>
 
-          <h1 className='md:pt-0 pt-12 pb-9 md:text-3xl text-2xl'>
+          <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl">
             {EMOJIS[3]}
           </h1>
         </div>
+
         <ButtonIcon
-          size='xl'
-          variant='solid'
+          size="xl"
+          variant="solid"
           isDisabled={false}
-          colorScheme='gray'
+          colorScheme="gray"
           onClick={() => navigatePage()}
           leftIcon={<AiOutlineArrowRight />}
         >

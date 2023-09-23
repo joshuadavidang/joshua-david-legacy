@@ -4,9 +4,9 @@ const STUDENT_ROLE: string =
 const INTERNSHIP_ROLE: string = 'Software Engineer Intern @';
 const INTRODUCTION: string = 'Hello World!';
 const ROLE: string = 'Software Engineer Intern';
-const INTERNSHIP_HEADER: string = 'Where I\'ve Worked';
+const INTERNSHIP_HEADER: string = "Where I've Worked";
 const PRICING_HEADER: string = 'Choose a plan that fits your needs.';
-const PROJECT_HEADER: string = 'Things I\'ve Built';
+const PROJECT_HEADER: string = "Things I've Built";
 const CONTACT_HEADER: string = 'Get In Touch';
 const EMOJIS: string[] = ['👋🏻', '🚀', '👷🏻‍♂️', '💬'];
 
@@ -20,5 +20,5 @@ export {
   PRICING_HEADER,
   PROJECT_HEADER,
   CONTACT_HEADER,
-  EMOJIS
+  EMOJIS,
 };

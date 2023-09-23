@@ -10,7 +10,11 @@ import { supabase } from '../superbase';
  * @returns boolean true || false
  */
 
-const validateDetails = (name: string, email: string, message: string): boolean => {
+const validateDetails = (
+  name: string,
+  email: string,
+  message: string,
+): boolean => {
   if (name === '' || email === '' || message === '') {
     return false;
   }
@@ -31,7 +35,7 @@ const addFormToDB = async (
   uuid: any,
   name: string,
   email: string,
-  message: string
+  message: string,
 ) => {
   let result = await supabase.from('form').insert({
     uuid: uuid,

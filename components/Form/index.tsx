@@ -10,8 +10,8 @@ import {
   useToast,
   useColorMode,
 } from '@chakra-ui/react';
-import { v4 as uuidv4 } from 'uuid';
 import { validateDetails, addFormToDB } from '@/helpers/form';
+import { randomUniqueId } from '@/helpers/randomUniqueId';
 
 const Form = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -37,7 +37,7 @@ const Form = () => {
       }
     } else {
       setLoadState(true);
-      await addFormToDB(uuidv4(), name, email, message).then(() => {
+      await addFormToDB(randomUniqueId(), name, email, message).then(() => {
         setTimeout(() => {
           setLoadState(false);
           clearState().then(() => {
@@ -72,6 +72,12 @@ const Form = () => {
     });
   };
 
+  const handleKeyDown = (event: any) => {
+    if (event.key === 'Enter') {
+      handleSubmit(event);
+    }
+  };
+
   const { name, email, message } = form;
 
   return (
@@ -83,6 +89,7 @@ const Form = () => {
           name="name"
           size="md"
           placeholder="First name"
+          onKeyDown={handleKeyDown}
           data={handleChange}
           value={name}
         />
@@ -95,6 +102,7 @@ const Form = () => {
           name="email"
           size="md"
           placeholder="Email address"
+          onKeyDown={handleKeyDown}
           data={handleChange}
           value={email}
         />
@@ -106,6 +114,7 @@ const Form = () => {
           name="message"
           size="md"
           placeholder="Leave a message..."
+          onKeyDown={handleKeyDown}
           rows={5}
           data={handleChange}
           value={message}
@@ -121,7 +130,7 @@ const Form = () => {
           onClick={(event: any) => handleSubmit(event)}
           leftIcon={<AiOutlineArrowRight />}
           isDisabled={false}
-          colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
+          colorScheme={colorMode === 'dark' ? 'gray' : 'telegram'}
         >
           Send
         </ButtonIcon>

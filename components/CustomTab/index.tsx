@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { InternshipExperience } from '@/data/internship';
 import PigeonLab from '@/images/Internship/PigeonLab.png';
+import GovTech from '@/images/Internship/GovTech.png';
 import Image from 'next/image';
 import {
   Avatar,
@@ -32,7 +33,9 @@ const CustomTab = () => {
       <div className="flex flex-col gap-y-8">
         {InternshipExperience.map(({ id, company, date, tasks }, index) => {
           let imageToShow = null;
-          if (company === 'Pigeonhole Live (PigeonLab)') {
+          if (company === 'GovTech Singapore') {
+            imageToShow = GovTech;
+          } else if (company === 'Pigeonhole Live (PigeonLab)') {
             imageToShow = PigeonLab;
           }
           return (
@@ -69,8 +72,8 @@ const CustomTab = () => {
         {showTask && (
           <div>
             {data &&
-              data.map((task: any, i: number) => (
-                <UnorderedList key={i} spacing={2} pt={3}>
+              data.map((task: any, index: number) => (
+                <UnorderedList key={index} spacing={2} pt={3}>
                   <ListItem>{task}</ListItem>
                 </UnorderedList>
               ))}

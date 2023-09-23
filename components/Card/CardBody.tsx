@@ -4,12 +4,12 @@ import Text from '@/components/Text/Text';
 interface CardBodyProps {
   children: any;
   fontSize: any;
-  paddingTop?: any;
+  pt?: any;
 }
 
-const CardBody = ({ children, paddingTop, fontSize }: CardBodyProps) => {
+const CardBody = ({ children, pt, fontSize }: CardBodyProps) => {
   return (
-    <ChakraCardBody paddingTop={paddingTop}>
+    <ChakraCardBody pt={pt}>
       <Text fontSize={fontSize} align="left">
         {children}
       </Text>

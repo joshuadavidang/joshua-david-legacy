@@ -32,7 +32,7 @@ export const PastProjects: PastProjectsType[] = [
     id: randomUniqueId(),
     name: 'DocusauNotes',
     description:
-      'Documentation of what I\'ve learnt over the years. Built with Docusaurus, a project for building and maintaining open source websites.',
+      "Documentation of what I've learnt over the years. Built with Docusaurus, a project for building and maintaining open source websites.",
     year: 2023,
     techStack: ['Docusaurus'],
     icon: Docusaurus,

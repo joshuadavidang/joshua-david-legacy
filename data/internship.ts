@@ -11,6 +11,17 @@ export interface InternshipExperienceType {
 export const InternshipExperience: InternshipExperienceType[] = [
   {
     id: randomUniqueId(),
+    company: 'GovTech Singapore',
+    date: 'Jan 2024 - Present',
+    link: 'https://tech.gov.sg/',
+    tasks: [
+      'Government Digital Services (GDS) - CrowdTaskSG',
+      'A gamified citizen engagement platform developed to bridge the gap between citizens and the government. It’s a one-stop platform where citizens can share their opinions, take part in surveys and earn coins that can be redeemed for rewards.',
+      'Technologies: TypeScript, Next.js, Node.js, AWS',
+    ],
+  },
+  {
+    id: randomUniqueId(),
     company: 'Pigeonhole Live (PigeonLab)',
     date: 'Jan 2023 - Mar 2023',
     link: 'https://pigeonholelive.com/',
