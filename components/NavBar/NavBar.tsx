@@ -11,7 +11,7 @@ import { Icon } from '@/components/Button/Icon';
 const NavBar = () => {
   const backgroundColor = useColorModeValue(
     'brand.offWhite',
-    'brand.lightsOut'
+    'brand.lightsOut',
   );
   const scrollToSection = useScrollToSection();
   const handleScroll = (id: any) => {

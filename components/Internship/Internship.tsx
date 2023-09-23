@@ -10,15 +10,16 @@ import {
   UnorderedList,
   Box,
   Link,
-  Avatar,
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { InternshipExperience } from '@/data/internship';
 import PigeonLab from '@/images/Internship/PigeonLab.png';
+import GovTech from '@/images/Internship/GovTech.png';
 import { ROLE } from '@/constants/index';
 import { motion } from 'framer-motion';
-import { BsCodeSlash } from 'react-icons/bs';
 import { hoverDecorationNone } from '@/helpers/hoverDecorationNone';
+import { BsCodeSlash } from 'react-icons/bs';
+import { Avatar } from '@chakra-ui/react';
 
 const Internship = () => {
   return (
@@ -36,10 +37,13 @@ const Internship = () => {
       >
         <TabList>
           <Tab>
+            <Image src={GovTech} width="30" alt="GovTech Singapore" />
+          </Tab>
+          <Tab>
             <Image src={PigeonLab} width="30" alt="PigeonLab" />
           </Tab>
           <Tab>
-            <Avatar size="sm" icon={<BsCodeSlash />} />
+            <Avatar icon={<BsCodeSlash />} size="sm" />
           </Tab>
         </TabList>
 
@@ -77,7 +81,7 @@ const Internship = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: 0.2, ease: 'easeIn' }}
                 >
-                  {tasks.length == 1 ? (
+                  {tasks.length === 1 ? (
                     <Text className="text-sm pt-3">{tasks[0]}</Text>
                   ) : (
                     <UnorderedList spacing={2} pt={3}>

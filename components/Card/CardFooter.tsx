@@ -1,7 +1,7 @@
 import { CardFooter as ChakraCardFooter } from '@chakra-ui/react';
 
 interface CardFooterProps {
-  pt?: any
+  pt?: any;
   children: any;
 }
 

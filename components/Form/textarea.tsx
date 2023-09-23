@@ -7,6 +7,7 @@ interface TextAreaProps {
   data: any;
   rows: number;
   size: 'xs' | 'sm' | 'md' | 'lg';
+  onKeyDown?: any;
 }
 
 const TextArea = ({
@@ -16,6 +17,7 @@ const TextArea = ({
   size,
   value,
   rows,
+  onKeyDown,
 }: TextAreaProps) => {
   return (
     <ChakraTextarea
@@ -28,6 +30,7 @@ const TextArea = ({
       resize="none"
       rows={rows}
       value={value}
+      onKeyDown={onKeyDown}
     />
   );
 };

@@ -23,7 +23,7 @@ import React from 'react';
 const SpecialMobileNavBar = () => {
   const backgroundColor = useColorModeValue(
     'brand.offWhite',
-    'brand.lightsOut'
+    'brand.lightsOut',
   );
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
@@ -41,8 +41,8 @@ const SpecialMobileNavBar = () => {
         <div className="flex flex-row">
           {ContactMe.map(
             ({ link, icon, title }, index) =>
-              index != 0 &&
-              index != ContactMe.length - 1 && (
+              index !== 0 &&
+              index !== ContactMe.length - 1 && (
                 <span key={title}>
                   <Link href={link} target="_blank">
                     <Icon
@@ -54,7 +54,7 @@ const SpecialMobileNavBar = () => {
                     />
                   </Link>
                 </span>
-              )
+              ),
           )}
         </div>
 

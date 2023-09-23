@@ -38,15 +38,12 @@ export default function ProjectPage() {
             {name}
           </CardHeader>
 
-          <CardBody
-            paddingTop="0"
-            fontSize={{ base: '14px', md: '15px', lg: '14px' }}
-          >
+          <CardBody pt="0" fontSize={{ base: '14px', md: '15px', lg: '14px' }}>
             {description}
           </CardBody>
         </Card>
       </Link>
-    )
+    ),
   );
 
   return (
@@ -87,7 +84,7 @@ export default function ProjectPage() {
                 </CardHeader>
 
                 <CardBody
-                  paddingTop="0"
+                  pt="0"
                   fontSize={{ base: '14px', md: '15px', lg: '14px' }}
                 >
                   {description}

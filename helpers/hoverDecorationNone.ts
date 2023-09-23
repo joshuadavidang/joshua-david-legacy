@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @returns text decoration on hover set to none
  */
 const hoverDecorationNone = () => ({

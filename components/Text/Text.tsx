@@ -9,12 +9,11 @@ interface TextProps {
   lineHeight?: number;
   mb?: any;
   align?: any;
+  as?: any;
+  cursor?: string;
 }
 
-const Text = ({
-  children,
-  ...props
-}: TextProps) => {
+const Text = ({ children, ...props }: TextProps) => {
   return <ChakraText {...props}>{children}</ChakraText>;
 };
 
