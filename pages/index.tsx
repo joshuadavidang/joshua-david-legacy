@@ -24,7 +24,7 @@ export default function Layout(props: { children: any }) {
 
   const backgroundColor = useColorModeValue(
     'brand.offWhite',
-    'brand.lightsOut'
+    'brand.lightsOut',
   );
 
   return (

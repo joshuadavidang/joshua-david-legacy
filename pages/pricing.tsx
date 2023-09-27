@@ -18,7 +18,7 @@ export default function Pricing() {
       <Head>
         <title>Pricing - Joshua David</title>
       </Head>
-      <Box className="flex flex-col justify-center items-center w-screen py-16 md:py-32 text-center">
+      <Box className="center-layout py-16 md:py-32 text-center">
         <h1 className="md:pt-0 pt-12 pb-9 md:text-3xl text-2xl md:max-w-none max-w-sm ">
           {PRICING_HEADER}
         </h1>
@@ -87,7 +87,7 @@ export default function Pricing() {
                   <Link href={link} target="_blank">
                     <ButtonIcon
                       size="md"
-                      colorScheme={colorMode == 'dark' ? 'gray' : 'telegram'}
+                      colorScheme={colorMode === 'dark' ? 'gray' : 'telegram'}
                       variant="solid"
                     >
                       {callToAction}
@@ -95,7 +95,7 @@ export default function Pricing() {
                   </Link>
                 </CardFooter>
               </Card>
-            )
+            ),
           )}
         </div>
       </Box>

@@ -10,7 +10,7 @@ import { Icon } from '@/components/Button/Icon';
 const SpecialNavBar = () => {
   const backgroundColor = useColorModeValue(
     'brand.offWhite',
-    'brand.lightsOut'
+    'brand.lightsOut',
   );
   const router = useRouter();
   const handleRoute = () => {

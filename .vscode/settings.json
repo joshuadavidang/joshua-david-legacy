@@ -1,16 +1,14 @@
 {
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "terminal.integrated.persistentSessionReviveProcess": "never",
-    "workbench.colorTheme": "Night Owl (No Italics)",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "eslint.validate": ["javascript"],
-    "css.lint.unknownProperties": "ignore",
-    "css.lint.unknownAtRules": "ignore",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "workbench.startupEditor": "none",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "css.lint.unknownProperties": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }
