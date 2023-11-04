@@ -4,6 +4,7 @@ import Sayocode from '@/images/Projects/Sayocode.png';
 import BreadApp from '@/images/Projects/bread_app.png';
 import macOS from '@/images/Projects/macOS.png';
 import Docusaurus from '@/images/Projects/Docusaurus.png';
+import Sayless from '@/images/Projects/SaylessEcosystem.png';
 import { TbBrandNextjs } from 'react-icons/tb';
 import {
   SiTypescript,
@@ -28,6 +29,23 @@ export interface PastProjectsType {
 }
 
 export const PastProjects: PastProjectsType[] = [
+  {
+    id: randomUniqueId(),
+    name: 'Sayless',
+    description:
+      'A gamified web app connecting people to share excess food. Upload receipts to add items to inventory or complete quests to earn vouchers.',
+    year: 2023,
+    techStack: [
+      'Vue.js',
+      'Express.js',
+      'MongoDB',
+      'Express.js',
+      'Firebase Authentication',
+      'Rest APIs',
+    ],
+    icon: Sayless,
+    link: 'https://github.com/SMU-IS/SayLess',
+  },
   {
     id: randomUniqueId(),
     name: 'DocusauNotes',
